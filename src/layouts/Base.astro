@@ -20,7 +20,9 @@ interface Props {
 }
 const { title, description = SITE.description, canonical, ogType = 'website', jsonLd, activeCategory } = Astro.props;
 const fullTitle = title === SITE.name ? `${SITE.name} — ${SITE.tagline}` : `${title} · ${SITE.name}`;
-const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+// build.format 'file' gives pathnames like /about.html; the public URLs are clean (/about), so canonicalise them
+const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
+const url = canonical ?? new URL(cleanPath, Astro.site).toString();
 ---
 <!doctype html>
 <html lang="en">
