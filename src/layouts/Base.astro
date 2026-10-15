@@ -17,15 +17,19 @@ interface Props {
   ogType?: string;
   jsonLd?: unknown;
   activeCategory?: string;
+  image?: string;      // absolute URL for og:image / twitter:image
+  imageAlt?: string;
+  noindex?: boolean;
 }
-const { title, description = SITE.description, canonical, ogType = 'website', jsonLd, activeCategory } = Astro.props;
+const { title, description = SITE.description, canonical, ogType = 'website', jsonLd, activeCategory, image, imageAlt, noindex = false } = Astro.props;
+const ogImage = image ?? `${SITE.url}/og-default.jpg`;
 const fullTitle = title === SITE.name ? `${SITE.name} — ${SITE.tagline}` : `${title} · ${SITE.name}`;
 // build.format 'file' gives pathnames like /about.html; the public URLs are clean (/about), so canonicalise them
 const cleanPath = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '');
 const url = canonical ?? new URL(cleanPath, Astro.site).toString();
 ---
 <!doctype html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,7 +41,17 @@ const url = canonical ?? new URL(cleanPath, Astro.site).toString();
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={url} />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={fullTitle} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+  {noindex && <meta name="robots" content="noindex, follow" />}
+  <meta name="theme-color" content="#FBF1CF" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   {import.meta.env.GOOGLE_SITE_VERIFICATION && <meta name="google-site-verification" content={import.meta.env.GOOGLE_SITE_VERIFICATION} />}

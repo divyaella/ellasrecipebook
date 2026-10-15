@@ -58,5 +58,6 @@
   "needs_review": [
     "no-macros"
   ],
-  "slug": "hot-mocha"
+  "slug": "hot-mocha",
+  "views": 1002
 }

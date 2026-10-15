@@ -1,0 +1,56 @@
+---
+/* A recipe photo cropped to a card shape, with a tinted placeholder when there is no image yet. */
+import { Image } from 'astro:assets';
+import type { Recipe } from '../data/site';
+import { tone } from '../data/site';
+import { photoFor } from '../data/images';
+
+interface Props {
+  recipe: Recipe;
+  aspect?: '4/3' | '1/1' | '9/16' | '4/5';
+  /** CSS width hint for srcset selection, e.g. "(max-width: 600px) 50vw, 300px" */
+  sizes?: string;
+  /** rendered width in CSS px at the largest layout; derivatives are generated at 1x and 2x */
+  width?: number;
+  priority?: boolean;
+  class?: string;
+  caption?: string;
+}
+const { recipe: r, aspect = '4/3', sizes, width = 400, priority = false, class: cls = '', caption } = Astro.props;
+const [aw, ah] = aspect.split('/').map(Number);
+const w = width;
+const h = Math.round((w * ah) / aw);
+const img = photoFor(r.slug);
+const t = tone(r);
+const alt = r.title;
+---
+{img ? (
+  <div class={`photo ${cls}`} style={`aspect-ratio:${aw}/${ah}`}>
+    <Image
+      src={img}
+      alt={alt}
+      width={w}
+      height={h}
+      widths={[Math.round(w * 0.5), w, w * 2]}
+      sizes={sizes ?? `${w}px`}
+      fit="cover"
+      position="center"
+      format="webp"
+      quality={78}
+      loading={priority ? 'eager' : 'lazy'}
+      decoding={priority ? 'sync' : 'async'}
+      fetchpriority={priority ? 'high' : undefined}
+    />
+    <slot />
+  </div>
+) : (
+  <div class={`ph photo t-${t} ${t === 'berry' ? 'ph-dark' : ''} ${cls}`} style={`aspect-ratio:${aw}/${ah}`}>
+    <span class="cap">{caption ?? 'photo'}</span>
+    <slot />
+  </div>
+)}
+
+<style>
+  .photo { position: relative; overflow: hidden; background: var(--honey); }
+  .photo :global(img) { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; display: block; }
+</style>

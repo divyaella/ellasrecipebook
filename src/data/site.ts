@@ -29,6 +29,9 @@ export const COLLECTIONS: {
   name: string;
   short: string;
   blurb: string;
+  seoTitle: string;      // <title> for the collection page, ≤ 60 chars
+  seoDescription: string;
+  intro: string;         // a paragraph of real copy on the page
   filter: (r: Recipe) => boolean;
   sort?: (a: Recipe, b: Recipe) => number;
 }[] = [
@@ -37,6 +40,9 @@ export const COLLECTIONS: {
     name: 'Popular on Instagram',
     short: 'From the Reels',
     blurb: 'Recipes you’ll already recognise from the Reels.',
+    seoTitle: 'Popular Indian Recipes from Instagram Reels',
+    seoDescription: "Ella's most-watched recipes from @ellasrecipebook_, written out in full — ingredients, method, macros — so you can cook them instead of rewinding the reel.",
+    intro: 'These are the recipes people keep coming back to on Instagram — the ones that got saved, shared and cooked the most. Every one is written out here in full, with the ingredient list, the method step by step and the macros per serving, so you never have to pause a reel at the wrong moment again.',
     filter: (r) => true,
     sort: (a, b) => b.likes - a.likes,
   },
@@ -45,6 +51,9 @@ export const COLLECTIONS: {
     name: 'Ready in 20 minutes',
     short: 'Under 20 min',
     blurb: 'Quick recipes for everyday cooking — the clock starts when you open the fridge.',
+    seoTitle: 'Quick Indian Recipes Ready in 20 Minutes',
+    seoDescription: 'Healthy recipes that go from fridge to table in 20 minutes or less — eggs, paneer, chicken, one-pan dinners — with macros per serving.',
+    intro: 'Twenty minutes is the honest limit on a weeknight. Everything here clears it: quick egg dishes, paneer and chicken stir-fries, bowls and toasts that come together while the kettle boils. The time on each card is the whole thing — chopping included — not just the cooking.',
     filter: (r) => r.tags.includes('under-20-min'),
     sort: (a, b) => (a.time_minutes ?? 99) - (b.time_minutes ?? 99) || b.likes - a.likes,
   },
@@ -53,6 +62,9 @@ export const COLLECTIONS: {
     name: 'Feed 2 for under ₹500',
     short: 'Under ₹500 for two',
     blurb: 'Budget-conscious meals, with the cost of feeding two made clear — no hidden “pantry staples”.',
+    seoTitle: 'Dinner for Two Under ₹500 — Budget Indian Recipes',
+    seoDescription: 'Full meals that feed two for under ₹500, costed ingredient by ingredient at Gurgaon prices. Big flavour, small bill.',
+    intro: "Every recipe here is costed ingredient by ingredient — what the vegetables, protein and dairy cost at Gurgaon grocery prices — and comes in under ₹500 for two people. Pantry staples like oil, salt and spices are counted too, so the number on the card is close to what you'll actually spend.",
     filter: (r) => (r.cost_for_two ?? Infinity) <= 500,
     sort: (a, b) => (a.cost_for_two ?? 0) - (b.cost_for_two ?? 0),
   },
@@ -61,6 +73,9 @@ export const COLLECTIONS: {
     name: 'High protein',
     short: 'High protein',
     blurb: 'Filling, flavourful meals with the protein per serving on the card.',
+    seoTitle: 'High-Protein Indian Recipes (25g+ per serving)',
+    seoDescription: 'Filling Indian meals with 25g or more protein per serving — chicken, eggs, paneer, prawns, dal — with full macros and a method that actually works.',
+    intro: "Protein that doesn't taste like a chore. Every recipe here delivers 25 grams or more per serving — chicken, eggs, paneer, prawns, dal — with the full macros on the card so you can fit it into whatever you're tracking. Most are everyday Indian dishes, lightened up rather than reinvented.",
     filter: (r) => r.tags.includes('high-protein'),
     sort: (a, b) => (b.macros.protein ?? 0) - (a.macros.protein ?? 0),
   },
@@ -69,6 +84,9 @@ export const COLLECTIONS: {
     name: 'Under 500 calories',
     short: 'Under 500 kcal',
     blurb: 'Lighter plates that still feel like dinner.',
+    seoTitle: 'Under 500 Calorie Indian Meals That Still Feel Like Dinner',
+    seoDescription: 'Lighter Indian meals under 500 calories per serving, with full macros. Proper plates — curries, bowls, eggs, stir-fries — not snacks dressed up as meals.',
+    intro: 'Under 500 calories, but a proper plate: curries, rice bowls, eggs, stir-fries and pasta that feel like dinner. Sides and chutneys are kept out of this list on purpose — everything here is a meal on its own, with the calories and macros per serving on the card.',
     // proper meals only — sides and chutneys sit under 150 kcal and aren't what this collection promises
     filter: (r) => r.tags.includes('under-500-kcal') && (r.macros.kcal ?? 0) >= 150,
     sort: (a, b) => b.likes - a.likes,
@@ -78,24 +96,27 @@ export const COLLECTIONS: {
     name: 'Meal prep',
     short: 'Meal prep',
     blurb: 'Recipes that make planning and preparing the week easier — big-batch bases and things that keep.',
+    seoTitle: 'Meal Prep Recipes for the Week — Indian & Easy',
+    seoDescription: 'Big-batch Indian recipes that keep well and reheat better — dals, curries, mince, overnight oats — plus a sample week to copy.',
+    intro: 'Recipes that make Sunday cooking pay off all week: dals and curries that deepen overnight, a chicken mince that becomes three different dinners, overnight oats and chia puddings for grab-and-go breakfasts. Each one keeps for at least three days in the fridge.',
     filter: (r) => r.tags.includes('meal-prep'),
     sort: (a, b) => b.likes - a.likes,
   },
 ];
 
 /** Categories — the header line and /categories/<id> pages. */
-export const CATEGORIES: { id: string; name: string; filter: (r: Recipe) => boolean }[] = [
-  { id: 'breakfast', name: 'Breakfast', filter: (r) => r.tags.includes('breakfast') },
-  { id: 'mains', name: 'Mains', filter: (r) => !r.tags.includes('breakfast') && !r.tags.includes('dessert') && !r.tags.includes('salad') },
-  { id: 'desserts', name: 'Desserts', filter: (r) => r.tags.includes('dessert') },
-  { id: 'salads', name: 'Salads', filter: (r) => r.tags.includes('salad') },
-  { id: 'vegetarian', name: 'Vegetarian', filter: (r) => r.tags.includes('vegetarian') },
-  { id: 'eggs', name: 'Eggs', filter: (r) => r.tags.includes('eggs') },
-  { id: 'chicken', name: 'Chicken', filter: (r) => r.tags.includes('chicken') },
-  { id: 'prawns', name: 'Prawns', filter: (r) => r.tags.includes('prawns') },
-  { id: 'pasta', name: 'Pasta', filter: (r) => r.tags.includes('pasta') },
-  { id: 'noodles', name: 'Noodles', filter: (r) => r.tags.includes('noodles') },
-  { id: 'paneer', name: 'Paneer', filter: (r) => r.tags.includes('paneer') },
+export const CATEGORIES: { id: string; name: string; seoTitle: string; intro: string; filter: (r: Recipe) => boolean }[] = [
+  { id: 'breakfast', name: 'Breakfast', seoTitle: 'Healthy Indian Breakfast Recipes', intro: "Breakfasts worth getting up for: eggs every which way, parathas, overnight oats and chia puddings, dosa and idli with proper chutney. Most take under 15 minutes, and the ones that don't are worth the wait.", filter: (r) => r.tags.includes('breakfast') },
+  { id: 'mains', name: 'Mains', seoTitle: 'Indian Dinner & Lunch Recipes — Mains', intro: 'The main event: curries, dals, rice dishes, pasta, noodles, stir-fries and one-pot dinners. Everyday home food, with macros per serving and the method written so it works the first time.', filter: (r) => !r.tags.includes('breakfast') && !r.tags.includes('dessert') && !r.tags.includes('salad') },
+  { id: 'desserts', name: 'Desserts', seoTitle: 'Dessert & Baking Recipes', intro: 'Brownies, cookies, cakes, chia puddings and a few sugar-free experiments — Ella started as a dessert person, and it shows.', filter: (r) => r.tags.includes('dessert') },
+  { id: 'salads', name: 'Salads', seoTitle: 'Salad Recipes That Are Actually Filling', intro: 'Salads built like meals — paneer tikka, chicken caesar, quinoa and chickpea — with enough protein to count as lunch.', filter: (r) => r.tags.includes('salad') },
+  { id: 'vegetarian', name: 'Vegetarian', seoTitle: 'Vegetarian Indian Recipes', intro: "Vegetarian dishes with real substance: paneer, dal, subzis, khichdi and the occasional pasta. Marked vegetarian only when there's no egg either.", filter: (r) => r.tags.includes('vegetarian') },
+  { id: 'eggs', name: 'Eggs', seoTitle: 'Egg Recipes — Indian & Beyond', intro: 'Eggs for breakfast, lunch or dinner: bhurji, omelettes, fried eggs with chilli oil, curries, frittatas. Cheap protein, done well.', filter: (r) => r.tags.includes('eggs') },
+  { id: 'chicken', name: 'Chicken', seoTitle: 'Healthy Chicken Recipes', intro: "Chicken the way it gets cooked at home in India: curries, roasts, kebabs, mince, air-fried 'fakeaways' — high in protein, light on oil.", filter: (r) => r.tags.includes('chicken') },
+  { id: 'prawns', name: 'Prawns', seoTitle: 'Prawn Recipes', intro: 'Kerala-style curries, pulao and quick stir-fries — prawns cook in minutes, so these are some of the fastest dinners on the site.', filter: (r) => r.tags.includes('prawns') },
+  { id: 'pasta', name: 'Pasta', seoTitle: 'Pasta Recipes with Macros', intro: 'Pasta with the macros worked out: bolognese, creamy mushroom, cherry tomato, mac and cheese — comfort food that still fits the week.', filter: (r) => r.tags.includes('pasta') },
+  { id: 'noodles', name: 'Noodles', seoTitle: 'Noodle Recipes — Ramen, Stir-Fries & More', intro: 'Dan dan, chilli oil, Korean rice noodles, upgraded instant ramen and Maggi — fast, hot and mostly under 30 minutes.', filter: (r) => r.tags.includes('noodles') },
+  { id: 'paneer', name: 'Paneer', seoTitle: 'Paneer Recipes — High Protein & Easy', intro: 'Paneer tikka, bhurji, matar paneer, palak paneer, stir-fries and salads — the vegetarian protein that does everything.', filter: (r) => r.tags.includes('paneer') },
 ];
 
 export const SERIES: { id: string; name: string; blurb: string }[] = [

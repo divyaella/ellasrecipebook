@@ -1,7 +1,11 @@
 ---
+import { getImage } from 'astro:assets';
 import Base from '../../layouts/Base.astro';
 import RecipeCard from '../../components/RecipeCard.astro';
-import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, fmtMacros, tone, seriesId } from '../../data/site';
+import Photo from '../../components/Photo.astro';
+import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, fmtMacros, seriesId } from '../../data/site';
+import { photoFor } from '../../data/images';
+import reelMeta from '../../../content/raw/reel-meta.json';
 
 export async function getStaticPaths() {
   const all = await loadRecipes();
@@ -9,37 +13,74 @@ export async function getStaticPaths() {
 }
 const { r, all } = Astro.props;
 
-const t = tone(r);
 const macros = fmtMacros(r);
 const inCollections = COLLECTIONS.filter((c) => c.id !== 'popular' && c.filter(r));
 const inCategories = CATEGORIES.filter((c) => c.filter(r));
 const sid = seriesId(r.series);
+const reelId = (r.source_url.match(/\/(?:reel|p|reels)\/([A-Za-z0-9_-]+)/) ?? [])[1];
+const reel = (reelMeta as Record<string, { dur?: number | null; views?: number | null }>)[r.slug];
 
 // Related: same series first, then shared tags, then most liked — never itself.
 const score = (o: typeof r) => (o.series && o.series === r.series ? 10 : 0) + o.tags.filter((x) => r.tags.includes(x)).length;
 const related = all.filter((o) => o.slug !== r.slug).sort((a, b) => score(b) - score(a) || b.likes - a.likes).slice(0, 4);
 
-const description = (r.intro || r.caption).replace(/\s+/g, ' ').trim().slice(0, 155);
+/* ---------- SEO text ---------- */
+const bits = [r.time_minutes ? `${r.time_minutes} min` : null, r.macros.kcal ? `${r.macros.kcal} kcal` : null].filter(Boolean);
+const hasRecipeWord = /\brecipe\b/i.test(r.title);
+let seoTitle = hasRecipeWord ? r.title : `${r.title} Recipe`;
+if (bits.length && (seoTitle + ` (${bits.join(', ')})`).length <= 60) seoTitle += ` (${bits.join(', ')})`;
+
+const nIng = r.ingredients.reduce((n, g) => n + g.items.length, 0);
+const facts = [
+  r.time_minutes ? `ready in ${r.time_minutes} minutes` : null,
+  r.macros.kcal ? `${r.macros.kcal} kcal` : null,
+  r.macros.protein ? `${r.macros.protein}g protein per serving` : null,
+].filter(Boolean);
+const templated = `${r.title} recipe: ${nIng} ingredients${facts.length ? ', ' + facts.join(', ') : ''}. Step-by-step method and the original reel, from Ella's kitchen in Gurgaon.`;
+const clean = (s: string) => s.replace(/\s+/g, ' ').trim();
+const description = (r.intro ? clean(r.intro) + (clean(r.intro).length < 90 && facts.length ? ` ${facts.join(', ')}.` : '') : templated).slice(0, 158);
+
+/* ---------- images: hero + the three ratios Google asks for + OG ---------- */
+const src = photoFor(r.slug);
+const abs = (p: string) => new URL(p, SITE.url).toString();
+const shots = src
+  ? await Promise.all([
+      getImage({ src, width: 1200, height: 1200, fit: 'cover', position: 'center', format: 'jpeg', quality: 80 }),
+      getImage({ src, width: 1200, height: 900, fit: 'cover', position: 'center', format: 'jpeg', quality: 80 }),
+      getImage({ src, width: 1200, height: 675, fit: 'cover', position: 'center', format: 'jpeg', quality: 80 }),
+      getImage({ src, width: 1200, height: 630, fit: 'cover', position: 'center', format: 'jpeg', quality: 80 }),
+    ])
+  : null;
+const schemaImages = shots ? shots.slice(0, 3).map((s) => abs(s.src)) : undefined;
+const ogImage = shots ? abs(shots[3].src) : undefined;
+
+/* ---------- structured data ---------- */
 const isoTime = r.time_minutes ? `PT${r.time_minutes}M` : undefined;
-const jsonLd = {
+const pageUrl = `${SITE.url}/recipes/${r.slug}`;
+const recipeLd = {
   '@context': 'https://schema.org',
   '@type': 'Recipe',
+  '@id': `${pageUrl}#recipe`,
+  mainEntityOfPage: pageUrl,
+  url: pageUrl,
   name: r.title,
-  author: { '@type': 'Person', name: SITE.author, url: SITE.instagram },
+  ...(schemaImages ? { image: schemaImages } : {}),
+  author: { '@type': 'Person', name: SITE.author, url: `${SITE.url}/about`, sameAs: [SITE.instagram] },
+  publisher: { '@type': 'Organization', name: SITE.name, url: SITE.url },
   datePublished: r.posted,
   description,
-  ...(r.image ? { image: new URL(r.image, SITE.url).toString() } : {}),
   ...(isoTime ? { totalTime: isoTime } : {}),
   ...(r.serves ? { recipeYield: `${r.serves} servings` } : {}),
-  recipeCategory: inCategories.map((c) => c.name).slice(0, 3).join(', ') || undefined,
-  recipeCuisine: 'Indian',
-  keywords: [...r.keywords, ...r.tags].join(', '),
+  ...(inCategories.length ? { recipeCategory: inCategories.map((c) => c.name).slice(0, 3).join(', ') } : {}),
+  recipeCuisine: r.tags.includes('pasta') || r.tags.includes('noodles') ? 'Fusion' : 'Indian',
+  keywords: [...new Set([...r.keywords, ...r.tags.map((t) => t.replace(/-/g, ' '))])].join(', '),
   recipeIngredient: r.ingredients.flatMap((g) => g.items),
-  recipeInstructions: r.method.map((step, i) => ({ '@type': 'HowToStep', position: i + 1, text: step })),
+  recipeInstructions: r.method.map((step, i) => ({ '@type': 'HowToStep', position: i + 1, text: step, url: `${pageUrl}#step-${i + 1}` })),
   ...(r.macros.kcal || r.macros.protein
     ? {
         nutrition: {
           '@type': 'NutritionInformation',
+          servingSize: '1 serving',
           ...(r.macros.kcal ? { calories: `${r.macros.kcal} calories` } : {}),
           ...(r.macros.protein ? { proteinContent: `${r.macros.protein} g` } : {}),
           ...(r.macros.carbs ? { carbohydrateContent: `${r.macros.carbs} g` } : {}),
@@ -47,12 +88,36 @@ const jsonLd = {
         },
       }
     : {}),
-  video: undefined,
+  ...(reelId && schemaImages
+    ? {
+        video: {
+          '@type': 'VideoObject',
+          name: `${r.title} — the reel`,
+          description,
+          thumbnailUrl: schemaImages,
+          uploadDate: r.posted,
+          ...(reel?.dur ? { duration: `PT${Math.round(reel.dur)}S` } : {}),
+          embedUrl: `https://www.instagram.com/reel/${reelId}/embed/`,
+          contentUrl: r.source_url,
+          ...(reel?.views ? { interactionStatistic: { '@type': 'InteractionCounter', interactionType: { '@type': 'WatchAction' }, userInteractionCount: reel.views } } : {}),
+        },
+      }
+    : {}),
   sameAs: r.source_url,
+};
+const crumbsLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: SITE.url },
+    { '@type': 'ListItem', position: 2, name: 'Recipes', item: `${SITE.url}/recipes` },
+    ...(inCategories[0] ? [{ '@type': 'ListItem', position: 3, name: inCategories[0].name, item: `${SITE.url}/categories/${inCategories[0].id}` }] : []),
+    { '@type': 'ListItem', position: inCategories[0] ? 4 : 3, name: r.title, item: pageUrl },
+  ],
 };
 const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
 ---
-<Base title={r.title} description={description} ogType="article" jsonLd={jsonLd}>
+<Base title={seoTitle} description={description} ogType="article" jsonLd={[recipeLd, crumbsLd]} image={ogImage} imageAlt={r.title}>
   <article class="recipe">
     <div class="wrap">
 
@@ -74,18 +139,24 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
             {r.macros.protein && <div><dt>Protein</dt><dd>{r.macros.protein}g</dd></div>}
           </dl>
           <div class="actions no-print">
-            <a href={r.source_url} class="btn" rel="noopener">Watch the reel
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            <a href="#ingredients" class="btn">Jump to the recipe
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14"></path><path d="M6 13l6 6 6-6"></path></svg></a>
             <button type="button" class="btn-ghost" onclick="window.print()">Print</button>
+            <a href={r.source_url} class="link-ul" rel="noopener">Open on Instagram</a>
           </div>
         </div>
-        <div class={`ph hero-img t-${t} ${t === 'berry' ? 'ph-dark' : ''}`}>
-          {r.image ? <img src={r.image} alt={r.title} /> : <span class="cap">photo</span>}
+        <div class="hero-img" id="hero">
+          <Photo recipe={r} aspect="4/5" width={480} sizes="(max-width: 600px) 100vw, 480px" priority />
+          {reelId && (
+            <button type="button" class="play no-print" id="playReel" data-embed={`https://www.instagram.com/reel/${reelId}/embed/`} aria-label="Play the reel">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg> Watch the reel
+            </button>
+          )}
         </div>
       </header>
 
       <div class="body">
-        <aside class="ing">
+        <aside class="ing" id="ingredients">
           <h2>Ingredients</h2>
           {r.ingredients.map((g) => (
             <div class="group">
@@ -107,7 +178,7 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
 
         <div class="method">
           <h2>Method</h2>
-          <ol>{r.method.map((step) => <li>{step}</li>)}</ol>
+          <ol>{r.method.map((step, i) => <li id={`step-${i + 1}`}>{step}</li>)}</ol>
           {r.tips.length > 0 && (
             <div class="tips">
               <h3>Ella's notes</h3>
@@ -152,8 +223,12 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
   .facts dd { margin: 0; font-family: var(--hand); font-weight: 700; font-size: 32px; line-height: 1; color: var(--berry); }
   .facts dd small { font-family: var(--serif); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
   .actions { display: flex; flex-wrap: wrap; gap: 12px; }
-  .hero-img { flex: 1 1 360px; min-width: 0; aspect-ratio: 1 / 1; max-width: 480px; }
-  @media (max-width: 600px) { .hero-img { aspect-ratio: 4 / 3; max-width: none; order: -1; } .head { padding-bottom: 32px; margin-bottom: 32px; } }
+  .hero-img { flex: 1 1 360px; min-width: 0; max-width: 480px; position: relative; }
+  .hero-img :global(.photo) { aspect-ratio: 4 / 5; }
+  .play { position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px 0 12px; border: 0; border-radius: 999px; background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 2px 12px rgba(31,28,61,.25); }
+  .play:hover { background: var(--butter); }
+  .hero-img iframe { width: 100%; aspect-ratio: 9 / 16; max-height: 80vh; border: 0; background: #000; display: block; }
+  @media (max-width: 600px) { .hero-img { max-width: none; order: -1; } .hero-img :global(.photo) { aspect-ratio: 4 / 3; } .head { padding-bottom: 32px; margin-bottom: 32px; } }
 
   .body { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; }
   .ing { flex: 1 1 300px; max-width: 400px; min-width: 0; background: var(--paper); border: 1px solid var(--line); padding: 28px; position: sticky; top: 16px; display: flex; flex-direction: column; gap: 20px; }
@@ -177,3 +252,16 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
   .posted a { color: var(--berry); }
   @media print { .ing { border: 0; padding: 0; } .ing li label { padding: 4px 0; } .hero-img { display: none; } }
 </style>
+
+<script>
+  const btn = document.getElementById('playReel') as HTMLButtonElement | null;
+  btn?.addEventListener('click', () => {
+    const host = document.getElementById('hero')!;
+    const f = document.createElement('iframe');
+    f.src = btn.dataset.embed!;
+    f.title = 'Instagram reel';
+    f.allow = 'autoplay; encrypted-media';
+    f.loading = 'eager';
+    host.replaceChildren(f);
+  });
+</script>

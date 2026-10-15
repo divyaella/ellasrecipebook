@@ -63,5 +63,6 @@
   "needs_review": [
     "no-macros"
   ],
-  "slug": "fudge"
+  "slug": "fudge",
+  "views": 6934
 }

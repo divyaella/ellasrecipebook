@@ -1,7 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import RecipeCard from '../components/RecipeCard.astro';
-import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, tone, meta, fmtCost } from '../data/site';
+import Photo from '../components/Photo.astro';
+import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, meta, fmtCost } from '../data/site';
 
 const all = await loadRecipes();
 const byId = Object.fromEntries(COLLECTIONS.map((c) => [c.id, all.filter(c.filter).sort(c.sort ?? (() => 0))]));
@@ -14,9 +15,33 @@ const protein = byId['high-protein'].slice(0, 4);
 const light = byId['under-500-kcal'].filter((r) => !protein.includes(r)).slice(0, 4);
 const prep = byId['meal-prep'].slice(0, 5);
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
-const ft = tone(featured);
+const homeLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE.url}/#website`,
+    url: SITE.url,
+    name: SITE.name,
+    description: SITE.description,
+    inLanguage: 'en-IN',
+    publisher: { '@id': `${SITE.url}/#person` },
+    potentialAction: { '@type': 'SearchAction', target: { '@type': 'EntryPoint', urlTemplate: `${SITE.url}/recipes?q={search_term_string}` }, 'query-input': 'required name=search_term_string' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': `${SITE.url}/#person`,
+    name: SITE.author,
+    alternateName: 'Ella',
+    url: `${SITE.url}/about`,
+    sameAs: [SITE.instagram],
+    jobTitle: 'Home cook and recipe writer',
+    address: { '@type': 'PostalAddress', addressLocality: 'Gurgaon', addressRegion: 'Haryana', addressCountry: 'IN' },
+  },
+];
+const homeDescription = `${all.length} healthy Indian home-cooking recipes with macros and the cost of feeding two — high protein, under 500 calories, ready in 20 minutes, meal prep. From @ellasrecipebook_.`;
 ---
-<Base title={SITE.name}>
+<Base title={SITE.name} description={homeDescription} jsonLd={homeLd}>
 
   <section class="hero">
     <div class="wrap">
@@ -30,9 +55,7 @@ const ft = tone(featured);
         </div>
       </div>
       <a href={`/recipes/${featured.slug}`} class="hero-feat">
-        <div class={`ph t-${ft} ${ft === 'berry' ? 'ph-dark' : ''}`} style="aspect-ratio:4/5">
-          {featured.image ? <img src={featured.image} alt="" /> : <span class="cap">photo · this week's recipe</span>}
-        </div>
+        <Photo recipe={featured} aspect="4/5" width={460} sizes="(max-width: 900px) 100vw, 460px" priority caption="photo · this week's recipe" />
         <div class="feat-meta"><span class="t">{featured.title}</span><span class="meta">{['This week', meta(featured), fmtCost(featured)].filter(Boolean).join(' · ')}</span></div>
       </a>
     </div>
@@ -71,7 +94,7 @@ const ft = tone(featured);
       </div>
       <div class="budget">
         <a href={`/recipes/${budget[0].slug}`} class="budget-feat">
-          <div class={`ph img t-${tone(budget[0])}`}>{budget[0].image ? <img src={budget[0].image} alt="" /> : <span class="cap">photo</span>}</div>
+          <Photo recipe={budget[0]} aspect="4/3" width={420} sizes="(max-width: 900px) 100vw, 420px" />
           <span class="tag">Tonight's cheapest dinner</span>
           <span class="bt">{budget[0].title}</span>
           <span class="price">₹{budget[0].cost_for_two} <small>for two{budget[0].time_minutes ? ` · ${budget[0].time_minutes} min` : ''}</small></span>
@@ -95,13 +118,13 @@ const ft = tone(featured);
         <div class="col">
           <h3>High protein</h3>
           <p class="sub">Filling, flavourful meals with the protein per serving.</p>
-          {protein.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.protein}g<small>protein</small></span></a>)}
+          {protein.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><Photo recipe={r} aspect="1/1" width={72} sizes="72px" class="sq" /><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.protein}g<small>protein</small></span></a>)}
           <a href="/collections/high-protein" class="link-arrow">All high-protein recipes →</a>
         </div>
         <div class="col">
           <h3>Under 500 calories</h3>
           <p class="sub">Lighter plates that still feel like dinner.</p>
-          {light.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.kcal}<small>kcal</small></span></a>)}
+          {light.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><Photo recipe={r} aspect="1/1" width={72} sizes="72px" class="sq" /><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.kcal}<small>kcal</small></span></a>)}
           <a href="/collections/under-500-kcal" class="link-arrow">All under-500 recipes →</a>
         </div>
       </div>
@@ -118,7 +141,7 @@ const ft = tone(featured);
         <div class="cta-row"><a href="/collections/meal-prep" class="btn">See the meal-prep recipes</a></div>
       </div>
       <div class="week" aria-label="A sample week">
-        {prep.map((r, i) => <a href={`/recipes/${r.slug}`} class="day"><span class="d">{days[i]}</span><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span></a>)}
+        {prep.map((r, i) => <a href={`/recipes/${r.slug}`} class="day"><span class="d">{days[i]}</span><Photo recipe={r} aspect="1/1" width={120} sizes="(max-width: 700px) 45vw, 120px" class="sq" /><span class="n">{r.title}<small>{meta(r)}</small></span></a>)}
       </div>
     </div>
   </section>
@@ -210,6 +233,7 @@ const ft = tone(featured);
   .col .sub { font-size: 15px; color: var(--muted); margin-top: -6px; margin-bottom: 6px; }
   .crow { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); color: var(--ink); }
   .crow .sq { width: 72px; height: 72px; flex: 0 0 auto; padding: 0; }
+  .crow .sq :global(.cap) { display: none; }
   .crow .n { flex: 1 1 auto; min-width: 0; font-size: 18px; font-weight: 500; line-height: 1.25; }
   .crow .n small { display: block; font-size: 13px; color: var(--muted); font-weight: 400; margin-top: 2px; }
   @media (max-width: 600px) { .col { padding: 20px; } }
@@ -224,6 +248,7 @@ const ft = tone(featured);
   .day { background: var(--paper); border: 1px solid var(--line); padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; color: var(--ink); }
   .day .d { font-family: var(--hand); font-weight: 700; font-size: 26px; line-height: 1; color: var(--berry); }
   .day .sq { aspect-ratio: 1 / 1; padding: 0; }
+  .day .sq :global(.cap) { display: none; }
   .day .n { font-size: 14px; font-weight: 500; line-height: 1.3; }
   .day .n small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 2px; }
 

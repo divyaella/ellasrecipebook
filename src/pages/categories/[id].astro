@@ -1,7 +1,7 @@
 ---
 import Base from '../../layouts/Base.astro';
 import Listing from '../../components/Listing.astro';
-import { CATEGORIES, loadRecipes } from '../../data/site';
+import { SITE, CATEGORIES, loadRecipes } from '../../data/site';
 
 export async function getStaticPaths() {
   const all = await loadRecipes();
@@ -12,7 +12,14 @@ export async function getStaticPaths() {
 }
 const { c, recipes } = Astro.props;
 const blurb = `Every ${c.name.toLowerCase()} recipe on the site, newest first.`;
+const description = `${recipes.length} ${c.name.toLowerCase()} recipes with macros per serving and step-by-step methods, from Ella's kitchen. ${c.intro}`.slice(0, 158);
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: c.seoTitle,
+  itemListElement: recipes.slice(0, 50).map((r, i) => ({ '@type': 'ListItem', position: i + 1, url: `${SITE.url}/recipes/${r.slug}`, name: r.title })),
+};
 ---
-<Base title={`${c.name} recipes`} description={blurb} activeCategory={c.id}>
-  <Listing heading={c.name} blurb={blurb} recipes={recipes} activeChip={c.id} />
+<Base title={c.seoTitle} description={description} activeCategory={c.id} jsonLd={jsonLd}>
+  <Listing heading={c.name} blurb={blurb} intro={c.intro} recipes={recipes} activeChip={c.id} />
 </Base>

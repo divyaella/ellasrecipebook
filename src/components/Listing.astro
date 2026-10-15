@@ -7,11 +7,12 @@ import { COLLECTIONS, CATEGORIES } from '../data/site';
 interface Props {
   heading: string;
   blurb?: string;
+  intro?: string;
   recipes: Recipe[];
   badge?: 'time' | 'cost' | 'protein' | 'kcal' | 'reel' | null;
   activeChip?: string; // collection or category id
 }
-const { heading, blurb, recipes, badge = null, activeChip } = Astro.props;
+const { heading, blurb, intro, recipes, badge = null, activeChip } = Astro.props;
 ---
 <section class="sec listing">
   <div class="wrap">
@@ -19,6 +20,7 @@ const { heading, blurb, recipes, badge = null, activeChip } = Astro.props;
       <div><h1>{heading}</h1>{blurb && <p class="sub">{blurb}</p>}</div>
       <span class="meta count">{recipes.length} {recipes.length === 1 ? 'recipe' : 'recipes'}</span>
     </div>
+    {intro && <p class="intro">{intro}</p>}
     <div class="chips no-print">
       <a class="chip" href="/recipes">Everything</a>
       {COLLECTIONS.map((c) => <a class={`chip${activeChip === c.id ? ' on' : ''}`} href={`/collections/${c.id}`}>{c.short}</a>)}
@@ -35,6 +37,7 @@ const { heading, blurb, recipes, badge = null, activeChip } = Astro.props;
 <style>
   .listing .wrap { padding-top: 32px; }
   .count { white-space: nowrap; padding-bottom: 6px; }
+  .intro { font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 68ch; margin: -12px 0 28px; }
   .chips { margin-bottom: 40px; }
   .empty { font-size: 18px; color: var(--muted); padding: 24px 0 48px; }
   .empty a { color: var(--berry); }
