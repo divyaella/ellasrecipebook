@@ -1,0 +1,3118 @@
+{
+ "10-minute-salsa": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "2-minute-protein-lava-cake": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.211,
+   0.914
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "2 minute",
+   "protein lava mug cake",
+   "EPISODE3:LEVELUPYOURPROTEIN"
+  ]
+ },
+ "aam-shake": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0036,
+  "text_seen": [
+   "3ingredientmdngo"
+  ]
+ },
+ "air-fried-crispy-chicken-with-lime-leaf-lemongrass-stir-fry-sauce": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.333,
+   0.895
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "30 MINUTE DINNER",
+   "AirFried Crispy Chicken with Lime",
+   "LEMONGRASS",
+   "BIROSEYECHT"
+  ]
+ },
+ "air-fryer-chicken-65": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.235,
+   0.938
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "RITE",
+   "Episode One:AirFried Delights",
+   "CHICKEN65",
+   "highproteinIloweffort"
+  ]
+ },
+ "air-fryer-chicken-parmesan": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Chicken Parmesan",
+   "AirFried Delights"
+  ]
+ },
+ "airfryer-chilli-chicken": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "AIRFRIEDDELIGHTS",
+   "Chilli Chicken",
+   "3o minute recipeIhigh protein low effort"
+  ]
+ },
+ "alfajores": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "all-purpose-chicken-mince": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "aloo-capsicum-subzi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEF00D101",
+   "aloo capsicum subzi"
+  ]
+ },
+ "aloo-paratha": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "aloo-paratha-sunday": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.05,
+   0.754
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Sundas are for",
+   "ALOO PARATHA"
+  ]
+ },
+ "anda-bhurji": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Anda Bhurji"
+  ]
+ },
+ "apple-cinnamon-chia-pudding": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY GIRLBREAKFAST",
+   "apple cinnamon chia pudding",
+   "meal prep friendlyl under 300 calories"
+  ]
+ },
+ "apple-pie-breakfast-quinoa": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.217,
+   0.92
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "APPLE\"PIE\"QUINOA",
+   "(calories and macros in the caption)"
+  ]
+ },
+ "asian-fried-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "ASIANFRIED EGGS",
+   "under 300 caloric breakfast"
+  ]
+ },
+ "asian-greens-chicken-stir-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.319,
+   0.882
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "Healthy Weeknight Dinner",
+   "30minuterecipellowpreptime",
+   "Soy Chicken & Asian Greens",
+   "Stir-fry"
+  ]
+ },
+ "asian-inspired-fried-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "NOTSOLAZYBREAKFAST",
+   "Asian Inspired Fried Eggs"
+  ]
+ },
+ "asian-inspired-smashed-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Asian Inspired Smashed Eggs"
+  ]
+ },
+ "asian-style-oats": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Asian Savoury Oats",
+   "filling breakfast option I loweffort"
+  ]
+ },
+ "asian-tadka-cucumber-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.08,
+   0.783
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Isian Tadka Cucumber Salad"
+  ]
+ },
+ "avocado-egg-toast": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.311,
+   0.873
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Breakfast",
+   "Avocado Toast"
+  ]
+ },
+ "basic-masala-omelette": {
+  "source": "frame",
+  "frame_fraction": 0.7,
+  "window": [
+   0.217,
+   0.92
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Simple Masala Omelette"
+  ]
+ },
+ "basil-chicken-mince-pad-krapow": {
+  "source": "frame",
+  "frame_fraction": 0.42,
+  "window": [
+   0.169,
+   0.872
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Basil Chicken"
+  ]
+ },
+ "beetroot-subzi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEF00D 101",
+   "Beetroot Subzi"
+  ]
+ },
+ "best-ever-scrambled-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Creamy Scrambled Eggs"
+  ]
+ },
+ "better-than-any-restaurant-s-tomato-bruschetta": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "better-than-mcd-peri-peri-chicken-burger": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.033,
+   0.736
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "BETTER THAN MCDONALD'S",
+   "peri peri burger"
+  ]
+ },
+ "bhindi-masala": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.243,
+   0.947
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Home food rol",
+   "Bhindi Masala",
+   "one pot recipe"
+  ]
+ },
+ "bokchoy-soup": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "bounty-overnight-oats": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.211,
+   0.914
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Bounty Overnight Oats",
+   "veganImeal prepfriendly"
+  ]
+ },
+ "breakfast-banana-split": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Healthier Banana Split"
+  ]
+ },
+ "breakfast-egg-salad-burritos": {
+  "source": "cover",
+  "window": [
+   0.367,
+   0.93
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Egg Salad Burrito"
+  ]
+ },
+ "breakfast-goals-iced-americano-x-anda-bhurji-with-mini-pav": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY GIRL BREAKFAST",
+   "Iced Americano Anda Bhurji Mini Pav"
+  ]
+ },
+ "brioche-hot-dog-buns": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.015,
+   0.718
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "brioche hot dog bun",
+   "Breaking Bread lor"
+  ]
+ },
+ "brown-butter-chocolate-chip-cookies": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.184,
+   0.887
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "BAKINGBASICS",
+   "brown butter chocolate chip cookies"
+  ]
+ },
+ "brownie-cookie": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.16,
+   0.863
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "brownie cookies"
+  ]
+ },
+ "butter-chicken": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "let's make dinner",
+   "Butter Chicken"
+  ]
+ },
+ "cabbage-subzi": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEF00D101",
+   "cabbage subzi"
+  ]
+ },
+ "cajun-chicken-pita-pocket-with-a-cucumber-salad-coriander-dressing": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.154,
+   0.858
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CajunChickenPitaPockets",
+   "With Tangy Cucumber Salad & Coriander Dressing"
+  ]
+ },
+ "carrot-cake-overnight-oats": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Carrot Cake Overnight Oats",
+   "highprotein"
+  ]
+ },
+ "cheats-green-thai-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "cheddar-jalapeno-meatballs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.05,
+   0.754
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHEDDARJALAPENOMEATBALLS",
+   "highprotein/mealprep"
+  ]
+ },
+ "cherry-tomato-pasta": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "cherry-tomato-spinach-scrambled-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.184,
+   0.887
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "CHERRYTOMATO&SPINACHSCRAMBLEDEGGS"
+  ]
+ },
+ "chicken-caesar-meatballs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "chicken-caesar-pasta-salad": {
+  "source": "cover",
+  "window": [
+   0.279,
+   0.982
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHICKEN CAESAR'S",
+   "PASTASALAD",
+   "high protein I meal prep"
+  ]
+ },
+ "chicken-chapli-kebab": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.178,
+   0.881
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30 MINUTERECIPES",
+   "Chicken Chapli Kebab"
+  ]
+ },
+ "chicken-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.181,
+   0.884
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "NotSo Lazy Girl Dinner",
+   "ONEPOTCHICKENCURRY"
+  ]
+ },
+ "chicken-dan-dan-noodles": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.252,
+   0.955
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "ChickenDanDanNoodles",
+   "high proteinImeal prepfriendly"
+  ]
+ },
+ "chicken-kheema-pulao": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHICKENKHEEMAPULAO",
+   "meal prep recipe"
+  ]
+ },
+ "chicken-sausage-maggi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "chicken-sausage-muffin": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.178,
+   0.881
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Sausage McMuffin, Homemade"
+  ]
+ },
+ "chicken-steak-in-creamy-mushroom-sauce": {
+  "source": "cover",
+  "window": [
+   0.437,
+   1.0
+  ],
+  "shape": "1:1",
+  "text_left": 0.0008,
+  "text_seen": [
+   "FEEDINGADI",
+   "EPISODE3",
+   "Chicken",
+   "Steak"
+  ]
+ },
+ "chickpea-tuna": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHICKPEA\"TUNA'",
+   "vegetarianmeal prep/high protein/low fatIlunch box friendly"
+  ]
+ },
+ "chilli-cheese-fried-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.359,
+   0.921
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHILLICHEESEFRIED EGGS",
+   "under30o caloriebreakfast"
+  ]
+ },
+ "chilli-cheese-hot-dog": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "chilli-cheese-omlette": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "WEEKENDBREAKFASTDIARIES",
+   "Cheese Chilli Omlette"
+  ]
+ },
+ "chilli-cheese-paniyaram": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "BREAKFASTDIARIES",
+   "Chilli Cheese Paniyaram"
+  ]
+ },
+ "chilli-oil-anda-bhurji": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.223,
+   0.926
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHILLIOIL ANDABHURJI",
+   "3oo caloriebreakfastIdecent protein"
+  ]
+ },
+ "chilli-oil-lettuce-wrap-burger": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.237,
+   0.941
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Chilli Oil Lettuce Wrap",
+   "“Burger\"",
+   "low effort I high protein"
+  ]
+ },
+ "chilli-oil-mushroom-nooodles": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "POV: you need a 2o minute",
+   "lunch recipe"
+  ]
+ },
+ "chilli-paste": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "chocolate-chip-banana-bread": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "chocolate-chip-banana-cake": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.237,
+   0.941
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHOCOLATE CHIP BANANA CAKE",
+   "30minutedessertrecipe"
+  ]
+ },
+ "chocolate-protein-pancakes": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.291,
+   0.994
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "PROBIOTC",
+   "LAZYSUNDAYBREAKFAST",
+   "high protein chocolate pancakes",
+   "Soya"
+  ]
+ },
+ "chocolate-souffle": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.053,
+   0.757
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "fancy yetsimpledessert",
+   "CHOCOLATESOUFFLERECIPE"
+  ]
+ },
+ "chole-masala": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEFO0D101",
+   "Chole Masala",
+   "vegan llunch box prep"
+  ]
+ },
+ "classic-chicken-caesar-salad": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.172,
+   0.875
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "THESALADEDIT",
+   "Episode One: Chicken Caesar Salad",
+   "414Calories60Grau",
+   "srotein"
+  ]
+ },
+ "classic-chilli-cheese-toast": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.184,
+   0.887
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Chilli Cheese Toast",
+   "quick snack option"
+  ]
+ },
+ "coffee-hazelnut-biscotti": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0082,
+  "text_seen": [
+   "hazelnut corebiscoltt"
+  ]
+ },
+ "continental-meatballs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.178,
+   0.881
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CONTINENTAL CHICKEN MEATBALLS",
+   "highprotein|low carb"
+  ]
+ },
+ "cookie-dough-1": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "cozy-chicken-lasagna": {
+  "source": "cover",
+  "window": [
+   0.222,
+   0.926
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Healthier Eating 101",
+   "Chicken Lasagna"
+  ]
+ },
+ "creamy-garlic-mushroom-pasta": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.157,
+   0.86
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "15 Minute Mushro0m Pasta"
+  ]
+ },
+ "creamy-mushroom-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.246,
+   0.95
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CREAMYMUSHROOMEGGS",
+   "brunch recipe"
+  ]
+ },
+ "creamy-mushroom-pasta": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.279,
+   0.982
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY LUNCHING",
+   "Creamy",
+   "Mushroom Pasta",
+   "lite version"
+  ]
+ },
+ "creamy-mushroom-spinach-frittata": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.184,
+   0.887
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "CREAMYMUSHROOM&SPINACHFRITTATA"
+  ]
+ },
+ "creamy-spinach-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.337,
+   0.899
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFASTS",
+   "creamy spinach fried eggs",
+   "inder300",
+   "alofies"
+  ]
+ },
+ "dahi-bhindi": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.226,
+   0.929
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "homefood o1",
+   "Dahi Bhindi"
+  ]
+ },
+ "dahi-tadka-toastie": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SIMPLESNACKING",
+   "Dahi Tadka Toastie"
+  ]
+ },
+ "dahi-wale-aloo": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Home Food 1ol",
+   "ahiwalealoo"
+  ]
+ },
+ "dal-bhorta": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LunchBoxBasics",
+   "DAL BHORTA"
+  ]
+ },
+ "dal-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0046,
+  "text_seen": [
+   "Masoor",
+   "atFr"
+  ]
+ },
+ "dal-makhani": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.279,
+   0.982
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "[Dal Makhani Recipe ]"
+  ]
+ },
+ "dal-paratha": {
+  "source": "frame",
+  "frame_fraction": 0.78,
+  "window": [
+   0.154,
+   0.858
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "H0MEF00D101",
+   "LeftoverDalParatha"
+  ]
+ },
+ "dan-dan-noodles": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Dan Dan Noodles",
+   "510Calories38GramsProtein"
+  ]
+ },
+ "dark-chocolate-chia-pudding-high-protein": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "BREAKFASTDIARIES",
+   "High Protein Chocolate Chia Pudding"
+  ]
+ },
+ "desi-animal-fries": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.033,
+   0.736
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "comfort food basics",
+   "DESIANIMAL FRIES"
+  ]
+ },
+ "desi-mushroom-kheema-spread": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.181,
+   0.884
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "DESIMUSHROOMKHEEMASPREAD"
+  ]
+ },
+ "desi-tomato-soup-with-grilled-cheese": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.175,
+   0.878
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CozySundayDinner",
+   "DesiTomato Soup withGrilled Cheese"
+  ]
+ },
+ "desi-turkish-eggs": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "double-chocolate-cookies": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.217,
+   0.92
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "DESSERTBASICS",
+   "Double Chocolate Cookies",
+   "cookie recipelone bowl"
+  ]
+ },
+ "dutch-baby-pancake": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0132,
+  "text_seen": [
+   "dutchbabypancake"
+  ]
+ },
+ "easy-chicken-red-thai-curry-meal-box": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "egg-fried-rice": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Emptying my fridge",
+   "Egg Fried Rice"
+  ]
+ },
+ "egg-salad-sandwich": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.276,
+   0.979
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "EGGSALADSANDWICHES",
+   "high proteinI meal prep recipe"
+  ]
+ },
+ "egg-salad-toastie": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30MINUTERECIPE",
+   "egg salad toasties",
+   "high proteinIquick&easy"
+  ]
+ },
+ "eggless-vanilla-cupcake": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.084,
+   0.793
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Cupcake Pan -> Bake at",
+   "180 -> Cool it down ->",
+   "Top with Whipped",
+   "Cream"
+  ]
+ },
+ "eggs-kejriwal": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY GIRL BREAKFAST",
+   "EggsKejriwal",
+   "is"
+  ]
+ },
+ "elephant-ears": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.211,
+   0.914
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Elephant Ears",
+   "2 ingredient recipe"
+  ]
+ },
+ "five-chilli-oil-rice-noodles-vegetable-stir-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "flourless-chocolate-cake": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "french-onion-chicken": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.217,
+   0.92
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Dinnerfor Two : Episode Ill",
+   "FRENCHONIONCHICKEN",
+   "high proteinlonepot"
+  ]
+ },
+ "fudge": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "fudge-brownies": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.235,
+   0.938
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "ultimate desserts to make at home",
+   "FUDGYCHOCOLATEBROWNIES"
+  ]
+ },
+ "garlic-tadka-khichdi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.229,
+   0.932
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Home Food ol",
+   "GarlicTadkaKhichdi",
+   "no cuttinglone pot recipe"
+  ]
+ },
+ "gooey-gochujang-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "guilt-free-caesar-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.053,
+   0.757
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "healthy",
+   "Chicken Caesars Salad"
+  ]
+ },
+ "gujarati-kadhi": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HomeFood101",
+   "Gujarati Kadhi"
+  ]
+ },
+ "healthier-chicken-ghee-roast-simplified": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "healthy-chicken-stroganoff": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.053,
+   0.757
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CHICKENSTROGANOFFRECIPE",
+   "onepotIhighprotein"
+  ]
+ },
+ "healthy-chicken-tikka": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "healthy-creamy-chicken-kheema-pav-high-protein": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.157,
+   0.86
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "CAN WE MAKEIT HEALTHY?",
+   "Chicken Kheema Pav",
+   "42gProtein/418Calories"
+  ]
+ },
+ "healthy-tuna-salad": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "high-protein-chilli-garlic-paneer-mushrooms": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Healthier Eating 101",
+   "Chilli Garlic Paneer"
+  ]
+ },
+ "homemade-dahi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.223,
+   0.926
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Homefood 101",
+   "HOMEMADEDAHI"
+  ]
+ },
+ "honeycomb": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.136,
+   0.698
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "honeycomb candy bar"
+  ]
+ },
+ "hot-chocolate-oatmeal": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "hot chocolate oatmeal"
+  ]
+ },
+ "hot-mocha": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "hot-oatmeal-bowl": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.178,
+   0.881
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HotOatmealBowl",
+   "withbanana,chocolate&peanutbutter"
+  ]
+ },
+ "iced-latte-smoked-cj-fried-egg": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY GIRL BREAKFAST",
+   "Iced Latte & Smoked CJ Fried Eggs"
+  ]
+ },
+ "iced-vietnamese-coconut-coffee-ca-phe-cot-dua": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.172,
+   0.875
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "COFFEE101",
+   "Iced Vietnamese Coconut Coffee"
+  ]
+ },
+ "ingredients": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Dinner",
+   "Chicken Meatball“Sub"
+  ]
+ },
+ "jhol-momos": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.003,
+  "text_seen": [
+   "jhol momo"
+  ]
+ },
+ "kada-prasad": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "kerala-egg-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "DinnerforTwo: Episode V",
+   "KERALAINSPIREDEGGCURRY",
+   "(calories and macros mentioned in the caption)"
+  ]
+ },
+ "kerala-inspired-coconut-curry-leaf-prawns": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "FEEDING ADI",
+   "Episode 2: Coconut Curry Leaf Prawns",
+   "355Calories/22gramsProtein"
+  ]
+ },
+ "kerala-prawn-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.219,
+   0.781
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "20 MinuteLunch Box",
+   "Kerala inspired Prawn Curry",
+   "198"
+  ]
+ },
+ "korean-braised-potato": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.22,
+   0.923
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "VEGAN DELIGHTS",
+   "Korean Braised Potatoes"
+  ]
+ },
+ "korean-fried-egg-rice": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST/LUNCH",
+   "Korean Fried Egg Rice"
+  ]
+ },
+ "korean-rice-noodles": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30 MINUTEMEALS",
+   "chickenkorean noodles",
+   "meal prepfriendly"
+  ]
+ },
+ "lavash": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.146,
+   0.854
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "lazy-girl-chicken-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Dinnerfor Two:EpisodeIl",
+   "LAZYGIRLCHICKENCURRY",
+   "(calories and macros in the description)"
+  ]
+ },
+ "lazy-girl-pasta-salad": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "leftover-pasta": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.053,
+   0.757
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LEFTOVERPASTARECIPE",
+   "meal prep I high protein"
+  ]
+ },
+ "lemon-coriander-rice": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lemon Coriander Fried Rice",
+   "comfortfoodbasics"
+  ]
+ },
+ "loaded-instant-ramen": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "POV:",
+   "You let your husband loose inthe supermarketand he",
+   "bought waytoo manyinstantramen packets"
+  ]
+ },
+ "low-and-slow-cheesy-scrambled-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl's Sunday Breakfast",
+   "Scrambled Eggs on Toast"
+  ]
+ },
+ "mac-and-cheese": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.146,
+   0.854
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "maggi-noodle-soup-with-frozen-momos": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.086,
+   0.789
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Maggi Noodle Soup with Frozen Momos"
+  ]
+ },
+ "makhni-gravy": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "mango-and-cream-overnight-oats": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.243,
+   0.947
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "mango and cream overnight oats",
+   "refined sugarfree|5ingredients"
+  ]
+ },
+ "mango-chia-seed-pudding": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.048,
+   0.751
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "under300caloriebreakfast",
+   "MANGOCHIASEEDPUDDING"
+  ]
+ },
+ "mango-colada-chia-pudding": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Breakfast Diaries",
+   "Mango Colada Chia Pudding"
+  ]
+ },
+ "masala-egg-bites": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Masala Egg Bites",
+   "under 300 calories"
+  ]
+ },
+ "matar-paneer": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "OnePot Matar Paneer",
+   "meal prepfriendlyIvegetarian"
+  ]
+ },
+ "mexican-rice-arroz-rojo": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "mexican-style-beans": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "mexican-style-beans-paneer": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "MEXICANBEANSANDPANEER",
+   "meal prep /high protein"
+  ]
+ },
+ "milagai-podi-aloo-tikki": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "TASTETREASURES:INDIANSIDEDISHES",
+   "Milagai Podi Aloo Tikki"
+  ]
+ },
+ "milagai-podi-baby-potato-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "TASTETREASURES:INDIANSIDEDISHES",
+   "MilagaiPodi Baby PotatoFry"
+  ]
+ },
+ "mini-chocolate-cheesecake": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "mizeria-polish-cucumber-salad": {
+  "source": "frame",
+  "frame_fraction": 0.42,
+  "window": [
+   0.232,
+   0.935
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Polish inspired",
+   "CUCUMBERSALAD",
+   "lowfatleasyprep/vegetarian"
+  ]
+ },
+ "mor-kuzhambu": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.175,
+   0.878
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "WEEKDAYLUNCH DIARIES",
+   "MorKuzhambu"
+  ]
+ },
+ "mushroom-cheese-chilli-omlette": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.172,
+   0.875
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Mushroom Cheese Chilli Omlette"
+  ]
+ },
+ "mushroom-ragu": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0144,
+  "text_seen": [
+   "mushroom ragu pasta "
+  ]
+ },
+ "mushroom-spinach-omlette": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "15minutebreakfasts",
+   "mushroom&spinachomlette"
+  ]
+ },
+ "namma-chocolate": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.319,
+   0.882
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "namma chocolate",
+   "recupe"
+  ]
+ },
+ "nextlevel-chocolate-protein-pancakes": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.367,
+   0.93
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "ASTE",
+   "REAMYTEXTURE",
+   "PROTE",
+   "FROMD"
+  ]
+ },
+ "no-oil-chicken-65": {
+  "source": "frame",
+  "frame_fraction": 0.42,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "FAKEFRIED",
+   "Zero Oil Chicken 65",
+   "346 Calories |53Grams Protein"
+  ]
+ },
+ "no-oil-chicken-curry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.22,
+   0.923
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Chicken Curry Recipe",
+   "Zero oil I meal prep friendly"
+  ]
+ },
+ "no-oil-chicken-lettuce-cups": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30MINUTERECIPE",
+   "ChickenLettuceCups",
+   "high proteinIlow carbImeal prep"
+  ]
+ },
+ "no-oil-chicken-shawarma-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.181,
+   0.884
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "No oil chicken shawarma salad",
+   "highproteinleasymeal prep"
+  ]
+ },
+ "no-oil-crispy-scallion-chicken": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "AIRFRIEDDELIGHTS",
+   "No Oil Crispy Scallion Chicken"
+  ]
+ },
+ "no-oil-orange-chicken": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.157,
+   0.86
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "AIRFRIEDDELIGHTS",
+   "Orange Chicken"
+  ]
+ },
+ "no-oil-paneer-tikka-quinoa-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.229,
+   0.932
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "PaneerTikka Quinoa Salad",
+   "no oil recipemeal prepfriendly"
+  ]
+ },
+ "no-oil-paneer-tikka-sliders": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.226,
+   0.929
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "No Oil Paneer Tikka Sliders",
+   "loweffort/vegetarianrecipe"
+  ]
+ },
+ "not-kfc-chicken-popcorn": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Healthy Junk Food:EpisodeI",
+   "NOTKFCCHICKENPOPCORN",
+   "(calories and macros in the caption)",
+   "chilpyouckerhphphatinlaoot.30minadeheye"
+  ]
+ },
+ "not-your-average-pizza-pasta-sauce": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.24,
+   0.944
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Sauce IoI",
+   "Pizza / Pasta Sauce"
+  ]
+ },
+ "nutella-french-toast": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.22,
+   0.923
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Nutella Stuffed",
+   "French Toast"
+  ]
+ },
+ "og-glazed-donut-dough": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.376,
+   0.939
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "SHAPING AND",
+   "FRYING THE",
+   "NUTS AREJNTHE",
+   "NEXTREEL"
+  ]
+ },
+ "one-bowl-mexican-salsa": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "one-pan-chicken-lasagna": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "one-pot-mac-cheese": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "OnePotRecipe",
+   "MACARONIANDCHEESE"
+  ]
+ },
+ "one-pot-masala-khichdi": {
+  "source": "cover",
+  "window": [
+   0.411,
+   0.974
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZY GIRL COOKING",
+   "Masala Khichdi"
+  ]
+ },
+ "one-pot-palak-paneer": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "one-pot-south-indian-khichdi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "ONE POT MEALS",
+   "South Indian Inspired Khichdi"
+  ]
+ },
+ "onion-chilli-cheese-omlette": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "CHILLI CHEESEOMLETTE",
+   "++ extra egg whites"
+  ]
+ },
+ "palak-khichdi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Home food 101",
+   "PALAKKHICHDI"
+  ]
+ },
+ "paneer-bhurji": {
+  "source": "frame",
+  "frame_fraction": 0.78,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Paneer Bhurji",
+   "quick and effortless"
+  ]
+ },
+ "paneer-paratha": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "H0MEF00D101",
+   "let's make paneer parathas"
+  ]
+ },
+ "paneer-roll": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.03,
+   0.733
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30 minute lunch recipe",
+   "PANEER ROLL"
+  ]
+ },
+ "paneer-stir-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.302,
+   0.864
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "POV:",
+   "Cooking is my love language and the in-laws are",
+   "comingtotown"
+  ]
+ },
+ "paneer-tikka-open-toastie": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Lunches",
+   "PANEERTIKKAOPENTOASTIE"
+  ]
+ },
+ "paneer-tikka-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.282,
+   0.985
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Zero Oil",
+   "Paneer",
+   "Tikka Salad",
+   "high protein I meal prep friendly"
+  ]
+ },
+ "pasta-bolognese": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.19,
+   0.893
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "POV:",
+   "you have 30 minutes to make dinner"
+  ]
+ },
+ "pastel-de-tres-leches": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "pina-colada-chia-pudding": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.196,
+   0.899
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LAZYGIRLBREAKFAST",
+   "Pina Colada Chia Pudding"
+  ]
+ },
+ "potato-asmr": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "potato-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.237,
+   0.941
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Home Food Iol",
+   "Potato Fry",
+   "small batch veganfriendb"
+  ]
+ },
+ "potato-roast": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "punjabi-kadhi": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "punjabi-kadhi-without-pakodas": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.151,
+   0.855
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEFOOD101",
+   "Punjabi Kadhi"
+  ]
+ },
+ "quick-easy-pasta": {
+  "source": "cover",
+  "window": [
+   0.403,
+   0.965
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "Quick and Easy Pasta Recipes",
+   "highprotein lloweffort"
+  ]
+ },
+ "quinoa-chickpea-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.276,
+   0.979
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SIMPLYSALADS",
+   "Duinoa Chickpea Salad",
+   "meal prep frienaly"
+  ]
+ },
+ "salted-caramel-blended-oats": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.202,
+   0.905
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LEVELUPYOURPROTEIN",
+   "Episode 1:SaltedCaramel BlendedOvernightOats",
+   "highprotein/loweffort"
+  ]
+ },
+ "sausage-ramen-hotpot": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.232,
+   0.935
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "RAINYDAYDELIGHT",
+   "let's make a sausage ramen hotpot"
+  ]
+ },
+ "simple-and-tasty-one-bowl-boondi-raita": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "simple-sponge-cake-for-tres-leches": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "soft-and-fluffy-scrambled-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.01,
+  "text_seen": [
+   "Havebreakfast with me"
+  ]
+ },
+ "spaghetti-bolognese": {
+  "source": "cover",
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "spaghetti-meatballs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.235,
+   0.938
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Spaghetti&",
+   "Meatballs",
+   "meal prep recipe"
+  ]
+ },
+ "spinach-cherry-tomato-scrambled-eggs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Breakfast",
+   "pinach"
+  ]
+ },
+ "spinach-feta-omlette": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SPINACH AND FETAOMLETTE",
+   "under3oocaloriebreakfast"
+  ]
+ },
+ "spinach-parmesan-soup": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.214,
+   0.917
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SPINACHANDPARMESANSOUP",
+   "3o minute recipe|vegetarian"
+  ]
+ },
+ "spinach-ricotta-cannelloni": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "sticky-asian-meatballs": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.232,
+   0.935
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "STICKYASIANMEATBALLS",
+   "highproteinImealprep"
+  ]
+ },
+ "strawberry-chia-pudding": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "LazyGirlBreakfast",
+   "STRAWBERRYCHIAPUDDING",
+   "caloriesandmacrosinthecaption"
+  ]
+ },
+ "strawberry-shortcakes": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Hssembly video in the",
+   "Previous reel"
+  ]
+ },
+ "stuffed-bhindi": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.068,
+   0.771
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "STUFFEDBHINDI",
+   "vegan T easy recipe"
+  ]
+ },
+ "stuffed-chicken-with-garlicky-mushrooms-spinach": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.199,
+   0.902
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "30MINUTERECIPE",
+   "Stuffed Chicken",
+   "with garlic mushrooms & spinack"
+  ]
+ },
+ "sugar-free-cheesecake-for-two": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.27,
+   0.973
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "EASYDESSERTRECIPE",
+   "small batch/ sugar free",
+   "Cheesecakefor2"
+  ]
+ },
+ "sugar-free-hot-chocolate": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.193,
+   0.896
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "treat yourself this monsoon",
+   " sugar free hot chocolate"
+  ]
+ },
+ "summer-pasta-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "sweet-sour-paneer": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.172,
+   0.875
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "and Sonr Paneer",
+   "390Calories29GramsProtein"
+  ]
+ },
+ "tamatar-ki-subzi": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.187,
+   0.89
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "HOMEFOOD101",
+   "Tamatar ki Subzi"
+  ]
+ },
+ "thai-chicken-meatballs-with-red-curry-coconut-sauce": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.208,
+   0.911
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "ThaiChickenMeatballs",
+   "w Red Curry Coconut Curry"
+  ]
+ },
+ "thai-inspired-ginger-carrot-soup": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.24,
+   0.944
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SIP&SAVOURSOUPSERIES",
+   "Thai Inspired",
+   "Ginger Carrot Soup"
+  ]
+ },
+ "thakkali-chutney-with-idli": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "the-holi-cookie": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.261,
+   0.964
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "The Holi Cookie",
+   "Thandai cookie dough",
+   "wih\"Holi chocolate chips"
+  ]
+ },
+ "tomato-chutney": {
+  "source": "frame",
+  "frame_fraction": 0.85,
+  "window": [
+   0.178,
+   0.881
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Lazy Girl Indian Breakfast",
+   "15 minute Tomato Chutney"
+  ]
+ },
+ "tomato-chutney-thakkali-thokku": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "tomato-soup": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.211,
+   0.914
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "SOUPISAVIBE",
+   "Tomato Soup"
+  ]
+ },
+ "triple-chocolate-muffins": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.255,
+   0.958
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "Easy Dessert Recip",
+   "Small batch",
+   "Triple Chocolate Muffins"
+  ]
+ },
+ "under-500-calorie-chicken-noodle-stir-fry": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.148,
+   0.852
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": []
+ },
+ "vatha-kuzhambu": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.205,
+   0.908
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "WEEKDAYLUNCHDIARIES",
+   "Vatha Kozhambu"
+  ]
+ },
+ "vegan-air-fryer-falafel": {
+  "source": "frame",
+  "frame_fraction": 0.92,
+  "window": [
+   0.065,
+   0.768
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "AIRFRYERFALAFEL",
+   "vegan protein rich"
+  ]
+ },
+ "vegan-egg-salad": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.407,
+   0.969
+  ],
+  "shape": "1:1",
+  "text_left": 0.0,
+  "text_seen": [
+   "Vegan Egg Salad",
+   "1oo% plant based Ionebowl recipe",
+   "OOMBAY"
+  ]
+ },
+ "vegan-mocha-delight-frappe": {
+  "source": "frame",
+  "frame_fraction": 0.97,
+  "window": [
+   0.036,
+   0.739
+  ],
+  "shape": "4:5",
+  "text_left": 0.0,
+  "text_seen": [
+   "VEGAN",
+   "mocha delight frappe"
+  ]
+ }
+}
