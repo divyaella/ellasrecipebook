@@ -107,7 +107,7 @@ const chips = [
     const idx = await loadIndex();
     let f = active;
     let words = tokens(text);
-    if (text && !f) { for (const [re, id] of phrase) { if (re.test(text.toLowerCase())) { f = id; break; } } }
+    if (text && !f) { for (const [re, id] of phrase) { const m = text.toLowerCase().match(re); if (m) { f = id; words = words.filter((w) => !m[0].includes(w)); break; } } }
     const stop = new Set(['under', 'in', 'within', 'min', 'mins', 'minutes', 'for', 'two', 'the', 'and', 'with', 'something', 'recipe', 'recipes']);
     words = words.filter((w) => !stop.has(w));
 
