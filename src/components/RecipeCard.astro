@@ -7,15 +7,15 @@ interface Props {
   recipe: Recipe;
   label?: string;          // small uppercase tag above the title
   badge?: 'time' | 'cost' | 'protein' | 'kcal' | 'reel' | null;
-  aspect?: '4/3' | '9/16' | '1/1';
+  aspect?: '4/3' | '9/16' | '1/1' | '4/5';
   sizes?: string;
 }
 const { recipe: r, label, badge = null, aspect = '4/3', sizes } = Astro.props;
 const tagText = label ?? (r.series ?? (r.tags.includes('breakfast') ? 'breakfast' : r.tags.includes('dessert') ? 'dessert' : r.tags.includes('salad') ? 'salad' : 'mains'));
-const defaultSizes = aspect === '9/16' ? '(max-width: 600px) 160px, 220px' : '(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 300px';
+const defaultSizes = aspect === '9/16' || aspect === '4/5' ? '(max-width: 600px) 160px, 220px' : '(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 300px';
 ---
 <a href={`/recipes/${r.slug}`} class="card">
-  <Photo recipe={r} aspect={aspect} width={aspect === '9/16' ? 240 : 320} sizes={sizes ?? defaultSizes} class="img">
+  <Photo recipe={r} aspect={aspect} width={aspect === '9/16' || aspect === '4/5' ? 240 : 320} sizes={sizes ?? defaultSizes} class="img">
     {badge === 'time' && r.time_minutes && <span class="time badge-tl">{r.time_minutes}<small>min</small></span>}
     {badge === 'cost' && r.cost_for_two && <span class="time badge-tl">₹{r.cost_for_two}<small>for two</small></span>}
     {badge === 'protein' && r.macros.protein && <span class="time badge-tl">{r.macros.protein}g<small>protein</small></span>}
