@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../data/site';
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  name: SITE.author,
+  url: `${SITE.url}/about`,
+  sameAs: [SITE.instagram],
+  jobTitle: 'Home cook and recipe writer',
+  address: { '@type': 'PostalAddress', addressLocality: 'Gurgaon', addressCountry: 'IN' },
+};
+---
+<Base title="About Ella" description="Divya Ella — the home cook behind Ella's Recipe Book: healthy recipes you'll actually crave, with the macros and what the ingredients cost." jsonLd={jsonLd}>
+  <section class="about-page">
+    <div class="wrap">
+      <div class="portrait"><span class="cap">portrait</span></div>
+      <div class="txt">
+        <p class="kick">About</p>
+        <h1>Hi, I'm Ella.</h1>
+        <p>Home cook, dessert person, and a firm believer that the best recipes are the ones you actually make again. I started posting what I cooked on Instagram in 2022 — breakfasts first, then the dinners I make for my husband Adi, then everything in between.</p>
+        <p>This site is where those recipes get written down properly: the ingredient list you can tick off, the method in steps, the macros per serving, and — because it's the first thing I check — what the ingredients cost to feed two in Gurgaon.</p>
+        <p>Everything here was cooked in my kitchen, photographed before it got eaten, and tested on a very honest husband.</p>
+        <div class="cta-row">
+          <a href="/recipes" class="btn">Browse the recipes</a>
+          <a href={SITE.instagram} class="link-ul" rel="me">{SITE.handle} on Instagram</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .about-page .wrap { padding-top: 56px; padding-bottom: 96px; display: flex; flex-wrap: wrap; gap: 40px 72px; align-items: flex-start; }
+  .portrait { width: 220px; height: 220px; border-radius: 999px; background: var(--butter); flex: 0 0 auto; display: flex; align-items: center; justify-content: center; }
+  .txt { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px; max-width: 62ch; }
+  h1 { font-weight: 500; font-size: clamp(40px, 5vw, 56px); letter-spacing: -0.01em; line-height: 1.05; }
+  .txt p:not(.kick) { font-size: 18px; line-height: 1.65; color: var(--muted); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-top: 8px; }
+</style>

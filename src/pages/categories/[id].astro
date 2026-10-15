@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import { CATEGORIES, loadRecipes } from '../../data/site';
+
+export async function getStaticPaths() {
+  const all = await loadRecipes();
+  return CATEGORIES.map((c) => ({
+    params: { id: c.id },
+    props: { c, recipes: all.filter(c.filter) },
+  }));
+}
+const { c, recipes } = Astro.props;
+const blurb = `Every ${c.name.toLowerCase()} recipe on the site, newest first.`;
+---
+<Base title={`${c.name} recipes`} description={blurb} activeCategory={c.id}>
+  <Listing heading={c.name} blurb={blurb} recipes={recipes} activeChip={c.id} />
+</Base>

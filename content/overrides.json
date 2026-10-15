@@ -1,0 +1,124 @@
+{
+  "_comment": "Hand fixes applied after parsing, keyed by Instagram post id. Any field here replaces the parsed value. Re-running `npm run parse` keeps these.",
+  "CnrWGT3pRyE": {
+    "title": "Alfajores",
+    "intro": "Melt-in-your-mouth dulce de leche sandwiched between three-ingredient shortbread cookies — the A in my desserts-from-A-to-Z project."
+  },
+  "CwRowNUJsDr": {
+    "title": "Air-Fried Crispy Chicken with Lime Leaf & Lemongrass Stir Fry Sauce"
+  },
+  "CfbjZeXjg84": {
+    "title": "Aloo Paratha",
+    "intro": "Monsoon season calls for masala-packed aloo parathas with cold dahi. Standard roti dough, prepped and on the table within the hour."
+  },
+  "DBDbj62yRpy": {
+    "title": "Low and Slow Cheesy Scrambled Eggs",
+    "intro": "Gooey, low-and-slow scrambled eggs. This recipe doubles or triples easily when you have friends over for breakfast."
+  },
+  "CcVfNTnIw77": {
+    "title": "Kada Prasad",
+    "intro": "A whole-wheat halwa made the way an aunty of mine makes it at home — as authentic as I could get it, and ready in under 20 minutes."
+  },
+  "Ct0tq1ug8Cb": {
+    "title": "Loaded Instant Ramen",
+    "intro": "A guilty indulgence: a packet of instant ramen, upgraded with chilli oil, garlic, mushrooms and capsicum."
+  },
+  "CmODRxGB4VV": {
+    "title": "Soft and Fluffy Scrambled Eggs",
+    "intro": "My mother taught me how to make the best scrambled eggs in the world with a few tips and tricks to keep them soft and fluffy."
+  },
+  "CsoKP4rgaAM": {
+    "title": "Chocolate Chip Banana Cake",
+    "intro": "Ready in 30 minutes. Makes two 5-inch round cakes."
+  },
+  "CbIEKQ6gFIJ": {
+    "title": "One-Bowl Mexican Salsa",
+    "intro": "A homemade spicy salsa made in the food processor and ready to serve in 5 minutes — perfect with nacho chips or alongside a Mexican dinner. Vegan."
+  },
+  "CzJJXK8ymvX": {
+    "title": "Fudge Brownies",
+    "intro": "The best fudge brownies you will ever make, I promise."
+  },
+  "CuJ3t1DAIUQ": {
+    "title": "Fudge Brownies",
+    "intro": "The best fudge brownies you will ever make, I promise."
+  },
+  "C_neBq3yzJ0": {
+    "title": "Easy Chicken Red Thai Curry Meal Box",
+    "keywords": [
+      "meal prep",
+      "lunch box",
+      "30 minute recipe"
+    ]
+  },
+  "Cp5BLvNAvzD": {
+    "title": "Sugar-Free Cheesecake for Two",
+    "intro": "Made with monkfruit sweetener and a homemade sugar-free Biscoff spread."
+  },
+  "DeOaq2yJAoo": {
+    "intro": "A juicy chicken chilli, a proper frankfurter, melted cheddar and jalapeños — basically everything you want in a hot dog."
+  },
+  "Cts4TKRgImI": {
+    "title": "Egg Fried Rice"
+  },
+  "DdG2irlpnPC": {
+    "title": "No-Oil Chicken 65"
+  },
+  "Cq2yNXigcMA": {
+    "title": "Dahi Wale Aloo"
+  },
+  "Cs05Ng_gj-g": {
+    "title": "Guilt-Free Caesar Salad"
+  },
+  "Ctqa0aSgOrn": {
+    "title": "Chicken Caesar Pasta Salad"
+  },
+  "CpAXWtsADOl": {
+    "title": "Cherry Tomato Pasta"
+  },
+  "CqK9q9Tv0m6": {
+    "title": "Garlic Tadka Khichdi"
+  },
+  "DJOSI5hIbM9": {
+    "title": "Lazy Girl Pasta Salad"
+  },
+  "CbkNxEyAg6O": {
+    "title": "Punjabi Kadhi"
+  },
+  "Cgt5YdTg6hz": {
+    "title": "Kada Prasad"
+  },
+  "CdDlBTFg5LQ": {
+    "title": "Makhni Gravy"
+  },
+  "CcSqY9YArF3": {
+    "title": "All-Purpose Chicken Mince"
+  },
+  "CuWF-8ZSHa-": {
+    "title": "Mizeria (Polish Cucumber Salad)"
+  },
+  "CvpK-okyUIH": {
+    "title": "Stuffed Chicken with Garlicky Mushrooms & Spinach"
+  },
+  "CbSRKLrAP7T": {
+    "title": "Simple Sponge Cake (for Tres Leches)"
+  },
+  "CbPtG0ag-e1": {
+    "title": "Mexican Rice (Arroz Rojo)"
+  },
+  "C2HJ2Sry_08": {
+    "title": "Best-Ever Scrambled Eggs"
+  },
+  "C3jfqUbID2F": {
+    "title": "Best-Ever Scrambled Eggs"
+  },
+  "CyUzYXKyTm8": {
+    "title": "Best-Ever Scrambled Eggs"
+  },
+  "C2cZCtkSh0w": {
+    "title": "Not-KFC Chicken Popcorn"
+  },
+  "Cmbk4mJphYE": {
+    "title": "10-Minute Salsa"
+  }
+}

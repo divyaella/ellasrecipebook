@@ -1,0 +1,24 @@
+---
+import Base from '../../layouts/Base.astro';
+import Listing from '../../components/Listing.astro';
+import { COLLECTIONS, loadRecipes } from '../../data/site';
+
+export async function getStaticPaths() {
+  const all = await loadRecipes();
+  return COLLECTIONS.map((c) => ({
+    params: { id: c.id },
+    props: { c, recipes: all.filter(c.filter).sort(c.sort ?? (() => 0)) },
+  }));
+}
+const { c, recipes } = Astro.props;
+const badge = ({ 'ready-in-20': 'time', 'under-500': 'cost', 'high-protein': 'protein', 'under-500-kcal': 'kcal', popular: 'reel' } as const)[c.id] ?? null;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  name: c.name,
+  itemListElement: recipes.slice(0, 50).map((r, i) => ({ '@type': 'ListItem', position: i + 1, url: `/recipes/${r.slug}`, name: r.title })),
+};
+---
+<Base title={c.name} description={c.blurb} jsonLd={jsonLd}>
+  <Listing heading={c.name} blurb={c.blurb} recipes={recipes} badge={badge} activeChip={c.id} />
+</Base>

@@ -1,0 +1,125 @@
+---
+import '@fontsource/lora/latin-400.css';
+import '@fontsource/lora/latin-400-italic.css';
+import '@fontsource/lora/latin-500.css';
+import '@fontsource/lora/latin-500-italic.css';
+import '@fontsource/lora/latin-600.css';
+import '@fontsource/lora/latin-600-italic.css';
+import '@fontsource/caveat/latin-500.css';
+import '@fontsource/caveat/latin-700.css';
+import '../styles/global.css';
+import { SITE, CATEGORIES } from '../data/site';
+
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  ogType?: string;
+  jsonLd?: unknown;
+  activeCategory?: string;
+}
+const { title, description = SITE.description, canonical, ogType = 'website', jsonLd, activeCategory } = Astro.props;
+const fullTitle = title === SITE.name ? `${SITE.name} — ${SITE.tagline}` : `${title} · ${SITE.name}`;
+const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{fullTitle}</title>
+  <meta name="description" content={description} />
+  <link rel="canonical" href={url} />
+  <meta property="og:site_name" content={SITE.name} />
+  <meta property="og:type" content={ogType} />
+  <meta property="og:title" content={fullTitle} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={url} />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="sitemap" href="/sitemap-index.xml" />
+  {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap top">
+    <a href="/" class="logo">Ella's Recipe Book</a>
+    <form class="hsearch" role="search" action="/recipes" method="get">
+      <label for="hq" class="sr-only">Search recipes</label>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg>
+      <input id="hq" name="q" type="search" placeholder="Search recipes, ingredients, “under 20 minutes”…" autocomplete="off" />
+    </form>
+    <nav class="icons" aria-label="Site">
+      <a href="/about" class="nav-link">About</a>
+      <a href={SITE.instagram} class="icon-btn" aria-label="Ella's Recipe Book on Instagram" rel="me">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.75" fill="currentColor"></circle></svg>
+      </a>
+    </nav>
+  </div>
+  <div class="catline">
+    <div class="wrap">
+      <nav aria-label="Categories">
+        {CATEGORIES.slice(0, 4).map((c) => <a href={`/categories/${c.id}`} aria-current={activeCategory === c.id ? 'page' : undefined}>{c.name}</a>)}
+        <span class="sep" aria-hidden="true"></span>
+        {CATEGORIES.slice(4).map((c) => <a href={`/categories/${c.id}`} aria-current={activeCategory === c.id ? 'page' : undefined}>{c.name}</a>)}
+        <a href="/recipes" class="all">All recipes <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+  <slot />
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <span class="logo">Ella's Recipe Book</span>
+    <nav aria-label="Footer">
+      <a href="/recipes">Recipes</a>
+      <a href="/about">About</a>
+      <a href="/#newsletter">Newsletter</a>
+      <a href={SITE.instagram}>Instagram</a>
+    </nav>
+    <span>© {new Date().getFullYear()} Ella's Recipe Book · {SITE.domain}</span>
+  </div>
+</footer>
+
+<style>
+  .site-head { border-bottom: 1px solid var(--line); background: var(--cream); }
+  .top { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 28px; min-height: 80px; padding-top: 10px; padding-bottom: 10px; }
+  .logo { font-family: var(--serif); font-weight: 600; font-style: italic; font-size: 26px; color: var(--berry); padding: 8px 0; line-height: 1.1; white-space: nowrap; }
+  .hsearch { flex: 1 1 320px; min-width: 0; max-width: 640px; display: flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 16px; border: 1px solid var(--ink); background: #fff; position: relative; }
+  .hsearch svg { flex: 0 0 auto; color: var(--muted); }
+  .hsearch input { flex: 1 1 auto; min-width: 0; border: 0; background: transparent; font-size: 15px; color: var(--ink); outline: none; min-height: 44px; }
+  .hsearch input::placeholder { color: var(--muted); }
+  .hsearch:focus-within { box-shadow: 0 0 0 2px var(--berry); }
+  .icons { margin-left: auto; display: flex; align-items: center; gap: 4px 16px; }
+  .nav-link { font-size: 15px; font-weight: 500; padding: 12px 0; }
+  .icon-btn { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: var(--ink); border-radius: 999px; }
+  .catline { border-top: 1px solid var(--line); }
+  .catline nav { display: flex; flex-wrap: wrap; align-items: center; gap: 0 22px; font-size: 14px; font-weight: 500; }
+  .catline nav a { padding: 11px 0; white-space: nowrap; }
+  .catline nav a[aria-current="page"] { color: var(--berry); box-shadow: inset 0 -2px 0 var(--berry); }
+  .catline .sep { width: 1px; height: 16px; background: var(--line); }
+  .catline .all { margin-left: auto; color: var(--berry); font-weight: 600; display: inline-flex; align-items: center; gap: 6px; }
+  @media (max-width: 600px) {
+    .top { gap: 8px 16px; min-height: 0; }
+    .logo { font-size: 22px; }
+    .hsearch { order: 3; flex-basis: 100%; min-height: 44px; }
+    .hsearch input { min-height: 40px; }
+    .icons { margin-left: auto; }
+    .catline nav { flex-wrap: nowrap; overflow-x: auto; gap: 0 18px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+    .catline nav::-webkit-scrollbar { display: none; }
+    .catline .all { margin-left: 0; }
+  }
+  .site-foot { border-top: 1px solid var(--line); }
+  .site-foot .wrap { padding-top: 40px; padding-bottom: 48px; display: flex; flex-wrap: wrap; gap: 24px 48px; align-items: center; justify-content: space-between; font-size: 14px; color: var(--muted); }
+  .site-foot .logo { font-size: 22px; }
+  .site-foot nav { display: flex; flex-wrap: wrap; gap: 8px 24px; }
+  .site-foot nav a { padding: 8px 0; color: var(--muted); }
+  .site-foot nav a:hover { color: var(--berry); }
+</style>
+</body>
+</html>

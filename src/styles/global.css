@@ -1,0 +1,107 @@
+/* Ella's Recipe Book — design tokens from the approved v3 mockup
+   Palette: Blueberry & Butter · Type: Lora (text) + Caveat (section headings) */
+:root {
+  --cream: #FBF1CF;
+  --ink: #1F1C3D;
+  --muted: #4E4A6B;
+  --berry: #4342A8;
+  --berry-deep: #2F2E7E;
+  --butter: #F2DD8F;
+  --lavender: #D6D4F5;
+  --honey: #F7E8B5;
+  --paper: #FFFDF6;
+  --line: rgba(31, 28, 61, 0.18);
+  --hand: 'Caveat', cursive;
+  --serif: 'Lora', Georgia, serif;
+  --max: 1200px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+html, body { margin: 0; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--ink); text-decoration: none; }
+a:hover { color: var(--berry); }
+h1, h2, h3, h4, p, ul, ol, figure { margin: 0; }
+img { max-width: 100%; display: block; }
+button, input { font: inherit; }
+:focus-visible { outline: 3px solid var(--berry); outline-offset: 2px; }
+
+.wrap { max-width: var(--max); margin: 0 auto; padding: 0 24px; }
+@media (max-width: 600px) { .wrap { padding: 0 16px; } }
+
+/* type roles */
+.hand { font-family: var(--hand); font-weight: 700; line-height: 1; }
+.kick { font-weight: 600; font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: var(--berry); line-height: 1.2; }
+.tag { font-weight: 600; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--berry); line-height: 1.2; }
+.meta { font-size: 14px; color: var(--muted); }
+.pill { display: inline-flex; align-items: center; gap: 6px; min-height: 28px; padding: 0 12px; border-radius: 999px; background: var(--paper); border: 1px solid var(--line); font-weight: 600; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; line-height: 1; }
+.pill-berry { background: var(--berry); color: #fff; border-color: var(--berry); }
+
+/* buttons & links */
+.btn { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; padding: 0 24px; background: var(--berry); color: #fff; font-weight: 600; font-size: 15px; border-radius: 999px; border: 0; cursor: pointer; }
+.btn:hover { background: var(--berry-deep); color: #fff; }
+.btn-ghost { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 48px; padding: 0 24px; border: 1px solid var(--ink); border-radius: 999px; font-weight: 600; font-size: 15px; background: transparent; color: var(--ink); cursor: pointer; }
+.btn-ghost:hover { background: var(--butter); color: var(--ink); }
+.link-arrow { font-size: 15px; font-weight: 500; display: inline-flex; gap: 8px; align-items: center; min-height: 44px; white-space: nowrap; }
+.link-ul { display: inline-flex; align-items: center; min-height: 48px; font-weight: 500; font-size: 15px; border-bottom: 1px solid var(--ink); }
+
+/* placeholder photo blocks (until photos exist) */
+.ph { display: flex; align-items: flex-end; padding: 16px; position: relative; overflow: hidden; }
+.ph .cap { font-weight: 500; font-size: 12px; letter-spacing: .1em; text-transform: uppercase; opacity: .75; line-height: 1.2; }
+.ph-dark .cap { color: var(--cream); opacity: .9; }
+.t-butter { background: var(--butter); }
+.t-lavender { background: var(--lavender); }
+.t-honey { background: var(--honey); }
+.t-berry { background: var(--berry); }
+.t-berry .cap { color: var(--cream); opacity: .9; }
+.ph img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+
+/* sections */
+.sec .wrap { padding-bottom: 88px; }
+.sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px 32px; flex-wrap: wrap; padding-bottom: 18px; border-bottom: 1px solid var(--ink); margin-bottom: 36px; }
+.sec-head h2, .sec-head h1 { font-family: var(--hand); font-weight: 700; font-size: 54px; line-height: .95; }
+.sec-head .sub { font-size: 16px; color: var(--muted); margin-top: 8px; max-width: 52ch; }
+@media (max-width: 600px) { .sec-head h2, .sec-head h1 { font-size: 42px; } .sec .wrap { padding-bottom: 56px; } }
+
+/* cards */
+.card { display: flex; flex-direction: column; gap: 12px; min-width: 0; color: var(--ink); }
+.card .t { font-size: 22px; font-weight: 500; line-height: 1.2; }
+.card .img { aspect-ratio: 4 / 3; }
+.row { display: flex; flex-wrap: wrap; gap: 40px 28px; }
+.row > .card { flex: 1 1 240px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 40px 28px; }
+.badge-tl { position: absolute; top: 12px; left: 12px; }
+.badge-tr { position: absolute; top: 12px; right: 12px; }
+.time { font-family: var(--hand); font-weight: 700; font-size: 34px; line-height: 1; color: var(--ink); background: var(--butter); padding: 8px 14px 6px; border-radius: 12px; display: inline-block; }
+.time small { font-size: 18px; font-weight: 500; margin-left: 2px; }
+.stat { font-family: var(--hand); font-weight: 700; font-size: 30px; line-height: 1; color: var(--berry); white-space: nowrap; text-align: right; }
+.stat small { display: block; font-family: var(--serif); font-weight: 600; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-top: 4px; }
+.price { font-family: var(--hand); font-weight: 700; font-size: 40px; line-height: 1; color: var(--berry); }
+.price small { font-family: var(--serif); font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-left: 8px; }
+
+/* chips */
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { display: inline-flex; align-items: center; min-height: 40px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 999px; font-size: 14px; font-weight: 500; background: transparent; cursor: pointer; color: var(--ink); }
+.chip:hover { background: var(--butter); color: var(--ink); }
+.chip.on { background: var(--ink); color: var(--cream); border-color: var(--ink); }
+
+/* forms */
+.field { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.field label { font-weight: 600; font-size: 12px; letter-spacing: .12em; text-transform: uppercase; line-height: 1.2; }
+.field input { min-height: 48px; padding: 0 16px; border: 1px solid var(--ink); border-radius: 0; font-size: 16px; background: #fff; width: 100%; color: var(--ink); }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* print: the recipe page */
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: #fff; color: #000; }
+  .wrap { max-width: none; padding: 0; }
+}

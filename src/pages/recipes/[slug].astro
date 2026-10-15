@@ -1,0 +1,179 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, fmtMacros, tone, seriesId } from '../../data/site';
+
+export async function getStaticPaths() {
+  const all = await loadRecipes();
+  return all.map((r) => ({ params: { slug: r.slug }, props: { r, all } }));
+}
+const { r, all } = Astro.props;
+
+const t = tone(r);
+const macros = fmtMacros(r);
+const inCollections = COLLECTIONS.filter((c) => c.id !== 'popular' && c.filter(r));
+const inCategories = CATEGORIES.filter((c) => c.filter(r));
+const sid = seriesId(r.series);
+
+// Related: same series first, then shared tags, then most liked — never itself.
+const score = (o: typeof r) => (o.series && o.series === r.series ? 10 : 0) + o.tags.filter((x) => r.tags.includes(x)).length;
+const related = all.filter((o) => o.slug !== r.slug).sort((a, b) => score(b) - score(a) || b.likes - a.likes).slice(0, 4);
+
+const description = (r.intro || r.caption).replace(/\s+/g, ' ').trim().slice(0, 155);
+const isoTime = r.time_minutes ? `PT${r.time_minutes}M` : undefined;
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Recipe',
+  name: r.title,
+  author: { '@type': 'Person', name: SITE.author, url: SITE.instagram },
+  datePublished: r.posted,
+  description,
+  ...(r.image ? { image: new URL(r.image, SITE.url).toString() } : {}),
+  ...(isoTime ? { totalTime: isoTime } : {}),
+  ...(r.serves ? { recipeYield: `${r.serves} servings` } : {}),
+  recipeCategory: inCategories.map((c) => c.name).slice(0, 3).join(', ') || undefined,
+  recipeCuisine: 'Indian',
+  keywords: [...r.keywords, ...r.tags].join(', '),
+  recipeIngredient: r.ingredients.flatMap((g) => g.items),
+  recipeInstructions: r.method.map((step, i) => ({ '@type': 'HowToStep', position: i + 1, text: step })),
+  ...(r.macros.kcal || r.macros.protein
+    ? {
+        nutrition: {
+          '@type': 'NutritionInformation',
+          ...(r.macros.kcal ? { calories: `${r.macros.kcal} calories` } : {}),
+          ...(r.macros.protein ? { proteinContent: `${r.macros.protein} g` } : {}),
+          ...(r.macros.carbs ? { carbohydrateContent: `${r.macros.carbs} g` } : {}),
+          ...(r.macros.fat ? { fatContent: `${r.macros.fat} g` } : {}),
+        },
+      }
+    : {}),
+  video: undefined,
+  sameAs: r.source_url,
+};
+const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', month: 'long', year: 'numeric' });
+---
+<Base title={r.title} description={description} ogType="article" jsonLd={jsonLd}>
+  <article class="recipe">
+    <div class="wrap">
+
+      <nav class="crumbs no-print" aria-label="Breadcrumb">
+        <a href="/recipes">Recipes</a>
+        {inCategories[0] && <><span aria-hidden="true">/</span><a href={`/categories/${inCategories[0].id}`}>{inCategories[0].name}</a></>}
+      </nav>
+
+      <header class="head">
+        <div class="head-txt">
+          {r.series && <p class="kick">{r.series}{r.episode ? ` · No. ${r.episode}` : ''}</p>}
+          <h1>{r.title}</h1>
+          {r.intro && <p class="lede">{r.intro}</p>}
+          <dl class="facts">
+            {r.time_minutes && <div><dt>Time</dt><dd>{r.time_minutes} min</dd></div>}
+            {r.serves && <div><dt>Serves</dt><dd>{r.serves}</dd></div>}
+            {r.cost_for_two && <div><dt>Cost</dt><dd>₹{r.cost_for_two} <small>for two</small></dd></div>}
+            {r.macros.kcal && <div><dt>Calories</dt><dd>{r.macros.kcal} <small>kcal</small></dd></div>}
+            {r.macros.protein && <div><dt>Protein</dt><dd>{r.macros.protein}g</dd></div>}
+          </dl>
+          <div class="actions no-print">
+            <a href={r.source_url} class="btn" rel="noopener">Watch the reel
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7"></path><path d="M8 7h9v9"></path></svg></a>
+            <button type="button" class="btn-ghost" onclick="window.print()">Print</button>
+          </div>
+        </div>
+        <div class={`ph hero-img t-${t} ${t === 'berry' ? 'ph-dark' : ''}`}>
+          {r.image ? <img src={r.image} alt={r.title} /> : <span class="cap">photo</span>}
+        </div>
+      </header>
+
+      <div class="body">
+        <aside class="ing">
+          <h2>Ingredients</h2>
+          {r.ingredients.map((g) => (
+            <div class="group">
+              {g.name && <h3>{g.name}</h3>}
+              <ul>
+                {g.items.map((it) => (
+                  <li><label><input type="checkbox" class="no-print" /><span>{it}</span></label></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+          {macros.length > 0 && (
+            <div class="macros">
+              <h3>Per serving</h3>
+              <ul>{macros.map((m) => <li>{m}</li>)}</ul>
+            </div>
+          )}
+        </aside>
+
+        <div class="method">
+          <h2>Method</h2>
+          <ol>{r.method.map((step) => <li>{step}</li>)}</ol>
+          {r.tips.length > 0 && (
+            <div class="tips">
+              <h3>Ella's notes</h3>
+              <ul>{r.tips.map((tip) => <li>{tip}</li>)}</ul>
+            </div>
+          )}
+          <p class="posted">First posted on Instagram, {posted}. <a href={r.source_url} rel="noopener">See the original reel →</a></p>
+          {(inCollections.length > 0 || inCategories.length > 0) && (
+            <div class="chips no-print">
+              {inCollections.map((c) => <a class="chip" href={`/collections/${c.id}`}>{c.short}</a>)}
+              {inCategories.map((c) => <a class="chip" href={`/categories/${c.id}`}>{c.name}</a>)}
+              {sid && <a class="chip" href={`/recipes?q=${encodeURIComponent(r.series!)}`}>{r.series}</a>}
+            </div>
+          )}
+        </div>
+      </div>
+
+    </div>
+  </article>
+
+  {related.length > 0 && (
+    <section class="sec no-print">
+      <div class="wrap">
+        <div class="sec-head"><div><h2>You might also like</h2></div><a href="/recipes" class="link-arrow">All recipes →</a></div>
+        <div class="row">{related.map((o) => <RecipeCard recipe={o} />)}</div>
+      </div>
+    </section>
+  )}
+</Base>
+
+<style>
+  .recipe .wrap { padding-top: 24px; padding-bottom: 88px; }
+  .crumbs { display: flex; gap: 10px; font-size: 13px; color: var(--muted); padding-bottom: 24px; }
+  .crumbs a { color: var(--muted); }
+  .head { display: flex; flex-wrap: wrap; gap: 32px 56px; align-items: flex-start; padding-bottom: 48px; border-bottom: 1px solid var(--ink); margin-bottom: 48px; }
+  .head-txt { flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 20px; }
+  .head h1 { font-weight: 500; font-size: clamp(36px, 5vw, 60px); line-height: 1.05; letter-spacing: -0.015em; }
+  .lede { font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 56ch; }
+  .facts { display: flex; flex-wrap: wrap; gap: 12px 32px; margin: 4px 0 0; }
+  .facts div { display: flex; flex-direction: column; gap: 2px; }
+  .facts dt { font-weight: 600; font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+  .facts dd { margin: 0; font-family: var(--hand); font-weight: 700; font-size: 32px; line-height: 1; color: var(--berry); }
+  .facts dd small { font-family: var(--serif); font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; }
+  .hero-img { flex: 1 1 360px; min-width: 0; aspect-ratio: 1 / 1; max-width: 480px; }
+  @media (max-width: 600px) { .hero-img { aspect-ratio: 4 / 3; max-width: none; order: -1; } .head { padding-bottom: 32px; margin-bottom: 32px; } }
+
+  .body { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; }
+  .ing { flex: 1 1 300px; max-width: 400px; min-width: 0; background: var(--paper); border: 1px solid var(--line); padding: 28px; position: sticky; top: 16px; display: flex; flex-direction: column; gap: 20px; }
+  @media (max-width: 800px) { .ing { position: static; max-width: none; } }
+  .ing h2, .method h2 { font-family: var(--hand); font-weight: 700; font-size: 44px; line-height: .95; }
+  .ing h3, .macros h3, .tips h3 { font-weight: 600; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--berry); margin-bottom: 8px; }
+  .ing ul { list-style: none; padding: 0; display: flex; flex-direction: column; }
+  .ing li label { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px dotted var(--line); cursor: pointer; font-size: 16px; line-height: 1.45; }
+  .ing li:last-child label { border-bottom: 0; }
+  .ing input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--berry); flex: 0 0 auto; }
+  .ing input:checked + span { color: var(--muted); text-decoration: line-through; }
+  .macros { border-top: 1px solid var(--ink); padding-top: 16px; }
+  .macros ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 15px; }
+  .method { flex: 2 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px; }
+  .method ol { padding-left: 0; list-style: none; counter-reset: step; display: flex; flex-direction: column; gap: 20px; }
+  .method ol li { counter-increment: step; display: flex; gap: 18px; font-size: 17px; line-height: 1.6; max-width: 66ch; }
+  .method ol li::before { content: counter(step); font-family: var(--hand); font-weight: 700; font-size: 34px; line-height: 1; color: var(--berry); min-width: 28px; flex: 0 0 auto; margin-top: 2px; }
+  .tips { background: var(--honey); padding: 22px 24px; max-width: 66ch; }
+  .tips ul { padding-left: 18px; display: flex; flex-direction: column; gap: 8px; font-size: 16px; }
+  .posted { font-size: 14px; color: var(--muted); }
+  .posted a { color: var(--berry); }
+  @media print { .ing { border: 0; padding: 0; } .ing li label { padding: 4px 0; } .hero-img { display: none; } }
+</style>

@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+---
+<Base title="Page not found">
+  <section class="nf">
+    <div class="wrap">
+      <p class="kick">404</p>
+      <h1>That page isn't in the book.</h1>
+      <p>It may have moved, or the link was mistyped. The recipes are all still here.</p>
+      <div class="cta-row"><a href="/recipes" class="btn">Browse all recipes</a><a href="/" class="link-ul">Back home</a></div>
+    </div>
+  </section>
+</Base>
+<style>
+  .nf .wrap { padding-top: 80px; padding-bottom: 120px; display: flex; flex-direction: column; gap: 20px; max-width: 720px; }
+  h1 { font-weight: 500; font-size: clamp(36px, 5vw, 56px); line-height: 1.05; }
+  p:not(.kick) { font-size: 18px; color: var(--muted); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+</style>

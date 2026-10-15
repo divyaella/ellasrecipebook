@@ -1,0 +1,156 @@
+---
+import Base from '../../layouts/Base.astro';
+import RecipeCard from '../../components/RecipeCard.astro';
+import { COLLECTIONS, CATEGORIES, loadRecipes } from '../../data/site';
+
+const all = await loadRecipes();
+const chips = [
+  ...COLLECTIONS.filter((c) => c.id !== 'popular').map((c) => ({ id: c.id, name: c.short, kind: 'collection' })),
+  ...CATEGORIES.map((c) => ({ id: c.id, name: c.name, kind: 'category' })),
+];
+---
+<Base title="All recipes" description={`Every recipe on Ella's Recipe Book — ${all.length} and counting. Search by dish, ingredient, time or budget.`}>
+  <section class="sec browse-all">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h1>All recipes</h1><p class="sub">Every recipe on the site, filtered however you cook — by collection, category, time or budget.</p></div>
+        <span class="meta count" id="count">{all.length} recipes</span>
+      </div>
+
+      <form class="search no-print" id="searchForm" role="search" action="/recipes" method="get">
+        <label for="q" class="sr-only">Search recipes</label>
+        <input id="q" name="q" type="search" placeholder="e.g. paneer, 20 minutes, something sweet" autocomplete="off" />
+        <button type="submit" class="btn">Search</button>
+        <button type="button" class="btn-ghost" id="clear" hidden>Clear</button>
+      </form>
+
+      <div class="chips no-print" id="chips">
+        <button type="button" class="chip on" data-f="">Everything</button>
+        {chips.map((c) => <button type="button" class="chip" data-f={c.id}>{c.name}</button>)}
+      </div>
+
+      <div class="grid" id="grid">
+        {all.map((r) => <RecipeCard recipe={r} />)}
+      </div>
+      <p class="empty" id="empty" hidden>No recipes match that. Try a different word — or <a href="/recipes">start again</a>.</p>
+    </div>
+  </section>
+</Base>
+
+<style>
+  .browse-all .wrap { padding-top: 32px; }
+  .count { white-space: nowrap; padding-bottom: 6px; }
+  .search { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 20px; }
+  .search input { flex: 1 1 320px; min-width: 0; min-height: 52px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 0; font-size: 16px; background: #fff; color: var(--ink); }
+  .chips { margin-bottom: 40px; }
+  .empty { font-size: 18px; color: var(--muted); padding: 24px 0 48px; }
+  .empty a { color: var(--berry); }
+</style>
+
+<script>
+  /* Progressive enhancement: the full grid is server-rendered; this filters it in place and
+     (when there is a query) re-ranks using the JSON index so ingredient matches count too. */
+  const filters: Record<string, (x: any) => boolean> = {
+    'ready-in-20': (x) => x.tg.includes('under-20-min'),
+    'under-500': (x) => x.c != null && x.c <= 500,
+    'high-protein': (x) => x.tg.includes('high-protein'),
+    'under-500-kcal': (x) => x.tg.includes('under-500-kcal'),
+    'meal-prep': (x) => x.tg.includes('meal-prep'),
+    breakfast: (x) => x.tg.includes('breakfast'),
+    mains: (x) => !x.tg.includes('breakfast') && !x.tg.includes('dessert') && !x.tg.includes('salad'),
+    desserts: (x) => x.tg.includes('dessert'),
+    salads: (x) => x.tg.includes('salad'),
+    vegetarian: (x) => x.tg.includes('vegetarian'),
+    eggs: (x) => x.tg.includes('eggs'),
+    chicken: (x) => x.tg.includes('chicken'),
+    prawns: (x) => x.tg.includes('prawns'),
+    pasta: (x) => x.tg.includes('pasta'),
+    noodles: (x) => x.tg.includes('noodles'),
+    paneer: (x) => x.tg.includes('paneer'),
+  };
+  // Phrases people type that really mean a filter.
+  const phrase: [RegExp, string][] = [
+    [/\b(under|in|within)\s*20\s*(min|mins|minutes)?\b|\bquick\b|\bfast\b/, 'ready-in-20'],
+    [/\b(under|below)\s*(₹|rs\.?|rupees)?\s*500\b(?!\s*(cal|kcal))|\bcheap\b|\bbudget\b/, 'under-500'],
+    [/\b(high|more)\s*protein\b|\bprotein\b/, 'high-protein'],
+    [/\b(under|below|low)\s*(500)?\s*(cal|kcal|calories)\b|\blight\b/, 'under-500-kcal'],
+    [/\bmeal\s*prep\b|\bbatch\b/, 'meal-prep'],
+    [/\bveg(etarian)?\b/, 'vegetarian'],
+    [/\bsweet\b|\bdessert\b/, 'desserts'],
+    [/\bbreakfast\b/, 'breakfast'],
+    [/\bsalad\b/, 'salads'],
+  ];
+
+  const grid = document.getElementById('grid')!;
+  const cards = Array.from(grid.children) as HTMLElement[];
+  const bySlug = new Map(cards.map((el) => [el.getAttribute('href')!.replace('/recipes/', ''), el]));
+  const q = document.getElementById('q') as HTMLInputElement;
+  const clear = document.getElementById('clear')!;
+  const count = document.getElementById('count')!;
+  const empty = document.getElementById('empty')!;
+  const chips = Array.from(document.querySelectorAll('#chips .chip')) as HTMLButtonElement[];
+  let index: any[] | null = null;
+  let active = '';
+
+  async function loadIndex() {
+    if (index) return index;
+    const res = await fetch('/search.json');
+    index = await res.json();
+    return index!;
+  }
+
+  function tokens(s: string) { return s.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').split(/\s+/).filter((w) => w.length > 1); }
+
+  async function apply() {
+    const text = q.value.trim();
+    clear.hidden = !text;
+    const idx = await loadIndex();
+    let f = active;
+    let words = tokens(text);
+    if (text && !f) { for (const [re, id] of phrase) { if (re.test(text.toLowerCase())) { f = id; break; } } }
+    const stop = new Set(['under', 'in', 'within', 'min', 'mins', 'minutes', 'for', 'two', 'the', 'and', 'with', 'something', 'recipe', 'recipes']);
+    words = words.filter((w) => !stop.has(w));
+
+    let rows = idx.filter((x) => (f ? filters[f]?.(x) ?? true : true));
+    if (words.length) {
+      rows = rows
+        .map((x) => {
+          let s = 0;
+          for (const w of words) {
+            if (x.t.toLowerCase().includes(w)) s += 5;
+            else if (x.k.includes(w)) s += 1;
+          }
+          return [x, s] as const;
+        })
+        .filter(([, s]) => s > 0)
+        .sort((a, b) => b[1] - a[1] || b[0].l - a[0].l)
+        .map(([x]) => x);
+    } else if (f === 'ready-in-20') rows.sort((a, b) => (a.tm ?? 99) - (b.tm ?? 99));
+    else if (f === 'under-500') rows.sort((a, b) => (a.c ?? 0) - (b.c ?? 0));
+    else if (f === 'high-protein') rows.sort((a, b) => (b.p ?? 0) - (a.p ?? 0));
+    else if (f === 'under-500-kcal') rows.sort((a, b) => (a.kc ?? 0) - (b.kc ?? 0));
+
+    const keep = new Set(rows.map((x) => x.s));
+    for (const el of cards) el.hidden = !keep.has(el.getAttribute('href')!.replace('/recipes/', ''));
+    // reorder to match ranking
+    for (const x of rows) { const el = bySlug.get(x.s); if (el) grid.appendChild(el); }
+    count.textContent = `${rows.length} ${rows.length === 1 ? 'recipe' : 'recipes'}`;
+    empty.hidden = rows.length > 0;
+    chips.forEach((c) => c.classList.toggle('on', c.dataset.f === (active || '')));
+    const url = new URL(location.href);
+    if (text) url.searchParams.set('q', text); else url.searchParams.delete('q');
+    if (active) url.searchParams.set('f', active); else url.searchParams.delete('f');
+    history.replaceState(null, '', url);
+  }
+
+  chips.forEach((c) => c.addEventListener('click', () => { active = c.dataset.f || ''; apply(); }));
+  document.getElementById('searchForm')!.addEventListener('submit', (e) => { e.preventDefault(); apply(); });
+  let t: number | undefined;
+  q.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(apply, 180); });
+  clear.addEventListener('click', () => { q.value = ''; apply(); q.focus(); });
+
+  const params = new URLSearchParams(location.search);
+  if (params.get('q')) q.value = params.get('q')!;
+  if (params.get('f') && filters[params.get('f')!]) active = params.get('f')!;
+  if (q.value || active) apply();
+</script>

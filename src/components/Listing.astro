@@ -1,0 +1,41 @@
+---
+/* A listing page body: heading + blurb + grid of cards, shared by collections and categories. */
+import RecipeCard from './RecipeCard.astro';
+import type { Recipe } from '../data/site';
+import { COLLECTIONS, CATEGORIES } from '../data/site';
+
+interface Props {
+  heading: string;
+  blurb?: string;
+  recipes: Recipe[];
+  badge?: 'time' | 'cost' | 'protein' | 'kcal' | 'reel' | null;
+  activeChip?: string; // collection or category id
+}
+const { heading, blurb, recipes, badge = null, activeChip } = Astro.props;
+---
+<section class="sec listing">
+  <div class="wrap">
+    <div class="sec-head">
+      <div><h1>{heading}</h1>{blurb && <p class="sub">{blurb}</p>}</div>
+      <span class="meta count">{recipes.length} {recipes.length === 1 ? 'recipe' : 'recipes'}</span>
+    </div>
+    <div class="chips no-print">
+      <a class="chip" href="/recipes">Everything</a>
+      {COLLECTIONS.map((c) => <a class={`chip${activeChip === c.id ? ' on' : ''}`} href={`/collections/${c.id}`}>{c.short}</a>)}
+      {CATEGORIES.map((c) => <a class={`chip${activeChip === c.id ? ' on' : ''}`} href={`/categories/${c.id}`}>{c.name}</a>)}
+    </div>
+    {recipes.length > 0 ? (
+      <div class="grid">{recipes.map((r) => <RecipeCard recipe={r} badge={badge} />)}</div>
+    ) : (
+      <p class="empty">Nothing here yet — more recipes are being written up every week. <a href="/recipes">Browse everything →</a></p>
+    )}
+  </div>
+</section>
+
+<style>
+  .listing .wrap { padding-top: 32px; }
+  .count { white-space: nowrap; padding-bottom: 6px; }
+  .chips { margin-bottom: 40px; }
+  .empty { font-size: 18px; color: var(--muted); padding: 24px 0 48px; }
+  .empty a { color: var(--berry); }
+</style>

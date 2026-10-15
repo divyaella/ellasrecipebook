@@ -1,0 +1,250 @@
+---
+import Base from '../layouts/Base.astro';
+import RecipeCard from '../components/RecipeCard.astro';
+import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, tone, meta, fmtCost } from '../data/site';
+
+const all = await loadRecipes();
+const byId = Object.fromEntries(COLLECTIONS.map((c) => [c.id, all.filter(c.filter).sort(c.sort ?? (() => 0))]));
+
+const featured = all.filter((r) => r.posted >= '2026-01-01').sort((a, b) => b.likes - a.likes)[0] ?? all[0];
+const popular = byId.popular.slice(0, 5);
+const quick = byId['ready-in-20'].slice(0, 4);
+const budget = byId['under-500'].slice(0, 6);
+const protein = byId['high-protein'].slice(0, 4);
+const light = byId['under-500-kcal'].filter((r) => !protein.includes(r)).slice(0, 4);
+const prep = byId['meal-prep'].slice(0, 5);
+const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+const ft = tone(featured);
+---
+<Base title={SITE.name}>
+
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-txt">
+        <p class="kick">Everyday recipes from Ella's kitchen</p>
+        <h1>Home cooking, <em>written down.</em></h1>
+        <p class="lede">Healthy recipes you'll actually crave — big flavour, better macros, and the cost of feeding two made clear. Tested in a Gurgaon kitchen and photographed before they got eaten.</p>
+        <div class="cta-row">
+          <a href="/recipes" class="btn">Browse all recipes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+          <a href={SITE.instagram} class="link-ul">{SITE.handle} on Instagram</a>
+        </div>
+      </div>
+      <a href={`/recipes/${featured.slug}`} class="hero-feat">
+        <div class={`ph t-${ft} ${ft === 'berry' ? 'ph-dark' : ''}`} style="aspect-ratio:4/5">
+          {featured.image ? <img src={featured.image} alt="" /> : <span class="cap">photo · this week's recipe</span>}
+        </div>
+        <div class="feat-meta"><span class="t">{featured.title}</span><span class="meta">{['This week', meta(featured), fmtCost(featured)].filter(Boolean).join(' · ')}</span></div>
+      </a>
+    </div>
+  </section>
+
+  <section class="sec" id="popular">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>Popular on Instagram</h2><p class="sub">Recipes you'll already recognise from the Reels.</p></div>
+        <a href="/collections/popular" class="link-arrow">All the favourites <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="reels">
+        {popular.map((r) => <div class="reel"><RecipeCard recipe={r} badge="reel" aspect="9/16" /></div>)}
+      </div>
+    </div>
+  </section>
+
+  {quick.length > 0 && (
+  <section class="sec" id="quick">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>Ready in 20 minutes</h2><p class="sub">Quick recipes for everyday cooking — the clock starts when you open the fridge.</p></div>
+        <a href="/collections/ready-in-20" class="link-arrow">All quick recipes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="row">{quick.map((r) => <RecipeCard recipe={r} badge="time" />)}</div>
+    </div>
+  </section>
+  )}
+
+  {budget.length > 0 && (
+  <section class="sec" id="budget">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>Feed 2 for under ₹500</h2><p class="sub">Budget-conscious meals, with the cost of feeding two made clear — no hidden “pantry staples”.</p></div>
+        <a href="/collections/under-500" class="link-arrow">All budget recipes <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+      </div>
+      <div class="budget">
+        <a href={`/recipes/${budget[0].slug}`} class="budget-feat">
+          <div class={`ph img t-${tone(budget[0])}`}>{budget[0].image ? <img src={budget[0].image} alt="" /> : <span class="cap">photo</span>}</div>
+          <span class="tag">Tonight's cheapest dinner</span>
+          <span class="bt">{budget[0].title}</span>
+          <span class="price">₹{budget[0].cost_for_two} <small>for two{budget[0].time_minutes ? ` · ${budget[0].time_minutes} min` : ''}</small></span>
+        </a>
+        <div class="menu">
+          <div class="mh"><span>More for under ₹500</span><span>for two</span></div>
+          {budget.slice(1).map((r) => <a href={`/recipes/${r.slug}`} class="mrow"><span class="n">{r.title}</span><span class="lead"></span><span class="p">₹{r.cost_for_two}</span></a>)}
+          <p class="foot">Costs are what Ella paid for the ingredients in Gurgaon, from her costing sheet; they move with the market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  )}
+
+  <section class="sec" id="numbers">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><h2>By the numbers</h2><p class="sub">Two collections for people who track what they eat — the number is on the card, not buried in the method.</p></div>
+      </div>
+      <div class="numbers">
+        <div class="col">
+          <h3>High protein</h3>
+          <p class="sub">Filling, flavourful meals with the protein per serving.</p>
+          {protein.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.protein}g<small>protein</small></span></a>)}
+          <a href="/collections/high-protein" class="link-arrow">All high-protein recipes →</a>
+        </div>
+        <div class="col">
+          <h3>Under 500 calories</h3>
+          <p class="sub">Lighter plates that still feel like dinner.</p>
+          {light.map((r) => <a href={`/recipes/${r.slug}`} class="crow"><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span><span class="stat">{r.macros.kcal}<small>kcal</small></span></a>)}
+          <a href="/collections/under-500-kcal" class="link-arrow">All under-500 recipes →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {prep.length >= 3 && (
+  <section class="prep" id="prep">
+    <div class="wrap">
+      <div class="prep-txt">
+        <p class="kick">Meal prep</p>
+        <h2>One Sunday hour, lunches till Friday.</h2>
+        <p>Recipes that make planning and preparing the week easier — big-batch bases, things that keep, and a plan that tells you what to cook when.</p>
+        <div class="cta-row"><a href="/collections/meal-prep" class="btn">See the meal-prep recipes</a></div>
+      </div>
+      <div class="week" aria-label="A sample week">
+        {prep.map((r, i) => <a href={`/recipes/${r.slug}`} class="day"><span class="d">{days[i]}</span><div class={`ph sq t-${tone(r)}`}></div><span class="n">{r.title}<small>{meta(r)}</small></span></a>)}
+      </div>
+    </div>
+  </section>
+  )}
+
+  <section class="sec" id="browse" style="padding-top:88px">
+    <div class="wrap">
+      <div class="browse">
+        <h2>Browse all recipes</h2>
+        <p>Every recipe on the site, filtered however you cook — by collection, category, time or budget.</p>
+        <form class="search" action="/recipes" method="get">
+          <label for="q" class="sr-only">Search recipes</label>
+          <input id="q" name="q" type="search" placeholder="e.g. paneer, 20 minutes, something sweet" />
+          <button type="submit" class="btn">Search</button>
+        </form>
+        <div class="chips">
+          <a class="chip on" href="/recipes">Everything</a>
+          {COLLECTIONS.filter((c) => c.id !== 'popular').map((c) => <a class="chip" href={`/collections/${c.id}`}>{c.short}</a>)}
+          <a class="chip" href="/collections/popular">From the Reels</a>
+          {CATEGORIES.map((c) => <a class="chip" href={`/categories/${c.id}`}>{c.name}</a>)}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap">
+      <div class="portrait"><span class="cap">portrait</span></div>
+      <div class="about-txt">
+        <p class="kick">About</p>
+        <h2>Hi, I'm Ella.</h2>
+        <p>Home cook, dessert person, and a firm believer that the best recipes are the ones you actually make again. This is where I write them down — with the macros, and what the ingredients cost.</p>
+        <a href="/about" class="link-arrow">More about Ella →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="newsletter">
+    <div class="wrap">
+      <div class="news-box">
+        <div class="news-txt">
+          <h2>New recipes, once a week.</h2>
+          <p>One email on Sunday morning, with the week's meal-prep plan. No spam, unsubscribe any time.</p>
+        </div>
+        <form class="news-form" action="#" method="post" data-newsletter>
+          <div class="field"><label for="nl-email">Your email</label><input id="nl-email" type="email" name="email" placeholder="you@example.com" required /></div>
+          <button type="submit" class="btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</Base>
+
+<style>
+  .hero .wrap { padding-top: 64px; padding-bottom: 64px; display: flex; flex-wrap: wrap; gap: 48px 64px; align-items: center; }
+  .hero-txt { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px; }
+  .hero h1 { font-weight: 500; font-size: clamp(44px, 6vw, 76px); line-height: 1.02; letter-spacing: -0.015em; }
+  .hero h1 em { font-style: italic; font-weight: 400; color: var(--berry); }
+  .lede { font-size: 19px; line-height: 1.55; color: var(--muted); max-width: 48ch; }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; }
+  .hero-feat { flex: 1 1 400px; max-width: 460px; min-width: 0; display: flex; flex-direction: column; gap: 14px; color: var(--ink); }
+  @media (max-width: 900px) { .hero-feat { max-width: none; } }
+  .feat-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; flex-wrap: wrap; }
+  .feat-meta .t { font-size: 24px; font-weight: 500; }
+  @media (max-width: 600px) { .hero .wrap { padding-top: 40px; padding-bottom: 40px; } }
+
+  .reels { display: flex; flex-wrap: wrap; gap: 28px; }
+  .reel { flex: 1 1 180px; min-width: 0; }
+  @media (max-width: 600px) { .reels { flex-wrap: nowrap; overflow-x: auto; gap: 14px; padding-bottom: 8px; margin: 0 -16px; padding-left: 16px; } .reel { flex: 0 0 160px; } }
+
+  .budget { display: flex; flex-wrap: wrap; gap: 40px 48px; align-items: stretch; }
+  .budget-feat { flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 14px; color: var(--ink); }
+  .budget-feat .img { aspect-ratio: 4 / 3; }
+  .budget-feat .bt { font-size: 28px; font-weight: 500; line-height: 1.15; }
+  .menu { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; background: var(--paper); border: 1px solid var(--line); padding: 28px 32px; }
+  .menu .mh { font-weight: 600; font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); padding-bottom: 14px; border-bottom: 1px solid var(--line); display: flex; justify-content: space-between; }
+  .mrow { display: flex; align-items: baseline; gap: 12px; padding: 16px 0; border-bottom: 1px dotted var(--line); color: var(--ink); }
+  .mrow:last-of-type { border-bottom: 0; }
+  .mrow .n { font-size: 19px; font-weight: 500; line-height: 1.25; }
+  .mrow .lead { flex: 1 1 auto; border-bottom: 2px dotted var(--line); min-width: 24px; transform: translateY(-6px); }
+  .mrow .p { font-family: var(--hand); font-weight: 700; font-size: 30px; line-height: 1; color: var(--berry); white-space: nowrap; }
+  .menu .foot { font-size: 13px; color: var(--muted); margin-top: 18px; }
+  @media (max-width: 600px) { .menu { padding: 20px; } }
+
+  .numbers { display: flex; flex-wrap: wrap; gap: 32px; }
+  .col { flex: 1 1 440px; min-width: 0; background: var(--paper); border: 1px solid var(--line); padding: 32px 32px 28px; display: flex; flex-direction: column; gap: 14px; }
+  .col h3 { font-family: var(--hand); font-weight: 700; font-size: 42px; line-height: .95; }
+  .col .sub { font-size: 15px; color: var(--muted); margin-top: -6px; margin-bottom: 6px; }
+  .crow { display: flex; align-items: center; gap: 16px; padding: 14px 0; border-top: 1px solid var(--line); color: var(--ink); }
+  .crow .sq { width: 72px; height: 72px; flex: 0 0 auto; padding: 0; }
+  .crow .n { flex: 1 1 auto; min-width: 0; font-size: 18px; font-weight: 500; line-height: 1.25; }
+  .crow .n small { display: block; font-size: 13px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+  @media (max-width: 600px) { .col { padding: 20px; } }
+
+  .prep { background: var(--lavender); }
+  .prep .wrap { padding-top: 72px; padding-bottom: 72px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center; }
+  .prep-txt { flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 18px; }
+  .prep-txt h2 { font-family: var(--hand); font-weight: 700; font-size: 54px; line-height: .95; }
+  .prep-txt p { font-size: 17px; color: var(--muted); max-width: 44ch; }
+  .week { flex: 2 1 520px; min-width: 0; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
+  @media (max-width: 700px) { .week { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .day { background: var(--paper); border: 1px solid var(--line); padding: 14px 14px 16px; display: flex; flex-direction: column; gap: 10px; min-width: 0; color: var(--ink); }
+  .day .d { font-family: var(--hand); font-weight: 700; font-size: 26px; line-height: 1; color: var(--berry); }
+  .day .sq { aspect-ratio: 1 / 1; padding: 0; }
+  .day .n { font-size: 14px; font-weight: 500; line-height: 1.3; }
+  .day .n small { display: block; font-size: 12px; color: var(--muted); font-weight: 400; margin-top: 2px; }
+
+  .browse { border: 1px solid var(--ink); padding: 48px 40px; display: flex; flex-direction: column; gap: 24px; background: var(--paper); }
+  .browse h2 { font-family: var(--hand); font-weight: 700; font-size: 54px; line-height: .95; }
+  .browse p { font-size: 16px; color: var(--muted); }
+  .search { display: flex; flex-wrap: wrap; gap: 12px; }
+  .search input { flex: 1 1 320px; min-width: 0; min-height: 52px; padding: 0 18px; border: 1px solid var(--ink); border-radius: 0; font-size: 16px; background: #fff; color: var(--ink); }
+  @media (max-width: 600px) { .browse { padding: 28px 20px; } .browse h2 { font-size: 42px; } }
+
+  .about .wrap { padding-bottom: 88px; display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: center; }
+  .portrait { width: 168px; height: 168px; border-radius: 999px; background: var(--butter); flex: 0 0 auto; display: flex; align-items: center; justify-content: center; }
+  .about-txt { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 16px; }
+  .about h2 { font-weight: 500; font-size: 40px; letter-spacing: -0.01em; line-height: 1.1; }
+  .about p { font-size: 18px; line-height: 1.6; color: var(--muted); max-width: 60ch; }
+
+  .news .wrap { padding-bottom: 80px; }
+  .news-box { display: flex; flex-wrap: wrap; gap: 32px 64px; align-items: center; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--ink); padding: 48px 0; }
+  .news-txt { flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+  .news h2 { font-family: var(--hand); font-weight: 700; font-size: 48px; line-height: 1; }
+  .news p { font-size: 16px; color: var(--muted); }
+  .news-form { flex: 1 1 360px; min-width: 0; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+  .news-form .field { flex: 1 1 220px; }
+</style>
