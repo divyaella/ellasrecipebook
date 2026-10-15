@@ -38,6 +38,7 @@ const url = canonical ?? new URL(Astro.url.pathname, Astro.site).toString();
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="sitemap" href="/sitemap-index.xml" />
+  {import.meta.env.GOOGLE_SITE_VERIFICATION && <meta name="google-site-verification" content={import.meta.env.GOOGLE_SITE_VERIFICATION} />}
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body>
