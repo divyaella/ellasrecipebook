@@ -148,7 +148,7 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
         <div class="hero-img" id="hero">
           <Photo recipe={r} aspect="4/5" width={480} sizes="(max-width: 600px) 100vw, 480px" priority />
           {reelId && (
-            <button type="button" class="play no-print" id="playReel" data-embed={`https://www.instagram.com/reel/${reelId}/embed/`} aria-label="Play the reel">
+            <button type="button" class="play no-print" id="playReel" data-permalink={`https://www.instagram.com/reel/${reelId}/`} aria-label="Play the reel">
               <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"></path></svg> Watch the reel
             </button>
           )}
@@ -227,7 +227,11 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
   .hero-img :global(.photo) { aspect-ratio: 4 / 5; }
   .play { position: absolute; left: 16px; bottom: 16px; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px 0 12px; border: 0; border-radius: 999px; background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; font-size: 14px; cursor: pointer; box-shadow: 0 2px 12px rgba(31,28,61,.25); }
   .play:hover { background: var(--butter); }
-  .hero-img iframe { width: 100%; aspect-ratio: 9 / 16; max-height: 80vh; border: 0; background: #000; display: block; }
+  /* the reel player: Instagram's embed sizes its own iframe to the 9:16 reel; we only give it the column */
+  .hero-img.playing { max-width: 480px; }
+  .hero-img :global(.instagram-media) { margin: 0 !important; width: 100% !important; min-width: 0 !important; max-width: 480px !important; border-radius: 0 !important; box-shadow: none !important; }
+  .hero-img :global(iframe.instagram-media) { border: 0 !important; }
+  .reel-loading { aspect-ratio: 9 / 16; display: flex; align-items: center; justify-content: center; background: var(--ink); color: var(--cream); font-size: 14px; }
   @media (max-width: 600px) { .hero-img { max-width: none; order: -1; } .hero-img :global(.photo) { aspect-ratio: 4 / 3; } .head { padding-bottom: 32px; margin-bottom: 32px; } }
 
   .body { display: flex; flex-wrap: wrap; gap: 40px 64px; align-items: flex-start; }
@@ -254,14 +258,20 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
 </style>
 
 <script>
+  // "Watch the reel": swap the photo for Instagram's official embed, which renders the reel at its
+  // native 9:16 and resizes its own iframe. Loaded only on tap, so the page stays light otherwise.
   const btn = document.getElementById('playReel') as HTMLButtonElement | null;
   btn?.addEventListener('click', () => {
     const host = document.getElementById('hero')!;
-    const f = document.createElement('iframe');
-    f.src = btn.dataset.embed!;
-    f.title = 'Instagram reel';
-    f.allow = 'autoplay; encrypted-media';
-    f.loading = 'eager';
-    host.replaceChildren(f);
+    host.classList.add('playing');
+    host.innerHTML = `<div class="reel-loading">Loading the reel…</div><blockquote class="instagram-media" data-instgrm-permalink="${btn.dataset.permalink}" data-instgrm-version="14"></blockquote>`;
+    const ready = () => {
+      (window as any).instgrm?.Embeds?.process();
+      // once Instagram has swapped the blockquote for its iframe, drop the placeholder
+      const t = setInterval(() => { if (host.querySelector('iframe')) { host.querySelector('.reel-loading')?.remove(); clearInterval(t); } }, 200);
+      setTimeout(() => clearInterval(t), 15000);
+    };
+    if ((window as any).instgrm) ready();
+    else { const s = document.createElement('script'); s.src = 'https://www.instagram.com/embed.js'; s.async = true; s.onload = ready; document.body.appendChild(s); }
   });
 </script>
