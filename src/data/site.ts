@@ -1,4 +1,5 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
+import hidden from '../../content/hidden.json';
 
 export type Recipe = CollectionEntry<'recipes'>['data'];
 
@@ -15,7 +16,8 @@ export const SITE = {
 };
 
 /** A recipe is published when it has enough to cook from and isn't a repost of another one. */
-export const isPublished = (r: Recipe) => r.ingredients.length > 0 && r.method.length > 0 && !r.duplicate_of;
+export const isPublished = (r: Recipe) =>
+  r.ingredients.length > 0 && r.method.length > 0 && !r.duplicate_of && !(r.slug in (hidden as Record<string, string>));
 
 /** All published recipes, newest first. */
 export async function loadRecipes(): Promise<Recipe[]> {

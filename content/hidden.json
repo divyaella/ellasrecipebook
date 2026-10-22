@@ -1,0 +1,10 @@
+{
+ "_comment": "Recipes held back from the site until their ingredient measurements are fixed. slug -> reason. Remove an entry to publish it again.",
+ "spinach-ricotta-cannelloni": "ingredients have no quantities at all",
+ "alfajores": "dulce de leche filling has no quantity",
+ "aam-shake": "mango has no quantity",
+ "chicken-sausage-muffin": "sausage patties have no quantity",
+ "dal-fry": "ingredient list cut short (masala ingredients only in the method)",
+ "chocolate-chip-banana-bread": "ingredient list cut short at the 'Dry' subheading",
+ "chocolate-chip-banana-cake": "ingredient list cut short at the 'Dry' subheading"
+}

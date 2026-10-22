@@ -2,12 +2,12 @@
  {
   "status": "missing",
   "key": "monkfruit",
-  "recipes": 6,
-  "lines": 7,
+  "recipes": 5,
+  "lines": 5,
   "examples": [
-   "1 - 2 tbsp monkfruit, if you prefer it slightly sweeter, this also depends on your mango sweetness, i dont use any",
-   "1 - 2 tbsp monkfruit, if you prefer it slightly sweeter, this also depends on your mango sweetness, i dont use any",
-   "1 tsp monkfruit, depends on how sweet the apples are, you can skip if not needed"
+   "1 tsp monkfruit, depends on how sweet the apples are, you can skip if not needed",
+   "1 sachet monkfruit",
+   "1 sachet monkfruit"
   ],
   "candidates": []
  },
@@ -166,17 +166,6 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Dark Chocolate (55%)|piece-weight",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "2-3 pieces ( 15 grams ) of dark chocolate, melted ( i used bournville 70% )",
-   "one piece dark chocolate"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "on kasturi methi",
   "recipes": 2,
@@ -282,17 +271,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "boiling water",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "1/2 cup boiling water",
-   "3 cups boiling water"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "dried red chillies",
   "recipes": 2,
@@ -337,17 +315,6 @@
   "examples": [
    "1 box / 200 grams buttom mushroom",
    "1 box / 200 grams buttom mushroom"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "vegetable stock cup water",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "3/4 cup vegetable stock or 1/2 cup water, whatever is available for you",
-   "3/4 cup vegetable stock or 1/2 cup water, whatever is available for you"
   ],
   "candidates": []
  },
@@ -449,16 +416,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "water chicken veg stock",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1/2 cup water/chicken/veg stock"
-  ],
-  "candidates": []
- },
- {
   "status": "unit",
   "key": "Beetroot|piece-weight",
   "recipes": 1,
@@ -470,14 +427,17 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Basil|piece-weight",
+  "status": "suggest",
+  "key": "peri peri seasoning bowl two cup cornflakes",
   "recipes": 1,
   "lines": 1,
   "examples": [
-   "10 basil leaves, sliced thin"
+   "2 tbsp peri peri seasoning bowl two: 1/2 cup cornflakes"
   ],
-  "candidates": []
+  "candidates": [
+   "peri peri seasoning",
+   "cornflakes"
+  ]
  },
  {
   "status": "suggest",
@@ -631,21 +591,11 @@
  },
  {
   "status": "missing",
-  "key": "sausage patties",
+  "key": "hot sauce best replacement",
   "recipes": 1,
   "lines": 1,
   "examples": [
-   "2 sausage patties"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Cheese Block|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "½ slice cheese"
+   "1 dash hot sauce (optional) the best replacement for WC sauce if you dont have it / dont want to use it"
   ],
   "candidates": []
  },
@@ -707,7 +657,7 @@
   "recipes": 1,
   "lines": 1,
   "examples": [
-   "1 - 2 tbsp of hung curd whipped to cut the spice and masalas :)"
+   "2 tbsp of hung curd whipped to cut the spice and masalas :) Optional: 1"
   ],
   "candidates": [
    "hung curd",
@@ -725,16 +675,6 @@
   "candidates": [
    "cream of tartar"
   ]
- },
- {
-  "status": "missing",
-  "key": "reserved water from pressure cooker",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1-1.5 cup reserved water from the pressure cooker"
-  ],
-  "candidates": []
  },
  {
   "status": "unit",
@@ -815,16 +755,6 @@
   "lines": 1,
   "examples": [
    "450g @licious_foods chicken mince"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "vegetable stock water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "¼ cup vegetable stock or warm water"
   ],
   "candidates": []
  },
@@ -944,36 +874,6 @@
   "lines": 1,
   "examples": [
    "1 1/2 cup chicken stock or vegetable stock is good too"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Cornstarch|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 /2 tbsp cornflour / arrow root powder"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "water thin consistency",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 - 2 tbsp water to thin consistency"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Kashmiri Chilli Powder|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "8 kashmiri chilli"
   ],
   "candidates": []
  },
@@ -1189,18 +1089,6 @@
   ]
  },
  {
-  "status": "suggest",
-  "key": "coriander leaves cup water blend",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Handful of coriander leaves and 1/4 cup water to blend"
-  ],
-  "candidates": [
-   "coriander"
-  ]
- },
- {
   "status": "unit",
   "key": "Cloves|piece-weight",
   "recipes": 1,
@@ -1338,16 +1226,6 @@
   "lines": 1,
   "examples": [
    "2 tbsp oil or 1 tbsp oil"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Frozen Mango Chunks|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 whole mango, i use alphonso"
   ],
   "candidates": []
  },
@@ -1533,16 +1411,6 @@
  },
  {
   "status": "missing",
-  "key": "mixed with tbsp water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1/2 tbsp mixed with 2 tbsp water"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "rcp",
   "recipes": 1,
   "lines": 1,
@@ -1627,18 +1495,6 @@
  },
  {
   "status": "suggest",
-  "key": "lemon size ball tamarind in cups water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 lemon size ball of tamarind soaked in 3 cups of water"
-  ],
-  "candidates": [
-   "lemon"
-  ]
- },
- {
-  "status": "suggest",
   "key": "low fat paneer",
   "recipes": 1,
   "lines": 1,
@@ -1675,6 +1531,16 @@
  },
  {
   "status": "missing",
+  "key": "portion sponge cake",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "1 portion (recipe in the previous reel) sponge cake"
+  ],
+  "candidates": []
+ },
+ {
+  "status": "missing",
   "key": "monkfruit sweetender",
   "recipes": 1,
   "lines": 1,
@@ -1697,16 +1563,6 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Turmeric Powder|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1/2 turmeric powder"
-  ],
-  "candidates": []
- },
- {
   "status": "ambiguous",
   "key": "cloves garlic",
   "recipes": 1,
@@ -1717,18 +1573,6 @@
   "candidates": [
    "cloves",
    "garlic"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "quinoa cups water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 cup quinoa ( around 200 grams ) : 2 cups water / vegetable stock"
-  ],
-  "candidates": [
-   "quinoa"
   ]
  },
  {
@@ -1800,16 +1644,6 @@
   "candidates": [
    "spinach"
   ]
- },
- {
-  "status": "missing",
-  "key": "milk water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tbsp milk/water (optional, for softer eggs)"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -1929,26 +1763,6 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Vegetable Stock (cube / powder)|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 1/2 vegetable stock"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "water grind",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "3 tbsp water to grind"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "chicken marinated with tsp gochujang paste",
   "recipes": 1,
@@ -1971,30 +1785,6 @@
   "candidates": [
    "onion",
    "shallots"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "lemon ball size tamarind in cups water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 lemon ball size tamarind soaked in 3 cups water"
-  ],
-  "candidates": [
-   "lemon"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "rice flour mixed with cup water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tbsp rice flour mixed with 1/4 cup water"
-  ],
-  "candidates": [
-   "rice flour"
   ]
  },
  {

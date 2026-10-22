@@ -15,6 +15,7 @@ ITEMS={}
 for p in PR:
     k=p['item'].lower()
     if k not in ITEMS or (p['default'] and not ITEMS[k]['default']): ITEMS[k]=p
+HIDDEN=json.load(open(f'{ROOT}/content/hidden.json'))
 # ---- text helpers
 FR={'½':.5,'¼':.25,'¾':.75,'⅓':1/3,'⅔':2/3,'⅛':.125}
 NUMW={'a':1,'an':1,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'half':.5}
@@ -66,6 +67,7 @@ def clean_name(s):
 def parse_line(line):
     raw=line; s=line.strip().lstrip('-•* ').lower()
     s=re.sub(r'\(.*?\)',lambda m:'' if re.search(r'\d',m.group(0)) is None else m.group(0),s)
+    s=re.sub(r'(\d)\s+/\s*(\d)',r'\1/\2',s)
     qty=None; unit=None; size=1.0; vague=None
     m=re.match(r'^('+NUM+r')(?:\s*(?:-|–|to)\s*('+NUM+r'))?\s*',s)
     if m:
@@ -178,9 +180,10 @@ def to_base(L,p):
         if u=='inch': return (q*10,'') if 'ginger' in k else (None,'piece-weight')
         if u=='slice': return (q*SLICE_G,'') if 'bread' in k else (None,'piece-weight')
         if u in(None,'pc'):
-            if any(x in k for x in('paste','sauce','powder','ketchup','puree','crushed','peeled','sun-dried','pickle','juice','oil','seeds','flakes','dried','frozen')) and 'curry leaves' not in k: return (None,'piece-weight')
+            if any(x in k for x in('paste','sauce','powder','ketchup','puree','crushed','peeled','sun-dried','pickle','juice','oil','seeds','flakes','dried','frozen','stock','masala','vinegar')) and 'curry leaves' not in k: return (None,'no-unit')
             for key,g in PIECE_G:
                 if key in k: return (q*g,'')
+            if p['category'] in('Spices & Seasonings','Pantry Staples','Sauces & Condiments','Oils & Vinegars','Flour & Baking') and not any(x in k for x in('bay','clove','cardamom','cinnamon','chilli','chili','curry','pepper','anise','mace','nutmeg','jalape','cashew','almond')): return (None,'no-unit')
             return (None,'piece-weight')
         if u=='spray': return (q*.5,'')
         if u in('stick',): return (None,'unit-'+u)
@@ -192,6 +195,8 @@ def to_base(L,p):
 # ---- run
 def expand(line):
     l=line.strip()
+    m=re.match(r'^(.+?)\s+[-–:]\s+((?:\d|[½¼¾]).*)$',l)          # "condensed milk - 200 ml" -> "200 ml condensed milk"
+    if m and not re.match(r'^\s*(\d|[½¼¾])',l): l=m.group(2)+' '+m.group(1)
     m=re.match(r'^([A-Za-z ]{2,18}):\s*(.+)$',l)
     if m and not re.search(r'\d',m.group(1)): l=m.group(2)
     l=re.split(r'\s+OR\s+',l)[0]
@@ -204,7 +209,7 @@ def cost_line(line):
     if L['vague'] and L['vague'][1]==0: out['status']='vague'; out['cost']=0; return out
     if L['qty'] is None and not L['vague']: out.update(status='vague',cost=0,note='no quantity given — not costed'); return out
     nm=canon_name(L['name'])
-    if nm and set(nm.split())<={'water','warm','hot','cold','ice','milk water'}-{'milk water'} and 'water' in nm.split() or nm in('ice','ice cubes','ice cube'): out.update(status='free',cost=0); return out
+    if (nm and 'water' in nm.split() and not any(w in nm.split() for w in('coconut','rose','soda','tonic','mineral','tuna','melon'))) or nm in('ice','ice cubes','ice cube'): out.update(status='free',cost=0); return out
     if nm and set(nm.split())<={'salt','pepper','black','and','white','sea','rock','table'} : out.update(status='vague',cost=0); return out
     st,key,cands=match(L['name'])
     if st=='gap': out.update(status='missing',reason='gap-list'); return out
@@ -224,6 +229,7 @@ def cost_line(line):
         out.update(status='ok',cost=round(amt*rate,2),amount=amt,note='vague amount'); return out
     if L['qty'] is None: out.update(status='vague',cost=0,note='no quantity given — not costed'); return out
     amt,note=to_base(L,p)
+    if note=='no-unit': out.update(status='vague',cost=0,note='quantity given without a unit — not costed'); return out
     if amt is None: out.update(status='unit',reason=note,qty=L['qty'],unit=L['unit']); return out
     out.update(status='ok',cost=round(amt*rate,2),amount=round(amt,1),note=note)
     return out
@@ -232,7 +238,7 @@ def main():
     tot=collections.Counter()
     for f in sorted(glob.glob(f'{ROOT}/content/recipes/*.json')):
         r=json.load(open(f))
-        if r.get('duplicate_of') or not r.get('ingredients') or not r.get('method'): continue
+        if r.get('duplicate_of') or not r.get('ingredients') or not r.get('method') or r['slug'] in HIDDEN: continue
         lines=[]
         for g in r['ingredients']:
             for it in g['items']: lines.extend(cost_line(x) for x in expand(it))

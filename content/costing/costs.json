@@ -157,86 +157,6 @@
    }
   ]
  },
- "aam-shake": {
-  "check_source": false,
-  "title": "Aam Shake",
-  "serves": 3.0,
-  "total": 36.0,
-  "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 12,
-  "for_two": 24,
-  "detail": [
-   {
-    "raw": "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
-    "name": "mango",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
-    "name": "milk",
-    "item": "Toned Milk",
-    "via": "alias",
-    "status": "ok",
-    "cost": 13.92,
-    "amount": 240.0,
-    "note": ""
-   },
-   {
-    "raw": "1 - 2 tbsp monkfruit, if you prefer it slightly sweeter, this also depends on your mango sweetness, i dont use any",
-    "name": "monkfruit",
-    "status": "missing",
-    "candidates": []
-   },
-   {
-    "raw": "1 - 2 tsp chia",
-    "name": "chia",
-    "item": "Chia Seeds",
-    "via": "auto",
-    "status": "ok",
-    "cost": 3.88,
-    "amount": 4.1,
-    "note": ""
-   },
-   {
-    "raw": "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
-    "name": "mango",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
-    "name": "milk",
-    "item": "Toned Milk",
-    "via": "alias",
-    "status": "ok",
-    "cost": 13.92,
-    "amount": 240.0,
-    "note": ""
-   },
-   {
-    "raw": "1 - 2 tbsp monkfruit, if you prefer it slightly sweeter, this also depends on your mango sweetness, i dont use any",
-    "name": "monkfruit",
-    "status": "missing",
-    "candidates": []
-   },
-   {
-    "raw": "1 - 2 tsp chia",
-    "name": "chia",
-    "item": "Chia Seeds",
-    "via": "auto",
-    "status": "ok",
-    "cost": 3.88,
-    "amount": 4.1,
-    "note": ""
-   }
-  ]
- },
  "air-fried-crispy-chicken-with-lime-leaf-lemongrass-stir-fry-sauce": {
   "check_source": false,
   "title": "Air-Fried Crispy Chicken with Lime Leaf & Lemongrass Stir Fry Sauce",
@@ -857,64 +777,6 @@
     "name": "coriander",
     "status": "vague",
     "cost": 0
-   }
-  ]
- },
- "alfajores": {
-  "check_source": false,
-  "title": "Alfajores",
-  "serves": 3.0,
-  "total": 58.0,
-  "lines": 5,
-  "resolved": 5,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 19,
-  "for_two": 39,
-  "detail": [
-   {
-    "raw": "90 grams maida",
-    "name": "maida",
-    "item": "All Purpose Flour (Maida)",
-    "via": "auto",
-    "status": "ok",
-    "cost": 6.12,
-    "amount": 90.0,
-    "note": ""
-   },
-   {
-    "raw": "75 grams salted butter, softened",
-    "name": "salted butter",
-    "item": "Salted Butter",
-    "via": "exact",
-    "status": "ok",
-    "cost": 47.25,
-    "amount": 75.0,
-    "note": ""
-   },
-   {
-    "raw": "20 grams icing sugar",
-    "name": "icing sugar",
-    "item": "Icing Sugar",
-    "via": "exact",
-    "status": "ok",
-    "cost": 4.6,
-    "amount": 20.0,
-    "note": ""
-   },
-   {
-    "raw": "a few drops of vanilla extract, optional",
-    "name": "a few drops vanilla extract",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "dulce de leche",
-    "name": "dulce de leche",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1719,9 +1581,9 @@
   "title": "Asian Greens Chicken Stir Fry",
   "serves": 3.0,
   "total": 811.0,
-  "lines": 12,
-  "resolved": 10,
-  "unresolved": 2,
+  "lines": 13,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 270,
   "for_two": 541,
@@ -1830,15 +1692,24 @@
    {
     "raw": "1/2 cup water/chicken/veg stock",
     "name": "water chicken veg stock",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
-    "raw": "slurry - 1 tsp cornflour + 3 tbsp water",
-    "name": "slurry",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "raw": "1 tsp cornflour",
+    "name": "cornflour",
+    "item": "Cornstarch",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.39,
+    "amount": 2.6,
+    "note": ""
+   },
+   {
+    "raw": "3 tbsp water slurry",
+    "name": "water slurry",
+    "status": "free",
+    "cost": 0
    }
   ]
  },
@@ -2683,9 +2554,9 @@
   "serves": 3.0,
   "total": 131.0,
   "lines": 6,
-  "resolved": 5,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 44,
   "for_two": 87,
   "detail": [
@@ -2730,10 +2601,9 @@
     "name": "basil leaves",
     "item": "Basil",
     "via": "auto",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 10.0,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "2 tbsp balsamic vinegar ( i like 3 tbsp because BALSAMIC IS THE BEST)",
@@ -2751,13 +2621,13 @@
   "check_source": false,
   "title": "Better Than McD Peri Peri Chicken Burger",
   "serves": 2.0,
-  "total": 483.0,
+  "total": 413.0,
   "lines": 16,
-  "resolved": 13,
-  "unresolved": 3,
+  "resolved": 12,
+  "unresolved": 4,
   "complete": false,
-  "per_serve": 242,
-  "for_two": 483,
+  "per_serve": 206,
+  "for_two": 413,
   "detail": [
    {
     "raw": "2 chicken breast, pounded",
@@ -2787,24 +2657,19 @@
     "note": ""
    },
    {
-    "raw": "1/2 cup cornflakes",
-    "name": "cornflakes",
-    "item": "Cornflakes",
-    "via": "exact",
-    "status": "ok",
-    "cost": 35.62,
-    "amount": 72.0,
-    "note": "density-guess"
+    "raw": "2 tbsp peri peri seasoning bowl two: 1/2 cup cornflakes",
+    "name": "peri peri seasoning bowl two cup cornflakes",
+    "status": "suggest",
+    "candidates": [
+     "peri peri seasoning",
+     "cornflakes"
+    ]
    },
    {
-    "raw": "1 - 2 tbsp peri peri seasoning",
-    "name": "peri peri seasoning",
-    "item": "Peri Peri Seasoning",
-    "via": "exact",
-    "status": "ok",
-    "cost": 34.03,
-    "amount": 12.4,
-    "note": ""
+    "raw": "1",
+    "name": "",
+    "status": "vague",
+    "cost": 0
    },
    {
     "raw": "1 tsp peri peri to sprinkle after cooking",
@@ -3234,9 +3099,9 @@
   "serves": 1.0,
   "total": 53.0,
   "lines": 5,
-  "resolved": 4,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 5,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 53,
   "for_two": 106,
   "detail": [
@@ -3275,10 +3140,9 @@
     "name": "dark chocolate",
     "item": "Dark Chocolate (55%)",
     "via": "suggested",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 2.5,
-    "unit": "pc"
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "2 tbsp granola",
@@ -5007,13 +4871,13 @@
   "check_source": false,
   "title": "Chicken Caesar Pasta Salad",
   "serves": 2.0,
-  "total": 623.0,
-  "lines": 12,
-  "resolved": 11,
-  "unresolved": 1,
+  "total": 655.0,
+  "lines": 15,
+  "resolved": 13,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 312,
-  "for_two": 623,
+  "per_serve": 328,
+  "for_two": 655,
   "detail": [
    {
     "raw": "2 chicken breast, slightly pounded,salt and pepper & cajun seasoning",
@@ -5108,11 +4972,40 @@
     "cost": 0
    },
    {
-    "raw": "the best replacement for WC sauce if you dont have it / dont want to use it - 1 tablespoon ketchup + 1 tablespoon white wine vinegar + ½ tablespoon soy sauce + 1 dash hot sauce (optional)",
-    "name": "best replacement",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "raw": "1 tablespoon ketchup",
+    "name": "ketchup",
+    "item": "Tomato Ketchup",
+    "via": "auto",
+    "status": "ok",
+    "cost": 5.36,
+    "amount": 16.5,
+    "note": ""
+   },
+   {
+    "raw": "1 tablespoon white wine vinegar",
+    "name": "white wine vinegar",
+    "item": "White Wine Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 17.7,
+    "amount": 15.0,
+    "note": ""
+   },
+   {
+    "raw": "½ tablespoon soy sauce",
+    "name": "soy sauce",
+    "item": "Soy Sauce (Light)",
+    "via": "alias",
+    "status": "ok",
+    "cost": 8.85,
+    "amount": 7.5,
+    "note": ""
+   },
+   {
+    "raw": "1 dash hot sauce (optional) the best replacement for WC sauce if you dont have it / dont want to use it",
+    "name": "hot sauce best replacement",
+    "status": "missing",
+    "candidates": []
    }
   ]
  },
@@ -5916,129 +5809,6 @@
    {
     "raw": "you can also add any other veges you want!!!!",
     "name": "you can also add any other veges",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   }
-  ]
- },
- "chicken-sausage-muffin": {
-  "check_source": false,
-  "title": "Chicken Sausage Muffin",
-  "serves": 4.0,
-  "total": 395.0,
-  "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 99,
-  "for_two": 198,
-  "detail": [
-   {
-    "raw": "Sausage patties",
-    "name": "sausage patties",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "450g chicken mince",
-    "name": "chicken mince",
-    "item": "Chicken Mince (Keema)",
-    "via": "alias",
-    "status": "ok",
-    "cost": 317.0,
-    "amount": 450.0,
-    "note": ""
-   },
-   {
-    "raw": "1 tsp each garlic powder, onion powder, smoked paprika",
-    "name": "each garlic powder",
-    "item": "Garlic Powder",
-    "via": "auto",
-    "status": "ok",
-    "cost": 6.19,
-    "amount": 2.8,
-    "note": ""
-   },
-   {
-    "raw": "1 tsp black pepper",
-    "name": "black pepper",
-    "status": "vague",
-    "cost": 0
-   },
-   {
-    "raw": "¾ tsp salt",
-    "name": "salt",
-    "status": "vague",
-    "cost": 0
-   },
-   {
-    "raw": "½ tsp chilli flakes",
-    "name": "chilli flakes",
-    "item": "Crushed Red Pepper",
-    "via": "exact",
-    "status": "ok",
-    "cost": 3.83,
-    "amount": 1.4,
-    "note": ""
-   },
-   {
-    "raw": "1 tbsp Worcestershire sauce",
-    "name": "worcestershire sauce",
-    "item": "Worcestershire Sauce",
-    "via": "exact",
-    "status": "ok",
-    "cost": 16.81,
-    "amount": 15.0,
-    "note": ""
-   },
-   {
-    "raw": "½ tbsp maple syrup (optional)",
-    "name": "maple syrup",
-    "item": "Maple Syrup",
-    "via": "exact",
-    "status": "ok",
-    "cost": 14.85,
-    "amount": 7.5,
-    "note": ""
-   },
-   {
-    "raw": "Per sandwich",
-    "name": "per sandwich",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "1 English muffin",
-    "name": "english muffin",
-    "item": "English Muffins",
-    "via": "exact",
-    "status": "ok",
-    "cost": 36.25,
-    "amount": 1.0,
-    "note": ""
-   },
-   {
-    "raw": "2 sausage patties",
-    "name": "sausage patties",
-    "status": "missing",
-    "candidates": []
-   },
-   {
-    "raw": "½ slice cheese",
-    "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 0.5,
-    "unit": "slice"
-   },
-   {
-    "raw": "Ketchup + yellow mustard (non negotiable!)",
-    "name": "ketchup",
     "status": "vague",
     "cost": 0,
     "note": "no quantity given — not costed"
@@ -7139,115 +6909,13 @@
     "note": ""
    },
    {
-    "raw": "1 - 2 tbsp of hung curd whipped to cut the spice and masalas :)",
+    "raw": "2 tbsp of hung curd whipped to cut the spice and masalas :) Optional: 1",
     "name": "hung curd whipped spice masalas",
     "status": "suggest",
     "candidates": [
      "hung curd",
      "curd"
     ]
-   }
-  ]
- },
- "chocolate-chip-banana-bread": {
-  "check_source": true,
-  "title": "Chocolate Chip Banana Bread",
-  "serves": 3.0,
-  "total": 29.0,
-  "lines": 4,
-  "resolved": 4,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 10,
-  "for_two": 19,
-  "detail": [
-   {
-    "raw": "Dry",
-    "name": "dry",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "120 grams Ap flour",
-    "name": "ap flour",
-    "item": "All Purpose Flour (Maida)",
-    "via": "auto",
-    "status": "ok",
-    "cost": 8.16,
-    "amount": 120.0,
-    "note": ""
-   },
-   {
-    "raw": "75 grams caster sugar",
-    "name": "caster sugar",
-    "item": "Caster Sugar",
-    "via": "exact",
-    "status": "ok",
-    "cost": 17.25,
-    "amount": 75.0,
-    "note": ""
-   },
-   {
-    "raw": "20 grams brown sugar",
-    "name": "brown sugar",
-    "item": "Brown Sugar",
-    "via": "exact",
-    "status": "ok",
-    "cost": 3.8,
-    "amount": 20.0,
-    "note": ""
-   }
-  ]
- },
- "chocolate-chip-banana-cake": {
-  "check_source": true,
-  "title": "Chocolate Chip Banana Cake",
-  "serves": 2.0,
-  "total": 29.0,
-  "lines": 4,
-  "resolved": 4,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 14,
-  "for_two": 29,
-  "detail": [
-   {
-    "raw": "Dry",
-    "name": "dry",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "120 grams Ap flour",
-    "name": "ap flour",
-    "item": "All Purpose Flour (Maida)",
-    "via": "auto",
-    "status": "ok",
-    "cost": 8.16,
-    "amount": 120.0,
-    "note": ""
-   },
-   {
-    "raw": "75 grams caster sugar",
-    "name": "caster sugar",
-    "item": "Caster Sugar",
-    "via": "exact",
-    "status": "ok",
-    "cost": 17.25,
-    "amount": 75.0,
-    "note": ""
-   },
-   {
-    "raw": "20 grams brown sugar",
-    "name": "brown sugar",
-    "item": "Brown Sugar",
-    "via": "exact",
-    "status": "ok",
-    "cost": 3.8,
-    "amount": 20.0,
-    "note": ""
    }
   ]
  },
@@ -7432,8 +7100,8 @@
   "serves": 4.0,
   "total": 150.0,
   "lines": 23,
-  "resolved": 20,
-  "unresolved": 3,
+  "resolved": 21,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 38,
   "for_two": 75,
@@ -7634,8 +7302,8 @@
    {
     "raw": "1-1.5 cup reserved water from the pressure cooker",
     "name": "reserved water from pressure cooker",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 1/2 tsp aamchur powder",
@@ -9545,30 +9213,6 @@
    }
   ]
  },
- "dal-fry": {
-  "check_source": true,
-  "title": "Dal Fry",
-  "serves": 4.0,
-  "total": 21.0,
-  "lines": 1,
-  "resolved": 1,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 5,
-  "for_two": 10,
-  "detail": [
-   {
-    "raw": "120 grams Masoor Dal, washed then soaked for 30 minutes followed by a 3-4 whistle pressure cook",
-    "name": "masoor dal",
-    "item": "Masoor Dal",
-    "via": "exact",
-    "status": "ok",
-    "cost": 21.0,
-    "amount": 120.0,
-    "note": ""
-   }
-  ]
- },
  "dal-makhani": {
   "check_source": false,
   "title": "Dal Makhani",
@@ -9802,8 +9446,8 @@
   "serves": 3.0,
   "total": 365.0,
   "lines": 24,
-  "resolved": 22,
-  "unresolved": 2,
+  "resolved": 23,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 122,
   "for_two": 243,
@@ -10018,8 +9662,8 @@
    {
     "raw": "¼ cup vegetable stock or warm water",
     "name": "vegetable stock water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "spring onion greens + sesame seeds",
@@ -11661,13 +11305,13 @@
   "check_source": false,
   "title": "French Onion Chicken",
   "serves": 3.0,
-  "total": 488.0,
+  "total": 489.0,
   "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
+  "resolved": 7,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 163,
-  "for_two": 325,
+  "for_two": 326,
   "detail": [
    {
     "raw": "3 chicken breasts, pounded with a mallet to thin it and even it out ( around 450-500 grams )",
@@ -11725,13 +11369,13 @@
    },
    {
     "raw": "1 /2 tbsp cornflour / arrow root powder",
-    "name": "tbsp cornflour",
+    "name": "cornflour",
     "item": "Cornstarch",
-    "via": "auto",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 1.0,
-    "unit": null
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.59,
+    "amount": 3.9,
+    "note": ""
    },
    {
     "raw": "35 grams gruyère",
@@ -11993,11 +11637,10 @@
     "cost": 0
    },
    {
-    "raw": "around 500 - 600 ml water",
-    "name": "",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "raw": "600 ml water around 500",
+    "name": "water",
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "Ghee (replace with oil to make this vegan) + jeera + mustard seeds + hing + red chilli powder + minced garlic",
@@ -12021,9 +11664,9 @@
   "serves": 1.0,
   "total": 57.0,
   "lines": 10,
-  "resolved": 9,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 10,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 57,
   "for_two": 114,
   "detail": [
@@ -12077,8 +11720,8 @@
    {
     "raw": "1 - 2 tbsp water to thin consistency",
     "name": "water thin consistency",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "black pepper",
@@ -12381,13 +12024,13 @@
   "check_source": false,
   "title": "Healthier Chicken Ghee Roast, Simplified",
   "serves": 3.0,
-  "total": 415.0,
+  "total": 412.0,
   "lines": 20,
-  "resolved": 18,
-  "unresolved": 2,
+  "resolved": 19,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 138,
-  "for_two": 277,
+  "per_serve": 137,
+  "for_two": 275,
   "detail": [
    {
     "raw": "450 grams chicken breast, cubed",
@@ -12497,10 +12140,9 @@
     "name": "kashmiri chilli",
     "item": "Kashmiri Chilli Powder",
     "via": "auto",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 8.0,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "6 byadgiri chillies",
@@ -12531,12 +12173,8 @@
    {
     "raw": "1 tbsp tamarind paste or small tamarind ball soaked in 2 tbsp water",
     "name": "tamarind paste tamarind ball in tbsp water",
-    "item": "Tamarind (paste / ball)",
-    "via": "auto",
-    "status": "ok",
-    "cost": 2.61,
-    "amount": 9.0,
-    "note": "density-guess"
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 tbsp ghee",
@@ -13079,10 +12717,10 @@
     "cost": 0
    },
    {
-    "raw": "1 tbsp maggi hot and sweet sauce",
-    "name": "maggi hot sweet sauce",
+    "raw": "1 tbsp maggi hot and sweet sauce secret ingredient",
+    "name": "maggi hot sweet sauce secret ingredient",
     "item": "Maggi Hot & Sweet Sauce",
-    "via": "exact",
+    "via": "auto",
     "status": "ok",
     "cost": 6.0,
     "amount": 15.0,
@@ -13482,9 +13120,9 @@
   "serves": 1.0,
   "total": 37.0,
   "lines": 8,
-  "resolved": 7,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 37,
   "for_two": 74,
   "detail": [
@@ -13549,10 +13187,9 @@
     "name": "dark chocolate",
     "item": "Dark Chocolate (55%)",
     "via": "suggested",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 1,
-    "unit": "pc"
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "1 tsp peanut butter",
@@ -13633,8 +13270,8 @@
   "serves": 2.0,
   "total": 28.0,
   "lines": 9,
-  "resolved": 6,
-  "unresolved": 3,
+  "resolved": 7,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 14,
   "for_two": 28,
@@ -13648,8 +13285,8 @@
    {
     "raw": "1/2 cup boiling water",
     "name": "boiling water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "OR",
@@ -13818,8 +13455,8 @@
   "serves": 2.0,
   "total": 283.0,
   "lines": 10,
-  "resolved": 7,
-  "unresolved": 3,
+  "resolved": 8,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 142,
   "for_two": 283,
@@ -13913,10 +13550,8 @@
    {
     "raw": "Handful of coriander leaves and 1/4 cup water to blend",
     "name": "coriander leaves cup water blend",
-    "status": "suggest",
-    "candidates": [
-     "coriander"
-    ]
+    "status": "free",
+    "cost": 0
    }
   ]
  },
@@ -15515,17 +15150,17 @@
   "serves": 3.0,
   "total": 153.0,
   "lines": 12,
-  "resolved": 11,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 12,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 51,
   "for_two": 102,
   "detail": [
    {
     "raw": "3 cups boiling water",
     "name": "boiling water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 tsp salt",
@@ -15809,8 +15444,8 @@
   "serves": 2.0,
   "total": 52.0,
   "lines": 7,
-  "resolved": 5,
-  "unresolved": 2,
+  "resolved": 6,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 26,
   "for_two": 52,
@@ -15850,10 +15485,9 @@
     "name": "mango",
     "item": "Frozen Mango Chunks",
     "via": "suggested",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 1.0,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "1 sachet monk fruit",
@@ -18534,8 +18168,8 @@
   "serves": 2.0,
   "total": 411.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 206,
   "for_two": 411,
@@ -18635,8 +18269,8 @@
    {
     "raw": "1/2 tbsp mixed with 2 tbsp water",
     "name": "mixed with tbsp water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    }
   ]
  },
@@ -20153,11 +19787,10 @@
     "cost": 0
    },
    {
-    "raw": "around 500 - 600 ml water, should completely submerge",
-    "name": "",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "raw": "600 ml water, should completely submerge around 500",
+    "name": "water",
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "Chopped coriander, for garnish",
@@ -20354,8 +19987,8 @@
   "serves": 3.0,
   "total": 68.0,
   "lines": 15,
-  "resolved": 13,
-  "unresolved": 2,
+  "resolved": 14,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 23,
   "for_two": 45,
@@ -20483,10 +20116,8 @@
    {
     "raw": "1 lemon size ball of tamarind soaked in 3 cups of water",
     "name": "lemon size ball tamarind in cups water",
-    "status": "suggest",
-    "candidates": [
-     "lemon"
-    ]
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "salt, to taste",
@@ -21545,8 +21176,8 @@
   "serves": 4.0,
   "total": 474.0,
   "lines": 17,
-  "resolved": 14,
-  "unresolved": 3,
+  "resolved": 15,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 118,
   "for_two": 237,
@@ -21651,8 +21282,8 @@
    {
     "raw": "3/4 cup vegetable stock or 1/2 cup water, whatever is available for you",
     "name": "vegetable stock cup water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 tbsp black pepper",
@@ -21709,48 +21340,59 @@
   "check_source": false,
   "title": "Pastel De Tres Leches",
   "serves": 3.0,
-  "total": 0.0,
+  "total": 244.0,
   "lines": 6,
-  "resolved": 6,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 0,
-  "for_two": 0,
+  "resolved": 5,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 81,
+  "for_two": 163,
   "detail": [
    {
-    "raw": "sponge cake - 1 portion (recipe in the previous reel)",
-    "name": "sponge cake",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "raw": "1 portion (recipe in the previous reel) sponge cake",
+    "name": "portion sponge cake",
+    "status": "missing",
+    "candidates": []
    },
    {
-    "raw": "evaporated milk - 177 ml ( boil 350 ml of milk for 20 minutes till it reduced to half and strain)",
+    "raw": "177 ml ( boil 350 ml of milk for 20 minutes till it reduced to half and strain) evaporated milk",
     "name": "evaporated milk",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "item": "Evaporated Milk",
+    "via": "exact",
+    "status": "ok",
+    "cost": 97.82,
+    "amount": 182.3,
+    "note": ""
    },
    {
-    "raw": "condensed milk - 200 ml",
+    "raw": "200 ml condensed milk",
     "name": "condensed milk",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "item": "Condensed Milk",
+    "via": "exact",
+    "status": "ok",
+    "cost": 84.03,
+    "amount": 206.0,
+    "note": ""
    },
    {
-    "raw": "milk - 60 ml",
+    "raw": "60 ml milk",
     "name": "milk",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "item": "Toned Milk",
+    "via": "alias",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 60.0,
+    "note": ""
    },
    {
-    "raw": "heavy whipping cream - 60 - 80 ml ( DO NOT USE AMUL CREAM)",
+    "raw": "60 - 80 ml ( DO NOT USE AMUL CREAM) heavy whipping cream",
     "name": "heavy whipping cream",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
+    "item": "Whipping Cream",
+    "via": "auto",
+    "status": "ok",
+    "cost": 57.75,
+    "amount": 70.0,
+    "note": ""
    },
    {
     "raw": "pinch of cinnamon",
@@ -22170,8 +21812,8 @@
   "serves": 3.0,
   "total": 122.0,
   "lines": 21,
-  "resolved": 19,
-  "unresolved": 2,
+  "resolved": 20,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 41,
   "for_two": 81,
@@ -22211,10 +21853,9 @@
     "name": "turmeric powder",
     "item": "Turmeric Powder",
     "via": "exact",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 0.5,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "1 tsp coriander powder",
@@ -22653,19 +22294,17 @@
   "serves": 5.0,
   "total": 152.0,
   "lines": 4,
-  "resolved": 3,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 4,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 30,
   "for_two": 61,
   "detail": [
    {
     "raw": "1 cup quinoa ( around 200 grams ) : 2 cups water / vegetable stock",
     "name": "quinoa cups water",
-    "status": "suggest",
-    "candidates": [
-     "quinoa"
-    ]
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 cup chickpea ( around 200 grams )",
@@ -23092,8 +22731,8 @@
   "serves": 3.0,
   "total": 474.0,
   "lines": 17,
-  "resolved": 14,
-  "unresolved": 3,
+  "resolved": 15,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 158,
   "for_two": 316,
@@ -23198,8 +22837,8 @@
    {
     "raw": "3/4 cup vegetable stock or 1/2 cup water, whatever is available for you",
     "name": "vegetable stock cup water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "1 tbsp black pepper",
@@ -23387,8 +23026,8 @@
   "serves": 1.0,
   "total": 97.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 97,
   "for_two": 194,
@@ -23476,8 +23115,8 @@
    {
     "raw": "1 tbsp milk/water (optional, for softer eggs)",
     "name": "milk water",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    }
   ]
  },
@@ -23641,83 +23280,6 @@
    {
     "raw": "keeps well in the fridge for 2-3 days",
     "name": "keeps well in fridge",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   }
-  ]
- },
- "spinach-ricotta-cannelloni": {
-  "check_source": false,
-  "title": "Spinach Ricotta Cannelloni",
-  "serves": 3.0,
-  "total": 0,
-  "lines": 9,
-  "resolved": 9,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 0,
-  "for_two": 0,
-  "detail": [
-   {
-    "raw": "Cannelloni tubes",
-    "name": "cannelloni tubes",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Ricotta",
-    "name": "ricotta",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Spinach",
-    "name": "spinach",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Tomato pasta sauce",
-    "name": "tomato pasta sauce",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Mozzarella",
-    "name": "mozzarella",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Garlic",
-    "name": "garlic",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Italian seasoning",
-    "name": "italian seasoning",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Salt & pepper",
-    "name": "salt & pepper",
-    "status": "vague",
-    "cost": 0,
-    "note": "no quantity given — not costed"
-   },
-   {
-    "raw": "Chilli flakes",
-    "name": "chilli flakes",
     "status": "vague",
     "cost": 0,
     "note": "no quantity given — not costed"
@@ -25010,8 +24572,8 @@
   "serves": 2.0,
   "total": 73.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 36,
   "for_two": 73,
@@ -25081,10 +24643,9 @@
     "name": "vegetable stock",
     "item": "Vegetable Stock (cube / powder)",
     "via": "auto",
-    "status": "unit",
-    "reason": "piece-weight",
-    "qty": 1.5,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "quantity given without a unit — not costed"
    },
    {
     "raw": "salt + black pepper to taste",
@@ -25303,8 +24864,8 @@
   "serves": 3.0,
   "total": 15.0,
   "lines": 15,
-  "resolved": 12,
-  "unresolved": 3,
+  "resolved": 13,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 5,
   "for_two": 10,
@@ -25361,8 +24922,8 @@
    {
     "raw": "3 tbsp water to grind",
     "name": "water grind",
-    "status": "missing",
-    "candidates": []
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "salt, to taste",
@@ -25888,8 +25449,8 @@
   "serves": 4.0,
   "total": 67.0,
   "lines": 11,
-  "resolved": 8,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 17,
   "for_two": 34,
@@ -25956,10 +25517,8 @@
    {
     "raw": "1 lemon ball size tamarind soaked in 3 cups water",
     "name": "lemon ball size tamarind in cups water",
-    "status": "suggest",
-    "candidates": [
-     "lemon"
-    ]
+    "status": "free",
+    "cost": 0
    },
    {
     "raw": "2 tbsp kuzhambu podi",
@@ -25990,10 +25549,8 @@
    {
     "raw": "1 tbsp rice flour mixed with 1/4 cup water",
     "name": "rice flour mixed with cup water",
-    "status": "suggest",
-    "candidates": [
-     "rice flour"
-    ]
+    "status": "free",
+    "cost": 0
    }
   ]
  },
