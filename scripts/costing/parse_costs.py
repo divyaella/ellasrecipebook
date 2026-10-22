@@ -7,6 +7,8 @@ ROOT=os.path.abspath(os.path.join(os.path.dirname(__file__),'..','..'))
 SH=json.load(open(f'{ROOT}/content/costing/sheet.json'))
 PR=[p for p in SH['prices']]
 ALIAS=SH['aliases']
+OV=SH.get('overrides',{})
+STANDIN={k:v.lower() for k,v in OV.get('standins',{}).items()}
 UNITS=SH['units']
 # ---- price lookup (default row per ingredient)
 ITEMS={}
@@ -19,7 +21,7 @@ NUMW={'a':1,'an':1,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'half':.5
 CANON={'chilly':'chilli','chili':'chilli','chillies':'chilli','chilies':'chilli','chillis':'chilli','aamchur':'amchur','cornflour':'cornstarch','haldi':'turmeric','turmeric':'turmeric',
  'jeera':'cumin','dahi':'curd','avacado':'avocado','dessicated':'desiccated','gochugara':'gochugaru','turmetic':'turmeric','turmeeric':'turmeric','poweder':'powder','esesame':'sesame','knobb':'knob','springs':'sprig','schezuan':'schezwan','mozarella':'mozzarella','tuvar':'toor','bayleaf':'bay','grounud':'ground','mozzarela':'mozzarella','buttom':'button'}
 PHRASE=[('maida','all purpose flour'),('ap flour','all purpose flour'),('methi seeds','fenugreek seeds'),('rai','mustard seeds'),('garlic cloves','garlic'),('garlic clove','garlic'),('plain flour','all purpose flour'),('chilli flakes','crushed red pepper'),
- ('red chilli flakes','crushed red pepper'),('wheat flour','whole wheat flour atta'),('saunf','fennel seeds'),('elaichi','green cardamom'),('cashew nuts','cashews whole'),('cashew nut','cashews whole'),('cashews','cashews whole'),('whipped cream','whipping cream'),('brown bread','whole wheat bread'),('vegetable oil','sunflower oil'),('canola oil','sunflower oil'),('vegetable canola oil','sunflower oil'),('cracked black pepper','black peppercorns'),('breadcrumbs','bread crumbs'),('breadcrumb','bread crumbs')]
+ ('red chilli flakes','crushed red pepper'),('wheat flour','whole wheat flour atta'),('garlic ginger paste','ginger garlic paste'),('gg paste','ginger garlic paste'),('ginger and garlic paste','ginger garlic paste'),('greek yoghurt','greek yogurt'),('saunf','fennel seeds'),('elaichi','green cardamom'),('cashew nuts','cashews whole'),('cashew nut','cashews whole'),('cashews','cashews whole'),('whipped cream','whipping cream'),('brown bread','whole wheat bread'),('cracked black pepper','black peppercorns'),('breadcrumbs','bread crumbs'),('breadcrumb','bread crumbs')]
 def sing(w):
     w=CANON.get(w,w)
     if w.endswith('ies') and len(w)>4: return w[:-3]+'y'
@@ -81,7 +83,7 @@ def parse_line(line):
         if w in SIZE: size=SIZE[w]; s=s[m.end():]; continue
         if w in UNIT and (qty is not None or w in VAGUE):
             unit=UNIT[w]; s=s[m.end():]; s=re.sub(r'^of\s+','',s); break
-        if w in('little','bit','few','some','generous','heaped','level','big','good'):
+        if w in('little','bit','few','some','generous','heaped','heaping','heapful','level','rounded','big','good','small'):
             s=s[m.end():]; continue
         break
     if unit in VAGUE and qty is None: qty=1
@@ -97,13 +99,12 @@ SUGGESTED={'oil':'Groundnut Oil','milk':'Toned Milk','butter':'Salted Butter','v
 SUGGESTED={k:v for k,v in SUGGESTED.items() if v.lower() in ITEMS}
 # ---- matching
 ITEMTOK={k:tuple(toks(k)) for k in ITEMS}
-ALIASK={clean_name(a):t for a,t in ALIAS.items()}
-ALIASK.update({a.lower():t for a,t in ALIAS.items()})
+ALIASK={clean_name(a):t for a,t in ALIAS.items() if t}
+ALIASK.update({a.lower():t for a,t in ALIAS.items() if t})
 def match(name):
     """-> (status, item_key, candidates)"""
     if not name: return ('empty',None,[])
     name=canon_name(name)
-    if name in ('ginger garlic paste','ginger and garlic paste','garlic ginger paste'): return ('gap',None,[])
     if name in ALIASK:
         t=ALIASK[name]
         if not t: return ('gap',None,[])
@@ -153,7 +154,8 @@ def density(p):
     if c in('Vegetable','Herbs'): return U('Chopped veg',.55),False
     if c=='Sauces & Condiments': return 1.1,False
     return U('Anything not listed',.6),True
-PIECE_G=[('chicken breast',180),('cheese slice',20),('jalapeno',15),('cardamom',.5),('peppercorn',.1),('cinnamon',2),('apple',180),('pickle',30),('avocado',170),('mushroom',20),('spring onion',15),('curry leaves',1),('coriander',100),('green chilli',5),('garlic',4),('ginger',10),('onion',110),('tomato',100),('potato',150),('carrot',70),('banana',120),('lemon',30),('bread',30),('cucumber',200),('capsicum',150),('bell pepper',150)]
+PIECE_G=[('cherry tomato',15),('chicken breast',180),('cheese slice',20),('jalapeno',15),('cardamom',.5),('peppercorn',.1),('cinnamon',2),('apple',180),('pickle',30),('avocado',170),('mushroom',20),('spring onion',15),('curry leaves',1),('coriander',100),('green chilli',5),('garlic',4),('ginger',10),('onion',110),('tomato',100),('potato',150),('carrot',70),('banana',120),('lemon',30),('bread',30),('cucumber',200),('capsicum',150),('bell pepper',150)]
+PIECE_G=[(k,v) for k,v in OV.get('piece_weights_g',{}).items()]+PIECE_G
 SLICE_G=30
 def to_base(L,p):
     """qty/unit -> amount in the price row's base unit (g/ml/pc). returns (amt, note) or (None, reason)"""
@@ -176,6 +178,7 @@ def to_base(L,p):
         if u=='inch': return (q*10,'') if 'ginger' in k else (None,'piece-weight')
         if u=='slice': return (q*SLICE_G,'') if 'bread' in k else (None,'piece-weight')
         if u in(None,'pc'):
+            if any(x in k for x in('paste','sauce','powder','ketchup','puree','crushed','peeled','sun-dried','pickle','juice','oil','seeds','flakes','dried','frozen')) and 'curry leaves' not in k: return (None,'piece-weight')
             for key,g in PIECE_G:
                 if key in k: return (q*g,'')
             return (None,'piece-weight')
@@ -209,7 +212,8 @@ def cost_line(line):
     if st in('missing','suggest','ambiguous'):
         out.update(status=st,candidates=cands); return out
     p=ITEMS.get(key)
-    if p is None: out.update(status='missing'); return out
+    if p is None and key in STANDIN and STANDIN[key] in ITEMS: p=ITEMS[STANDIN[key]]; out['standin']=f"{key} not priced yet — using {p['item']}"
+    if p is None: out.update(status='missing',reason='no price yet',item_wanted=key); return out
     out['item']=p['item']; out['via']=st
     if not p['qty'] or not p['price']: out['status']='noprice'; return out
     rate=p['price']/p['qty']/(p['yield_'] or 1)
@@ -242,7 +246,8 @@ def main():
             e=review[key]; e['count']+=1; e['recipes'].add(r['slug']); e['status']=l['status']
             if len(e['examples'])<3: e['examples'].append(l['raw'])
             e['cands']=l.get('candidates',[]) or e['cands']
-        res[r['slug']]=dict(title=r['title'],serves=sv,total=total,lines=len(lines),resolved=len(ok),unresolved=len(unresolved),
+        nlines=sum(len(g['items']) for g in r['ingredients'])
+        res[r['slug']]=dict(check_source=nlines<=4,title=r['title'],serves=sv,total=total,lines=len(lines),resolved=len(ok),unresolved=len(unresolved),
                             complete=not unresolved,per_serve=round(total/sv) if sv else None,for_two=round(total/sv*2) if sv else None,detail=lines)
     json.dump(res,open(f'{ROOT}/content/costing/costs.json','w'),indent=1,ensure_ascii=False)
     rv=[dict(status=k[0],key=k[1],recipes=len(v['recipes']),lines=v['count'],examples=v['examples'],candidates=v['cands']) for k,v in review.items()]
@@ -250,6 +255,6 @@ def main():
     json.dump(rv,open(f'{ROOT}/content/costing/review.json','w'),indent=1,ensure_ascii=False)
     n=sum(tot.values()); print('lines',n,dict(tot))
     print('resolved %',round(100*(tot['ok']+tot['vague']+tot['free'])/n,1))
-    comp=sum(1 for v in res.values() if v['complete']); print('recipes fully costed',comp,'of',len(res))
+    comp=sum(1 for v in res.values() if v['complete']); print('recipes fully costed',comp,'of',len(res),'| of which ingredient list looks short:',sum(1 for v in res.values() if v['complete'] and v['check_source']))
     print('review items',len(rv),dict(collections.Counter(x['status'] for x in rv)))
 if __name__=='__main__': main()

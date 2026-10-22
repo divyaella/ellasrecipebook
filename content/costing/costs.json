@@ -1,14 +1,15 @@
 {
  "10-minute-salsa": {
+  "check_source": false,
   "title": "10-Minute Salsa",
-  "serves": null,
+  "serves": 3.0,
   "total": 20.0,
   "lines": 9,
   "resolved": 9,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 7,
+  "for_two": 13,
   "detail": [
    {
     "raw": "2 medium tomatoes, seeds removed and cut into cubes",
@@ -89,15 +90,16 @@
   ]
  },
  "2-minute-protein-lava-cake": {
+  "check_source": false,
   "title": "2 Minute Protein Lava Cake",
   "serves": 1.0,
-  "total": 12.0,
+  "total": 25.0,
   "lines": 7,
-  "resolved": 2,
-  "unresolved": 5,
+  "resolved": 3,
+  "unresolved": 4,
   "complete": false,
-  "per_serve": 12,
-  "for_two": 24,
+  "per_serve": 25,
+  "for_two": 50,
   "detail": [
    {
     "raw": "1 scoop chocolate protein",
@@ -108,8 +110,12 @@
    {
     "raw": "1 banana",
     "name": "banana",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1.0,
+    "note": ""
    },
    {
     "raw": "1 egg",
@@ -152,15 +158,16 @@
   ]
  },
  "aam-shake": {
+  "check_source": false,
   "title": "Aam Shake",
-  "serves": null,
+  "serves": 3.0,
   "total": 36.0,
   "lines": 8,
   "resolved": 6,
   "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 12,
+  "for_two": 24,
   "detail": [
    {
     "raw": "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
@@ -173,7 +180,7 @@
     "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -206,7 +213,7 @@
     "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -231,15 +238,16 @@
   ]
  },
  "air-fried-crispy-chicken-with-lime-leaf-lemongrass-stir-fry-sauce": {
+  "check_source": false,
   "title": "Air-Fried Crispy Chicken with Lime Leaf & Lemongrass Stir Fry Sauce",
-  "serves": null,
+  "serves": 3.0,
   "total": 391.0,
   "lines": 5,
   "resolved": 4,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 130,
+  "for_two": 261,
   "detail": [
    {
     "raw": "450 grams chicken breast, cubed",
@@ -264,8 +272,10 @@
    {
     "raw": "2 tbsp @boombayway Lime leaf + Lemon grass Stir Fry sauce for the marinade",
     "name": "boombayway lime leaf",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "lime"
+    ]
    },
    {
     "raw": "1 tbsp @boombayway Five Chilli Oil",
@@ -287,15 +297,16 @@
   ]
  },
  "air-fryer-chicken-65": {
+  "check_source": false,
   "title": "Air Fryer Chicken “65”",
   "serves": 2.0,
-  "total": 418.0,
+  "total": 491.0,
   "lines": 21,
-  "resolved": 16,
-  "unresolved": 5,
-  "complete": false,
-  "per_serve": 209,
-  "for_two": 418,
+  "resolved": 21,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 246,
+  "for_two": 491,
   "detail": [
    {
     "raw": "450 grams chicken breasts, cut into cubes",
@@ -310,14 +321,22 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2-3 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 18.2,
+    "amount": 38.6,
+    "note": ""
    },
    {
     "raw": "2 springs curry leaves",
@@ -441,30 +460,43 @@
    {
     "raw": "1/2 tsp oil for basing the air fryer tray",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 0.74,
+    "cost": 0.47,
     "amount": 2.5,
     "note": ""
    },
    {
     "raw": "1 lemon",
     "name": "lemon",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Lemon",
+    "via": "exact",
+    "status": "ok",
+    "cost": 12.25,
+    "amount": 50.0,
+    "note": ""
    },
    {
     "raw": "1/4 cup greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 29.11,
+    "amount": 61.8,
+    "note": ""
    },
    {
     "raw": "2 tbsp green chutney",
     "name": "green chutney",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chutney",
+    "via": "exact",
+    "status": "ok",
+    "cost": 11.38,
+    "amount": 33.0,
+    "note": ""
    },
    {
     "raw": "1 tsp chaat masala",
@@ -479,15 +511,16 @@
   ]
  },
  "air-fryer-chicken-parmesan": {
+  "check_source": false,
   "title": "Air Fryer Chicken Parmesan",
-  "serves": null,
+  "serves": 2.0,
   "total": 562.0,
   "lines": 13,
   "resolved": 12,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 281,
+  "for_two": 562,
   "detail": [
    {
     "raw": "2 boneless, skinless chicken breasts",
@@ -610,15 +643,16 @@
   ]
  },
  "airfryer-chilli-chicken": {
+  "check_source": false,
   "title": "Airfryer Chilli Chicken",
   "serves": 3.0,
-  "total": 130.0,
+  "total": 139.0,
   "lines": 23,
-  "resolved": 19,
-  "unresolved": 4,
+  "resolved": 22,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 43,
-  "for_two": 87,
+  "per_serve": 46,
+  "for_two": 93,
   "detail": [
    {
     "raw": "450 grams chicken breast or thigh, cubed | use paneer for vegetarian option",
@@ -629,8 +663,12 @@
    {
     "raw": "1 tbsp minced ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "4-5 garlic cloves, minced",
@@ -651,8 +689,12 @@
    {
     "raw": "1 tbsp chilli vinegar",
     "name": "chilli vinegar",
-    "status": "missing",
-    "candidates": []
+    "item": "Chilli Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.15,
+    "amount": 15.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp soy sauce",
@@ -677,31 +719,34 @@
    {
     "raw": "1 tsp oil, for the airfryer",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
    {
     "raw": "1 tbsp minced ginger and garlic",
     "name": "ginger garlic",
-    "status": "ambiguous",
-    "candidates": [
-     "garlic",
-     "ginger"
-    ]
+    "item": "Ginger Garlic Paste",
+    "via": "auto",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies, split",
@@ -816,15 +861,16 @@
   ]
  },
  "alfajores": {
+  "check_source": false,
   "title": "Alfajores",
-  "serves": null,
+  "serves": 3.0,
   "total": 58.0,
   "lines": 5,
   "resolved": 5,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 19,
+  "for_two": 39,
   "detail": [
    {
     "raw": "90 grams maida",
@@ -873,15 +919,16 @@
   ]
  },
  "all-purpose-chicken-mince": {
+  "check_source": false,
   "title": "All-Purpose Chicken Mince",
-  "serves": null,
+  "serves": 3.0,
   "total": 281.0,
   "lines": 7,
   "resolved": 6,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 94,
+  "for_two": 187,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -954,23 +1001,25 @@
   ]
  },
  "aloo-capsicum-subzi": {
+  "check_source": false,
   "title": "Aloo Capsicum Subzi",
   "serves": 3.0,
-  "total": 48.0,
+  "total": 47.0,
   "lines": 10,
   "resolved": 10,
   "unresolved": 0,
   "complete": true,
   "per_serve": 16,
-  "for_two": 32,
+  "for_two": 31,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -1059,15 +1108,16 @@
   ]
  },
  "aloo-paratha-sunday": {
+  "check_source": false,
   "title": "Aloo Paratha Sunday",
-  "serves": null,
+  "serves": 4.0,
   "total": 51.0,
   "lines": 13,
-  "resolved": 12,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 13,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 13,
+  "for_two": 26,
   "detail": [
    {
     "raw": "4 potatoes, peeled and boiled then mashed once cool",
@@ -1112,8 +1162,12 @@
    {
     "raw": "1/2 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.45,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "1 tsp ground cumin",
@@ -1194,15 +1248,16 @@
   ]
  },
  "aloo-paratha": {
+  "check_source": false,
   "title": "Aloo Paratha",
-  "serves": null,
+  "serves": 3.0,
   "total": 35.0,
   "lines": 12,
-  "resolved": 11,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 12,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 12,
+  "for_two": 23,
   "detail": [
    {
     "raw": "4 -5 potatoes, peeled and boiled",
@@ -1247,8 +1302,12 @@
    {
     "raw": "1/2 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.45,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "1 tsp ground cumin",
@@ -1319,13 +1378,14 @@
   ]
  },
  "anda-bhurji": {
+  "check_source": false,
   "title": "Anda Bhurji",
   "serves": 2.0,
   "total": 71.0,
   "lines": 7,
-  "resolved": 6,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 36,
   "for_two": 71,
   "detail": [
@@ -1343,7 +1403,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -1352,18 +1412,23 @@
    {
     "raw": "1 tsp oil / butter",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
    {
     "raw": "1 tsp ginger garlic paste, optional",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1/2 onion, finely chopped",
@@ -1395,6 +1460,7 @@
   ]
  },
  "apple-cinnamon-chia-pudding": {
+  "check_source": false,
   "title": "Apple Cinnamon Chia Pudding",
   "serves": 2.0,
   "total": 49.0,
@@ -1419,7 +1485,7 @@
     "raw": "1 cup milk, plant based, regular, lactose free you choose :)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -1458,15 +1524,16 @@
   ]
  },
  "apple-pie-breakfast-quinoa": {
+  "check_source": false,
   "title": "Apple “Pie” Breakfast Quinoa",
   "serves": 2.0,
-  "total": 52.0,
+  "total": 66.0,
   "lines": 7,
-  "resolved": 5,
-  "unresolved": 2,
+  "resolved": 6,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 26,
-  "for_two": 52,
+  "per_serve": 33,
+  "for_two": 66,
   "detail": [
    {
     "raw": "2 apples",
@@ -1525,21 +1592,26 @@
    {
     "raw": "2 tbsp greek yogurt, for topping",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 14.56,
+    "amount": 30.9,
+    "note": ""
    }
   ]
  },
  "asian-fried-eggs": {
+  "check_source": false,
   "title": "Asian Fried Eggs",
   "serves": 1.0,
-  "total": 54.0,
+  "total": 55.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 54,
-  "for_two": 108,
+  "per_serve": 55,
+  "for_two": 110,
   "detail": [
    {
     "raw": "2 egg",
@@ -1594,8 +1666,12 @@
    {
     "raw": "1 tsp chilli vinegar, i used chings, normal works great too",
     "name": "chilli vinegar",
-    "status": "missing",
-    "candidates": []
+    "item": "Chilli Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.38,
+    "amount": 5.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp dark soy sauce",
@@ -1639,23 +1715,25 @@
   ]
  },
  "asian-greens-chicken-stir-fry": {
+  "check_source": false,
   "title": "Asian Greens Chicken Stir Fry",
   "serves": 3.0,
-  "total": 812.0,
+  "total": 811.0,
   "lines": 12,
   "resolved": 10,
   "unresolved": 2,
   "complete": false,
-  "per_serve": 271,
+  "per_serve": 270,
   "for_two": 541,
   "detail": [
    {
     "raw": "1 tsp oil, sesame gives some great flavour",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -1682,11 +1760,11 @@
    {
     "raw": "1 tsp ginger paste",
     "name": "ginger paste",
-    "item": "Ginger",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 1.03,
-    "amount": 2.8,
+    "cost": 0.91,
+    "amount": 5.5,
     "note": ""
    },
    {
@@ -1712,8 +1790,12 @@
    {
     "raw": "2 bunches of bok choy",
     "name": "bunches bok choy",
-    "status": "missing",
-    "candidates": []
+    "item": "Bok Choy",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 2.0,
+    "unit": null
    },
    {
     "raw": "2 tbsp soy sauce",
@@ -1761,15 +1843,16 @@
   ]
  },
  "asian-inspired-fried-eggs": {
+  "check_source": false,
   "title": "Asian Inspired Fried Eggs",
   "serves": 1.0,
-  "total": 63.0,
+  "total": 64.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 63,
-  "for_two": 126,
+  "per_serve": 64,
+  "for_two": 128,
   "detail": [
    {
     "raw": "2 egg",
@@ -1824,8 +1907,12 @@
    {
     "raw": "1 tsp chilli vinegar, i used chings, normal works great too",
     "name": "chilli vinegar",
-    "status": "missing",
-    "candidates": []
+    "item": "Chilli Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.38,
+    "amount": 5.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp soy sauce, i prefer light but dark works well too and lends a stronger flavour so choose which you prefer",
@@ -1869,15 +1956,16 @@
   ]
  },
  "asian-inspired-smashed-eggs": {
+  "check_source": false,
   "title": "Asian Inspired Smashed Eggs",
   "serves": 1.0,
-  "total": 32.0,
+  "total": 36.0,
   "lines": 6,
-  "resolved": 3,
-  "unresolved": 3,
+  "resolved": 4,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 32,
-  "for_two": 64,
+  "per_serve": 36,
+  "for_two": 72,
   "detail": [
    {
     "raw": "2 eggs, softboiled - thats 6 minutes then dunk in ice water for 1 -2 minutes before peeling",
@@ -1892,8 +1980,12 @@
    {
     "raw": "1 1/2 tsp greek yogurt / mayo",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.64,
+    "amount": 7.7,
+    "note": ""
    },
    {
     "raw": "1 tsp chilli oil",
@@ -1916,8 +2008,12 @@
    {
     "raw": "3-4 birds eye chilli, dont have then use green chillies ( adjust as per taste)",
     "name": "birds eye chilli",
-    "status": "missing",
-    "candidates": []
+    "item": "Bird's Eye Chilli",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 3.5,
+    "unit": null
    },
    {
     "raw": "salt + pepper to taste",
@@ -1928,15 +2024,16 @@
   ]
  },
  "asian-style-oats": {
+  "check_source": false,
   "title": "Asian Style Oats",
   "serves": 1.0,
-  "total": 88.0,
+  "total": 30.0,
   "lines": 9,
-  "resolved": 9,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 88,
-  "for_two": 176,
+  "resolved": 8,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 30,
+  "for_two": 60,
   "detail": [
    {
     "raw": "1/4 tsp chilli oil",
@@ -2011,12 +2108,11 @@
    {
     "raw": "1 1/2 cups vegetable",
     "name": "vegetable",
-    "item": "Mixed Vegetables",
-    "via": "auto",
-    "status": "ok",
-    "cost": 58.32,
-    "amount": 216.0,
-    "note": "density-guess"
+    "status": "ambiguous",
+    "candidates": [
+     "mixed vegetables",
+     "vegetable stock (cube / powder)"
+    ]
    },
    {
     "raw": "but you will need to add in some salt + pepper",
@@ -2028,15 +2124,16 @@
   ]
  },
  "asian-tadka-cucumber-salad": {
+  "check_source": false,
   "title": "Asian Tadka Cucumber Salad",
-  "serves": null,
+  "serves": 3.0,
   "total": 48.0,
   "lines": 7,
   "resolved": 7,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 16,
+  "for_two": 32,
   "detail": [
    {
     "raw": "6 cloves garlic, minced",
@@ -2111,6 +2208,7 @@
   ]
  },
  "avocado-egg-toast": {
+  "check_source": true,
   "title": "Avocado Egg Toast",
   "serves": 2.0,
   "total": 132.0,
@@ -2161,6 +2259,7 @@
   ]
  },
  "basic-masala-omelette": {
+  "check_source": false,
   "title": "Basic Masala Omelette",
   "serves": 2.0,
   "total": 62.0,
@@ -2192,7 +2291,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -2237,15 +2336,16 @@
   ]
  },
  "basil-chicken-mince-pad-krapow": {
+  "check_source": false,
   "title": "Basil Chicken Mince | Pad Krapow",
   "serves": 3.0,
-  "total": 573.0,
+  "total": 577.0,
   "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 191,
-  "for_two": 382,
+  "per_serve": 192,
+  "for_two": 385,
   "detail": [
    {
     "raw": "450 grams chicken mince",
@@ -2290,8 +2390,12 @@
    {
     "raw": "4-5 birds eye chilli, chopped ( adjust as per your personal spice level )",
     "name": "birds eye chilli",
-    "status": "missing",
-    "candidates": []
+    "item": "Bird's Eye Chilli",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 4.5,
+    "unit": null
    },
    {
     "raw": "1 green capsicum, small cubes",
@@ -2352,8 +2456,12 @@
    {
     "raw": "1 tbsp vegetable stock powder ( use 1/4 cup water if you dont have)",
     "name": "vegetable stock powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 3.75,
+    "amount": 15.0,
+    "note": ""
    },
    {
     "raw": "large handful of basil leaves",
@@ -2368,6 +2476,7 @@
   ]
  },
  "beetroot-subzi": {
+  "check_source": false,
   "title": "Beetroot Subzi",
   "serves": 3.0,
   "total": 37.0,
@@ -2525,6 +2634,7 @@
   ]
  },
  "best-ever-scrambled-eggs": {
+  "check_source": true,
   "title": "Best-Ever Scrambled Eggs",
   "serves": 1.0,
   "total": 40.0,
@@ -2559,7 +2669,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -2568,15 +2678,16 @@
   ]
  },
  "better-than-any-restaurant-s-tomato-bruschetta": {
+  "check_source": false,
   "title": "Better Than Any Restaurant's, Tomato Bruschetta",
-  "serves": null,
+  "serves": 3.0,
   "total": 131.0,
   "lines": 6,
   "resolved": 5,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 44,
+  "for_two": 87,
   "detail": [
    {
     "raw": "2 tbsp extra virgin olive oil",
@@ -2637,15 +2748,16 @@
   ]
  },
  "better-than-mcd-peri-peri-chicken-burger": {
+  "check_source": false,
   "title": "Better Than McD Peri Peri Chicken Burger",
   "serves": 2.0,
-  "total": 425.0,
+  "total": 483.0,
   "lines": 16,
-  "resolved": 12,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 212,
-  "for_two": 425,
+  "per_serve": 242,
+  "for_two": 483,
   "detail": [
    {
     "raw": "2 chicken breast, pounded",
@@ -2712,8 +2824,12 @@
    {
     "raw": "1/2 cup greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 58.23,
+    "amount": 123.6,
+    "note": ""
    },
    {
     "raw": "1 tsp black pepper",
@@ -2776,15 +2892,16 @@
   ]
  },
  "bhindi-masala": {
+  "check_source": false,
   "title": "Bhindi Masala",
-  "serves": null,
-  "total": 49.0,
+  "serves": 3.0,
+  "total": 50.0,
   "lines": 14,
-  "resolved": 12,
-  "unresolved": 2,
+  "resolved": 13,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 17,
+  "for_two": 33,
   "detail": [
    {
     "raw": "1.5 tbsp oil to fry the bhindi",
@@ -2825,8 +2942,12 @@
    {
     "raw": "1 tsp ginger-garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies, finely chopped",
@@ -2914,15 +3035,16 @@
   ]
  },
  "bokchoy-soup": {
+  "check_source": false,
   "title": "Bokchoy Soup",
   "serves": 3.0,
-  "total": 48.0,
+  "total": 433.0,
   "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 16,
-  "for_two": 32,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 144,
+  "for_two": 289,
   "detail": [
    {
     "raw": "1 tbsp sesame oil",
@@ -2967,14 +3089,22 @@
    {
     "raw": "3 1/2 cups vegetable stock",
     "name": "vegetable stock",
-    "status": "missing",
-    "candidates": []
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 210.0,
+    "amount": 840.0,
+    "note": ""
    },
    {
     "raw": "500 grams bokchoy, chopped",
     "name": "bokchoy",
-    "status": "missing",
-    "candidates": []
+    "item": "Bok Choy",
+    "via": "fuzzy",
+    "status": "ok",
+    "cost": 175.0,
+    "amount": 500.0,
+    "note": ""
    },
    {
     "raw": "1 tsp black pepper",
@@ -2991,6 +3121,7 @@
   ]
  },
  "bounty-overnight-oats": {
+  "check_source": false,
   "title": "Bounty Overnight Oats",
   "serves": 1.0,
   "total": 50.0,
@@ -3075,7 +3206,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -3098,27 +3229,36 @@
   ]
  },
  "breakfast-banana-split": {
+  "check_source": false,
   "title": "Breakfast Banana Split",
   "serves": 1.0,
-  "total": 21.0,
+  "total": 53.0,
   "lines": 5,
-  "resolved": 2,
-  "unresolved": 3,
+  "resolved": 4,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 21,
-  "for_two": 42,
+  "per_serve": 53,
+  "for_two": 106,
   "detail": [
    {
     "raw": "1 banana",
     "name": "banana",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1.0,
+    "note": ""
    },
    {
     "raw": "40 grams greek yogurt epigamia",
     "name": "greek yogurt epigamia",
-    "status": "missing",
-    "candidates": []
+    "item": "Greek Yogurt",
+    "via": "auto",
+    "status": "ok",
+    "cost": 18.84,
+    "amount": 40.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp peanut butter",
@@ -3153,15 +3293,16 @@
   ]
  },
  "breakfast-egg-salad-burritos": {
+  "check_source": false,
   "title": "Breakfast Egg Salad Burritos",
   "serves": 2.0,
-  "total": 108.0,
+  "total": 190.0,
   "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 54,
-  "for_two": 108,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 95,
+  "for_two": 190,
   "detail": [
    {
     "raw": "5 eggs",
@@ -3176,8 +3317,12 @@
    {
     "raw": "3 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 21.84,
+    "amount": 46.4,
+    "note": ""
    },
    {
     "raw": "1 onion, finely chopped",
@@ -3228,21 +3373,26 @@
    {
     "raw": "2 tortilla wraps , use a higher protein one or whole wheat or multigrain basis your nutrition needs, even a roti works well :)",
     "name": "tortilla wraps",
-    "status": "missing",
-    "candidates": []
+    "item": "Roti / Tortilla Wraps (cooked)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 60.0,
+    "amount": 90.0,
+    "note": ""
    }
   ]
  },
  "breakfast-goals-iced-americano-x-anda-bhurji-with-mini-pav": {
+  "check_source": false,
   "title": "Breakfast Goals: Iced Americano x Anda Bhurji with Mini Pav",
-  "serves": null,
+  "serves": 3.0,
   "total": 75.0,
   "lines": 10,
   "resolved": 9,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 25,
+  "for_two": 50,
   "detail": [
    {
     "raw": "5 eggs",
@@ -3335,15 +3485,16 @@
   ]
  },
  "brioche-hot-dog-buns": {
+  "check_source": false,
   "title": "Brioche Hot Dog Buns",
-  "serves": null,
+  "serves": 3.0,
   "total": 93.0,
   "lines": 7,
   "resolved": 7,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 31,
+  "for_two": 62,
   "detail": [
    {
     "raw": "350 grams maida",
@@ -3395,7 +3546,7 @@
     "raw": "110 ml milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.38,
     "amount": 110.0,
@@ -3414,6 +3565,7 @@
   ]
  },
  "brown-butter-chocolate-chip-cookies": {
+  "check_source": false,
   "title": "Brown Butter Chocolate Chip Cookies",
   "serves": 10.0,
   "total": 415.0,
@@ -3524,15 +3676,16 @@
   ]
  },
  "brownie-cookie": {
+  "check_source": false,
   "title": "Brownie Cookie",
-  "serves": null,
-  "total": 186.0,
+  "serves": 3.0,
+  "total": 193.0,
   "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 64,
+  "for_two": 129,
   "detail": [
    {
     "raw": "50 grams butter",
@@ -3567,8 +3720,12 @@
    {
     "raw": "1/2 tsp coffee powder",
     "name": "coffee powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Instant Coffee Powder",
+    "via": "auto",
+    "status": "ok",
+    "cost": 7.0,
+    "amount": 1.5,
+    "note": "density-guess"
    },
    {
     "raw": "1 whole egg",
@@ -3599,8 +3756,9 @@
    {
     "raw": "2 tsp canola oil",
     "name": "canola oil",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
     "item": "Sunflower Oil",
-    "via": "exact",
+    "via": "alias",
     "status": "ok",
     "cost": 1.9,
     "amount": 10.0,
@@ -3652,15 +3810,16 @@
   ]
  },
  "butter-chicken": {
+  "check_source": false,
   "title": "Butter Chicken",
   "serves": 3.0,
-  "total": 476.0,
+  "total": 485.0,
   "lines": 20,
-  "resolved": 16,
-  "unresolved": 4,
+  "resolved": 18,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 159,
-  "for_two": 317,
+  "per_serve": 162,
+  "for_two": 323,
   "detail": [
    {
     "raw": "6 garlic cloves | 3 cardamom pods, green| 2 whole peppercorn | 3 cloves |6 kashmiri red chilli, dried",
@@ -3673,16 +3832,21 @@
    {
     "raw": "1/2 tsp cinnamon powder ( optional )",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 1.4,
+    "note": ""
    },
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -3735,9 +3899,11 @@
    },
    {
     "raw": "1 heaping tbsp on kasturi methi",
-    "name": "heaping tbsp on kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "name": "on kasturi methi",
+    "status": "suggest",
+    "candidates": [
+     "kasuri methi"
+    ]
    },
    {
     "raw": "salt, to taste as per your preferece",
@@ -3765,8 +3931,12 @@
    {
     "raw": "2 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.45,
+    "amount": 33.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp red chilli powder",
@@ -3837,6 +4007,7 @@
   ]
  },
  "cabbage-subzi": {
+  "check_source": false,
   "title": "Cabbage Subzi",
   "serves": 4.0,
   "total": 57.0,
@@ -3946,15 +4117,16 @@
   ]
  },
  "cajun-chicken-pita-pocket-with-a-cucumber-salad-coriander-dressing": {
+  "check_source": false,
   "title": "Cajun Chicken Pita Pocket with a Cucumber Salad & Coriander Dressing",
   "serves": 3.0,
-  "total": 459.0,
+  "total": 516.0,
   "lines": 24,
-  "resolved": 17,
-  "unresolved": 7,
+  "resolved": 22,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 153,
-  "for_two": 306,
+  "per_serve": 172,
+  "for_two": 344,
   "detail": [
    {
     "raw": "450 grams chicken breast",
@@ -3986,8 +4158,12 @@
    {
     "raw": "1 - 2 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 10.92,
+    "amount": 23.2,
+    "note": ""
    },
    {
     "raw": "salt + pepper to taste",
@@ -3998,14 +4174,22 @@
    {
     "raw": "1 tsp peri peri masala",
     "name": "peri peri masala",
-    "status": "missing",
-    "candidates": []
+    "item": "Peri Peri Masala",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.01,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "1/2 lemon, juiced",
     "name": "lemon",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Lemon",
+    "via": "exact",
+    "status": "ok",
+    "cost": 6.12,
+    "amount": 25.0,
+    "note": ""
    },
    {
     "raw": "1 tsp olive oil",
@@ -4067,8 +4251,12 @@
    {
     "raw": "1 lemon juice",
     "name": "lemon juice",
-    "status": "missing",
-    "candidates": []
+    "item": "Lemon",
+    "via": "auto",
+    "status": "ok",
+    "cost": 12.25,
+    "amount": 50.0,
+    "note": ""
    },
    {
     "raw": "handful chopped coriander",
@@ -4096,14 +4284,20 @@
    {
     "raw": "3 - 4 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 25.48,
+    "amount": 54.1,
+    "note": ""
    },
    {
     "raw": "1 lemon’s juice",
     "name": "lemon s juice",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "lemon"
+    ]
    },
    {
     "raw": "coriander leaves",
@@ -4147,15 +4341,16 @@
   ]
  },
  "carrot-cake-overnight-oats": {
+  "check_source": false,
   "title": "Carrot Cake Overnight Oats",
   "serves": 1.0,
-  "total": 39.0,
+  "total": 49.0,
   "lines": 11,
-  "resolved": 8,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 39,
-  "for_two": 78,
+  "per_serve": 49,
+  "for_two": 98,
   "detail": [
    {
     "raw": "30 grams oats",
@@ -4181,7 +4376,7 @@
     "raw": "1 cup milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -4200,8 +4395,12 @@
    {
     "raw": "1 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 7.28,
+    "amount": 15.5,
+    "note": ""
    },
    {
     "raw": "1 tbsp raisins",
@@ -4215,8 +4414,12 @@
    {
     "raw": "1/2 tsp cinnamon powder",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 1.4,
+    "note": ""
    },
    {
     "raw": "1/4 tsp nutmeg powder",
@@ -4254,15 +4457,16 @@
   ]
  },
  "cheats-green-thai-curry": {
+  "check_source": false,
   "title": "Cheat’s Green Thai Curry",
-  "serves": null,
+  "serves": 3.0,
   "total": 578.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 193,
+  "for_two": 385,
   "detail": [
    {
     "raw": "5 cloves of garlic, chopped",
@@ -4343,6 +4547,7 @@
   ]
  },
  "cheddar-jalapeno-meatballs": {
+  "check_source": false,
   "title": "Cheddar Jalapeño Meatballs",
   "serves": 2.0,
   "total": 372.0,
@@ -4424,15 +4629,16 @@
   ]
  },
  "cherry-tomato-pasta": {
+  "check_source": false,
   "title": "Cherry Tomato Pasta",
   "serves": 2.0,
-  "total": 89.0,
+  "total": 60.0,
   "lines": 9,
   "resolved": 8,
   "unresolved": 1,
   "complete": false,
-  "per_serve": 44,
-  "for_two": 89,
+  "per_serve": 30,
+  "for_two": 60,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -4460,8 +4666,8 @@
     "item": "Cherry Tomato",
     "via": "auto",
     "status": "ok",
-    "cost": 34.5,
-    "amount": 100.0,
+    "cost": 5.17,
+    "amount": 15.0,
     "note": ""
    },
    {
@@ -4511,15 +4717,16 @@
   ]
  },
  "cherry-tomato-spinach-scrambled-eggs": {
+  "check_source": false,
   "title": "Cherry Tomato & Spinach Scrambled Eggs",
   "serves": 1.0,
-  "total": 275.0,
+  "total": 99.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 275,
-  "for_two": 550,
+  "per_serve": 99,
+  "for_two": 198,
   "detail": [
    {
     "raw": "2 sprays of olive oil",
@@ -4547,8 +4754,8 @@
     "item": "Cherry Tomato",
     "via": "exact",
     "status": "ok",
-    "cost": 207.0,
-    "amount": 600.0,
+    "cost": 31.05,
+    "amount": 90.0,
     "note": ""
    },
    {
@@ -4575,7 +4782,7 @@
     "raw": "1 tbsp milk ( optional )",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -4601,15 +4808,16 @@
   ]
  },
  "chicken-caesar-meatballs": {
+  "check_source": false,
   "title": "Chicken Caesar Meatballs",
   "serves": 12.0,
-  "total": 623.0,
+  "total": 741.0,
   "lines": 21,
-  "resolved": 20,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 52,
-  "for_two": 104,
+  "resolved": 21,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 62,
+  "for_two": 124,
   "detail": [
    {
     "raw": "450 g chicken mince",
@@ -4696,8 +4904,12 @@
    {
     "raw": "250 g Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 117.78,
+    "amount": 250.0,
+    "note": ""
    },
    {
     "raw": "20 g grated Parmesan",
@@ -4792,15 +5004,16 @@
   ]
  },
  "chicken-caesar-pasta-salad": {
+  "check_source": false,
   "title": "Chicken Caesar Pasta Salad",
   "serves": 2.0,
-  "total": 507.0,
+  "total": 623.0,
   "lines": 12,
-  "resolved": 10,
-  "unresolved": 2,
+  "resolved": 11,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 254,
-  "for_two": 507,
+  "per_serve": 312,
+  "for_two": 623,
   "detail": [
    {
     "raw": "2 chicken breast, slightly pounded,salt and pepper & cajun seasoning",
@@ -4849,8 +5062,12 @@
    {
     "raw": "1 cup greek yogurt / 160 grams ish",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 116.46,
+    "amount": 247.2,
+    "note": ""
    },
    {
     "raw": "3-4 garlic cloves, minced",
@@ -4900,15 +5117,16 @@
   ]
  },
  "chicken-chapli-kebab": {
+  "check_source": false,
   "title": "Chicken Chapli Kebab",
-  "serves": null,
-  "total": 368.0,
+  "serves": 4.0,
+  "total": 371.0,
   "lines": 14,
-  "resolved": 13,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 14,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 93,
+  "for_two": 186,
   "detail": [
    {
     "raw": "450 grams Chicken mince (",
@@ -5009,8 +5227,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies, chopped",
@@ -5041,15 +5263,16 @@
   ]
  },
  "chicken-curry": {
+  "check_source": false,
   "title": "Chicken Curry",
   "serves": 3.0,
-  "total": 299.0,
+  "total": 303.0,
   "lines": 19,
-  "resolved": 15,
-  "unresolved": 4,
+  "resolved": 17,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 100,
-  "for_two": 199,
+  "per_serve": 101,
+  "for_two": 202,
   "detail": [
    {
     "raw": "500 grams curry cut chicken or use boneless thighs",
@@ -5094,8 +5317,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tbsp ghee",
@@ -5110,10 +5337,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -5212,8 +5440,12 @@
    {
     "raw": "1 tsp kasturi methi",
     "name": "kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "fuzzy",
+    "status": "ok",
+    "cost": 1.54,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "coriander, sliced ginger and green chilli",
@@ -5225,15 +5457,16 @@
   ]
  },
  "chicken-dan-dan-noodles": {
+  "check_source": false,
   "title": "Chicken Dan Dan Noodles",
   "serves": 3.0,
-  "total": 482.0,
+  "total": 479.0,
   "lines": 19,
-  "resolved": 19,
-  "unresolved": 0,
-  "complete": true,
-  "per_serve": 161,
-  "for_two": 321,
+  "resolved": 18,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 160,
+  "for_two": 319,
   "detail": [
    {
     "raw": "180 grams noodles, uncooked ( serving would be 60 grams per serving- this is a large serving )",
@@ -5372,12 +5605,11 @@
    {
     "raw": "1 tbsp vegetable / canola oil",
     "name": "vegetable",
-    "item": "Mixed Vegetables",
-    "via": "auto",
-    "status": "ok",
-    "cost": 2.43,
-    "amount": 9.0,
-    "note": "density-guess"
+    "status": "ambiguous",
+    "candidates": [
+     "mixed vegetables",
+     "vegetable stock (cube / powder)"
+    ]
    },
    {
     "raw": "1 tbsp dark soy",
@@ -5422,15 +5654,16 @@
   ]
  },
  "chicken-kheema-pulao": {
+  "check_source": false,
   "title": "Chicken Kheema “Pulao”",
   "serves": 3.0,
-  "total": 399.0,
+  "total": 401.0,
   "lines": 17,
-  "resolved": 15,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 133,
-  "for_two": 266,
+  "resolved": 17,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 134,
+  "for_two": 267,
   "detail": [
    {
     "raw": "450 grams chicken mince",
@@ -5445,8 +5678,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 tsp haldi powder",
@@ -5501,10 +5738,11 @@
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -5527,8 +5765,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -5593,21 +5835,26 @@
   ]
  },
  "chicken-sausage-maggi": {
+  "check_source": false,
   "title": "Chicken Sausage Maggi",
   "serves": 2.0,
-  "total": 31.0,
+  "total": 169.0,
   "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 16,
-  "for_two": 31,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 84,
+  "for_two": 169,
   "detail": [
    {
     "raw": "3 bundles of maggi noodles",
     "name": "bundles maggi noodles",
-    "status": "missing",
-    "candidates": []
+    "item": "Maggi Noodles",
+    "via": "auto",
+    "status": "ok",
+    "cost": 40.0,
+    "amount": 210.0,
+    "note": ""
    },
    {
     "raw": "1 tsp olive oil",
@@ -5652,8 +5899,12 @@
    {
     "raw": "150 grams chicken sausage",
     "name": "chicken sausage",
-    "status": "missing",
-    "candidates": []
+    "item": "Chicken Sausage",
+    "via": "exact",
+    "status": "ok",
+    "cost": 98.4,
+    "amount": 150.0,
+    "note": ""
    },
    {
     "raw": "reserve water from cooking the maggi",
@@ -5672,6 +5923,7 @@
   ]
  },
  "chicken-sausage-muffin": {
+  "check_source": false,
   "title": "Chicken Sausage Muffin",
   "serves": 4.0,
   "total": 395.0,
@@ -5794,15 +6046,16 @@
   ]
  },
  "chicken-steak-in-creamy-mushroom-sauce": {
+  "check_source": false,
   "title": "Chicken Steak in Creamy Mushroom Sauce",
   "serves": 3.0,
-  "total": 512.0,
+  "total": 569.0,
   "lines": 21,
-  "resolved": 20,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 171,
-  "for_two": 341,
+  "resolved": 21,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 190,
+  "for_two": 379,
   "detail": [
    {
     "raw": "Chicken Steak",
@@ -5967,8 +6220,12 @@
    {
     "raw": "120g Greek yogurt - room temp - take it out 30 minutes before you start cooking",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 56.53,
+    "amount": 120.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp cornflour",
@@ -5996,15 +6253,16 @@
   ]
  },
  "chickpea-tuna": {
+  "check_source": false,
   "title": "Chickpea “Tuna”",
   "serves": 2.0,
-  "total": 36.0,
+  "total": 71.0,
   "lines": 7,
-  "resolved": 3,
-  "unresolved": 4,
+  "resolved": 5,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 18,
-  "for_two": 36,
+  "per_serve": 36,
+  "for_two": 71,
   "detail": [
    {
     "raw": "100 grams chickpeas soaked overnight then pressure cookered for 30 minuts till super soft",
@@ -6047,14 +6305,22 @@
    {
     "raw": "1/4 cup Greek yogurt + more if needed for a creamier texture",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 29.11,
+    "amount": 61.8,
+    "note": ""
    },
    {
     "raw": "1 tbsp maggi hot and sweet sauce",
     "name": "maggi hot sweet sauce",
-    "status": "missing",
-    "candidates": []
+    "item": "Maggi Hot & Sweet Sauce",
+    "via": "exact",
+    "status": "ok",
+    "cost": 6.0,
+    "amount": 15.0,
+    "note": ""
    },
    {
     "raw": "Salt + pepper",
@@ -6066,6 +6332,7 @@
   ]
  },
  "chilli-cheese-fried-eggs": {
+  "check_source": false,
   "title": "Chilli Cheese Fried Eggs",
   "serves": 1.0,
   "total": 38.0,
@@ -6135,6 +6402,7 @@
   ]
  },
  "chilli-cheese-hot-dog": {
+  "check_source": false,
   "title": "Chilli Cheese Hot Dog",
   "serves": 4.0,
   "total": 425.0,
@@ -6253,6 +6521,7 @@
   ]
  },
  "chilli-cheese-omlette": {
+  "check_source": false,
   "title": "Chilli Cheese Omlette",
   "serves": 1.0,
   "total": 55.0,
@@ -6284,7 +6553,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -6339,6 +6608,7 @@
   ]
  },
  "chilli-cheese-paniyaram": {
+  "check_source": true,
   "title": "Chilli Cheese Paniyaram",
   "serves": 1.0,
   "total": 16.0,
@@ -6384,6 +6654,7 @@
   ]
  },
  "chilli-oil-anda-bhurji": {
+  "check_source": false,
   "title": "Chilli Oil Anda Bhurji",
   "serves": 1.0,
   "total": 48.0,
@@ -6479,6 +6750,7 @@
   ]
  },
  "chilli-oil-lettuce-wrap-burger": {
+  "check_source": false,
   "title": "Chilli Oil Lettuce Wrap Burger",
   "serves": 3.0,
   "total": 407.0,
@@ -6594,15 +6866,16 @@
   ]
  },
  "chilli-oil-mushroom-nooodles": {
+  "check_source": false,
   "title": "Chilli Oil Mushroom Nooodles",
   "serves": 2.0,
-  "total": 258.0,
+  "total": 259.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 129,
-  "for_two": 258,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 130,
+  "for_two": 259,
   "detail": [
    {
     "raw": "1/2 tsp chilli oil (only oil)",
@@ -6627,8 +6900,12 @@
    {
     "raw": "1/2 tsp garlic ginger paste",
     "name": "garlic ginger paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.45,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "1 onion, sliced",
@@ -6693,15 +6970,16 @@
   ]
  },
  "chilli-paste": {
+  "check_source": false,
   "title": "Chilli Paste",
-  "serves": null,
-  "total": 50.0,
+  "serves": 3.0,
+  "total": 62.0,
   "lines": 18,
-  "resolved": 16,
-  "unresolved": 2,
+  "resolved": 17,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 21,
+  "for_two": 41,
   "detail": [
    {
     "raw": "6 cloves of garlic",
@@ -6736,10 +7014,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -6818,10 +7097,11 @@
    {
     "raw": "1 tsp oil for sauteeing the pav",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -6851,8 +7131,12 @@
    {
     "raw": "1 lemon, to finish",
     "name": "lemon",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Lemon",
+    "via": "exact",
+    "status": "ok",
+    "cost": 12.25,
+    "amount": 50.0,
+    "note": ""
    },
    {
     "raw": "1 - 2 tbsp of hung curd whipped to cut the spice and masalas :)",
@@ -6866,15 +7150,16 @@
   ]
  },
  "chocolate-chip-banana-bread": {
+  "check_source": true,
   "title": "Chocolate Chip Banana Bread",
-  "serves": null,
+  "serves": 3.0,
   "total": 29.0,
   "lines": 4,
   "resolved": 4,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 10,
+  "for_two": 19,
   "detail": [
    {
     "raw": "Dry",
@@ -6916,6 +7201,7 @@
   ]
  },
  "chocolate-chip-banana-cake": {
+  "check_source": true,
   "title": "Chocolate Chip Banana Cake",
   "serves": 2.0,
   "total": 29.0,
@@ -6966,15 +7252,16 @@
   ]
  },
  "chocolate-protein-pancakes": {
+  "check_source": false,
   "title": "Chocolate Protein Pancakes",
   "serves": 4.0,
-  "total": 41.0,
+  "total": 54.0,
   "lines": 6,
-  "resolved": 4,
-  "unresolved": 2,
+  "resolved": 5,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 10,
-  "for_two": 20,
+  "per_serve": 14,
+  "for_two": 27,
   "detail": [
    {
     "raw": "2 eggs",
@@ -6989,8 +7276,12 @@
    {
     "raw": "1 bananas",
     "name": "bananas",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1.0,
+    "note": ""
    },
    {
     "raw": "1/4 cup oats",
@@ -7031,6 +7322,7 @@
   ]
  },
  "chocolate-souffle": {
+  "check_source": false,
   "title": "Chocolate Soufflé",
   "serves": 3.0,
   "total": 136.0,
@@ -7045,7 +7337,7 @@
     "raw": "57 ml milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 3.31,
     "amount": 57.0,
@@ -7135,15 +7427,16 @@
   ]
  },
  "chole-masala": {
+  "check_source": false,
   "title": "Chole Masala",
   "serves": 4.0,
-  "total": 83.0,
+  "total": 150.0,
   "lines": 23,
-  "resolved": 18,
-  "unresolved": 5,
+  "resolved": 20,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 21,
-  "for_two": 42,
+  "per_serve": 38,
+  "for_two": 75,
   "detail": [
    {
     "raw": "1 cup chickpeas, uncooked, around 190 grams",
@@ -7158,8 +7451,12 @@
    {
     "raw": "1 cup black tea brewed",
     "name": "black tea brewed",
-    "status": "missing",
-    "candidates": []
+    "item": "Black Tea",
+    "via": "auto",
+    "status": "ok",
+    "cost": 64.8,
+    "amount": 144.0,
+    "note": "density-guess"
    },
    {
     "raw": "2 cups water, to pressure cook",
@@ -7256,10 +7553,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -7276,8 +7574,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 tomatoes",
@@ -7348,15 +7650,16 @@
   ]
  },
  "classic-chicken-caesar-salad": {
+  "check_source": false,
   "title": "Classic Chicken Caesar Salad",
   "serves": 3.0,
-  "total": 497.0,
+  "total": 615.0,
   "lines": 19,
-  "resolved": 17,
-  "unresolved": 2,
+  "resolved": 18,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 166,
-  "for_two": 331,
+  "per_serve": 205,
+  "for_two": 410,
   "detail": [
    {
     "raw": "450g chicken breast, cubed",
@@ -7443,8 +7746,12 @@
    {
     "raw": "250g Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 117.78,
+    "amount": 250.0,
+    "note": ""
    },
    {
     "raw": "20g finely grated Parmesan",
@@ -7525,6 +7832,7 @@
   ]
  },
  "classic-chilli-cheese-toast": {
+  "check_source": false,
   "title": "Classic Chilli Cheese Toast",
   "serves": 2.0,
   "total": 34.0,
@@ -7579,7 +7887,7 @@
     "raw": "1-2 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 1.31,
     "amount": 22.5,
@@ -7605,21 +7913,26 @@
   ]
  },
  "coffee-hazelnut-biscotti": {
+  "check_source": false,
   "title": "Coffee Hazelnut Biscotti",
-  "serves": null,
-  "total": 269.0,
+  "serves": 3.0,
+  "total": 311.0,
   "lines": 14,
-  "resolved": 13,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 14,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 104,
+  "for_two": 207,
   "detail": [
    {
     "raw": "1 tbsp coffee powder",
     "name": "coffee powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Instant Coffee Powder",
+    "via": "auto",
+    "status": "ok",
+    "cost": 42.0,
+    "amount": 9.0,
+    "note": "density-guess"
    },
    {
     "raw": "28 ml hot water - allow to cool",
@@ -7631,7 +7944,7 @@
     "raw": "2 tsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.58,
     "amount": 10.0,
@@ -7746,15 +8059,16 @@
   ]
  },
  "continental-meatballs": {
+  "check_source": false,
   "title": "Continental Meatballs",
   "serves": 3.0,
-  "total": 402.0,
+  "total": 401.0,
   "lines": 10,
   "resolved": 10,
   "unresolved": 0,
   "complete": true,
   "per_serve": 134,
-  "for_two": 268,
+  "for_two": 267,
   "detail": [
    {
     "raw": "450 grams chicken mince",
@@ -7769,11 +8083,11 @@
    {
     "raw": "1 tbsp garlic paste",
     "name": "garlic paste",
-    "item": "Garlic",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 2.85,
-    "amount": 8.2,
+    "cost": 2.72,
+    "amount": 16.5,
     "note": ""
    },
    {
@@ -7841,25 +8155,27 @@
    {
     "raw": "1 tsp oil / not needed also if you want to cut the fat!",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    }
   ]
  },
  "cookie-dough-1": {
+  "check_source": false,
   "title": "Cookie Dough #1",
-  "serves": null,
-  "total": 209.0,
+  "serves": 3.0,
+  "total": 217.0,
   "lines": 12,
-  "resolved": 10,
-  "unresolved": 2,
+  "resolved": 11,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 72,
+  "for_two": 145,
   "detail": [
    {
     "raw": "57 grams butter, softened",
@@ -7956,8 +8272,12 @@
    {
     "raw": "25 grams crushed biscuits",
     "name": "biscuits",
-    "status": "missing",
-    "candidates": []
+    "item": "Oreo Biscuits",
+    "via": "auto",
+    "status": "ok",
+    "cost": 7.58,
+    "amount": 25.0,
+    "note": ""
    },
    {
     "raw": "i used 75 grams of hersheys creamy milk chocolate and 25 grams of @callebautindia chips because dark chocolate is BETTER always",
@@ -7969,23 +8289,25 @@
   ]
  },
  "cozy-chicken-lasagna": {
+  "check_source": false,
   "title": "Cozy Chicken Lasagna",
-  "serves": null,
-  "total": 482.0,
+  "serves": 3.0,
+  "total": 480.0,
   "lines": 9,
   "resolved": 9,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 160,
+  "for_two": 320,
   "detail": [
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -8059,7 +8381,7 @@
     "raw": "2 cups milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 27.84,
     "amount": 480.0,
@@ -8068,6 +8390,7 @@
   ]
  },
  "creamy-garlic-mushroom-pasta": {
+  "check_source": false,
   "title": "Creamy Garlic Mushroom Pasta",
   "serves": 2.0,
   "total": 160.0,
@@ -8178,6 +8501,7 @@
   ]
  },
  "creamy-mushroom-eggs": {
+  "check_source": false,
   "title": "Creamy Mushroom Eggs",
   "serves": 2.0,
   "total": 160.0,
@@ -8242,7 +8566,7 @@
     "raw": "1 tbsp milk, if needed to thin it out",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -8303,15 +8627,16 @@
   ]
  },
  "creamy-mushroom-pasta": {
+  "check_source": false,
   "title": "Creamy Mushroom Pasta",
   "serves": 2.0,
-  "total": 79.0,
+  "total": 151.0,
   "lines": 11,
-  "resolved": 8,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 40,
-  "for_two": 79,
+  "per_serve": 76,
+  "for_two": 151,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -8370,8 +8695,12 @@
    {
     "raw": "1/2 cup vegetable stock",
     "name": "vegetable stock",
-    "status": "missing",
-    "candidates": []
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 30.0,
+    "amount": 120.0,
+    "note": ""
    },
    {
     "raw": "1/8 cup amul cream",
@@ -8393,8 +8722,12 @@
    {
     "raw": "30 grams grated gouda cheese",
     "name": "gouda cheese",
-    "status": "missing",
-    "candidates": []
+    "item": "Gouda Cheese",
+    "via": "exact",
+    "status": "ok",
+    "cost": 42.0,
+    "amount": 30.0,
+    "note": ""
    },
    {
     "raw": "100 grams pasta of choice",
@@ -8405,6 +8738,7 @@
   ]
  },
  "creamy-mushroom-spinach-frittata": {
+  "check_source": false,
   "title": "Creamy Mushroom & Spinach Frittata",
   "serves": 2.0,
   "total": 124.0,
@@ -8475,7 +8809,7 @@
     "raw": "1 tbsp milk, if needed to thin it out",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -8536,6 +8870,7 @@
   ]
  },
  "creamy-spinach-eggs": {
+  "check_source": false,
   "title": "Creamy Spinach Eggs",
   "serves": 1.0,
   "total": 98.0,
@@ -8622,23 +8957,25 @@
   ]
  },
  "dahi-bhindi": {
+  "check_source": false,
   "title": "Dahi Bhindi",
   "serves": 3.0,
-  "total": 79.0,
+  "total": 80.0,
   "lines": 19,
-  "resolved": 18,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 26,
+  "resolved": 19,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 27,
   "for_two": 53,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -8804,21 +9141,26 @@
    {
     "raw": "1 tsp kasuri methi",
     "name": "kasuri methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.54,
+    "amount": 2.8,
+    "note": ""
    }
   ]
  },
  "dahi-tadka-toastie": {
+  "check_source": false,
   "title": "Dahi Tadka Toastie",
-  "serves": null,
-  "total": 100.0,
+  "serves": 2.0,
+  "total": 102.0,
   "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 51,
+  "for_two": 102,
   "detail": [
    {
     "raw": "400 grams curd",
@@ -8883,8 +9225,12 @@
    {
     "raw": "1 tsp green chutney",
     "name": "green chutney",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chutney",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.9,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "tadka to cook",
@@ -8927,15 +9273,16 @@
   ]
  },
  "dahi-wale-aloo": {
+  "check_source": false,
   "title": "Dahi Wale Aloo",
-  "serves": null,
+  "serves": 3.0,
   "total": 78.0,
   "lines": 17,
   "resolved": 17,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 26,
+  "for_two": 52,
   "detail": [
    {
     "raw": "3-4 potatoes, boiled, peeled and chopped into cubes or mashed roughly",
@@ -9006,21 +9353,21 @@
    {
     "raw": "1 tsp ginger paste",
     "name": "ginger paste",
-    "item": "Ginger",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 1.03,
-    "amount": 2.8,
+    "cost": 0.91,
+    "amount": 5.5,
     "note": ""
    },
    {
     "raw": "1 tsp garlic paste",
     "name": "garlic paste",
-    "item": "Garlic",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 0.95,
-    "amount": 2.8,
+    "cost": 0.91,
+    "amount": 5.5,
     "note": ""
    },
    {
@@ -9095,15 +9442,16 @@
   ]
  },
  "dal-bhorta": {
+  "check_source": false,
   "title": "Dal Bhorta",
   "serves": 5.0,
-  "total": 55.0,
+  "total": 53.0,
   "lines": 10,
   "resolved": 9,
   "unresolved": 1,
   "complete": false,
   "per_serve": 11,
-  "for_two": 22,
+  "for_two": 21,
   "detail": [
    {
     "raw": "1 cup masoor dal ( 190 grams )",
@@ -9140,18 +9488,23 @@
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
    {
     "raw": "3 dry red chilli",
     "name": "dry red chilli",
-    "status": "missing",
-    "candidates": []
+    "item": "Dry Red Chilli",
+    "via": "exact",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 3.0,
+    "unit": null
    },
    {
     "raw": "8 garlic cloves",
@@ -9193,6 +9546,7 @@
   ]
  },
  "dal-fry": {
+  "check_source": true,
   "title": "Dal Fry",
   "serves": 4.0,
   "total": 21.0,
@@ -9216,15 +9570,16 @@
   ]
  },
  "dal-makhani": {
+  "check_source": false,
   "title": "Dal Makhani",
   "serves": 5.0,
-  "total": 103.0,
+  "total": 117.0,
   "lines": 16,
-  "resolved": 13,
-  "unresolved": 3,
-  "complete": false,
-  "per_serve": 21,
-  "for_two": 41,
+  "resolved": 16,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 23,
+  "for_two": 47,
   "detail": [
    {
     "raw": "1 cup urad dal ( black lentils ) ( 200 grams )",
@@ -9265,24 +9620,33 @@
    {
     "raw": "1/2 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.21,
+    "cost": 1.43,
     "amount": 7.5,
     "note": ""
    },
    {
     "raw": "2 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.45,
+    "amount": 33.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp red chilli paste ( use between 1 - 2 tbsp depending on how spicy you want it )",
     "name": "red chilli paste",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chilli Paste / Red Chilli Paste",
+    "via": "auto",
+    "status": "ok",
+    "cost": 4.43,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1/2 tsp garam masala",
@@ -9323,8 +9687,12 @@
    {
     "raw": "1 tbsp kasturi methi",
     "name": "kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "fuzzy",
+    "status": "ok",
+    "cost": 4.62,
+    "amount": 8.2,
+    "note": ""
    },
    {
     "raw": "pinch of garam masala",
@@ -9366,6 +9734,7 @@
   ]
  },
  "dal-paratha": {
+  "check_source": false,
   "title": "Dal Paratha",
   "serves": 6.0,
   "total": 14.0,
@@ -9428,15 +9797,16 @@
   ]
  },
  "dan-dan-noodles": {
+  "check_source": false,
   "title": "Dan Dan Noodles",
   "serves": 3.0,
-  "total": 330.0,
+  "total": 365.0,
   "lines": 24,
-  "resolved": 21,
-  "unresolved": 3,
+  "resolved": 22,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 110,
-  "for_two": 220,
+  "per_serve": 122,
+  "for_two": 243,
   "detail": [
    {
     "raw": "Noodles + greens",
@@ -9458,8 +9828,12 @@
    {
     "raw": "1 bunch bok choy (or spinach / any greens)",
     "name": "bok choy",
-    "status": "missing",
-    "candidates": []
+    "item": "Bok Choy",
+    "via": "exact",
+    "status": "ok",
+    "cost": 35.0,
+    "amount": 100.0,
+    "note": ""
    },
    {
     "raw": "450g @licious_foods chicken mince",
@@ -9657,15 +10031,16 @@
   ]
  },
  "dark-chocolate-chia-pudding-high-protein": {
+  "check_source": false,
   "title": "Dark Chocolate Chia Pudding ( High Protein )",
   "serves": 2.0,
-  "total": 85.0,
+  "total": 160.0,
   "lines": 7,
-  "resolved": 5,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 42,
-  "for_two": 85,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 80,
+  "for_two": 160,
   "detail": [
    {
     "raw": "1/4 cup chia seeds",
@@ -9681,7 +10056,7 @@
     "raw": "2 cup milk, plant based, regular, lactose free you choose :)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 27.84,
     "amount": 480.0,
@@ -9690,8 +10065,12 @@
    {
     "raw": "1.5 scoop chocolate flavoured protein powder",
     "name": "chocolate flavoured protein powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Protein Powder",
+    "via": "auto",
+    "status": "ok",
+    "cost": 67.37,
+    "amount": 45.0,
+    "note": ""
    },
    {
     "raw": "1/2 tbsp cocoa powder",
@@ -9726,21 +10105,26 @@
    {
     "raw": "1 tbsp greek yogurt, for topping + chocolate chips",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 7.28,
+    "amount": 15.5,
+    "note": ""
    }
   ]
  },
  "desi-animal-fries": {
+  "check_source": false,
   "title": "Desi Animal Fries",
-  "serves": null,
+  "serves": 3.0,
   "total": 55.0,
   "lines": 8,
   "resolved": 7,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 18,
+  "for_two": 37,
   "detail": [
    {
     "raw": "2 - 3 Potatoes, cut into fries",
@@ -9756,7 +10140,7 @@
     "raw": "1/2 cup milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.96,
     "amount": 120.0,
@@ -9819,15 +10203,16 @@
   ]
  },
  "desi-mushroom-kheema-spread": {
+  "check_source": false,
   "title": "Desi Mushroom Kheema Spread",
   "serves": 5.0,
-  "total": 167.0,
+  "total": 195.0,
   "lines": 13,
-  "resolved": 12,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 33,
-  "for_two": 67,
+  "resolved": 13,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 39,
+  "for_two": 78,
   "detail": [
    {
     "raw": "2-3 sprays olive oil",
@@ -9945,29 +10330,35 @@
    {
     "raw": "5 tbsp green chutney",
     "name": "green chutney",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chutney",
+    "via": "exact",
+    "status": "ok",
+    "cost": 28.46,
+    "amount": 82.5,
+    "note": ""
    }
   ]
  },
  "desi-tomato-soup-with-grilled-cheese": {
+  "check_source": false,
   "title": "Desi Tomato Soup with Grilled Cheese",
   "serves": 2.0,
-  "total": 70.0,
+  "total": 69.0,
   "lines": 13,
   "resolved": 12,
   "unresolved": 1,
   "complete": false,
-  "per_serve": 35,
-  "for_two": 70,
+  "per_serve": 34,
+  "for_two": 69,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -10084,21 +10475,26 @@
   ]
  },
  "desi-turkish-eggs": {
+  "check_source": false,
   "title": "Desi Turkish Eggs",
   "serves": 1.0,
-  "total": 9.0,
+  "total": 56.0,
   "lines": 15,
-  "resolved": 11,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 9,
-  "for_two": 18,
+  "per_serve": 56,
+  "for_two": 112,
   "detail": [
    {
     "raw": "100 grams greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 47.11,
+    "amount": 100.0,
+    "note": ""
    },
    {
     "raw": "1 tsp minced garlic",
@@ -10146,10 +10542,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -10166,8 +10563,10 @@
    {
     "raw": "2 dried red chilli",
     "name": "dried red chilli",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "dry red chilli"
+    ]
    },
    {
     "raw": "pinch of red chilli powder",
@@ -10192,8 +10591,12 @@
    {
     "raw": "pinch of hing, optional",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "a pinch of turmeric",
@@ -10218,15 +10621,16 @@
   ]
  },
  "double-chocolate-cookies": {
+  "check_source": false,
   "title": "Double Chocolate Cookies",
   "serves": 10.0,
-  "total": 181.0,
+  "total": 188.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 18,
-  "for_two": 36,
+  "per_serve": 19,
+  "for_two": 38,
   "detail": [
    {
     "raw": "113 grams butter, room tempreture (salted or unsalted)",
@@ -10311,8 +10715,12 @@
    {
     "raw": "1/2 tsp coffee powder",
     "name": "coffee powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Instant Coffee Powder",
+    "via": "auto",
+    "status": "ok",
+    "cost": 7.0,
+    "amount": 1.5,
+    "note": "density-guess"
    },
    {
     "raw": "pinch of salt",
@@ -10332,21 +10740,22 @@
   ]
  },
  "dutch-baby-pancake": {
+  "check_source": false,
   "title": "Dutch Baby Pancake",
-  "serves": null,
+  "serves": 3.0,
   "total": 34.0,
   "lines": 7,
   "resolved": 7,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 11,
+  "for_two": 23,
   "detail": [
    {
     "raw": "65 grams milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 3.66,
     "amount": 63.1,
@@ -10411,15 +10820,16 @@
   ]
  },
  "easy-chicken-red-thai-curry-meal-box": {
+  "check_source": false,
   "title": "Easy Chicken Red Thai Curry Meal Box",
-  "serves": null,
-  "total": 295.0,
+  "serves": 3.0,
+  "total": 297.0,
   "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 99,
+  "for_two": 198,
   "detail": [
    {
     "raw": "450g chicken breast or thighs, cut into bite-sized pieces",
@@ -10456,8 +10866,9 @@
    {
     "raw": "1 tablespoon vegetable oil",
     "name": "vegetable oil",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
     "item": "Sunflower Oil",
-    "via": "exact",
+    "via": "alias",
     "status": "ok",
     "cost": 2.85,
     "amount": 15.0,
@@ -10516,8 +10927,12 @@
    {
     "raw": "1 tablespoon lime juice",
     "name": "lime juice",
-    "status": "missing",
-    "candidates": []
+    "item": "Lime",
+    "via": "auto",
+    "status": "ok",
+    "cost": 2.02,
+    "amount": 8.2,
+    "note": ""
    },
    {
     "raw": "Fresh basil or cilantro, for garnish (optional)",
@@ -10534,6 +10949,7 @@
   ]
  },
  "egg-fried-rice": {
+  "check_source": false,
   "title": "Egg Fried Rice",
   "serves": 2.0,
   "total": 212.0,
@@ -10664,15 +11080,16 @@
   ]
  },
  "egg-salad-sandwich": {
+  "check_source": false,
   "title": "Egg Salad Sandwich",
   "serves": 1.0,
-  "total": 88.0,
+  "total": 109.0,
   "lines": 8,
-  "resolved": 5,
-  "unresolved": 3,
+  "resolved": 6,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 88,
-  "for_two": 176,
+  "per_serve": 109,
+  "for_two": 218,
   "detail": [
    {
     "raw": "3 eggs, boiled, peeled and cut up, i use 1 yolk, 3 whites - do what you prefer, you can use more yolks :)",
@@ -10697,8 +11114,12 @@
    {
     "raw": "3 tbsp greek yogurt, i use epigamia plain greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 21.84,
+    "amount": 46.4,
+    "note": ""
    },
    {
     "raw": "1 tbsp mustard, dijon tastes best",
@@ -10742,15 +11163,16 @@
   ]
  },
  "egg-salad-toastie": {
+  "check_source": false,
   "title": "Egg Salad Toastie",
   "serves": 1.0,
-  "total": 101.0,
+  "total": 123.0,
   "lines": 10,
-  "resolved": 6,
-  "unresolved": 4,
+  "resolved": 7,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 101,
-  "for_two": 202,
+  "per_serve": 123,
+  "for_two": 246,
   "detail": [
    {
     "raw": "3 eggs, boiled, peeled and cut up, i use 1 yolk, 3 whites - do what you prefer, you can use more yolks :)",
@@ -10785,8 +11207,12 @@
    {
     "raw": "3 tbsp greek yogurt, i use epigamia plain greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 21.84,
+    "amount": 46.4,
+    "note": ""
    },
    {
     "raw": "1 tbsp mustard, dijon tastes best",
@@ -10840,15 +11266,16 @@
   ]
  },
  "eggless-vanilla-cupcake": {
+  "check_source": false,
   "title": "Eggless Vanilla Cupcake",
-  "serves": null,
+  "serves": 3.0,
   "total": 102.0,
   "lines": 9,
   "resolved": 9,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 34,
+  "for_two": 68,
   "detail": [
    {
     "raw": "Dry",
@@ -10887,7 +11314,7 @@
     "raw": "120 ml milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.96,
     "amount": 120.0,
@@ -10936,6 +11363,7 @@
   ]
  },
  "eggs-kejriwal": {
+  "check_source": false,
   "title": "Eggs Kejriwal",
   "serves": 2.0,
   "total": 77.0,
@@ -11012,15 +11440,16 @@
   ]
  },
  "elephant-ears": {
+  "check_source": true,
   "title": "Elephant Ears",
-  "serves": null,
+  "serves": 3.0,
   "total": 23.0,
   "lines": 2,
   "resolved": 1,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 8,
+  "for_two": 15,
   "detail": [
    {
     "raw": "1 sheet puff pastry, thawed in the fridge overnight is best, I took mine out to room temperature 40 minutes before",
@@ -11045,15 +11474,16 @@
   ]
  },
  "five-chilli-oil-rice-noodles-vegetable-stir-fry": {
+  "check_source": false,
   "title": "Five Chilli Oil Rice Noodles & Vegetable Stir Fry",
-  "serves": null,
+  "serves": 3.0,
   "total": 194.0,
   "lines": 6,
   "resolved": 6,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 65,
+  "for_two": 129,
   "detail": [
    {
     "raw": "1 - 2 tbsp @boombayway Five Chilli Oil",
@@ -11118,15 +11548,16 @@
   ]
  },
  "flourless-chocolate-cake": {
+  "check_source": false,
   "title": "Flourless Chocolate Cake",
-  "serves": null,
-  "total": 376.0,
+  "serves": 3.0,
+  "total": 390.0,
   "lines": 10,
-  "resolved": 9,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 10,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 130,
+  "for_two": 260,
   "detail": [
    {
     "raw": "60 grams butter, i use @amul_india",
@@ -11161,8 +11592,12 @@
    {
     "raw": "1 tsp coffee powder, i use @brucoffeein",
     "name": "coffee powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Instant Coffee Powder",
+    "via": "auto",
+    "status": "ok",
+    "cost": 14.0,
+    "amount": 3.0,
+    "note": "density-guess"
    },
    {
     "raw": "1 tsp vanilla extract",
@@ -11223,15 +11658,16 @@
   ]
  },
  "french-onion-chicken": {
+  "check_source": false,
   "title": "French Onion Chicken",
   "serves": 3.0,
-  "total": 454.0,
+  "total": 488.0,
   "lines": 8,
-  "resolved": 5,
-  "unresolved": 3,
+  "resolved": 6,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 151,
-  "for_two": 303,
+  "per_serve": 163,
+  "for_two": 325,
   "detail": [
    {
     "raw": "3 chicken breasts, pounded with a mallet to thin it and even it out ( around 450-500 grams )",
@@ -11253,10 +11689,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -11299,12 +11736,17 @@
    {
     "raw": "35 grams gruyère",
     "name": "gruy re",
-    "status": "missing",
-    "candidates": []
+    "item": "Gruyère",
+    "via": "exact",
+    "status": "ok",
+    "cost": 34.83,
+    "amount": 35.0,
+    "note": ""
    }
   ]
  },
  "fudge-brownies": {
+  "check_source": false,
   "title": "Fudge Brownies",
   "serves": 9.0,
   "total": 405.0,
@@ -11398,15 +11840,16 @@
   ]
  },
  "fudge": {
+  "check_source": false,
   "title": "Fudge",
-  "serves": null,
+  "serves": 3.0,
   "total": 230.0,
   "lines": 6,
   "resolved": 5,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 77,
+  "for_two": 153,
   "detail": [
    {
     "raw": "112 grams chocolate ( i used equal quantities of callebaut 811 and lindt 70%)",
@@ -11460,15 +11903,16 @@
   ]
  },
  "garlic-tadka-khichdi": {
+  "check_source": false,
   "title": "Garlic Tadka Khichdi",
-  "serves": null,
-  "total": 18.0,
+  "serves": 3.0,
+  "total": 20.0,
   "lines": 11,
-  "resolved": 8,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 7,
+  "for_two": 13,
   "detail": [
    {
     "raw": "1/2 cup rice",
@@ -11495,8 +11939,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 tsp haldi",
@@ -11531,8 +11979,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "salt, to taste",
@@ -11564,6 +12016,7 @@
   ]
  },
  "gooey-gochujang-eggs": {
+  "check_source": false,
   "title": "Gooey Gochujang Eggs",
   "serves": 1.0,
   "total": 57.0,
@@ -11660,15 +12113,16 @@
   ]
  },
  "guilt-free-caesar-salad": {
+  "check_source": false,
   "title": "Guilt-Free Caesar Salad",
   "serves": 2.0,
-  "total": 431.0,
+  "total": 548.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 216,
-  "for_two": 431,
+  "per_serve": 274,
+  "for_two": 548,
   "detail": [
    {
     "raw": "2 chicken breast, slightly pounded,salt and pepper",
@@ -11717,8 +12171,12 @@
    {
     "raw": "1 cup greek yogurt / 160 grams ish",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 116.46,
+    "amount": 247.2,
+    "note": ""
    },
    {
     "raw": "3-4 garlic cloves, minced",
@@ -11761,12 +12219,13 @@
   ]
  },
  "gujarati-kadhi": {
+  "check_source": false,
   "title": "Gujarati Kadhi",
   "serves": 3.0,
   "total": 83.0,
   "lines": 16,
-  "resolved": 13,
-  "unresolved": 3,
+  "resolved": 14,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 28,
   "for_two": 55,
@@ -11843,8 +12302,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1 inch ginger",
@@ -11869,8 +12332,12 @@
    {
     "raw": "2 dry red chillies, broken and de seed ( optional )",
     "name": "dry red chillies",
-    "status": "missing",
-    "candidates": []
+    "item": "Dry Red Chilli",
+    "via": "exact",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 2.0,
+    "unit": null
    },
    {
     "raw": "1/2 tsp cumin",
@@ -11911,15 +12378,16 @@
   ]
  },
  "healthier-chicken-ghee-roast-simplified": {
+  "check_source": false,
   "title": "Healthier Chicken Ghee Roast, Simplified",
   "serves": 3.0,
-  "total": 412.0,
+  "total": 415.0,
   "lines": 20,
-  "resolved": 17,
-  "unresolved": 3,
+  "resolved": 18,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 137,
-  "for_two": 275,
+  "per_serve": 138,
+  "for_two": 277,
   "detail": [
    {
     "raw": "450 grams chicken breast, cubed",
@@ -12063,8 +12531,12 @@
    {
     "raw": "1 tbsp tamarind paste or small tamarind ball soaked in 2 tbsp water",
     "name": "tamarind paste tamarind ball in tbsp water",
-    "status": "missing",
-    "candidates": []
+    "item": "Tamarind (paste / ball)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 2.61,
+    "amount": 9.0,
+    "note": "density-guess"
    },
    {
     "raw": "1 tbsp ghee",
@@ -12105,15 +12577,16 @@
   ]
  },
  "healthy-chicken-stroganoff": {
+  "check_source": false,
   "title": "Healthy Chicken Stroganoff",
   "serves": 3.0,
-  "total": 577.0,
+  "total": 654.0,
   "lines": 12,
   "resolved": 9,
   "unresolved": 3,
   "complete": false,
-  "per_serve": 192,
-  "for_two": 385,
+  "per_serve": 218,
+  "for_two": 436,
   "detail": [
    {
     "raw": "450 grams chicken breast, cut into pieces, sizes as per your preference",
@@ -12186,18 +12659,21 @@
    {
     "raw": "1 cups vegetable",
     "name": "vegetable",
-    "item": "Mixed Vegetables",
-    "via": "auto",
-    "status": "ok",
-    "cost": 38.88,
-    "amount": 144.0,
-    "note": "density-guess"
+    "status": "ambiguous",
+    "candidates": [
+     "mixed vegetables",
+     "vegetable stock (cube / powder)"
+    ]
    },
    {
     "raw": "1 cup greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 116.46,
+    "amount": 247.2,
+    "note": ""
    },
    {
     "raw": "160 grams pasta, any works here or you can serve with steamed rice",
@@ -12218,15 +12694,16 @@
   ]
  },
  "healthy-chicken-tikka": {
+  "check_source": false,
   "title": "Healthy Chicken Tikka",
-  "serves": null,
-  "total": 413.0,
+  "serves": 3.0,
+  "total": 414.0,
   "lines": 10,
-  "resolved": 9,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 10,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 138,
+  "for_two": 276,
   "detail": [
    {
     "raw": "450 grams chicken breast, boneless",
@@ -12277,8 +12754,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 tsp garam masala",
@@ -12323,15 +12804,16 @@
   ]
  },
  "healthy-creamy-chicken-kheema-pav-high-protein": {
+  "check_source": false,
   "title": "Healthy Creamy Chicken Kheema Pav | High Protein",
   "serves": 3.0,
-  "total": 448.0,
+  "total": 521.0,
   "lines": 22,
-  "resolved": 20,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 149,
-  "for_two": 299,
+  "resolved": 22,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 174,
+  "for_two": 347,
   "detail": [
    {
     "raw": "500g chicken mince (5% fat)",
@@ -12376,8 +12858,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies (optional)",
@@ -12392,16 +12878,21 @@
    {
     "raw": "150g Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 70.67,
+    "amount": 150.0,
+    "note": ""
    },
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -12532,15 +13023,16 @@
   ]
  },
  "healthy-tuna-salad": {
+  "check_source": false,
   "title": "Healthy Tuna Salad",
-  "serves": null,
-  "total": 5.0,
+  "serves": 3.0,
+  "total": 49.0,
   "lines": 6,
-  "resolved": 2,
-  "unresolved": 4,
+  "resolved": 4,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 16,
+  "for_two": 33,
   "detail": [
    {
     "raw": "2 - 3 pickles (gerkin) diced",
@@ -12573,8 +13065,12 @@
    {
     "raw": "1/3 cup Greek yogurt + more if needed for a creamier texture",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 38.82,
+    "amount": 82.4,
+    "note": ""
    },
    {
     "raw": "salt + pepper, to taste",
@@ -12585,21 +13081,26 @@
    {
     "raw": "1 tbsp maggi hot and sweet sauce",
     "name": "maggi hot sweet sauce",
-    "status": "missing",
-    "candidates": []
+    "item": "Maggi Hot & Sweet Sauce",
+    "via": "exact",
+    "status": "ok",
+    "cost": 6.0,
+    "amount": 15.0,
+    "note": ""
    }
   ]
  },
  "high-protein-chilli-garlic-paneer-mushrooms": {
+  "check_source": false,
   "title": "High Protein Chilli Garlic Paneer & Mushrooms",
   "serves": 2.0,
-  "total": 275.0,
+  "total": 279.0,
   "lines": 10,
-  "resolved": 7,
-  "unresolved": 3,
+  "resolved": 8,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 138,
-  "for_two": 275,
+  "per_serve": 140,
+  "for_two": 279,
   "detail": [
    {
     "raw": "1 tsp olive/sesame oil to saute paneer",
@@ -12678,8 +13179,12 @@
    {
     "raw": "1 tbsp chilli vinegar",
     "name": "chilli vinegar",
-    "status": "missing",
-    "candidates": []
+    "item": "Chilli Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.15,
+    "amount": 15.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp schezuan sauce",
@@ -12694,6 +13199,7 @@
   ]
  },
  "homemade-dahi": {
+  "check_source": true,
   "title": "Homemade Dahi",
   "serves": 60.0,
   "total": 39.0,
@@ -12708,7 +13214,7 @@
     "raw": "600 grams milk, i use full fat milk here, feel free to use low fat if you please :)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 33.79,
     "amount": 582.5,
@@ -12727,15 +13233,16 @@
   ]
  },
  "honeycomb": {
+  "check_source": true,
   "title": "Honeycomb",
-  "serves": null,
+  "serves": 3.0,
   "total": 24.0,
   "lines": 4,
   "resolved": 2,
   "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 8,
+  "for_two": 16,
   "detail": [
    {
     "raw": "100 grams caster / regular sugar",
@@ -12779,6 +13286,7 @@
   ]
  },
  "hot-chocolate-oatmeal": {
+  "check_source": false,
   "title": "Hot Chocolate Oatmeal",
   "serves": 1.0,
   "total": 23.0,
@@ -12803,7 +13311,7 @@
     "raw": "120 ml milk , any works here - almond, lactose free, oat or regular",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.96,
     "amount": 120.0,
@@ -12896,15 +13404,16 @@
   ]
  },
  "hot-mocha": {
+  "check_source": false,
   "title": "Hot Mocha",
-  "serves": null,
+  "serves": 3.0,
   "total": 12.0,
   "lines": 8,
   "resolved": 4,
   "unresolved": 4,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 4,
+  "for_two": 8,
   "detail": [
    {
     "raw": "1 tbsp cocoa powder",
@@ -12919,8 +13428,10 @@
    {
     "raw": "1 tbsp coffee",
     "name": "coffee",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "instant coffee powder"
+    ]
    },
    {
     "raw": "1 tbsp hot water",
@@ -12966,15 +13477,16 @@
   ]
  },
  "hot-oatmeal-bowl": {
+  "check_source": false,
   "title": "Hot Oatmeal Bowl",
   "serves": 1.0,
-  "total": 21.0,
+  "total": 37.0,
   "lines": 8,
-  "resolved": 5,
-  "unresolved": 3,
+  "resolved": 7,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 21,
-  "for_two": 42,
+  "per_serve": 37,
+  "for_two": 74,
   "detail": [
    {
     "raw": "50 grams rolled oats ( keep in mind that 50 grams of oats is very filling, you can reduce this to 34-40 grams and reduce calories too )",
@@ -12990,7 +13502,7 @@
     "raw": "100 grams milk ( use any you prefer almond, oat, lactose free or regular )",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 5.63,
     "amount": 97.1,
@@ -13005,8 +13517,12 @@
    {
     "raw": "1/2 tsp cinnamon powder",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 1.4,
+    "note": ""
    },
    {
     "raw": "1 tsp jaggery powder",
@@ -13021,8 +13537,12 @@
    {
     "raw": "one banana",
     "name": "banana",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1,
+    "note": ""
    },
    {
     "raw": "one piece dark chocolate",
@@ -13047,15 +13567,16 @@
   ]
  },
  "iced-latte-smoked-cj-fried-egg": {
+  "check_source": false,
   "title": "Iced Latte & Smoked CJ Fried Egg",
-  "serves": null,
+  "serves": 1.0,
   "total": 25.0,
   "lines": 6,
   "resolved": 4,
   "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 25,
+  "for_two": 50,
   "detail": [
    {
     "raw": "1 tbsp smoked chilli jaggery sauce",
@@ -13107,6 +13628,7 @@
   ]
  },
  "iced-vietnamese-coconut-coffee-ca-phe-cot-dua": {
+  "check_source": false,
   "title": "Iced Vietnamese Coconut Coffee | Cà Phê Cốt Dừa",
   "serves": 2.0,
   "total": 28.0,
@@ -13184,15 +13706,16 @@
   ]
  },
  "ingredients": {
+  "check_source": false,
   "title": "Ingredients",
-  "serves": null,
+  "serves": 3.0,
   "total": 163.0,
   "lines": 10,
   "resolved": 9,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 54,
+  "for_two": 109,
   "detail": [
    {
     "raw": "1 can of tomatoes (crushed or whole, your choice!)",
@@ -13290,21 +13813,26 @@
   ]
  },
  "jhol-momos": {
+  "check_source": false,
   "title": "Jhol Momos",
   "serves": 2.0,
-  "total": 45.0,
+  "total": 283.0,
   "lines": 10,
-  "resolved": 6,
-  "unresolved": 4,
+  "resolved": 7,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 22,
-  "for_two": 45,
+  "per_serve": 142,
+  "for_two": 283,
   "detail": [
    {
     "raw": "16 momos, for 2 portions, either steamed or pan fried or fried",
     "name": "momos",
-    "status": "missing",
-    "candidates": []
+    "item": "Frozen Momos",
+    "via": "auto",
+    "status": "ok",
+    "cost": 238.4,
+    "amount": 16.0,
+    "note": ""
    },
    {
     "raw": "1.5 tbsp sesame seeds",
@@ -13329,8 +13857,10 @@
    {
     "raw": "2 dried red chillies",
     "name": "dried red chillies",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "dry red chilli"
+    ]
    },
    {
     "raw": "1 onion, finely chopped",
@@ -13391,15 +13921,16 @@
   ]
  },
  "kada-prasad": {
+  "check_source": false,
   "title": "Kada Prasad",
-  "serves": null,
+  "serves": 3.0,
   "total": 95.0,
   "lines": 5,
   "resolved": 4,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 32,
+  "for_two": 63,
   "detail": [
    {
     "raw": "1 1/2 cups water",
@@ -13446,15 +13977,16 @@
   ]
  },
  "kerala-egg-curry": {
+  "check_source": false,
   "title": "Kerala Egg Curry",
   "serves": 3.0,
-  "total": 239.0,
+  "total": 241.0,
   "lines": 15,
-  "resolved": 14,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 15,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 80,
-  "for_two": 159,
+  "for_two": 161,
   "detail": [
    {
     "raw": "6 eggs",
@@ -13519,8 +14051,12 @@
    {
     "raw": "1 tbsp minced ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies finely chopped, adjust as per taste",
@@ -13601,15 +14137,16 @@
   ]
  },
  "kerala-inspired-coconut-curry-leaf-prawns": {
+  "check_source": false,
   "title": "Kerala-Inspired Coconut Curry Leaf Prawns",
   "serves": 2.0,
-  "total": 291.0,
+  "total": 298.0,
   "lines": 18,
-  "resolved": 16,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 146,
-  "for_two": 291,
+  "resolved": 18,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 149,
+  "for_two": 298,
   "detail": [
    {
     "raw": "½ cup curry leaves + extra for garnish",
@@ -13624,10 +14161,11 @@
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -13681,14 +14219,22 @@
    {
     "raw": "1 tbsp Greek yogurt / hung curd",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 7.28,
+    "amount": 15.5,
+    "note": ""
    },
    {
     "raw": "1 tsp ginger-garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "¼ tsp black pepper",
@@ -13773,15 +14319,16 @@
   ]
  },
  "kerala-prawn-curry": {
+  "check_source": false,
   "title": "Kerala Prawn Curry",
   "serves": 3.0,
-  "total": 468.0,
+  "total": 471.0,
   "lines": 13,
-  "resolved": 12,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 156,
-  "for_two": 312,
+  "resolved": 13,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 157,
+  "for_two": 314,
   "detail": [
    {
     "raw": "250 grams prawns",
@@ -13826,8 +14373,12 @@
    {
     "raw": "1 tbsp minced ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 green chillies finely chopped, adjust as per taste",
@@ -13908,6 +14459,7 @@
   ]
  },
  "korean-braised-potato": {
+  "check_source": false,
   "title": "Korean Braised Potato",
   "serves": 3.0,
   "total": 59.0,
@@ -14005,6 +14557,7 @@
   ]
  },
  "korean-fried-egg-rice": {
+  "check_source": false,
   "title": "Korean Fried Egg Rice",
   "serves": 1.0,
   "total": 49.0,
@@ -14137,6 +14690,7 @@
   ]
  },
  "korean-rice-noodles": {
+  "check_source": false,
   "title": "Korean Rice Noodles",
   "serves": 3.0,
   "total": 425.0,
@@ -14256,15 +14810,16 @@
   ]
  },
  "lavash": {
+  "check_source": false,
   "title": "Lavash",
-  "serves": null,
+  "serves": 3.0,
   "total": 64.0,
   "lines": 7,
   "resolved": 7,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 21,
+  "for_two": 43,
   "detail": [
    {
     "raw": "2 cups whole wheat flour",
@@ -14331,15 +14886,16 @@
   ]
  },
  "lazy-girl-chicken-curry": {
+  "check_source": false,
   "title": "Lazy Girl Chicken Curry",
   "serves": 4.0,
-  "total": 300.0,
+  "total": 303.0,
   "lines": 18,
-  "resolved": 17,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 75,
-  "for_two": 150,
+  "resolved": 18,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 76,
+  "for_two": 152,
   "detail": [
    {
     "raw": "500 grams curry cut chicken or use boneless thighs",
@@ -14384,8 +14940,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tsp coriander powder",
@@ -14509,15 +15069,16 @@
   ]
  },
  "lazy-girl-pasta-salad": {
+  "check_source": false,
   "title": "Lazy Girl Pasta Salad",
-  "serves": null,
-  "total": 48.0,
+  "serves": 3.0,
+  "total": 190.0,
   "lines": 11,
-  "resolved": 7,
-  "unresolved": 4,
+  "resolved": 9,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 63,
+  "for_two": 127,
   "detail": [
    {
     "raw": "2 cups dry pasta, cooked",
@@ -14528,8 +15089,12 @@
    {
     "raw": "300g high-protein Greek yogurt (I went with Epigamia)",
     "name": "high protein greek yogurt",
-    "status": "missing",
-    "candidates": []
+    "item": "Greek Yogurt",
+    "via": "auto",
+    "status": "ok",
+    "cost": 141.33,
+    "amount": 300.0,
+    "note": ""
    },
    {
     "raw": "1 onion, chopped",
@@ -14564,8 +15129,12 @@
    {
     "raw": "1 small tsp whole grain mustard",
     "name": "grain mustard",
-    "status": "missing",
-    "candidates": []
+    "item": "Whole Grain / English Mustard",
+    "via": "auto",
+    "status": "ok",
+    "cost": 1.17,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "Salt + pepper to taste",
@@ -14606,15 +15175,16 @@
   ]
  },
  "leftover-pasta": {
+  "check_source": false,
   "title": "Leftover Pasta",
   "serves": 1.0,
-  "total": 286.0,
+  "total": 177.0,
   "lines": 9,
   "resolved": 9,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 286,
-  "for_two": 572,
+  "per_serve": 177,
+  "for_two": 354,
   "detail": [
    {
     "raw": "20-30 grams cooked pasta",
@@ -14629,10 +15199,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -14648,12 +15219,12 @@
    },
    {
     "raw": "2 heaping teaspoons tomato paste",
-    "name": "heaping teaspoons tomato paste",
+    "name": "tomato paste",
     "item": "Tomato Paste",
-    "via": "auto",
+    "via": "exact",
     "status": "ok",
-    "cost": 115.0,
-    "amount": 200.0,
+    "cost": 6.32,
+    "amount": 11.0,
     "note": ""
    },
    {
@@ -14670,7 +15241,7 @@
     "raw": "2-3 tbsp milk ( can use whole or low fat, doesn’t matter)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 2.18,
     "amount": 37.5,
@@ -14703,15 +15274,16 @@
   ]
  },
  "lemon-coriander-rice": {
+  "check_source": false,
   "title": "Lemon Coriander Rice",
-  "serves": null,
+  "serves": 3.0,
   "total": 102.0,
   "lines": 10,
   "resolved": 8,
   "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 34,
+  "for_two": 68,
   "detail": [
    {
     "raw": "2 tbsp sesame oil",
@@ -14796,8 +15368,10 @@
    {
     "raw": "1 lemon’s juice",
     "name": "lemon s juice",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "lemon"
+    ]
    },
    {
     "raw": "2-3 cups cooked leftover rice that has been in the fridge for atleast 12 hours",
@@ -14808,15 +15382,16 @@
   ]
  },
  "loaded-instant-ramen": {
+  "check_source": false,
   "title": "Loaded Instant Ramen",
   "serves": 1.0,
-  "total": 61.0,
+  "total": 71.0,
   "lines": 7,
-  "resolved": 6,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 61,
-  "for_two": 122,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 71,
+  "for_two": 142,
   "detail": [
    {
     "raw": "1/2 tsp chilli oil",
@@ -14881,12 +15456,17 @@
    {
     "raw": "1 tsp chilli crisp",
     "name": "chilli crisp",
-    "status": "missing",
-    "candidates": []
+    "item": "Chilli Crisp",
+    "via": "exact",
+    "status": "ok",
+    "cost": 9.11,
+    "amount": 5.5,
+    "note": ""
    }
   ]
  },
  "low-and-slow-cheesy-scrambled-eggs": {
+  "check_source": true,
   "title": "Low and Slow Cheesy Scrambled Eggs",
   "serves": 1.0,
   "total": 40.0,
@@ -14921,7 +15501,7 @@
     "raw": "1 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.87,
     "amount": 15.0,
@@ -14930,15 +15510,16 @@
   ]
  },
  "mac-and-cheese": {
+  "check_source": false,
   "title": "Mac And Cheese",
-  "serves": null,
+  "serves": 3.0,
   "total": 153.0,
   "lines": 12,
   "resolved": 11,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 51,
+  "for_two": 102,
   "detail": [
    {
     "raw": "3 cups boiling water",
@@ -14976,7 +15557,7 @@
     "raw": "500 ml lukewarm milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 29.0,
     "amount": 500.0,
@@ -15047,21 +15628,26 @@
   ]
  },
  "maggi-noodle-soup-with-frozen-momos": {
+  "check_source": true,
   "title": "Maggi Noodle Soup with Frozen Momos",
   "serves": 1.0,
-  "total": 0,
+  "total": 147.0,
   "lines": 4,
-  "resolved": 2,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 0,
-  "for_two": 0,
+  "resolved": 4,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 147,
+  "for_two": 294,
   "detail": [
    {
     "raw": "1 packet of maggi noodles @maggiindia",
     "name": "maggi noodles maggiindia",
-    "status": "missing",
-    "candidates": []
+    "item": "Maggi Noodles",
+    "via": "auto",
+    "status": "ok",
+    "cost": 80.0,
+    "amount": 420.0,
+    "note": "pack size"
    },
    {
     "raw": "1 cup extra water for the soupy texture",
@@ -15079,21 +15665,26 @@
    {
     "raw": "4 - 5 frozen momos",
     "name": "momos",
-    "status": "missing",
-    "candidates": []
+    "item": "Frozen Momos",
+    "via": "auto",
+    "status": "ok",
+    "cost": 67.05,
+    "amount": 4.5,
+    "note": ""
    }
   ]
  },
  "makhni-gravy": {
+  "check_source": false,
   "title": "Makhni Gravy",
-  "serves": null,
-  "total": 70.0,
+  "serves": 3.0,
+  "total": 73.0,
   "lines": 14,
-  "resolved": 9,
-  "unresolved": 5,
+  "resolved": 10,
+  "unresolved": 4,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 24,
+  "for_two": 49,
   "detail": [
    {
     "raw": "8 garlic cloves",
@@ -15126,8 +15717,12 @@
    {
     "raw": "1/2 tsp cinnamon powder",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 1.4,
+    "note": ""
    },
    {
     "raw": "2 tbsp oil or 1 tbsp oil",
@@ -15194,9 +15789,11 @@
    },
    {
     "raw": "1 heaping tbsp on kasturi methi",
-    "name": "heaping tbsp on kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "name": "on kasturi methi",
+    "status": "suggest",
+    "candidates": [
+     "kasuri methi"
+    ]
    },
    {
     "raw": "salt, to taste as per your preferece",
@@ -15207,15 +15804,16 @@
   ]
  },
  "mango-and-cream-overnight-oats": {
+  "check_source": false,
   "title": "Mango and Cream Overnight Oats",
   "serves": 2.0,
-  "total": 34.0,
+  "total": 52.0,
   "lines": 7,
-  "resolved": 4,
-  "unresolved": 3,
+  "resolved": 5,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 17,
-  "for_two": 34,
+  "per_serve": 26,
+  "for_two": 52,
   "detail": [
    {
     "raw": "50 grams oats, i use quaker rolled oats",
@@ -15231,7 +15829,7 @@
     "raw": "1 cup milk, amul forever",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -15266,8 +15864,12 @@
    {
     "raw": "2-3 tbsp greek yogurt, i use epigamia",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 18.2,
+    "amount": 38.6,
+    "note": ""
    },
    {
     "raw": "fresh cut mango pieces for topping",
@@ -15279,6 +15881,7 @@
   ]
  },
  "mango-chia-seed-pudding": {
+  "check_source": true,
   "title": "Mango Chia Seed Pudding",
   "serves": 2.0,
   "total": 31.0,
@@ -15324,6 +15927,7 @@
   ]
  },
  "mango-colada-chia-pudding": {
+  "check_source": false,
   "title": "Mango Colada Chia Pudding",
   "serves": 2.0,
   "total": 73.0,
@@ -15393,6 +15997,7 @@
   ]
  },
  "masala-egg-bites": {
+  "check_source": false,
   "title": "Masala Egg Bites",
   "serves": 1.0,
   "total": 56.0,
@@ -15483,15 +16088,16 @@
   ]
  },
  "matar-paneer": {
+  "check_source": false,
   "title": "Matar Paneer",
   "serves": 4.0,
-  "total": 248.0,
+  "total": 252.0,
   "lines": 20,
-  "resolved": 17,
-  "unresolved": 3,
+  "resolved": 19,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 62,
-  "for_two": 124,
+  "per_serve": 63,
+  "for_two": 126,
   "detail": [
    {
     "raw": "15 cashews",
@@ -15572,8 +16178,12 @@
    {
     "raw": "1 tbsp ginger-garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tbsp ghee",
@@ -15660,8 +16270,12 @@
    {
     "raw": "1 tsp kasturi methi, crushed",
     "name": "kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "fuzzy",
+    "status": "ok",
+    "cost": 1.54,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "coriander leaves",
@@ -15673,23 +16287,25 @@
   ]
  },
  "mexican-rice-arroz-rojo": {
+  "check_source": false,
   "title": "Mexican Rice (Arroz Rojo)",
-  "serves": null,
-  "total": 162.0,
+  "serves": 3.0,
+  "total": 172.0,
   "lines": 17,
-  "resolved": 15,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 17,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 57,
+  "for_two": 115,
   "detail": [
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -15815,8 +16431,12 @@
    {
     "raw": "1/2 cup cauliflower",
     "name": "cauliflower",
-    "status": "missing",
-    "candidates": []
+    "item": "Cauliflower",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.12,
+    "amount": 66.0,
+    "note": ""
    },
    {
     "raw": "1/2 cup sweet corn",
@@ -15831,12 +16451,17 @@
    {
     "raw": "1/2 cup french beans",
     "name": "french beans",
-    "status": "missing",
-    "candidates": []
+    "item": "French Beans",
+    "via": "exact",
+    "status": "ok",
+    "cost": 6.86,
+    "amount": 66.0,
+    "note": ""
    }
   ]
  },
  "mexican-style-beans-paneer": {
+  "check_source": false,
   "title": "Mexican Style Beans + Paneer",
   "serves": 3.0,
   "total": 653.0,
@@ -15860,10 +16485,11 @@
    {
     "raw": "1 tsp oil / ghee",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -15998,15 +16624,16 @@
   ]
  },
  "mexican-style-beans": {
+  "check_source": false,
   "title": "Mexican Style Beans",
-  "serves": null,
+  "serves": 3.0,
   "total": 450.0,
   "lines": 14,
   "resolved": 14,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 150,
+  "for_two": 300,
   "detail": [
    {
     "raw": "60 grams Kidney Beans (Rajma), Soaked over night and pressure cooked for 30 minutes",
@@ -16021,10 +16648,11 @@
    {
     "raw": "1 tsp oil / ghee",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -16139,6 +16767,7 @@
   ]
  },
  "milagai-podi-aloo-tikki": {
+  "check_source": false,
   "title": "Milagai Podi Aloo Tikki",
   "serves": 7.0,
   "total": 34.0,
@@ -16234,15 +16863,16 @@
   ]
  },
  "milagai-podi-baby-potato-fry": {
+  "check_source": false,
   "title": "Milagai Podi Baby Potato Fry",
   "serves": 3.0,
-  "total": 57.0,
+  "total": 72.0,
   "lines": 8,
-  "resolved": 7,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 19,
-  "for_two": 38,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 24,
+  "for_two": 48,
   "detail": [
    {
     "raw": "1 tsp sesame oil",
@@ -16293,8 +16923,12 @@
    {
     "raw": "2 tbsp milagai podi, use more depending on how much flavour you want :)",
     "name": "milagai podi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kuzhambu / Rasam / Milagai Podi",
+    "via": "auto",
+    "status": "ok",
+    "cost": 14.85,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "salt, to taste",
@@ -16315,6 +16949,7 @@
   ]
  },
  "mini-chocolate-cheesecake": {
+  "check_source": false,
   "title": "Mini Chocolate Cheesecake",
   "serves": 10.0,
   "total": 614.0,
@@ -16441,15 +17076,16 @@
   ]
  },
  "mizeria-polish-cucumber-salad": {
+  "check_source": false,
   "title": "Mizeria (Polish Cucumber Salad)",
   "serves": 1.0,
-  "total": 31.0,
+  "total": 60.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 31,
-  "for_two": 62,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 60,
+  "for_two": 120,
   "detail": [
    {
     "raw": "1 large cucumber",
@@ -16464,8 +17100,12 @@
    {
     "raw": "1/4 cup greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 29.11,
+    "amount": 61.8,
+    "note": ""
    },
    {
     "raw": "1/2 tsp sugar",
@@ -16530,15 +17170,16 @@
   ]
  },
  "mor-kuzhambu": {
+  "check_source": false,
   "title": "Mor Kuzhambu",
   "serves": 3.0,
-  "total": 125.0,
+  "total": 126.0,
   "lines": 19,
-  "resolved": 17,
-  "unresolved": 2,
+  "resolved": 18,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 42,
-  "for_two": 83,
+  "for_two": 84,
   "detail": [
    {
     "raw": "1 tbsp tuvar dal",
@@ -16695,14 +17336,22 @@
    {
     "raw": "1-2 dry red chillies",
     "name": "dry red chillies",
-    "status": "missing",
-    "candidates": []
+    "item": "Dry Red Chilli",
+    "via": "exact",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 1.5,
+    "unit": null
    },
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "one sprig curry leaves",
@@ -16717,6 +17366,7 @@
   ]
  },
  "mushroom-cheese-chilli-omlette": {
+  "check_source": false,
   "title": "Mushroom & Cheese Chilli Omlette",
   "serves": 1.0,
   "total": 53.0,
@@ -16741,7 +17391,7 @@
     "raw": "1/2 tbsp milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 0.43,
     "amount": 7.5,
@@ -16793,23 +17443,25 @@
   ]
  },
  "mushroom-ragu": {
+  "check_source": false,
   "title": "Mushroom Ragù",
-  "serves": null,
+  "serves": 3.0,
   "total": 163.0,
   "lines": 12,
   "resolved": 11,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 54,
+  "for_two": 109,
   "detail": [
    {
     "raw": "1 tsp oil / butter",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -16918,15 +17570,16 @@
   ]
  },
  "mushroom-spinach-omlette": {
+  "check_source": false,
   "title": "Mushroom & Spinach Omlette",
   "serves": 1.0,
-  "total": 52.0,
+  "total": 66.0,
   "lines": 6,
-  "resolved": 5,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 52,
-  "for_two": 104,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 66,
+  "for_two": 132,
   "detail": [
    {
     "raw": "2 eggs (2 grams)",
@@ -16974,21 +17627,26 @@
    {
     "raw": "10 grams gouda",
     "name": "gouda",
-    "status": "missing",
-    "candidates": []
+    "item": "Gouda Cheese",
+    "via": "auto",
+    "status": "ok",
+    "cost": 14.0,
+    "amount": 10.0,
+    "note": ""
    }
   ]
  },
  "namma-chocolate": {
+  "check_source": false,
   "title": "Namma Chocolate",
-  "serves": null,
+  "serves": 3.0,
   "total": 230.0,
   "lines": 6,
   "resolved": 5,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 77,
+  "for_two": 153,
   "detail": [
    {
     "raw": "112 grams chocolate ( i used equal quantities of callebaut 811 and lindt 70%)",
@@ -17042,15 +17700,16 @@
   ]
  },
  "nextlevel-chocolate-protein-pancakes": {
+  "check_source": false,
   "title": "#NextLevel Chocolate Protein Pancakes",
   "serves": 4.0,
-  "total": 41.0,
+  "total": 54.0,
   "lines": 7,
-  "resolved": 4,
-  "unresolved": 3,
+  "resolved": 5,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 10,
-  "for_two": 20,
+  "per_serve": 14,
+  "for_two": 27,
   "detail": [
    {
     "raw": "2 eggs",
@@ -17065,8 +17724,12 @@
    {
     "raw": "1 bananas",
     "name": "bananas",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1.0,
+    "note": ""
    },
    {
     "raw": "1/4 cup oats",
@@ -17113,15 +17776,16 @@
   ]
  },
  "no-oil-chicken-65": {
+  "check_source": false,
   "title": "No-Oil Chicken 65",
   "serves": 3.0,
-  "total": 423.0,
+  "total": 455.0,
   "lines": 13,
-  "resolved": 10,
-  "unresolved": 3,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 141,
-  "for_two": 282,
+  "per_serve": 152,
+  "for_two": 303,
   "detail": [
    {
     "raw": "500g boneless chicken breast, cut into bite-sized pieces",
@@ -17136,14 +17800,22 @@
    {
     "raw": "¼ cup Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 29.11,
+    "amount": 61.8,
+    "note": ""
    },
    {
     "raw": "1 tbsp ginger-garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "½ tsp haldi",
@@ -17240,15 +17912,16 @@
   ]
  },
  "no-oil-chicken-curry": {
+  "check_source": false,
   "title": "No Oil Chicken Curry",
   "serves": 3.0,
-  "total": 525.0,
+  "total": 537.0,
   "lines": 29,
-  "resolved": 24,
-  "unresolved": 5,
+  "resolved": 27,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 175,
-  "for_two": 350,
+  "per_serve": 179,
+  "for_two": 358,
   "detail": [
    {
     "raw": "Pressure Cooker Base",
@@ -17355,8 +18028,12 @@
    {
     "raw": "1/4 tsp cinnamon powder, optional",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.74,
+    "amount": 0.7,
+    "note": ""
    },
    {
     "raw": "1 tsp garam masala",
@@ -17391,8 +18068,12 @@
    {
     "raw": "1 tbsp kasuri methi",
     "name": "kasuri methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.62,
+    "amount": 8.2,
+    "note": ""
    },
    {
     "raw": "salt, to taste",
@@ -17430,8 +18111,12 @@
    {
     "raw": "2 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.45,
+    "amount": 33.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp red chilli powder",
@@ -17502,6 +18187,7 @@
   ]
  },
  "no-oil-chicken-lettuce-cups": {
+  "check_source": false,
   "title": "No Oil Chicken Lettuce Cups",
   "serves": 2.0,
   "total": 426.0,
@@ -17642,15 +18328,16 @@
   ]
  },
  "no-oil-chicken-shawarma-salad": {
+  "check_source": false,
   "title": "No Oil Chicken Shawarma Salad",
   "serves": 3.0,
-  "total": 418.0,
+  "total": 461.0,
   "lines": 22,
-  "resolved": 16,
-  "unresolved": 6,
+  "resolved": 19,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 139,
-  "for_two": 279,
+  "per_serve": 154,
+  "for_two": 307,
   "detail": [
    {
     "raw": "450 grams chicken breast, sliced into strips ( feel free to replace with paneer for a veg option and reduce quantity by half)",
@@ -17681,8 +18368,12 @@
    {
     "raw": "2 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 14.56,
+    "amount": 30.9,
+    "note": ""
    },
    {
     "raw": "juice of 1 lemon",
@@ -17723,8 +18414,12 @@
    {
     "raw": "4 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 29.11,
+    "amount": 61.8,
+    "note": ""
    },
    {
     "raw": "1 tbsp minced garlic",
@@ -17765,8 +18460,12 @@
    {
     "raw": "dash of lime juice",
     "name": "lime juice",
-    "status": "missing",
-    "candidates": []
+    "item": "Lime",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.12,
+    "amount": 0.5,
+    "note": "vague amount"
    },
    {
     "raw": "150 grams lettuce per bowl, use iceburg, romaine or any you prefer and whats available to you",
@@ -17830,6 +18529,7 @@
   ]
  },
  "no-oil-crispy-scallion-chicken": {
+  "check_source": false,
   "title": "No Oil Crispy Scallion Chicken",
   "serves": 2.0,
   "total": 411.0,
@@ -17941,15 +18641,16 @@
   ]
  },
  "no-oil-orange-chicken": {
+  "check_source": false,
   "title": "No Oil Orange Chicken",
   "serves": 3.0,
-  "total": 426.0,
+  "total": 476.0,
   "lines": 20,
-  "resolved": 16,
-  "unresolved": 4,
+  "resolved": 19,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 142,
-  "for_two": 284,
+  "per_serve": 159,
+  "for_two": 317,
   "detail": [
    {
     "raw": "450 grams chicken breast, cubed",
@@ -18006,8 +18707,12 @@
    {
     "raw": "1 tsp orange zest",
     "name": "orange zest",
-    "status": "missing",
-    "candidates": []
+    "item": "Orange",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.3,
+    "amount": 2.8,
+    "note": ""
    },
    {
     "raw": "2-3 tbsp rice flour ( use as much as you need to form a coating ) ( can substitute with cornflour if you dont have rice flour in your pantry )",
@@ -18029,10 +18734,12 @@
    {
     "raw": "3 oranges, freshly squeezed",
     "name": "oranges",
-    "status": "suggest",
-    "candidates": [
-     "bell pepper orange"
-    ]
+    "item": "Orange",
+    "via": "exact",
+    "status": "ok",
+    "cost": 48.6,
+    "amount": 450.0,
+    "note": ""
    },
    {
     "raw": "2 tbsp light soy ( if using dark, use max 1 tbsp as it will change the colour like in my video)",
@@ -18057,8 +18764,12 @@
    {
     "raw": "1 tbsp orange zest",
     "name": "orange zest",
-    "status": "missing",
-    "candidates": []
+    "item": "Orange",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.89,
+    "amount": 8.2,
+    "note": ""
    },
    {
     "raw": "1 tbsp vinegar",
@@ -18093,8 +18804,12 @@
    {
     "raw": "3-4 birds eye chilli, finely chopped ( i love the sweet and spicy combo, if you want it on the sweeter end, dont add the chilli) ( if you dont have birds ete chilli, use 1 green chilli )",
     "name": "birds eye chilli",
-    "status": "missing",
-    "candidates": []
+    "item": "Bird's Eye Chilli",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 3.5,
+    "unit": null
    },
    {
     "raw": "1 tbsp cornflour",
@@ -18121,15 +18836,16 @@
   ]
  },
  "no-oil-paneer-tikka-quinoa-salad": {
+  "check_source": false,
   "title": "No Oil Paneer Tikka Quinoa Salad",
   "serves": 3.0,
-  "total": 239.0,
+  "total": 327.0,
   "lines": 23,
-  "resolved": 21,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 80,
-  "for_two": 159,
+  "resolved": 23,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 109,
+  "for_two": 218,
   "detail": [
    {
     "raw": "200 grams paneer, can be subbed with paneer or chicken too",
@@ -18161,8 +18877,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -18223,8 +18943,12 @@
    {
     "raw": "3/4 cup greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 87.34,
+    "amount": 185.4,
+    "note": ""
    },
    {
     "raw": "large bunch of coriander leaves + some stems wont matter as it will be blended",
@@ -18321,15 +19045,16 @@
   ]
  },
  "no-oil-paneer-tikka-sliders": {
+  "check_source": false,
   "title": "No Oil Paneer Tikka Sliders",
   "serves": 2.0,
-  "total": 176.0,
+  "total": 199.0,
   "lines": 17,
-  "resolved": 13,
-  "unresolved": 4,
+  "resolved": 16,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 88,
-  "for_two": 176,
+  "per_serve": 100,
+  "for_two": 199,
   "detail": [
    {
     "raw": "Tikka Marinade - marinate paneer for 30 minutes minimum",
@@ -18423,20 +19148,32 @@
    {
     "raw": "1 tbsp gg paste",
     "name": "gg paste",
-    "status": "missing",
-    "candidates": []
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "2 tbsp Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 14.56,
+    "amount": 30.9,
+    "note": ""
    },
    {
     "raw": "1 tbsp green chutney",
     "name": "green chutney",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chutney",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.69,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tsp chaat masala",
@@ -18472,15 +19209,16 @@
   ]
  },
  "not-kfc-chicken-popcorn": {
+  "check_source": false,
   "title": "Not-KFC Chicken Popcorn",
   "serves": 3.0,
-  "total": 225.0,
+  "total": 227.0,
   "lines": 12,
-  "resolved": 8,
-  "unresolved": 4,
+  "resolved": 9,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 75,
-  "for_two": 150,
+  "per_serve": 76,
+  "for_two": 151,
   "detail": [
    {
     "raw": "450 grams chicken, cut into small cubes",
@@ -18488,17 +19226,21 @@
     "status": "ambiguous",
     "candidates": [
      "chicken masala",
+     "chicken sausage",
      "chicken breast boneless",
      "chicken mince (keema)",
-     "chicken thigh boneless",
-     "butter chicken masala"
+     "chicken thigh boneless"
     ]
    },
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1/2 tbsp red chilli powder",
@@ -18591,15 +19333,16 @@
   ]
  },
  "not-your-average-pizza-pasta-sauce": {
+  "check_source": false,
   "title": "Not Your Average Pizza / Pasta Sauce",
-  "serves": null,
+  "serves": 4.0,
   "total": 319.0,
   "lines": 10,
   "resolved": 10,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 80,
+  "for_two": 160,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -18689,15 +19432,16 @@
   ]
  },
  "nutella-french-toast": {
+  "check_source": false,
   "title": "Nutella French Toast",
-  "serves": null,
-  "total": 72.0,
+  "serves": 2.0,
+  "total": 75.0,
   "lines": 8,
-  "resolved": 6,
-  "unresolved": 2,
+  "resolved": 7,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 38,
+  "for_two": 75,
   "detail": [
    {
     "raw": "8 slices of bread, i use wholewheat bread, use a thick bread if possible ( brioche is the best)",
@@ -18723,7 +19467,7 @@
     "raw": "1 cup milk, whole or skimmed",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -18748,14 +19492,20 @@
    {
     "raw": "1/2 tsp cinnamon powder",
     "name": "cinnamon powder",
-    "status": "missing",
-    "candidates": []
+    "item": "Cinnamon Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.48,
+    "amount": 1.4,
+    "note": ""
    },
    {
     "raw": "4 tbsp nutella",
     "name": "nutella",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "nutella / chocolate spread"
+    ]
    },
    {
     "raw": "a little butter to fry the french toast",
@@ -18767,6 +19517,7 @@
   ]
  },
  "og-glazed-donut-dough": {
+  "check_source": false,
   "title": "OG Glazed Donut Dough",
   "serves": 4.0,
   "total": 84.0,
@@ -18781,7 +19532,7 @@
     "raw": "120 ml milk, luke warm",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.96,
     "amount": 120.0,
@@ -18862,15 +19613,16 @@
   ]
  },
  "one-bowl-mexican-salsa": {
+  "check_source": false,
   "title": "One-Bowl Mexican Salsa",
-  "serves": null,
+  "serves": 3.0,
   "total": 20.0,
   "lines": 9,
   "resolved": 8,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 7,
+  "for_two": 13,
   "detail": [
    {
     "raw": "2 medium tomatos",
@@ -18951,15 +19703,16 @@
   ]
  },
  "one-pan-chicken-lasagna": {
+  "check_source": false,
   "title": "One Pan Chicken Lasagna",
   "serves": 3.0,
-  "total": 640.0,
+  "total": 730.0,
   "lines": 14,
-  "resolved": 13,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 213,
-  "for_two": 427,
+  "resolved": 14,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 243,
+  "for_two": 487,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -19044,8 +19797,12 @@
    {
     "raw": "1 1/2 cup vegetable stock",
     "name": "vegetable stock",
-    "status": "missing",
-    "candidates": []
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 90.0,
+    "amount": 360.0,
+    "note": ""
    },
    {
     "raw": "120 grams lasagna sheets",
@@ -19096,6 +19853,7 @@
   ]
  },
  "one-pot-mac-cheese": {
+  "check_source": false,
   "title": "One Pot Mac & Cheese",
   "serves": 5.0,
   "total": 392.0,
@@ -19140,7 +19898,7 @@
     "raw": "2 cups milk, slightly heated ( helps prevent lumps )",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 27.84,
     "amount": 480.0,
@@ -19225,15 +19983,16 @@
   ]
  },
  "one-pot-masala-khichdi": {
+  "check_source": false,
   "title": "One Pot Masala Khichdi",
   "serves": 3.0,
-  "total": 47.0,
+  "total": 48.0,
   "lines": 18,
-  "resolved": 15,
-  "unresolved": 3,
+  "resolved": 17,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 16,
-  "for_two": 31,
+  "for_two": 32,
   "detail": [
    {
     "raw": "80 grams basmati rice",
@@ -19290,8 +20049,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1 onion, finely chopped",
@@ -19306,8 +20069,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "2 tomato, finely chopped",
@@ -19401,15 +20168,16 @@
   ]
  },
  "one-pot-palak-paneer": {
+  "check_source": false,
   "title": "One Pot Palak Paneer",
-  "serves": null,
-  "total": 286.0,
+  "serves": 3.0,
+  "total": 287.0,
   "lines": 17,
-  "resolved": 14,
-  "unresolved": 3,
+  "resolved": 16,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 96,
+  "for_two": 191,
   "detail": [
    {
     "raw": "250 grams spinach, stems removed, blanced for 1 minute",
@@ -19454,10 +20222,11 @@
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -19514,8 +20283,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "salt to taste",
@@ -19566,21 +20339,26 @@
    {
     "raw": "1 tsp kasturi methi, crushed",
     "name": "kasturi methi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kasuri Methi",
+    "via": "fuzzy",
+    "status": "ok",
+    "cost": 1.54,
+    "amount": 2.8,
+    "note": ""
    }
   ]
  },
  "one-pot-south-indian-khichdi": {
+  "check_source": false,
   "title": "One Pot South Indian Khichdi",
   "serves": 3.0,
-  "total": 53.0,
+  "total": 68.0,
   "lines": 15,
-  "resolved": 11,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 18,
-  "for_two": 35,
+  "per_serve": 23,
+  "for_two": 45,
   "detail": [
    {
     "raw": "1/2 cup rice ( approx 100 grams)",
@@ -19635,8 +20413,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "2 green chilli, split",
@@ -19691,14 +20473,20 @@
    {
     "raw": "2 tbsp rasam podi",
     "name": "rasam podi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kuzhambu / Rasam / Milagai Podi",
+    "via": "auto",
+    "status": "ok",
+    "cost": 14.85,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 lemon size ball of tamarind soaked in 3 cups of water",
     "name": "lemon size ball tamarind in cups water",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "lemon"
+    ]
    },
    {
     "raw": "salt, to taste",
@@ -19716,6 +20504,7 @@
   ]
  },
  "onion-chilli-cheese-omlette": {
+  "check_source": false,
   "title": "Onion Chilli Cheese Omlette",
   "serves": 1.0,
   "total": 29.0,
@@ -19786,15 +20575,16 @@
   ]
  },
  "palak-khichdi": {
+  "check_source": false,
   "title": "Palak Khichdi",
   "serves": 2.0,
-  "total": 126.0,
+  "total": 127.0,
   "lines": 16,
-  "resolved": 13,
-  "unresolved": 3,
+  "resolved": 15,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 63,
-  "for_two": 126,
+  "per_serve": 64,
+  "for_two": 127,
   "detail": [
    {
     "raw": "80 grams basmati rice",
@@ -19831,8 +20621,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1 onion, finely chopped",
@@ -19847,8 +20641,12 @@
    {
     "raw": "1 tsp ginger garlic paste + add in more finely minced garlic for extra flavour",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "2 tomato, finely chopped",
@@ -19942,13 +20740,14 @@
   ]
  },
  "paneer-bhurji": {
+  "check_source": false,
   "title": "Paneer Bhurji",
   "serves": 3.0,
   "total": 178.0,
   "lines": 6,
-  "resolved": 5,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 59,
   "for_two": 119,
   "detail": [
@@ -19965,18 +20764,23 @@
    {
     "raw": "1 tsp oil / ghee",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
    {
     "raw": "1 tsp ginger garlic paste, optional",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 onion, finely chopped",
@@ -20008,15 +20812,16 @@
   ]
  },
  "paneer-paratha": {
+  "check_source": false,
   "title": "Paneer Paratha",
-  "serves": null,
+  "serves": 4.0,
   "total": 15.0,
   "lines": 6,
   "resolved": 4,
   "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 4,
+  "for_two": 8,
   "detail": [
    {
     "raw": "200 grams low fat paneer, grated",
@@ -20074,15 +20879,16 @@
   ]
  },
  "paneer-roll": {
+  "check_source": false,
   "title": "Paneer Roll",
   "serves": 4.0,
-  "total": 240.0,
+  "total": 243.0,
   "lines": 18,
-  "resolved": 16,
-  "unresolved": 2,
+  "resolved": 17,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 60,
-  "for_two": 120,
+  "per_serve": 61,
+  "for_two": 122,
   "detail": [
    {
     "raw": "200 grams paneer, cubed",
@@ -20117,8 +20923,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 onion, sliced",
@@ -20219,8 +21029,10 @@
    {
     "raw": "4 rotis, super thin, i use 80 grams flour for the 4 rotis",
     "name": "rotis",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "roti / tortilla wraps (cooked)"
+    ]
    },
    {
     "raw": "1 onion, thinly sliced",
@@ -20252,15 +21064,16 @@
   ]
  },
  "paneer-stir-fry": {
+  "check_source": false,
   "title": "Paneer Stir Fry",
   "serves": 2.0,
-  "total": 216.0,
+  "total": 218.0,
   "lines": 14,
-  "resolved": 13,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 108,
-  "for_two": 216,
+  "resolved": 14,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 109,
+  "for_two": 218,
   "detail": [
    {
     "raw": "200 grams paneer, sliced",
@@ -20275,10 +21088,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -20295,8 +21109,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tomato, thinly sliced",
@@ -20394,15 +21212,16 @@
   ]
  },
  "paneer-tikka-open-toastie": {
+  "check_source": false,
   "title": "Paneer Tikka Open Toastie",
   "serves": 4.0,
-  "total": 208.0,
+  "total": 214.0,
   "lines": 15,
-  "resolved": 11,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 52,
-  "for_two": 104,
+  "per_serve": 54,
+  "for_two": 107,
   "detail": [
    {
     "raw": "200 grams paneer, can be subbed with tofu or chicken too",
@@ -20454,8 +21273,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -20516,8 +21339,12 @@
    {
     "raw": "1 tbsp green chutney",
     "name": "green chutney",
-    "status": "missing",
-    "candidates": []
+    "item": "Green Chutney",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.69,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "60 grams cheese of choice",
@@ -20538,15 +21365,16 @@
   ]
  },
  "paneer-tikka-salad": {
+  "check_source": false,
   "title": "Paneer Tikka Salad",
   "serves": 1.0,
-  "total": 143.0,
+  "total": 167.0,
   "lines": 18,
-  "resolved": 16,
-  "unresolved": 2,
-  "complete": false,
-  "per_serve": 143,
-  "for_two": 286,
+  "resolved": 18,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 167,
+  "for_two": 334,
   "detail": [
    {
     "raw": "Tikka Marinade - marinate paneer for 30 minutes",
@@ -20634,8 +21462,12 @@
    {
     "raw": "1 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.72,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 Cucumber, peel and remove seeds",
@@ -20671,8 +21503,12 @@
    {
     "raw": "3 tbsp Greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 21.84,
+    "amount": 46.4,
+    "note": ""
    },
    {
     "raw": "Handful of coriander",
@@ -20704,23 +21540,25 @@
   ]
  },
  "pasta-bolognese": {
+  "check_source": false,
   "title": "Pasta Bolognese",
   "serves": 4.0,
-  "total": 475.0,
+  "total": 474.0,
   "lines": 17,
   "resolved": 14,
   "unresolved": 3,
   "complete": false,
-  "per_serve": 119,
-  "for_two": 238,
+  "per_serve": 118,
+  "for_two": 237,
   "detail": [
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -20737,11 +21575,11 @@
    {
     "raw": "1 tsp garlic paste for that extra zing",
     "name": "garlic paste",
-    "item": "Garlic",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 0.95,
-    "amount": 2.8,
+    "cost": 0.91,
+    "amount": 5.5,
     "note": ""
    },
    {
@@ -20868,15 +21706,16 @@
   ]
  },
  "pastel-de-tres-leches": {
+  "check_source": false,
   "title": "Pastel De Tres Leches",
-  "serves": null,
+  "serves": 3.0,
   "total": 0.0,
   "lines": 6,
   "resolved": 6,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 0,
+  "for_two": 0,
   "detail": [
    {
     "raw": "sponge cake - 1 portion (recipe in the previous reel)",
@@ -20926,15 +21765,16 @@
   ]
  },
  "pina-colada-chia-pudding": {
+  "check_source": false,
   "title": "Pina Colada Chia Pudding",
   "serves": 2.0,
-  "total": 144.0,
+  "total": 104.0,
   "lines": 7,
   "resolved": 5,
   "unresolved": 2,
   "complete": false,
-  "per_serve": 72,
-  "for_two": 144,
+  "per_serve": 52,
+  "for_two": 104,
   "detail": [
    {
     "raw": "1/4 cup chia seeds",
@@ -20960,7 +21800,7 @@
     "raw": "3/4 cup regular milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 10.44,
     "amount": 180.0,
@@ -20969,8 +21809,12 @@
    {
     "raw": "1 tbsp greek yogurt",
     "name": "greek yogurt",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Greek Yogurt",
+    "via": "exact",
+    "status": "ok",
+    "cost": 7.28,
+    "amount": 15.5,
+    "note": ""
    },
    {
     "raw": "1 tsp monkfruit or sweetender",
@@ -20991,25 +21835,25 @@
    {
     "raw": "1 cup cut pineapple",
     "name": "pineapple",
-    "item": "Pineapple Slices",
-    "via": "auto",
-    "status": "ok",
-    "cost": 47.15,
-    "amount": 144.0,
-    "note": "density-guess"
+    "status": "ambiguous",
+    "candidates": [
+     "pineapple slices",
+     "pineapple juice"
+    ]
    }
   ]
  },
  "potato-asmr": {
+  "check_source": false,
   "title": "Potato Asmr",
-  "serves": null,
-  "total": 31.0,
+  "serves": 3.0,
+  "total": 30.0,
   "lines": 10,
   "resolved": 10,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 10,
+  "for_two": 20,
   "detail": [
    {
     "raw": "5 Potatoes, boiled, peeled and chopped",
@@ -21024,10 +21868,11 @@
    {
     "raw": "2 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.95,
+    "cost": 1.9,
     "amount": 10.0,
     "note": ""
    },
@@ -21103,15 +21948,16 @@
   ]
  },
  "potato-fry": {
+  "check_source": false,
   "title": "Potato Fry",
-  "serves": null,
+  "serves": 3.0,
   "total": 25.0,
   "lines": 11,
   "resolved": 11,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 8,
+  "for_two": 17,
   "detail": [
    {
     "raw": "3 Potatoes, boiled, peeled and chopped",
@@ -21215,15 +22061,16 @@
   ]
  },
  "potato-roast": {
+  "check_source": false,
   "title": "Potato Roast",
-  "serves": null,
-  "total": 31.0,
+  "serves": 3.0,
+  "total": 30.0,
   "lines": 10,
   "resolved": 10,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 10,
+  "for_two": 20,
   "detail": [
    {
     "raw": "5 Potatoes, boiled, peeled and chopped",
@@ -21238,10 +22085,11 @@
    {
     "raw": "2 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.95,
+    "cost": 1.9,
     "amount": 10.0,
     "note": ""
    },
@@ -21317,15 +22165,16 @@
   ]
  },
  "punjabi-kadhi-without-pakodas": {
+  "check_source": false,
   "title": "Punjabi Kadhi Without Pakodas",
-  "serves": null,
-  "total": 123.0,
+  "serves": 3.0,
+  "total": 122.0,
   "lines": 21,
-  "resolved": 18,
-  "unresolved": 3,
+  "resolved": 19,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 41,
+  "for_two": 81,
   "detail": [
    {
     "raw": "55 grams besan ( 1/2 cup )",
@@ -21386,10 +22235,11 @@
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -21416,8 +22266,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "2 onions, finely sliced",
@@ -21502,8 +22356,10 @@
    {
     "raw": "2-3 dried red chillies",
     "name": "dried red chillies",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "dry red chilli"
+    ]
    },
    {
     "raw": "1/2 tsp red chilli powder",
@@ -21518,15 +22374,16 @@
   ]
  },
  "punjabi-kadhi": {
+  "check_source": false,
   "title": "Punjabi Kadhi",
-  "serves": null,
-  "total": 92.0,
+  "serves": 3.0,
+  "total": 94.0,
   "lines": 17,
-  "resolved": 14,
-  "unresolved": 3,
+  "resolved": 16,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 31,
+  "for_two": 63,
   "detail": [
    {
     "raw": "400 grams of dahi ( sour dahi works best for this recipe)",
@@ -21571,8 +22428,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1.5 tsp salt",
@@ -21639,8 +22500,12 @@
    {
     "raw": "pinch hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1 tbsp ginger",
@@ -21684,15 +22549,16 @@
   ]
  },
  "quick-easy-pasta": {
+  "check_source": false,
   "title": "Quick & Easy Pasta",
   "serves": 1.0,
-  "total": 286.0,
+  "total": 177.0,
   "lines": 9,
   "resolved": 9,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 286,
-  "for_two": 572,
+  "per_serve": 177,
+  "for_two": 354,
   "detail": [
    {
     "raw": "20-30 grams cooked pasta",
@@ -21707,10 +22573,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -21726,12 +22593,12 @@
    },
    {
     "raw": "2 heaping teaspoons tomato paste",
-    "name": "heaping teaspoons tomato paste",
+    "name": "tomato paste",
     "item": "Tomato Paste",
-    "via": "auto",
+    "via": "exact",
     "status": "ok",
-    "cost": 115.0,
-    "amount": 200.0,
+    "cost": 6.32,
+    "amount": 11.0,
     "note": ""
    },
    {
@@ -21748,7 +22615,7 @@
     "raw": "2-3 tbsp milk ( can use whole or low fat, doesn’t matter)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 2.18,
     "amount": 37.5,
@@ -21781,6 +22648,7 @@
   ]
  },
  "quinoa-chickpea-salad": {
+  "check_source": true,
   "title": "Quinoa Chickpea Salad",
   "serves": 5.0,
   "total": 152.0,
@@ -21832,15 +22700,16 @@
   ]
  },
  "salted-caramel-blended-oats": {
+  "check_source": false,
   "title": "Salted Caramel Blended Oats",
   "serves": 1.0,
-  "total": 24.0,
+  "total": 42.0,
   "lines": 9,
-  "resolved": 5,
-  "unresolved": 4,
+  "resolved": 6,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 24,
-  "for_two": 48,
+  "per_serve": 42,
+  "for_two": 84,
   "detail": [
    {
     "raw": "40 grams old fashioned rolled oats",
@@ -21867,14 +22736,20 @@
    {
     "raw": "40 grams plain Greek yogurt,",
     "name": "plain greek yogurt",
-    "status": "missing",
-    "candidates": []
+    "item": "Greek Yogurt",
+    "via": "auto",
+    "status": "ok",
+    "cost": 18.84,
+    "amount": 40.0,
+    "note": ""
    },
    {
     "raw": "1 scoop French vanilla caramel protein powder",
     "name": "french vanilla caramel protein powder",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "protein powder"
+    ]
    },
    {
     "raw": "pinch of salt = salted caramel",
@@ -21918,15 +22793,16 @@
   ]
  },
  "sausage-ramen-hotpot": {
+  "check_source": true,
   "title": "Sausage Ramen Hotpot",
   "serves": 1.0,
-  "total": 17.0,
+  "total": 116.0,
   "lines": 4,
-  "resolved": 3,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 17,
-  "for_two": 34,
+  "resolved": 4,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 116,
+  "for_two": 232,
   "detail": [
    {
     "raw": "1/2 tsp chilli oil",
@@ -21941,8 +22817,12 @@
    {
     "raw": "150 grams chicken sausage",
     "name": "chicken sausage",
-    "status": "missing",
-    "candidates": []
+    "item": "Chicken Sausage",
+    "via": "exact",
+    "status": "ok",
+    "cost": 98.4,
+    "amount": 150.0,
+    "note": ""
    },
    {
     "raw": "1 onion, finely sliced 1/2 green capsicum, sliced",
@@ -21967,15 +22847,16 @@
   ]
  },
  "simple-and-tasty-one-bowl-boondi-raita": {
+  "check_source": false,
   "title": "Simple And Tasty One Bowl Boondi Raita",
-  "serves": null,
-  "total": 38.0,
+  "serves": 3.0,
+  "total": 57.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 19,
+  "for_two": 38,
   "detail": [
    {
     "raw": "200 grams dahi (1cup)",
@@ -22046,8 +22927,12 @@
    {
     "raw": "1/2 cup boondi",
     "name": "boondi",
-    "status": "missing",
-    "candidates": []
+    "item": "Boondi",
+    "via": "exact",
+    "status": "ok",
+    "cost": 18.86,
+    "amount": 72.0,
+    "note": "density-guess"
    },
    {
     "raw": "coriander leaves to garnish",
@@ -22059,15 +22944,16 @@
   ]
  },
  "simple-sponge-cake-for-tres-leches": {
+  "check_source": false,
   "title": "Simple Sponge Cake (for Tres Leches)",
-  "serves": null,
+  "serves": 3.0,
   "total": 95.0,
   "lines": 7,
   "resolved": 7,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 32,
+  "for_two": 63,
   "detail": [
    {
     "raw": "75 grams AP Flour",
@@ -22119,7 +23005,7 @@
     "raw": "50 ml milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 2.9,
     "amount": 50.0,
@@ -22138,15 +23024,16 @@
   ]
  },
  "soft-and-fluffy-scrambled-eggs": {
+  "check_source": false,
   "title": "Soft and Fluffy Scrambled Eggs",
-  "serves": null,
+  "serves": 3.0,
   "total": 57.0,
   "lines": 6,
   "resolved": 5,
   "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 19,
+  "for_two": 38,
   "detail": [
    {
     "raw": "Serves one, double/triple the recipe for more people",
@@ -22200,23 +23087,25 @@
   ]
  },
  "spaghetti-bolognese": {
+  "check_source": false,
   "title": "Spaghetti Bolognese",
   "serves": 3.0,
-  "total": 475.0,
+  "total": 474.0,
   "lines": 17,
   "resolved": 14,
   "unresolved": 3,
   "complete": false,
   "per_serve": 158,
-  "for_two": 317,
+  "for_two": 316,
   "detail": [
    {
     "raw": "1 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 4.42,
+    "cost": 2.85,
     "amount": 15.0,
     "note": ""
    },
@@ -22233,11 +23122,11 @@
    {
     "raw": "1 tsp garlic paste for that extra zing",
     "name": "garlic paste",
-    "item": "Garlic",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 0.95,
-    "amount": 2.8,
+    "cost": 0.91,
+    "amount": 5.5,
     "note": ""
    },
    {
@@ -22364,15 +23253,16 @@
   ]
  },
  "spaghetti-meatballs": {
+  "check_source": false,
   "title": "Spaghetti & Meatballs",
   "serves": 4.0,
-  "total": 463.0,
+  "total": 462.0,
   "lines": 13,
   "resolved": 12,
   "unresolved": 1,
   "complete": false,
   "per_serve": 116,
-  "for_two": 232,
+  "for_two": 231,
   "detail": [
    {
     "raw": "50-60 grams pasta per person for a hearty meal, can be customized as per your preference",
@@ -22439,11 +23329,11 @@
    {
     "raw": "1 tbsp garlic paste",
     "name": "garlic paste",
-    "item": "Garlic",
+    "item": "Ginger Garlic Paste",
     "via": "auto",
     "status": "ok",
-    "cost": 2.85,
-    "amount": 8.2,
+    "cost": 2.72,
+    "amount": 16.5,
     "note": ""
    },
    {
@@ -22481,16 +23371,18 @@
    {
     "raw": "1 tsp oil / not needed also if you want to cut the fat!",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    }
   ]
  },
  "spinach-cherry-tomato-scrambled-eggs": {
+  "check_source": false,
   "title": "Spinach + Cherry Tomato Scrambled Eggs",
   "serves": 1.0,
   "total": 97.0,
@@ -22590,6 +23482,7 @@
   ]
  },
  "spinach-feta-omlette": {
+  "check_source": false,
   "title": "Spinach & Feta Omlette",
   "serves": 1.0,
   "total": 50.0,
@@ -22656,6 +23549,7 @@
   ]
  },
  "spinach-parmesan-soup": {
+  "check_source": false,
   "title": "Spinach & Parmesan Soup",
   "serves": 1.0,
   "total": 165.0,
@@ -22718,7 +23612,7 @@
     "raw": "1/2 cup milk, you can use whole, almond, lactose free",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 6.96,
     "amount": 120.0,
@@ -22754,6 +23648,7 @@
   ]
  },
  "spinach-ricotta-cannelloni": {
+  "check_source": false,
   "title": "Spinach Ricotta Cannelloni",
   "serves": 3.0,
   "total": 0,
@@ -22830,6 +23725,7 @@
   ]
  },
  "sticky-asian-meatballs": {
+  "check_source": false,
   "title": "Sticky Asian Meatballs",
   "serves": 3.0,
   "total": 400.0,
@@ -22979,15 +23875,16 @@
   ]
  },
  "strawberry-chia-pudding": {
+  "check_source": false,
   "title": "Strawberry Chia Pudding",
   "serves": 2.0,
-  "total": 47.0,
+  "total": 192.0,
   "lines": 5,
-  "resolved": 3,
-  "unresolved": 2,
+  "resolved": 4,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 24,
-  "for_two": 47,
+  "per_serve": 96,
+  "for_two": 192,
   "detail": [
    {
     "raw": "1/4 cup chia seeds",
@@ -23003,7 +23900,7 @@
     "raw": "1 cup milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 13.92,
     "amount": 240.0,
@@ -23028,21 +23925,26 @@
    {
     "raw": "200 grams strawberries",
     "name": "strawberries",
-    "status": "missing",
-    "candidates": []
+    "item": "Strawberries",
+    "via": "exact",
+    "status": "ok",
+    "cost": 145.0,
+    "amount": 200.0,
+    "note": ""
    }
   ]
  },
  "strawberry-shortcakes": {
+  "check_source": false,
   "title": "Strawberry Shortcakes",
-  "serves": null,
+  "serves": 3.0,
   "total": 95.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 32,
+  "for_two": 63,
   "detail": [
    {
     "raw": "200 grams Maida",
@@ -23120,15 +24022,16 @@
   ]
  },
  "stuffed-bhindi": {
+  "check_source": false,
   "title": "Stuffed Bhindi",
   "serves": 2.0,
-  "total": 52.0,
+  "total": 51.0,
   "lines": 11,
-  "resolved": 10,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 11,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 26,
-  "for_two": 52,
+  "for_two": 51,
   "detail": [
    {
     "raw": "250 grams Bhindi",
@@ -23143,18 +24046,23 @@
    {
     "raw": "1 - 2 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 6.64,
+    "cost": 4.28,
     "amount": 22.5,
     "note": ""
    },
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "1 tbsp coriander powder",
@@ -23235,15 +24143,16 @@
   ]
  },
  "stuffed-chicken-with-garlicky-mushrooms-spinach": {
+  "check_source": false,
   "title": "Stuffed Chicken with Garlicky Mushrooms & Spinach",
   "serves": 3.0,
-  "total": 614.0,
+  "total": 655.0,
   "lines": 10,
-  "resolved": 9,
-  "unresolved": 1,
-  "complete": false,
-  "per_serve": 205,
-  "for_two": 409,
+  "resolved": 10,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 218,
+  "for_two": 437,
   "detail": [
    {
     "raw": "3 chicken breasts",
@@ -23258,10 +24167,11 @@
    {
     "raw": "1/2 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 0.74,
+    "cost": 0.47,
     "amount": 2.5,
     "note": ""
    },
@@ -23324,8 +24234,12 @@
    {
     "raw": "30 grams gouda cheese",
     "name": "gouda cheese",
-    "status": "missing",
-    "candidates": []
+    "item": "Gouda Cheese",
+    "via": "exact",
+    "status": "ok",
+    "cost": 42.0,
+    "amount": 30.0,
+    "note": ""
    },
    {
     "raw": "1 tbsp cajun seasoning for the top of the chicken, optional",
@@ -23340,15 +24254,16 @@
   ]
  },
  "sugar-free-cheesecake-for-two": {
+  "check_source": false,
   "title": "Sugar-Free Cheesecake for Two",
-  "serves": null,
+  "serves": 3.0,
   "total": 125.0,
   "lines": 6,
   "resolved": 3,
   "unresolved": 3,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 42,
+  "for_two": 83,
   "detail": [
    {
     "raw": "1 tbsp monk fruit sugar",
@@ -23395,12 +24310,15 @@
    {
     "raw": "50 grams of my homemade biscoff spread (sugar free) or any topping of choice",
     "name": "my homemade biscoff spread any topping choice",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "biscoff spread"
+    ]
    }
   ]
  },
  "sugar-free-hot-chocolate": {
+  "check_source": false,
   "title": "Sugar Free Hot Chocolate",
   "serves": 2.0,
   "total": 118.0,
@@ -23415,7 +24333,7 @@
     "raw": "350 ml milk, you can use any milk you want - almond, oats, normal or lactose free",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 20.3,
     "amount": 350.0,
@@ -23471,15 +24389,16 @@
   ]
  },
  "summer-pasta-salad": {
+  "check_source": false,
   "title": "Summer Pasta Salad",
-  "serves": null,
-  "total": 205.0,
+  "serves": 3.0,
+  "total": 216.0,
   "lines": 10,
-  "resolved": 7,
-  "unresolved": 3,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 72,
+  "for_two": 144,
   "detail": [
    {
     "raw": "80 grams of pasta, weigh before cooking :)",
@@ -23497,7 +24416,8 @@
     "status": "ambiguous",
     "candidates": [
      "lettuce iceberg",
-     "romaine lettuce"
+     "romaine lettuce",
+     "lettuce (generic leaves)"
     ]
    },
    {
@@ -23550,14 +24470,22 @@
    {
     "raw": "1 tsp whole grain mustard",
     "name": "grain mustard",
-    "status": "missing",
-    "candidates": []
+    "item": "Whole Grain / English Mustard",
+    "via": "auto",
+    "status": "ok",
+    "cost": 1.17,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "a squeeze of lime",
     "name": "squeeze lime",
-    "status": "missing",
-    "candidates": []
+    "item": "Lime",
+    "via": "auto",
+    "status": "ok",
+    "cost": 9.8,
+    "amount": 40,
+    "note": ""
    },
    {
     "raw": "pinch of salt and pepper",
@@ -23568,15 +24496,16 @@
   ]
  },
  "sweet-sour-paneer": {
+  "check_source": false,
   "title": "Sweet & Sour Paneer",
   "serves": 2.0,
-  "total": 286.0,
+  "total": 311.0,
   "lines": 16,
-  "resolved": 14,
-  "unresolved": 2,
+  "resolved": 15,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": 143,
-  "for_two": 286,
+  "per_serve": 156,
+  "for_two": 311,
   "detail": [
    {
     "raw": "Paneer & vegetables",
@@ -23638,10 +24567,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -23662,8 +24592,12 @@
    {
     "raw": "200g pineapple juice",
     "name": "pineapple juice",
-    "status": "missing",
-    "candidates": []
+    "item": "Pineapple Juice",
+    "via": "exact",
+    "status": "ok",
+    "cost": 25.8,
+    "amount": 200.0,
+    "note": ""
    },
    {
     "raw": "2 tbsp soy sauce",
@@ -23725,23 +24659,25 @@
   ]
  },
  "tamatar-ki-subzi": {
+  "check_source": false,
   "title": "Tamatar Ki Subzi",
   "serves": 3.0,
   "total": 59.0,
   "lines": 13,
-  "resolved": 12,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 13,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 20,
   "for_two": 39,
   "detail": [
    {
     "raw": "1 - 2 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.21,
+    "cost": 1.43,
     "amount": 7.5,
     "note": ""
    },
@@ -23778,8 +24714,12 @@
    {
     "raw": "1 tsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
    },
    {
     "raw": "3 green chillies, finely chopped ( adjust as per spice preference )",
@@ -23860,15 +24800,16 @@
   ]
  },
  "thai-chicken-meatballs-with-red-curry-coconut-sauce": {
+  "check_source": false,
   "title": "Thai Chicken Meatballs with Red Curry Coconut Sauce",
   "serves": 3.0,
-  "total": 607.0,
+  "total": 610.0,
   "lines": 20,
-  "resolved": 15,
-  "unresolved": 5,
+  "resolved": 16,
+  "unresolved": 4,
   "complete": false,
-  "per_serve": 202,
-  "for_two": 405,
+  "per_serve": 203,
+  "for_two": 407,
   "detail": [
    {
     "raw": "450 grams chicken mince",
@@ -23911,8 +24852,12 @@
    {
     "raw": "1 1/2 tbsp ginger garlic paste",
     "name": "ginger garlic paste",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Ginger Garlic Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.08,
+    "amount": 24.8,
+    "note": ""
    },
    {
     "raw": "1 tbsp red curry paste",
@@ -23952,10 +24897,11 @@
    {
     "raw": "1 tsp oil, to cook meatballs, dont want to use oil? use an airfryer",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -23969,10 +24915,11 @@
    {
     "raw": "1/2 tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.21,
+    "cost": 1.43,
     "amount": 7.5,
     "note": ""
    },
@@ -24058,6 +25005,7 @@
   ]
  },
  "thai-inspired-ginger-carrot-soup": {
+  "check_source": false,
   "title": "Thai Inspired Ginger Carrot Soup",
   "serves": 2.0,
   "total": 73.0,
@@ -24121,14 +25069,22 @@
    {
     "raw": "2 birds eye chilli, for spice, optional basis what you like :)",
     "name": "birds eye chilli",
-    "status": "missing",
-    "candidates": []
+    "item": "Bird's Eye Chilli",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 2.0,
+    "unit": null
    },
    {
     "raw": "1 1/2 vegetable stock",
     "name": "vegetable stock",
-    "status": "missing",
-    "candidates": []
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 1.5,
+    "unit": null
    },
    {
     "raw": "salt + black pepper to taste",
@@ -24153,23 +25109,25 @@
   ]
  },
  "thakkali-chutney-with-idli": {
+  "check_source": false,
   "title": "Thakkali Chutney with Idli",
   "serves": 4.0,
-  "total": 59.0,
+  "total": 58.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 15,
-  "for_two": 30,
+  "per_serve": 14,
+  "for_two": 29,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -24243,6 +25201,7 @@
   ]
  },
  "the-holi-cookie": {
+  "check_source": false,
   "title": "The Holi Cookie",
   "serves": 5.0,
   "total": 412.0,
@@ -24287,7 +25246,7 @@
     "raw": "2 tbsp milk (mix in 1/2 - 1 tbsp thandai powder)",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 1.74,
     "amount": 30.0,
@@ -24339,15 +25298,16 @@
   ]
  },
  "tomato-chutney-thakkali-thokku": {
+  "check_source": false,
   "title": "Tomato Chutney / Thakkali Thokku",
-  "serves": null,
+  "serves": 3.0,
   "total": 15.0,
   "lines": 15,
-  "resolved": 11,
-  "unresolved": 4,
+  "resolved": 12,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 5,
+  "for_two": 10,
   "detail": [
    {
     "raw": "Oil",
@@ -24369,8 +25329,12 @@
    {
     "raw": "3 dry red chilies – broken",
     "name": "dry red chilies",
-    "status": "missing",
-    "candidates": []
+    "item": "Dry Red Chilli",
+    "via": "exact",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 3.0,
+    "unit": null
    },
    {
     "raw": "5 black pepper, whole",
@@ -24409,18 +25373,23 @@
    {
     "raw": "½ tbsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 2.21,
+    "cost": 1.43,
     "amount": 7.5,
     "note": ""
    },
    {
     "raw": "1 dry red chili",
     "name": "dry red chili",
-    "status": "missing",
-    "candidates": []
+    "item": "Dry Red Chilli",
+    "via": "exact",
+    "status": "unit",
+    "reason": "piece-weight",
+    "qty": 1.0,
+    "unit": null
    },
    {
     "raw": "curry leaves",
@@ -24442,8 +25411,12 @@
    {
     "raw": "pinch of hing",
     "name": "hing",
-    "status": "missing",
-    "reason": "gap-list"
+    "item": "Hing (Asafoetida)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.6,
+    "amount": 0.3,
+    "note": "vague amount"
    },
    {
     "raw": "cool this and blend it into a smooth paste",
@@ -24462,23 +25435,25 @@
   ]
  },
  "tomato-chutney": {
+  "check_source": false,
   "title": "Tomato Chutney",
   "serves": 4.0,
-  "total": 59.0,
+  "total": 58.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 15,
-  "for_two": 30,
+  "per_serve": 14,
+  "for_two": 29,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -24552,23 +25527,25 @@
   ]
  },
  "tomato-soup": {
+  "check_source": false,
   "title": "Tomato Soup",
   "serves": 2.0,
-  "total": 47.0,
+  "total": 46.0,
   "lines": 13,
   "resolved": 13,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 24,
-  "for_two": 47,
+  "per_serve": 23,
+  "for_two": 46,
   "detail": [
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -24674,15 +25651,16 @@
   ]
  },
  "triple-chocolate-muffins": {
+  "check_source": false,
   "title": "Triple Chocolate Muffins",
   "serves": 8.0,
-  "total": 286.0,
+  "total": 279.0,
   "lines": 12,
   "resolved": 12,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 36,
-  "for_two": 72,
+  "per_serve": 35,
+  "for_two": 70,
   "detail": [
    {
     "raw": "125 grams maida",
@@ -24754,10 +25732,11 @@
    {
     "raw": "60 grams oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 19.24,
+    "cost": 12.39,
     "amount": 65.2,
     "note": ""
    },
@@ -24765,7 +25744,7 @@
     "raw": "60 grams milk",
     "name": "milk",
     "item": "Toned Milk",
-    "via": "suggested",
+    "via": "alias",
     "status": "ok",
     "cost": 3.38,
     "amount": 58.3,
@@ -24801,15 +25780,16 @@
   ]
  },
  "under-500-calorie-chicken-noodle-stir-fry": {
+  "check_source": false,
   "title": "Under 500 Calorie Chicken Noodle Stir Fry",
-  "serves": null,
-  "total": 56.0,
+  "serves": 3.0,
+  "total": 75.0,
   "lines": 9,
-  "resolved": 7,
-  "unresolved": 2,
+  "resolved": 8,
+  "unresolved": 1,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 25,
+  "for_two": 50,
   "detail": [
    {
     "raw": "200 grams chicken marinated with 1/2 tsp gochujang paste",
@@ -24822,10 +25802,11 @@
    {
     "raw": "1 tsp oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
     "status": "ok",
-    "cost": 1.47,
+    "cost": 0.95,
     "amount": 5.0,
     "note": ""
    },
@@ -24892,21 +25873,26 @@
    {
     "raw": "50 grams atta noodles, I use @masterchow.in",
     "name": "atta noodles",
-    "status": "missing",
-    "candidates": []
+    "item": "Atta Noodles",
+    "via": "exact",
+    "status": "ok",
+    "cost": 20.0,
+    "amount": 50.0,
+    "note": ""
    }
   ]
  },
  "vatha-kuzhambu": {
+  "check_source": false,
   "title": "Vatha Kuzhambu",
   "serves": 4.0,
-  "total": 52.0,
+  "total": 67.0,
   "lines": 11,
-  "resolved": 7,
-  "unresolved": 4,
+  "resolved": 8,
+  "unresolved": 3,
   "complete": false,
-  "per_serve": 13,
-  "for_two": 26,
+  "per_serve": 17,
+  "for_two": 34,
   "detail": [
    {
     "raw": "1 tbsp sesame oil",
@@ -24970,14 +25956,20 @@
    {
     "raw": "1 lemon ball size tamarind soaked in 3 cups water",
     "name": "lemon ball size tamarind in cups water",
-    "status": "missing",
-    "candidates": []
+    "status": "suggest",
+    "candidates": [
+     "lemon"
+    ]
    },
    {
     "raw": "2 tbsp kuzhambu podi",
     "name": "kuzhambu podi",
-    "status": "missing",
-    "candidates": []
+    "item": "Kuzhambu / Rasam / Milagai Podi",
+    "via": "auto",
+    "status": "ok",
+    "cost": 14.85,
+    "amount": 16.5,
+    "note": ""
    },
    {
     "raw": "1 tbsp jaggery / brown sugar",
@@ -25006,6 +25998,7 @@
   ]
  },
  "vegan-air-fryer-falafel": {
+  "check_source": false,
   "title": "Vegan Air Fryer Falafel",
   "serves": 8.0,
   "total": 63.0,
@@ -25117,15 +26110,16 @@
   ]
  },
  "vegan-egg-salad": {
+  "check_source": false,
   "title": "Vegan Egg Salad",
-  "serves": null,
+  "serves": 4.0,
   "total": 45.0,
   "lines": 8,
   "resolved": 4,
   "unresolved": 4,
   "complete": false,
-  "per_serve": null,
-  "for_two": null,
+  "per_serve": 11,
+  "for_two": 22,
   "detail": [
    {
     "raw": "100 grams chickpea (raw weight), pressure cooked",
@@ -25198,21 +26192,26 @@
   ]
  },
  "vegan-mocha-delight-frappe": {
+  "check_source": false,
   "title": "Vegan Mocha Delight Frappe",
   "serves": 1.0,
-  "total": 15.0,
+  "total": 28.0,
   "lines": 7,
-  "resolved": 4,
-  "unresolved": 3,
+  "resolved": 5,
+  "unresolved": 2,
   "complete": false,
-  "per_serve": 15,
-  "for_two": 30,
+  "per_serve": 28,
+  "for_two": 56,
   "detail": [
    {
     "raw": "1 banana, frozen, cut into chunks",
     "name": "banana",
-    "status": "missing",
-    "candidates": []
+    "item": "Banana",
+    "via": "exact",
+    "status": "ok",
+    "cost": 13.0,
+    "amount": 1.0,
+    "note": ""
    },
    {
     "raw": "1 cup brewed coffee, chilled",

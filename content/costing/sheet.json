@@ -3294,9 +3294,9 @@
    "category": "Poultry",
    "brand": "Licious",
    "store": "Licious",
-   "qty": null,
+   "qty": 450.0,
    "unit": "g",
-   "price": null,
+   "price": 350.0,
    "default": true,
    "yield_": 1.0,
    "updated": "29 Jul 2026",
@@ -5862,6 +5862,604 @@
    "yield_": 1.0,
    "updated": "29 Jul 2026",
    "note": ""
+  },
+  {
+   "item": "Ginger Garlic Paste",
+   "category": "Sauces & Condiments",
+   "brand": "Catch",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 33.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Greek Yogurt",
+   "category": "Dairy & Eggs",
+   "brand": "Milky Mist",
+   "store": "Blinkit",
+   "qty": 225.0,
+   "unit": "g",
+   "price": 106.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Lemon",
+   "category": "Vegetable",
+   "brand": "Generic",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 49.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "unit corrected to g (sheet had pc)"
+  },
+  {
+   "item": "Dry Red Chilli",
+   "category": "Spices & Seasonings",
+   "brand": "Whole Farm Premium",
+   "store": "Blinkit",
+   "qty": 100.0,
+   "unit": "g",
+   "price": 74.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Hing (Asafoetida)",
+   "category": "Spices & Seasonings",
+   "brand": "Catch",
+   "store": "Blinkit",
+   "qty": 25.0,
+   "unit": "g",
+   "price": 50.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Vegetable Stock (cube / powder)",
+   "category": "Pantry Staples",
+   "brand": "Knorr Vegetables Stock Cubes",
+   "store": "Blinkit",
+   "qty": 80.0,
+   "unit": "g",
+   "price": 20.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Kasuri Methi",
+   "category": "Spices & Seasonings",
+   "brand": "Whole Farm Premium",
+   "store": "Blinkit",
+   "qty": 50.0,
+   "unit": "g",
+   "price": 28.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Banana",
+   "category": "Vegetable",
+   "brand": "Generic",
+   "store": "Blinkit",
+   "qty": 3.0,
+   "unit": "pc",
+   "price": 39.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Instant Coffee Powder",
+   "category": "Pantry Staples",
+   "brand": "Nescafé Classic",
+   "store": "Blinkit",
+   "qty": 45.0,
+   "unit": "g",
+   "price": 210.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Cinnamon Powder",
+   "category": "Spices & Seasonings",
+   "brand": "Snapin",
+   "store": "Blinkit",
+   "qty": 45.0,
+   "unit": "g",
+   "price": 114.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Protein Powder",
+   "category": "Pantry Staples",
+   "brand": "Nakpro Impact Whey Concentrate & Isolate",
+   "store": "Blinkit",
+   "qty": 1000.0,
+   "unit": "g",
+   "price": 1497.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Green Chutney",
+   "category": "Sauces & Condiments",
+   "brand": "Tata Sampann Chatpati Dhaniya Pudina Hari Chutney Dip",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 69.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Tabasco / Hot Sauce",
+   "category": "Sauces & Condiments",
+   "brand": "Tabasco Red Pepper Chilli Sauce",
+   "store": "Blinkit",
+   "qty": 60.0,
+   "unit": "ml",
+   "price": 189.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Chicken Sausage",
+   "category": "Poultry",
+   "brand": "Prasuma",
+   "store": "Blinkit",
+   "qty": 250.0,
+   "unit": "g",
+   "price": 164.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Chilli Vinegar",
+   "category": "Oils & Vinegars",
+   "brand": "Ching's Secret White Chilli Vinegar with Green Jwala Chilli",
+   "store": "Blinkit",
+   "qty": 170.0,
+   "unit": "ml",
+   "price": 47.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Bird's Eye Chilli",
+   "category": "Vegetable",
+   "brand": "Thai Bird Eye Chilli - Green",
+   "store": "Blinkit",
+   "qty": 20.0,
+   "unit": "g",
+   "price": 100.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Lettuce (generic leaves)",
+   "category": "Vegetable",
+   "brand": "Green Lettuce",
+   "store": "Blinkit",
+   "qty": 100.0,
+   "unit": "g",
+   "price": 41.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Kuzhambu / Rasam / Milagai Podi",
+   "category": "Spices & Seasonings",
+   "brand": "Yours Freshly Rasam Powder",
+   "store": "Blinkit",
+   "qty": 100.0,
+   "unit": "g",
+   "price": 90.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Bok Choy",
+   "category": "Vegetable",
+   "brand": "Generic",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 70.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Whole Grain / English Mustard",
+   "category": "Sauces & Condiments",
+   "brand": "Tops English Mustard Sauce",
+   "store": "Blinkit",
+   "qty": 300.0,
+   "unit": "g",
+   "price": 64.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Gouda Cheese",
+   "category": "Dairy & Eggs",
+   "brand": "Amul Gouda Cheese Block",
+   "store": "Blinkit",
+   "qty": 250.0,
+   "unit": "g",
+   "price": 350.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Lime",
+   "category": "Vegetable",
+   "brand": "Generic (Blinkit listing is Lemon; separate green lime not f",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 49.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "unit corrected to g (sheet had pc)"
+  },
+  {
+   "item": "Roti / Tortilla Wraps (cooked)",
+   "category": "Bread & Bakery",
+   "brand": "Cornitos Wheat Flour Tortilla Wrap",
+   "store": "Blinkit",
+   "qty": 270.0,
+   "unit": "g",
+   "price": 180.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "unit corrected to g (sheet had pc)"
+  },
+  {
+   "item": "Maggi Noodles",
+   "category": "Pantry Staples",
+   "brand": "Maggi 2 Minutes Instant Noodles",
+   "store": "Blinkit",
+   "qty": 420.0,
+   "unit": "g",
+   "price": 80.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "unit corrected to g (sheet had pc)"
+  },
+  {
+   "item": "Maggi Hot & Sweet Sauce",
+   "category": "Sauces & Condiments",
+   "brand": "Maggi Hot & Sweet Tomato Chilli Sauce",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "ml",
+   "price": 80.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Marshmallows",
+   "category": "Flour & Baking",
+   "brand": "Pluffs Pink & White Marshmallow",
+   "store": "Blinkit",
+   "qty": 140.0,
+   "unit": "g",
+   "price": 171.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Green Chilli Paste / Red Chilli Paste",
+   "category": "Sauces & Condiments",
+   "brand": "Ching's Secret Green Chilli Sauce (substitute, not paste)",
+   "store": "Blinkit",
+   "qty": 190.0,
+   "unit": "g",
+   "price": 51.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "substitute/older listing — Ella to confirm"
+  },
+  {
+   "item": "Strawberries",
+   "category": "Vegetable",
+   "brand": "Delishh Frozen Strawberry (frozen alternative; fresh listing",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 145.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "substitute/older listing — Ella to confirm"
+  },
+  {
+   "item": "Frozen Momos",
+   "category": "Frozen Foods",
+   "brand": "Prasuma Veg and Paneer Momos",
+   "store": "Blinkit",
+   "qty": 10.0,
+   "unit": "pc",
+   "price": 149.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Cooking Spray",
+   "category": "Oils & Vinegars",
+   "brand": "Anveshan Groundnut Oil Cooking Spray",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "ml",
+   "price": 317.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "substitute/older listing — Ella to confirm"
+  },
+  {
+   "item": "Peri Peri Masala",
+   "category": "Spices & Seasonings",
+   "brand": "Orika African Peri Peri Masala",
+   "store": "Blinkit",
+   "qty": 85.0,
+   "unit": "g",
+   "price": 62.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Black Tea",
+   "category": "Pantry Staples",
+   "brand": "Tata Tea Premium",
+   "store": "Blinkit",
+   "qty": 100.0,
+   "unit": "g",
+   "price": 45.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Dan Dan Sauce",
+   "category": "Sauces & Condiments",
+   "brand": "MasterChow Chowmein Sauce (substitute, not Dan Dan sauce)",
+   "store": "Blinkit",
+   "qty": 220.0,
+   "unit": "ml",
+   "price": 133.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "substitute/older listing — Ella to confirm"
+  },
+  {
+   "item": "Gruyère",
+   "category": "Dairy & Eggs",
+   "brand": "D'lecta 100% Cheddar (substitute; Gruyère not found)",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 199.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "substitute/older listing — Ella to confirm"
+  },
+  {
+   "item": "Tamarind (paste / ball)",
+   "category": "Pantry Staples",
+   "brand": "Mother's Recipe Tamarind Paste",
+   "store": "Blinkit",
+   "qty": 200.0,
+   "unit": "g",
+   "price": 58.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Frozen Chicken Meatballs",
+   "category": "Frozen Foods",
+   "brand": "Godrej Yummiez Korean Style Chicken Meatballs",
+   "store": "Blinkit",
+   "qty": 250.0,
+   "unit": "g",
+   "price": 163.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Chilli Crisp",
+   "category": "Sauces & Condiments",
+   "brand": "MasterChow Crunchy Garlic Chilli Crisp",
+   "store": "Blinkit",
+   "qty": 90.0,
+   "unit": "g",
+   "price": 149.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Cauliflower",
+   "category": "Vegetable",
+   "brand": "Generic",
+   "store": "Blinkit",
+   "qty": 400.0,
+   "unit": "g",
+   "price": 31.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "French Beans",
+   "category": "Vegetable",
+   "brand": "Generic",
+   "store": "Blinkit",
+   "qty": 250.0,
+   "unit": "g",
+   "price": 26.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Oreo Biscuits",
+   "category": "Flour & Baking",
+   "brand": "Oreo Vanilla Flavour Sandwich Cream Biscuits",
+   "store": "Blinkit",
+   "qty": 125.25,
+   "unit": "g",
+   "price": 38.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Orange",
+   "category": "Vegetable",
+   "brand": "Indian Nagpur Orange",
+   "store": "Blinkit",
+   "qty": 500.0,
+   "unit": "g",
+   "price": 54.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": "unit corrected to g (sheet had pc)"
+  },
+  {
+   "item": "Nutella / Chocolate Spread",
+   "category": "Sauces & Condiments",
+   "brand": "Nutella Hazelnut Chocolate Spread",
+   "store": "Blinkit",
+   "qty": 180.0,
+   "unit": "g",
+   "price": 239.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Boondi",
+   "category": "Pantry Staples",
+   "brand": "Haldiram's",
+   "store": "Blinkit",
+   "qty": 210.0,
+   "unit": "g",
+   "price": 55.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Biscoff Spread",
+   "category": "Sauces & Condiments",
+   "brand": "Lotus Biscoff Smooth Spread",
+   "store": "Blinkit",
+   "qty": 400.0,
+   "unit": "g",
+   "price": 674.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Pineapple Juice",
+   "category": "Sauces & Condiments",
+   "brand": "Real Fruit Power",
+   "store": "Blinkit",
+   "qty": 1000.0,
+   "unit": "ml",
+   "price": 129.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
+  },
+  {
+   "item": "Atta Noodles",
+   "category": "Pantry Staples",
+   "brand": "Maggi Nutrilicious Veg Atta Noodles",
+   "store": "Blinkit",
+   "qty": 290.0,
+   "unit": "g",
+   "price": 116.0,
+   "default": true,
+   "yield_": 1.0,
+   "updated": "22 Oct 2026",
+   "note": ""
   }
  ],
  "aliases": {
@@ -5903,348 +6501,352 @@
   "lemon": "",
   "greek yogurt": "",
   "hing": "",
-  "water": ""
+  "water": "",
+  "milk": "Toned Milk",
+  "oil": "Canola Oil",
+  "vegetable oil": "Canola Oil",
+  "canola oil": "Canola Oil"
  },
  "serves": {
   "CzdQu3Ky2oL": {
    "title": "Iced Latte & Smoked CJ Fried Egg",
-   "serves": null,
-   "confirmed": false
+   "serves": 1.0,
+   "confirmed": true
   },
   "C5gNewkSSCk": {
    "title": "Air Fryer Chicken Parmesan",
-   "serves": null,
-   "confirmed": false
+   "serves": 2.0,
+   "confirmed": true
   },
   "CwcGklapiA7": {
    "title": "Aloo Paratha Sunday",
-   "serves": null,
-   "confirmed": false
+   "serves": 4.0,
+   "confirmed": true
   },
   "CyaL6UCSlwq": {
    "title": "Paneer Paratha",
-   "serves": null,
-   "confirmed": false
+   "serves": 4.0,
+   "confirmed": true
   },
   "CzsplxGSgE_": {
    "title": "Dahi Tadka Toastie",
-   "serves": null,
-   "confirmed": false
+   "serves": 2.0,
+   "confirmed": true
   },
   "Cw7eFxuyOwf": {
    "title": "Chicken Chapli Kebab",
-   "serves": null,
-   "confirmed": false
+   "serves": 4.0,
+   "confirmed": true
   },
   "C1KI17CSDfy": {
    "title": "Lemon Coriander Rice",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cv1SbaEgslc": {
    "title": "Vegan Egg Salad",
-   "serves": null,
-   "confirmed": false
+   "serves": 4.0,
+   "confirmed": true
   },
   "CtDtpuvIlJQ": {
    "title": "Nutella French Toast",
-   "serves": null,
-   "confirmed": false
+   "serves": 2.0,
+   "confirmed": true
   },
   "CwowNt-pe45": {
    "title": "Five Chilli Oil Rice Noodles & Vegetable Stir Fry",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CwRowNUJsDr": {
    "title": "Air-Fried Crispy Chicken with Lime Leaf & Lemongrass Stir Fry Sauce",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CuZSPmZIhRC": {
    "title": "Brownie Cookie",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cq2yNXigcMA": {
    "title": "Dahi Wale Aloo",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "C1YrFyYSZ_Z": {
    "title": "Healthy Tuna Salad",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "DJOSI5hIbM9": {
    "title": "Lazy Girl Pasta Salad",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "C5FWjjLyuVM": {
    "title": "Punjabi Kadhi Without Pakodas",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Crnv4LngInN": {
    "title": "Desi Animal Fries",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "DQQv60ZEXkS": {
    "title": "Breakfast Goals: Iced Americano x Anda Bhurji with Mini Pav",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cgt5YdTg6hz": {
    "title": "Kada Prasad",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "C_neBq3yzJ0": {
    "title": "Easy Chicken Red Thai Curry Meal Box",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqhgYmpg1IM": {
    "title": "Namma Chocolate",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "DIoRZAYyIUz": {
    "title": "Ingredients",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CoFGrwSP1XH": {
    "title": "Fudge",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "DQJ-BKvDR-Q": {
    "title": "Cozy Chicken Lasagna",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqK9q9Tv0m6": {
    "title": "Garlic Tadka Khichdi",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CdiXKwjjczi": {
    "title": "Lavash",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cq77kfogGNO": {
    "title": "Brioche Hot Dog Buns",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cc-Y_chJeA0": {
    "title": "Flourless Chocolate Cake",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqablEHgl19": {
    "title": "Asian Tadka Cucumber Salad",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqIhClqgVsL": {
    "title": "Potato Fry",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqF3SQigXZS": {
    "title": "Bhindi Masala",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CrFkaNTg06o": {
    "title": "Aam Shake",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CfbjZeXjg84": {
    "title": "Aloo Paratha",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CdAXU17o2NG": {
    "title": "Summer Pasta Salad",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CqvFyFYALHP": {
    "title": "Not Your Average Pizza / Pasta Sauce",
-   "serves": null,
-   "confirmed": false
+   "serves": 4.0,
+   "confirmed": true
   },
   "Cbr-NrQIkWN": {
    "title": "Potato Roast",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CdDlBTFg5LQ": {
    "title": "Makhni Gravy",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CmT0O6poAfm": {
    "title": "Cheat’s Green Thai Curry",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cb-BnTFIQuQ": {
    "title": "Better Than Any Restaurant's, Tomato Bruschetta",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CnrWGT3pRyE": {
    "title": "Alfajores",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CeGnQYADJsj": {
    "title": "Mac And Cheese",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cp5BLvNAvzD": {
    "title": "Sugar-Free Cheesecake for Two",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cb47-r1Ac24": {
    "title": "Cookie Dough #1",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbpXCEtoiRt": {
    "title": "Simple And Tasty One Bowl Boondi Raita",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbaANoQgqFd": {
    "title": "One Pot Palak Paneer",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cdf4f-mJiRU": {
    "title": "Eggless Vanilla Cupcake",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbupIRHoU7u": {
    "title": "Chilli Paste",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cn_9qwsPaHC": {
    "title": "Elephant Ears",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CozbDY8ATG0": {
    "title": "Honeycomb",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cb2RIAXgB4j": {
    "title": "Chocolate Chip Banana Bread",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbPtG0ag-e1": {
    "title": "Mexican Rice (Arroz Rojo)",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CgY9vTOARJW": {
    "title": "Under 500 Calorie Chicken Noodle Stir Fry",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cmbk4mJphYE": {
    "title": "10-Minute Salsa",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CmMCV_xo2nH": {
    "title": "Tomato Chutney / Thakkali Thokku",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CnO-QN8p9UT": {
    "title": "Mushroom Ragù",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbSRKLrAP7T": {
    "title": "Simple Sponge Cake (for Tres Leches)",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CgjesQIglKD": {
    "title": "Healthy Chicken Tikka",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cl8jBQ6hhWz": {
    "title": "Mexican Style Beans",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbkNxEyAg6O": {
    "title": "Punjabi Kadhi",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "Cn1jAnhAcTa": {
    "title": "Dutch Baby Pancake",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CntVehzJt4m": {
    "title": "Coffee Hazelnut Biscotti",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CfEdBxhj9Mr": {
    "title": "Potato Asmr",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbIEKQ6gFIJ": {
    "title": "One-Bowl Mexican Salsa",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CmODRxGB4VV": {
    "title": "Soft and Fluffy Scrambled Eggs",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "ClLcebXI6Ly": {
    "title": "Hot Mocha",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CcSqY9YArF3": {
    "title": "All-Purpose Chicken Mince",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CldjvBiIJ3S": {
    "title": "Strawberry Shortcakes",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "CbXfxv0gdQS": {
    "title": "Pastel De Tres Leches",
-   "serves": null,
-   "confirmed": false
+   "serves": 3.0,
+   "confirmed": true
   },
   "C1gMf-uSMyY": {
    "title": "Creamy Mushroom & Spinach Frittata",
@@ -7227,6 +7829,25 @@
    "type": "Vague amounts",
    "value": 0.0,
    "unit": "g"
+  }
+ },
+ "overrides": {
+  "_comment": "Hand decisions that don't fit the Sheet columns. aliases: recipe wording -> price-list ingredient. standins: ingredient not yet priced -> priced ingredient used meanwhile (flagged).",
+  "aliases": {
+   "oil": "Canola Oil",
+   "vegetable oil": "Canola Oil",
+   "canola oil": "Canola Oil"
+  },
+  "standins": {
+   "canola oil": "Sunflower Oil"
+  },
+  "piece_weights_g": {
+   "lemon": 50,
+   "lime": 40,
+   "orange": 150,
+   "roti": 45,
+   "tortilla": 45,
+   "maggi": 70
   }
  }
 }

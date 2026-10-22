@@ -1,0 +1,6 @@
+{
+ "_comment": "Hand decisions that don't fit the Sheet columns. aliases: recipe wording -> price-list ingredient. standins: ingredient not yet priced -> priced ingredient used meanwhile (flagged).",
+ "aliases": {"oil": "Canola Oil", "vegetable oil": "Canola Oil", "canola oil": "Canola Oil"},
+ "standins": {"canola oil": "Sunflower Oil"},
+ "piece_weights_g": {"lemon": 50, "lime": 40, "orange": 150, "roti": 45, "tortilla": 45, "maggi": 70}
+}
