@@ -37,18 +37,6 @@
  },
  {
   "status": "missing",
-  "key": "knobb butter",
-  "recipes": 7,
-  "lines": 7,
-  "examples": [
-   "knobb of butter",
-   "knobb of butter",
-   "knobb of butter"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "monkfruit",
   "recipes": 6,
   "lines": 7,
@@ -80,18 +68,6 @@
    "2 tbsp green chutney",
    "1 tsp green chutney",
    "5 tbsp green chutney"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Cheese Block|noqty",
-  "recipes": 5,
-  "lines": 5,
-  "examples": [
-   "grated cheese",
-   "Cheese for topping",
-   "grated cheese"
   ],
   "candidates": []
  },
@@ -157,18 +133,6 @@
  },
  {
   "status": "missing",
-  "key": "marinade",
-  "recipes": 4,
-  "lines": 4,
-  "examples": [
-   "Marinade - you can play around with the spices as per your preference of flavours",
-   "Marinade - you can play around with the spices as per your preference of flavours",
-   "marinade"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "kasturi methi",
   "recipes": 4,
   "lines": 4,
@@ -192,20 +156,6 @@
   "candidates": []
  },
  {
-  "status": "suggest",
-  "key": "spring onion greens",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "1 spring onion greens, finely chopped",
-   "spring onion greens + sesame seeds",
-   "3 spring onion greens, chopped"
-  ],
-  "candidates": [
-   "onion"
-  ]
- },
- {
   "status": "missing",
   "key": "tobasco",
   "recipes": 3,
@@ -214,30 +164,6 @@
    "1 tsp tobasco",
    "1/4 tsp tobasco",
    "1 tsp tobasco"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "juice lemon",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "Juice of ½ lemon",
-   "Juice of ½ lemon",
-   "juice of 1 lemon"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Caesar Dressing|noqty",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "Caesar dressing",
-   "Caesar’s “cheats” Dressing",
-   "Caesar’s “cheats” Dressing"
   ],
   "candidates": []
  },
@@ -278,35 +204,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Tomato|noqty",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "sliced tomatoes",
-   "sliced tomatoes",
-   "Tomato - remove seeds inside part mushy, optional, sliced"
-  ],
-  "candidates": []
- },
- {
-  "status": "ambiguous",
-  "key": "dry",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "Dry",
-   "Dry",
-   "Dry"
-  ],
-  "candidates": [
-   "active dry yeast",
-   "instant dry yeast",
-   "dry coconut (copra)",
-   "dry ginger powder"
-  ]
- },
- {
   "status": "missing",
   "key": "pasta choice",
   "recipes": 3,
@@ -337,29 +234,6 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Onion|noqty",
-  "recipes": 3,
-  "lines": 3,
-  "examples": [
-   "spring onion + white sesame seeds",
-   "pickled onions",
-   "Pickled onions"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "juice one lemon",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "the juice of one lemon",
-   "the juice of one lemon"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "monkfruit sweetener",
   "recipes": 2,
@@ -369,19 +243,6 @@
    "1 tbsp monkfruit sweetener (use sweetener of choice, normal sugar works fine too and the amount is dependant on how sweet the chocolate is)"
   ],
   "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "spices",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "spices ( you can add more basis your personal preference keeping in mind that marinades dilute flavours)",
-   "Spices + Mix ins"
-  ],
-  "candidates": [
-   "chinese five spice"
-  ]
  },
  {
   "status": "suggest",
@@ -397,15 +258,17 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Cocoa Powder|noqty",
+  "status": "suggest",
+  "key": "spring onion greens",
   "recipes": 2,
   "lines": 2,
   "examples": [
-   "OR 1 tbsp cocoa powder + water + 1 tsp monkfruit to create a paste",
-   "dusting of cocoa powder, optional"
+   "1 spring onion greens, finely chopped",
+   "3 spring onion greens, chopped"
   ],
-  "candidates": []
+  "candidates": [
+   "onion"
+  ]
  },
  {
   "status": "unit",
@@ -415,17 +278,6 @@
   "examples": [
    "2-3 pieces ( 15 grams ) of dark chocolate, melted ( i used bournville 70% )",
    "one piece dark chocolate"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "a handful cashew nuts",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "a handful of cashew nuts",
-   "a handful of cashew nuts"
   ],
   "candidates": []
  },
@@ -441,28 +293,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Garlic|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "minced garlic",
-   "Garlic"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Cucumber|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "cucumber salsa",
-   "cubed cucumber"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "lemon s juice",
   "recipes": 2,
@@ -470,17 +300,6 @@
   "examples": [
    "1 lemon’s juice",
    "1 lemon’s juice"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Vanilla Extract|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "few drops of vanilla extract",
-   "drop of vanilla extract"
   ],
   "candidates": []
  },
@@ -551,17 +370,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Salted Butter|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "butter + caster sugar for buttering and dusting the ramekin",
-   "butter"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "kashmiri red chilli",
   "recipes": 2,
@@ -591,28 +399,6 @@
   "examples": [
    "1 tsp kasuri methi",
    "1 tbsp kasuri methi"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Carrot|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "grated carrot, optional",
-   "carrots, bell pepper, cabbage,"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Ghee|noqty",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "knobb of ghee",
-   "Ghee (replace with oil to make this vegan) + jeera + mustard seeds + hing + red chilli powder + minced garlic"
   ],
   "candidates": []
  },
@@ -650,20 +436,6 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "nuts",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "nuts, seeds, candy, whatever your heart desires :)",
-   "nuts, seeds, candy, whatever your heart desires :)"
-  ],
-  "candidates": [
-   "macadamia nuts",
-   "pine nuts"
-  ]
- },
- {
   "status": "missing",
   "key": "dry red chillies",
   "recipes": 2,
@@ -689,34 +461,12 @@
  },
  {
   "status": "missing",
-  "key": "strawberries",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "strawberries",
-   "200 grams strawberries"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "boiling water",
   "recipes": 2,
   "lines": 2,
   "examples": [
    "1/2 cup boiling water",
    "3 cups boiling water"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "salt & pepper",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "Salt & pepper (to your liking)",
-   "Salt & pepper"
   ],
   "candidates": []
  },
@@ -767,17 +517,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "any vegetables",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "any vegetables you want",
-   "any vegetables you want"
-  ],
-  "candidates": []
- },
- {
   "status": "unit",
   "key": "Cashews (Whole)|piece-weight",
   "recipes": 2,
@@ -787,64 +526,6 @@
    "8 cashews"
   ],
   "candidates": []
- },
- {
-  "status": "ambiguous",
-  "key": "sauce",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "sauce",
-   "sauce"
-  ],
-  "candidates": [
-   "arrabbiata sauce",
-   "bbq sauce",
-   "burger sauce",
-   "fish sauce",
-   "hoisin sauce"
-  ]
- },
- {
-  "status": "ambiguous",
-  "key": "dressing",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "dressing",
-   "Dressing - combine in the mixer"
-  ],
-  "candidates": [
-   "balsamic dressing",
-   "caesar dressing",
-   "ranch dressing",
-   "thousand island dressing"
-  ]
- },
- {
-  "status": "missing",
-  "key": "tikka marinade",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "Tikka Marinade - marinate paneer for 30 minutes minimum",
-   "Tikka Marinade - marinate paneer for 30 minutes"
-  ],
-  "candidates": []
- },
- {
-  "status": "ambiguous",
-  "key": "lettuce",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "Chopped lettuce",
-   "1 lettuce, hand shredded"
-  ],
-  "candidates": [
-   "lettuce iceberg",
-   "romaine lettuce"
-  ]
  },
  {
   "status": "missing",
@@ -899,33 +580,12 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Frozen Mango Chunks|noqty",
-  "recipes": 1,
-  "lines": 2,
-  "examples": [
-   "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
-   "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "boombayway lime leaf",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "2 tbsp @boombayway Lime leaf + Lemon grass Stir Fry sauce for the marinade"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "your favourite vegetables choice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Your favourite vegetables of choice"
   ],
   "candidates": []
  },
@@ -941,16 +601,6 @@
    "chicken breast boneless",
    "chicken thigh boneless"
   ]
- },
- {
-  "status": "missing",
-  "key": "cooking spray",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Cooking spray"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -974,28 +624,6 @@
    "garlic",
    "ginger"
   ]
- },
- {
-  "status": "suggest",
-  "key": "a few drops vanilla extract",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a few drops of vanilla extract, optional"
-  ],
-  "candidates": [
-   "vanilla extract"
-  ]
- },
- {
-  "status": "missing",
-  "key": "dulce de leche",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "dulce de leche"
-  ],
-  "candidates": []
  },
  {
   "status": "suggest",
@@ -1041,26 +669,6 @@
  },
  {
   "status": "missing",
-  "key": "slurry",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "slurry - 1 tsp cornflour + 3 tbsp water"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "but",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "but you will need to add in some salt + pepper"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "vegetable stock powder",
   "recipes": 1,
   "lines": 1,
@@ -1091,16 +699,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "White Eggs|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "egg + crumb coating"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "peri peri sprinkle after cooking",
   "recipes": 1,
@@ -1114,41 +712,11 @@
  },
  {
   "status": "missing",
-  "key": "cheats mayo",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "cheats “mayo”"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "english mustard your",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "2 tsp english mustard or to your taste"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "lettuce leaves",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "lettuce leaves"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Cheese Slices|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "cheese slices"
   ],
   "candidates": []
  },
@@ -1207,31 +775,11 @@
  },
  {
   "status": "missing",
-  "key": "topping",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "topping"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "chocolate pieces",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "2-3 chocolate pieces"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Desiccated Coconut|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "dessicated coconut"
   ],
   "candidates": []
  },
@@ -1277,18 +825,6 @@
  },
  {
   "status": "suggest",
-  "key": "add as many as little chocolate chips",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "add as many or as little chocolate chips you want"
-  ],
-  "candidates": [
-   "chocolate chips"
-  ]
- },
- {
-  "status": "suggest",
   "key": "garlic cloves cardamom pods",
   "recipes": 1,
   "lines": 1,
@@ -1318,18 +854,6 @@
    "1 lemon juice"
   ],
   "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "dip",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "dip"
-  ],
-  "candidates": [
-   "garlic dip (toum)"
-  ]
  },
  {
   "status": "missing",
@@ -1376,48 +900,6 @@
  },
  {
   "status": "missing",
-  "key": "as is with toast",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "as is or with toast"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Parmesan|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Extra Parmesan"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "best replacement",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "the best replacement for WC sauce if you dont have it / dont want to use it - 1 tablespoon ketchup + 1 tablespoon white wine vinegar + ½ tablespoon soy sauce + 1 dash hot sauce (optional)"
-  ],
-  "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "mince",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "mince"
-  ],
-  "candidates": [
-   "chicken mince (keema)"
-  ]
- },
- {
-  "status": "missing",
   "key": "bundles maggi noodles",
   "recipes": 1,
   "lines": 1,
@@ -1428,42 +910,11 @@
  },
  {
   "status": "missing",
-  "key": "reserve water from cooking maggi",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "reserve water from cooking the maggi"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "you can also add any other veges",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "you can also add any other veges you want!!!!"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "sausage patties",
   "recipes": 1,
-  "lines": 2,
-  "examples": [
-   "Sausage patties",
-   "2 sausage patties"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "per sandwich",
-  "recipes": 1,
   "lines": 1,
   "examples": [
-   "Per sandwich"
+   "2 sausage patties"
   ],
   "candidates": []
  },
@@ -1474,26 +925,6 @@
   "lines": 1,
   "examples": [
    "½ slice cheese"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Tomato Ketchup|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Ketchup + yellow mustard (non negotiable!)"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "chicken steak",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Chicken Steak"
   ],
   "candidates": []
  },
@@ -1516,26 +947,6 @@
   "lines": 1,
   "examples": [
    "4 frankfurters"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Jalapeños|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Jalapeños + red paprika"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Dijon Mustard|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Mustard + ketchup, as desired"
   ],
   "candidates": []
  },
@@ -1615,32 +1026,6 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "masala",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "masala"
-  ],
-  "candidates": [
-   "biryani masala",
-   "chaat masala",
-   "chicken masala",
-   "chole masala",
-   "garam masala"
-  ]
- },
- {
-  "status": "missing",
-  "key": "gravy",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "gravy"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "reserved water from pressure cooker",
   "recipes": 1,
@@ -1691,21 +1076,6 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "i used grams hersheys creamy milk chocolate grams callebautindia chips because dark chocolate is better always",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "i used 75 grams of hersheys creamy milk chocolate and 25 grams of @callebautindia chips because dark chocolate is BETTER always"
-  ],
-  "candidates": [
-   "chocolate chips",
-   "dark chocolate (55%)",
-   "dark chocolate (70%)",
-   "milk chocolate"
-  ]
- },
- {
   "status": "suggest",
   "key": "tinned san marzano tomatoes",
   "recipes": 1,
@@ -1715,18 +1085,6 @@
   ],
   "candidates": [
    "tomato"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "a little parmesan cheese",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a little grated parmesan cheese"
-  ],
-  "candidates": [
-   "parmesan"
   ]
  },
  {
@@ -1741,51 +1099,11 @@
  },
  {
   "status": "missing",
-  "key": "nobb butter",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "nobb of butter"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Tomato Paste|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "cashew tomato paste: 8 cashews + 2 tomato"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "tadka cook",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "tadka to cook"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "dry red chilli",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "3 dry red chilli"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "serve",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "to serve, 1 tsp ghee"
   ],
   "candidates": []
  },
@@ -1810,34 +1128,12 @@
   "candidates": []
  },
  {
-  "status": "suggest",
-  "key": "i forgot add coriander",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "i forgot to add coriander, but you should definately add some :)"
-  ],
-  "candidates": [
-   "coriander"
-  ]
- },
- {
   "status": "missing",
   "key": "leftover dal",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "150 grams leftover dal , i use this amount as my dal is quite thick, if using a thinner dal, you need to adjust the amount to get a proper dough consistency . do not add all dal at once as it might lead to the dough being too thick"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Hakka Noodles|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Noodles + greens"
   ],
   "candidates": []
  },
@@ -1858,16 +1154,6 @@
   "lines": 1,
   "examples": [
    "450g @licious_foods chicken mince"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "dan dan sauce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Dan Dan sauce"
   ],
   "candidates": []
  },
@@ -1922,16 +1208,6 @@
   "lines": 1,
   "examples": [
    "2 dried red chilli"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "a pinch turmeric",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a pinch of turmeric"
   ],
   "candidates": []
  },
@@ -2049,32 +1325,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "temper",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "temper"
-  ],
-  "candidates": []
- },
- {
-  "status": "ambiguous",
-  "key": "paste",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "paste"
-  ],
-  "candidates": [
-   "harissa paste",
-   "tomato paste",
-   "vanilla bean paste",
-   "thai green curry paste",
-   "thai red curry paste"
-  ]
- },
- {
   "status": "unit",
   "key": "Kashmiri Chilli Powder|piece-weight",
   "recipes": 1,
@@ -2111,26 +1361,6 @@
   "lines": 1,
   "examples": [
    "45 grams of uncooked pasta per serving"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "lemon wedges",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Lemon wedges"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Pav|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Whole wheat pav"
   ],
   "candidates": []
  },
@@ -2207,16 +1437,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "toppings",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "toppings"
-  ],
-  "candidates": []
- },
- {
   "status": "ambiguous",
   "key": "dark chocolate cube",
   "recipes": 1,
@@ -2228,16 +1448,6 @@
    "dark chocolate (55%)",
    "dark chocolate (70%)"
   ]
- },
- {
-  "status": "unit",
-  "key": "Granola|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "crunchy granola, optional, for crunch"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -2256,16 +1466,6 @@
   "lines": 1,
   "examples": [
    "1 - 1.5 cups whole fat / slim milk"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "having a frother is amazing",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Having a frother is amazing but if you don’t a spoon works fine!"
   ],
   "candidates": []
  },
@@ -2312,16 +1512,6 @@
   ]
  },
  {
-  "status": "unit",
-  "key": "Sourdough Slices|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "toasted sourdough"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "vietnamese coffee",
   "recipes": 1,
@@ -2338,16 +1528,6 @@
   "lines": 1,
   "examples": [
    "2 shots espresso"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "coconut slushy",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "coconut slushy"
   ],
   "candidates": []
  },
@@ -2508,16 +1688,6 @@
  },
  {
   "status": "missing",
-  "key": "add whatever veggies",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Add whatever veggies you like—TBH, I kept it simple"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "leftover rice",
   "recipes": 1,
   "lines": 1,
@@ -2543,16 +1713,6 @@
   "lines": 1,
   "examples": [
    "1 packet of maggi noodles @maggiindia"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "half packet",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "extra half packet, maggi masala"
   ],
   "candidates": []
  },
@@ -2598,16 +1758,6 @@
  },
  {
   "status": "missing",
-  "key": "mango pieces",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "fresh cut mango pieces for topping"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "sachets monk fruit sweetener",
   "recipes": 1,
   "lines": 1,
@@ -2628,16 +1778,6 @@
    "raw mango",
    "frozen mango chunks"
   ]
- },
- {
-  "status": "missing",
-  "key": "next morning",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "the next morning, layer with fresh mango and serve :)"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -2668,16 +1808,6 @@
   "lines": 1,
   "examples": [
    "1 tbsp chopped mango per serve"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "vegetables vegetables maximum else reduce quantities each",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Optional vegetables: 2 vegetables maximum else reduce quantities of each"
   ],
   "candidates": []
  },
@@ -2742,36 +1872,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "additional grams whipped cream gives a light airy ganache",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "additional 30 grams of whipped cream gives a light and airy ganache for the topping"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "squeeze lemon juice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Squeeze lemon juice"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Red Onion|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "pickled red onions (recipe is on my paneer roll reel)"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "cheese slice cheese is always subjective in a recipe",
   "recipes": 1,
@@ -2782,16 +1882,6 @@
   "candidates": [
    "cheese slices"
   ]
- },
- {
-  "status": "missing",
-  "key": "increase protein in meal by adding chicken",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Increase protein in the meal by adding -cooked chicken, paneer, tofu."
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -2828,41 +1918,11 @@
  },
  {
   "status": "missing",
-  "key": "pressure cooker base",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Pressure Cooker Base"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "kashmiri dried red chilli",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "3 kashmiri dried red chilli"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "assembly",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "assembly"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "head lettuce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "head of lettuce for the cups"
   ],
   "candidates": []
  },
@@ -2893,16 +1953,6 @@
   "lines": 1,
   "examples": [
    "1/2 pita per bowl of salad cut into 4 triangles, airfried for 5 minutes till golden brown and crisp"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "if",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "if you dont have a ready shawarma spice at home, use the below mix"
   ],
   "candidates": []
  },
@@ -2950,48 +2000,6 @@
   ]
  },
  {
-  "status": "suggest",
-  "key": "bunch coriander leaves",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "large bunch of coriander leaves + some stems wont matter as it will be blended"
-  ],
-  "candidates": [
-   "coriander"
-  ]
- },
- {
-  "status": "missing",
-  "key": "assemble",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "to assemble,"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "any lettuce choice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "any lettuce of choice"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "any other vegetables choice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "any other vegetables of choice"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "rcp",
   "recipes": 1,
@@ -3010,18 +2018,6 @@
    "1 tbsp gg paste"
   ],
   "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "pav slider buns",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Pav or slider buns"
-  ],
-  "candidates": [
-   "pav"
-  ]
  },
  {
   "status": "ambiguous",
@@ -3067,26 +2063,6 @@
  },
  {
   "status": "missing",
-  "key": "season with salt",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "season with salt + pepper + any spices you want! Adds flavour"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Olive Oil Spray|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Few sprays of olive oil, optional"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "nutella",
   "recipes": 1,
   "lines": 1,
@@ -3094,30 +2070,6 @@
    "4 tbsp nutella"
   ],
   "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "a little butter fry french toast",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a little butter to fry the french toast"
-  ],
-  "candidates": [
-   "french fries"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "a few sprigs coriander leaves",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a few sprigs of coriander leaves"
-  ],
-  "candidates": [
-   "coriander"
-  ]
  },
  {
   "status": "missing",
@@ -3160,26 +2112,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "serve as is with a slice toast",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "serve as is or with a slice of toast"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "ml water",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "around 400 ml water, should completely submerge"
-  ],
-  "candidates": []
- },
- {
   "status": "suggest",
   "key": "low fat paneer",
   "recipes": 1,
@@ -3190,16 +2122,6 @@
   "candidates": [
    "paneer"
   ]
- },
- {
-  "status": "missing",
-  "key": "roti dough made with wheat flour",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "regular roti dough made with whole wheat flour"
-  ],
-  "candidates": []
  },
  {
   "status": "suggest",
@@ -3224,76 +2146,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Sprinkles|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "sprinkle of salt"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Bell Pepper Red|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Red bell pepper, optional, sliced"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "sponge cake",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "sponge cake - 1 portion (recipe in the previous reel)"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Evaporated Milk|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "evaporated milk - 177 ml ( boil 350 ml of milk for 20 minutes till it reduced to half and strain)"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Condensed Milk|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "condensed milk - 200 ml"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Toned Milk|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "milk - 60 ml"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Whipping Cream|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "heavy whipping cream - 60 - 80 ml ( DO NOT USE AMUL CREAM)"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "monkfruit sweetender",
   "recipes": 1,
@@ -3310,16 +2162,6 @@
   "lines": 1,
   "examples": [
    "1/2 turmeric powder"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "tadka",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "tadka"
   ],
   "candidates": []
  },
@@ -3406,16 +2248,6 @@
  },
  {
   "status": "missing",
-  "key": "serves one",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Serves one, double/triple the recipe for more people"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "tbsp milk",
   "recipes": 1,
   "lines": 1,
@@ -3468,63 +2300,11 @@
  },
  {
   "status": "missing",
-  "key": "keeps well in fridge",
+  "key": "strawberries",
   "recipes": 1,
   "lines": 1,
   "examples": [
-   "keeps well in the fridge for 2-3 days"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "cannelloni tubes",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Cannelloni tubes"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Ricotta|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Ricotta"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Spinach|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Spinach"
-  ],
-  "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "tomato pasta sauce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Tomato pasta sauce"
-  ],
-  "candidates": [
-   "tomato"
-  ]
- },
- {
-  "status": "unit",
-  "key": "Mozzarella|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Mozzarella"
+   "200 grams strawberries"
   ],
   "candidates": []
  },
@@ -3562,24 +2342,17 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "marshmallow",
+  "status": "ambiguous",
+  "key": "lettuce",
   "recipes": 1,
   "lines": 1,
   "examples": [
-   "marshmallow, you get sugar free ones on amazon tooo or use normal ones if you dont care :)"
+   "1 lettuce, hand shredded"
   ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "a few pieces brocolli florettes",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a few pieces of brocolli florettes, blanched and cooled"
-  ],
-  "candidates": []
+  "candidates": [
+   "lettuce iceberg",
+   "romaine lettuce"
+  ]
  },
  {
   "status": "missing",
@@ -3588,26 +2361,6 @@
   "lines": 1,
   "examples": [
    "a squeeze of lime"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Paneer|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Paneer & vegetables"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "sweet & sour sauce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Sweet & sour sauce ( feel free to adjust as per your taste - more/less spicy/salty)"
   ],
   "candidates": []
  },
@@ -3650,16 +2403,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "coconut curry sauce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Coconut curry sauce"
-  ],
-  "candidates": []
- },
- {
   "status": "ambiguous",
   "key": "green",
   "recipes": 1,
@@ -3691,26 +2434,6 @@
  },
  {
   "status": "missing",
-  "key": "you can",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "you can use walnuts, hazelnuts, pistachios etc as per your preference :)"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Groundnut Oil|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "Oil"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "dry red chilies",
   "recipes": 1,
   "lines": 1,
@@ -3736,71 +2459,6 @@
   "lines": 1,
   "examples": [
    "1 dry red chili"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "cool this blend it",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "cool this and blend it into a smooth paste"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "time make tadka",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "time to make the tadka,"
-  ],
-  "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "a handful bunch coriander",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "a handful bunch of coriander"
-  ],
-  "candidates": [
-   "coriander"
-  ]
- },
- {
-  "status": "unit",
-  "key": "Whole Wheat Bread|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "brown bread croutons"
-  ],
-  "candidates": []
- },
- {
-  "status": "ambiguous",
-  "key": "sprinkle parmesan",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "sprinkle of parmesan, to top"
-  ],
-  "candidates": [
-   "parmesan",
-   "sprinkles"
-  ]
- },
- {
-  "status": "missing",
-  "key": "reduce quantity chocolate add nuts your choice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "reduce quantity of chocolate and add nuts of your choice"
   ],
   "candidates": []
  },
@@ -3923,16 +2581,6 @@
   "lines": 1,
   "examples": [
    "1-2 sachets, monk fruit"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Chocolate Chips|noqty",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "vegan chocolate chips / shavings + biscuit crumbs"
   ],
   "candidates": []
  }

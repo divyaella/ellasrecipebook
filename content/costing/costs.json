@@ -4,9 +4,9 @@
   "serves": null,
   "total": 20.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": null,
   "for_two": null,
   "detail": [
@@ -43,17 +43,16 @@
    {
     "raw": "chopped coriander leaves",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "the juice of one lemon",
     "name": "juice one lemon",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp cumin powder",
@@ -157,8 +156,8 @@
   "serves": null,
   "total": 36.0,
   "lines": 8,
-  "resolved": 4,
-  "unresolved": 4,
+  "resolved": 6,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -166,12 +165,9 @@
    {
     "raw": "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
     "name": "mango",
-    "item": "Frozen Mango Chunks",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
@@ -202,12 +198,9 @@
    {
     "raw": "Mango, i use frozen mangoes that i keep in the freezer, allow to thaw for 10 minutes, it makes it easier to blend and easier on your mixer",
     "name": "mango",
-    "item": "Frozen Mango Chunks",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cup milk, 3/4 cup to blend with the mangoes, 1/4 to blend the excess",
@@ -242,8 +235,8 @@
   "serves": null,
   "total": 391.0,
   "lines": 5,
-  "resolved": 3,
-  "unresolved": 2,
+  "resolved": 4,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -287,8 +280,9 @@
    {
     "raw": "Your favourite vegetables of choice",
     "name": "your favourite vegetables choice",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -297,8 +291,8 @@
   "serves": 2.0,
   "total": 418.0,
   "lines": 21,
-  "resolved": 15,
-  "unresolved": 6,
+  "resolved": 16,
+  "unresolved": 5,
   "complete": false,
   "per_serve": 209,
   "for_two": 418,
@@ -348,10 +342,9 @@
    {
     "raw": "spices ( you can add more basis your personal preference keeping in mind that marinades dilute flavours)",
     "name": "spices",
-    "status": "suggest",
-    "candidates": [
-     "chinese five spice"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 1/2 tbsp red chilli powder",
@@ -490,8 +483,8 @@
   "serves": null,
   "total": 562.0,
   "lines": 13,
-  "resolved": 11,
-  "unresolved": 2,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -610,8 +603,9 @@
    {
     "raw": "Cooking spray",
     "name": "cooking spray",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -826,9 +820,9 @@
   "serves": null,
   "total": 58.0,
   "lines": 5,
-  "resolved": 3,
-  "unresolved": 2,
-  "complete": false,
+  "resolved": 5,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": null,
   "for_two": null,
   "detail": [
@@ -865,16 +859,16 @@
    {
     "raw": "a few drops of vanilla extract, optional",
     "name": "a few drops vanilla extract",
-    "status": "suggest",
-    "candidates": [
-     "vanilla extract"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "dulce de leche",
     "name": "dulce de leche",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1394,11 +1388,9 @@
    {
     "raw": "coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1640,11 +1632,9 @@
    {
     "raw": "sesame seeds, for ganish",
     "name": "sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "suggested",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1653,8 +1643,8 @@
   "serves": 3.0,
   "total": 812.0,
   "lines": 12,
-  "resolved": 9,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 271,
   "for_two": 541,
@@ -1764,8 +1754,9 @@
    {
     "raw": "slurry - 1 tsp cornflour + 3 tbsp water",
     "name": "slurry",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1871,11 +1862,9 @@
    {
     "raw": "sesame seeds, for ganish",
     "name": "sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "suggested",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -1943,9 +1932,9 @@
   "serves": 1.0,
   "total": 88.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 88,
   "for_two": 176,
   "detail": [
@@ -2032,8 +2021,9 @@
    {
     "raw": "but you will need to add in some salt + pepper",
     "name": "but",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -2165,7 +2155,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -2174,17 +2165,18 @@
   "serves": 2.0,
   "total": 62.0,
   "lines": 7,
-  "resolved": 6,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 31,
   "for_two": 62,
   "detail": [
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 eggs",
@@ -2649,8 +2641,8 @@
   "serves": 2.0,
   "total": 425.0,
   "lines": 16,
-  "resolved": 8,
-  "unresolved": 8,
+  "resolved": 12,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 212,
   "for_two": 425,
@@ -2668,12 +2660,9 @@
    {
     "raw": "egg + crumb coating",
     "name": "egg",
-    "item": "White Eggs",
-    "via": "alias",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 eggs + hot sauce + salt + pepper",
@@ -2716,8 +2705,9 @@
    {
     "raw": "cheats “mayo”",
     "name": "cheats mayo",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 cup greek yogurt",
@@ -2772,18 +2762,16 @@
    {
     "raw": "lettuce leaves",
     "name": "lettuce leaves",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "cheese slices",
     "name": "cheese slices",
-    "item": "Cheese Slices",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -2919,11 +2907,9 @@
    {
     "raw": "chopped coriander leaves or garnish",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -3009,8 +2995,8 @@
   "serves": 1.0,
   "total": 50.0,
   "lines": 12,
-  "resolved": 5,
-  "unresolved": 7,
+  "resolved": 8,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 50,
   "for_two": 100,
@@ -3075,8 +3061,9 @@
    {
     "raw": "topping",
     "name": "topping",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2-3 chocolate pieces",
@@ -3097,22 +3084,16 @@
    {
     "raw": "OR 1 tbsp cocoa powder + water + 1 tsp monkfruit to create a paste",
     "name": "tbsp cocoa powder",
-    "item": "Cocoa Powder",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "dessicated coconut",
     "name": "dessicated coconut",
-    "item": "Desiccated Coconut",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -3537,7 +3518,8 @@
     "raw": "sea salt for topping",
     "name": "sea salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -3546,8 +3528,8 @@
   "serves": null,
   "total": 186.0,
   "lines": 13,
-  "resolved": 10,
-  "unresolved": 3,
+  "resolved": 11,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -3663,10 +3645,9 @@
    {
     "raw": "add as many or as little chocolate chips you want",
     "name": "add as many as little chocolate chips",
-    "status": "suggest",
-    "candidates": [
-     "chocolate chips"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -3675,8 +3656,8 @@
   "serves": 3.0,
   "total": 476.0,
   "lines": 20,
-  "resolved": 14,
-  "unresolved": 6,
+  "resolved": 16,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 159,
   "for_two": 317,
@@ -3728,8 +3709,9 @@
    {
     "raw": "a handful of cashew nuts",
     "name": "a handful cashew nuts",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -3766,8 +3748,9 @@
    {
     "raw": "Marinade - you can play around with the spices as per your preference of flavours",
     "name": "marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 cup hung curd ( as thick as possible)",
@@ -3967,8 +3950,8 @@
   "serves": 3.0,
   "total": 459.0,
   "lines": 24,
-  "resolved": 14,
-  "unresolved": 10,
+  "resolved": 17,
+  "unresolved": 7,
   "complete": false,
   "per_serve": 153,
   "for_two": 306,
@@ -3996,12 +3979,9 @@
    {
     "raw": "minced garlic",
     "name": "garlic",
-    "item": "Garlic",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 - 2 tbsp greek yogurt",
@@ -4070,12 +4050,9 @@
    {
     "raw": "cucumber salsa",
     "name": "cucumber salsa",
-    "item": "Cucumber",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cucumber, small cubes",
@@ -4112,10 +4089,9 @@
    {
     "raw": "dip",
     "name": "dip",
-    "status": "suggest",
-    "candidates": [
-     "garlic dip (toum)"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3 - 4 tbsp greek yogurt",
@@ -4132,11 +4108,9 @@
    {
     "raw": "coriander leaves",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2-3 cloves garlic",
@@ -4177,8 +4151,8 @@
   "serves": 1.0,
   "total": 39.0,
   "lines": 11,
-  "resolved": 7,
-  "unresolved": 4,
+  "resolved": 8,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 39,
   "for_two": 78,
@@ -4257,12 +4231,9 @@
    {
     "raw": "few drops of vanilla extract",
     "name": "drops vanilla extract",
-    "item": "Vanilla Extract",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 carrot, shredded",
@@ -4544,9 +4515,9 @@
   "serves": 1.0,
   "total": 275.0,
   "lines": 8,
-  "resolved": 7,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 275,
   "for_two": 550,
   "detail": [
@@ -4623,8 +4594,9 @@
    {
     "raw": "as is or with toast",
     "name": "as is with toast",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -4633,8 +4605,8 @@
   "serves": 12.0,
   "total": 623.0,
   "lines": 21,
-  "resolved": 17,
-  "unresolved": 4,
+  "resolved": 20,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 52,
   "for_two": 104,
@@ -4770,8 +4742,9 @@
    {
     "raw": "Juice of ½ lemon",
     "name": "juice lemon",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Salt & black pepper, to taste",
@@ -4798,31 +4771,23 @@
    {
     "raw": "Caesar dressing",
     "name": "caesar dressing",
-    "item": "Caesar Dressing",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Extra Parmesan",
     "name": "parmesan",
-    "item": "Parmesan",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Freshly cracked black pepper",
     "name": "cracked black pepper",
-    "item": "Black Peppercorns",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -4831,8 +4796,8 @@
   "serves": 2.0,
   "total": 507.0,
   "lines": 12,
-  "resolved": 7,
-  "unresolved": 5,
+  "resolved": 10,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 254,
   "for_two": 507,
@@ -4870,22 +4835,16 @@
    {
     "raw": "grated cheese",
     "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Caesar’s “cheats” Dressing",
     "name": "caesar s cheats dressing",
-    "item": "Caesar Dressing",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cup greek yogurt / 160 grams ish",
@@ -4934,8 +4893,9 @@
    {
     "raw": "the best replacement for WC sauce if you dont have it / dont want to use it - 1 tablespoon ketchup + 1 tablespoon white wine vinegar + ½ tablespoon soy sauce + 1 dash hot sauce (optional)",
     "name": "best replacement",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -5258,11 +5218,9 @@
    {
     "raw": "coriander, sliced ginger and green chilli",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -5271,9 +5229,9 @@
   "serves": 3.0,
   "total": 482.0,
   "lines": 19,
-  "resolved": 18,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 19,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 161,
   "for_two": 321,
   "detail": [
@@ -5300,10 +5258,9 @@
    {
     "raw": "mince",
     "name": "mince",
-    "status": "suggest",
-    "candidates": [
-     "chicken mince (keema)"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "450 grams chicken mince",
@@ -5369,7 +5326,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "5 cloves garlic, finely chopped",
@@ -5639,8 +5597,8 @@
   "serves": 2.0,
   "total": 31.0,
   "lines": 8,
-  "resolved": 4,
-  "unresolved": 4,
+  "resolved": 6,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 16,
   "for_two": 31,
@@ -5700,14 +5658,16 @@
    {
     "raw": "reserve water from cooking the maggi",
     "name": "reserve water from cooking maggi",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "you can also add any other veges you want!!!!",
     "name": "you can also add any other veges",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -5716,8 +5676,8 @@
   "serves": 4.0,
   "total": 395.0,
   "lines": 13,
-  "resolved": 8,
-  "unresolved": 5,
+  "resolved": 11,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 99,
   "for_two": 198,
@@ -5725,8 +5685,9 @@
    {
     "raw": "Sausage patties",
     "name": "sausage patties",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "450g chicken mince",
@@ -5793,8 +5754,9 @@
    {
     "raw": "Per sandwich",
     "name": "per sandwich",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 English muffin",
@@ -5825,12 +5787,9 @@
    {
     "raw": "Ketchup + yellow mustard (non negotiable!)",
     "name": "ketchup",
-    "item": "Tomato Ketchup",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -5839,8 +5798,8 @@
   "serves": 3.0,
   "total": 512.0,
   "lines": 21,
-  "resolved": 19,
-  "unresolved": 2,
+  "resolved": 20,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 171,
   "for_two": 341,
@@ -5848,8 +5807,9 @@
    {
     "raw": "Chicken Steak",
     "name": "chicken steak",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "450g chicken breast, flatten each breast for easy cooking",
@@ -5904,11 +5864,9 @@
    {
     "raw": "Salt & black pepper",
     "name": "salt & black pepper",
-    "item": "Black Salt",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "200g button mushrooms, sliced",
@@ -6031,11 +5989,9 @@
    {
     "raw": "Salt & black pepper",
     "name": "salt & black pepper",
-    "item": "Black Salt",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -6104,7 +6060,8 @@
     "raw": "Salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -6182,8 +6139,8 @@
   "serves": 4.0,
   "total": 425.0,
   "lines": 13,
-  "resolved": 9,
-  "unresolved": 4,
+  "resolved": 12,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 106,
   "for_two": 212,
@@ -6207,32 +6164,23 @@
    {
     "raw": "Cheese for topping",
     "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Jalapeños + red paprika",
     "name": "jalape os",
-    "item": "Jalapeños",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Mustard + ketchup, as desired",
     "name": "mustard",
-    "item": "Dijon Mustard",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "400g chicken mince",
@@ -6309,17 +6257,18 @@
   "serves": 1.0,
   "total": 55.0,
   "lines": 8,
-  "resolved": 7,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 55,
   "for_two": 110,
   "detail": [
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 eggs",
@@ -6534,8 +6483,8 @@
   "serves": 3.0,
   "total": 407.0,
   "lines": 12,
-  "resolved": 9,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 136,
   "for_two": 271,
@@ -6600,7 +6549,8 @@
     "raw": "salt, if you need it, i dont use any",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 egg, optional for extra protein",
@@ -6631,12 +6581,9 @@
    {
     "raw": "sliced tomatoes",
     "name": "tomatoes",
-    "item": "Tomato",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp relish per burger",
@@ -6897,11 +6844,9 @@
    {
     "raw": "coriander leaves, chopped",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 lemon, to finish",
@@ -6925,22 +6870,18 @@
   "serves": null,
   "total": 29.0,
   "lines": 4,
-  "resolved": 3,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 4,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": null,
   "for_two": null,
   "detail": [
    {
     "raw": "Dry",
     "name": "dry",
-    "status": "ambiguous",
-    "candidates": [
-     "active dry yeast",
-     "instant dry yeast",
-     "dry coconut (copra)",
-     "dry ginger powder"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "120 grams Ap flour",
@@ -6979,22 +6920,18 @@
   "serves": 2.0,
   "total": 29.0,
   "lines": 4,
-  "resolved": 3,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 4,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 14,
   "for_two": 29,
   "detail": [
    {
     "raw": "Dry",
     "name": "dry",
-    "status": "ambiguous",
-    "candidates": [
-     "active dry yeast",
-     "instant dry yeast",
-     "dry coconut (copra)",
-     "dry ginger powder"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "120 grams Ap flour",
@@ -7098,8 +7035,8 @@
   "serves": 3.0,
   "total": 136.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 45,
   "for_two": 91,
@@ -7191,12 +7128,9 @@
    {
     "raw": "butter + caster sugar for buttering and dusting the ramekin",
     "name": "butter",
-    "item": "Salted Butter",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -7205,8 +7139,8 @@
   "serves": 4.0,
   "total": 83.0,
   "lines": 23,
-  "resolved": 16,
-  "unresolved": 7,
+  "resolved": 18,
+  "unresolved": 5,
   "complete": false,
   "per_serve": 21,
   "for_two": 42,
@@ -7236,14 +7170,9 @@
    {
     "raw": "masala",
     "name": "masala",
-    "status": "ambiguous",
-    "candidates": [
-     "biryani masala",
-     "chaat masala",
-     "chicken masala",
-     "chole masala",
-     "garam masala"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 black peppercorn",
@@ -7320,8 +7249,9 @@
    {
     "raw": "gravy",
     "name": "gravy",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp oil",
@@ -7422,8 +7352,8 @@
   "serves": 3.0,
   "total": 497.0,
   "lines": 19,
-  "resolved": 16,
-  "unresolved": 3,
+  "resolved": 17,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 166,
   "for_two": 331,
@@ -7559,8 +7489,9 @@
    {
     "raw": "Juice of ½ lemon",
     "name": "juice lemon",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Salt + black pepper, to taste",
@@ -7587,11 +7518,9 @@
    {
     "raw": "Freshly cracked black pepper",
     "name": "cracked black pepper",
-    "item": "Black Peppercorns",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -7600,8 +7529,8 @@
   "serves": 2.0,
   "total": 34.0,
   "lines": 7,
-  "resolved": 5,
-  "unresolved": 2,
+  "resolved": 6,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 17,
   "for_two": 34,
@@ -7669,12 +7598,9 @@
    {
     "raw": "butter",
     "name": "butter",
-    "item": "Salted Butter",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -7929,8 +7855,8 @@
   "serves": null,
   "total": 209.0,
   "lines": 12,
-  "resolved": 9,
-  "unresolved": 3,
+  "resolved": 10,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -8036,13 +7962,9 @@
    {
     "raw": "i used 75 grams of hersheys creamy milk chocolate and 25 grams of @callebautindia chips because dark chocolate is BETTER always",
     "name": "i used grams hersheys creamy milk chocolate grams callebautindia chips because dark chocolate is better always",
-    "status": "ambiguous",
-    "candidates": [
-     "chocolate chips",
-     "dark chocolate (55%)",
-     "dark chocolate (70%)",
-     "milk chocolate"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -8150,8 +8072,8 @@
   "serves": 2.0,
   "total": 160.0,
   "lines": 11,
-  "resolved": 9,
-  "unresolved": 2,
+  "resolved": 10,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 80,
   "for_two": 160,
@@ -8249,10 +8171,9 @@
    {
     "raw": "a little grated parmesan cheese",
     "name": "a little parmesan cheese",
-    "status": "suggest",
-    "candidates": [
-     "parmesan"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -8435,17 +8356,16 @@
    {
     "raw": "oregano + chilli flakes",
     "name": "oregano",
-    "item": "Oregano",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 cup vegetable stock",
@@ -8466,11 +8386,9 @@
    {
     "raw": "fresh basil",
     "name": "basil",
-    "item": "Basil",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "30 grams grated gouda cheese",
@@ -8622,17 +8540,18 @@
   "serves": 1.0,
   "total": 98.0,
   "lines": 8,
-  "resolved": 7,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 8,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 98,
   "for_two": 196,
   "detail": [
    {
     "raw": "nobb of butter",
     "name": "nobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 eggs",
@@ -8707,8 +8626,8 @@
   "serves": 3.0,
   "total": 79.0,
   "lines": 19,
-  "resolved": 17,
-  "unresolved": 2,
+  "resolved": 18,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 26,
   "for_two": 53,
@@ -8736,12 +8655,9 @@
    {
     "raw": "cashew tomato paste: 8 cashews + 2 tomato",
     "name": "cashew tomato paste cashews",
-    "item": "Tomato Paste",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp ghee",
@@ -8898,8 +8814,8 @@
   "serves": null,
   "total": 100.0,
   "lines": 13,
-  "resolved": 8,
-  "unresolved": 5,
+  "resolved": 11,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -8937,12 +8853,9 @@
    {
     "raw": "grated carrot, optional",
     "name": "carrot",
-    "item": "Carrot",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 - 2 green chilli, chopped",
@@ -8958,7 +8871,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/4 tsp tobasco",
@@ -8975,36 +8889,30 @@
    {
     "raw": "tadka to cook",
     "name": "tadka cook",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "knobb of ghee",
     "name": "knobb ghee",
-    "item": "Ghee",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "rai",
     "name": "rai",
-    "item": "Mustard Seeds",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "curry leaves",
     "name": "curry leaves",
-    "item": "Curry Leaves",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "6 slices of bread, use any that you prefer ( macros are basis standard white bread )",
@@ -9128,11 +9036,9 @@
    {
     "raw": "a few curry leaves",
     "name": "a few curry leaves",
-    "item": "Curry Leaves",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 tsp red chilli powder",
@@ -9193,8 +9099,8 @@
   "serves": 5.0,
   "total": 55.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 11,
   "for_two": 22,
@@ -9280,8 +9186,9 @@
    {
     "raw": "to serve, 1 tsp ghee",
     "name": "serve",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -9433,7 +9340,8 @@
     "raw": "to garnish",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "5 grams butter",
@@ -9462,8 +9370,8 @@
   "serves": 6.0,
   "total": 14.0,
   "lines": 6,
-  "resolved": 3,
-  "unresolved": 3,
+  "resolved": 4,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 2,
   "for_two": 5,
@@ -9507,10 +9415,9 @@
    {
     "raw": "i forgot to add coriander, but you should definately add some :)",
     "name": "i forgot add coriander",
-    "status": "suggest",
-    "candidates": [
-     "coriander"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "150 grams leftover dal , i use this amount as my dal is quite thick, if using a thinner dal, you need to adjust the amount to get a proper dough consistency . do not add all dal at once as it might lead to the dough being too thick",
@@ -9525,8 +9432,8 @@
   "serves": 3.0,
   "total": 330.0,
   "lines": 24,
-  "resolved": 18,
-  "unresolved": 6,
+  "resolved": 21,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 110,
   "for_two": 220,
@@ -9534,12 +9441,9 @@
    {
     "raw": "Noodles + greens",
     "name": "noodles",
-    "item": "Hakka Noodles",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "120g @masterchow.in udon noodles, raw",
@@ -9617,13 +9521,15 @@
     "raw": "Salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Dan Dan sauce",
     "name": "dan dan sauce",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1½ tbsp garlic, finely chopped",
@@ -9744,10 +9650,9 @@
    {
     "raw": "spring onion greens + sesame seeds",
     "name": "spring onion greens",
-    "status": "suggest",
-    "candidates": [
-     "onion"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -10013,11 +9918,9 @@
    {
     "raw": "Coriander to garnish",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "5 slices of bread",
@@ -10185,8 +10088,8 @@
   "serves": 1.0,
   "total": 9.0,
   "lines": 15,
-  "resolved": 10,
-  "unresolved": 5,
+  "resolved": 11,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 9,
   "for_two": 18,
@@ -10220,11 +10123,9 @@
    {
     "raw": "chopped coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "pinch of salt",
@@ -10297,8 +10198,9 @@
    {
     "raw": "a pinch of turmeric",
     "name": "a pinch turmeric",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 softboiled egg",
@@ -10309,11 +10211,9 @@
    {
     "raw": "coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -10638,9 +10538,9 @@
   "serves": 2.0,
   "total": 212.0,
   "lines": 12,
-  "resolved": 11,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 12,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 106,
   "for_two": 212,
   "detail": [
@@ -10757,12 +10657,9 @@
    {
     "raw": "carrots, bell pepper, cabbage,",
     "name": "carrots",
-    "item": "Carrot",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -10823,7 +10720,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "handful of chopped coriander leaves",
@@ -10916,7 +10814,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "handful of chopped coriander leaves",
@@ -10945,22 +10844,18 @@
   "serves": null,
   "total": 102.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": null,
   "for_two": null,
   "detail": [
    {
     "raw": "Dry",
     "name": "dry",
-    "status": "ambiguous",
-    "candidates": [
-     "active dry yeast",
-     "instant dry yeast",
-     "dry coconut (copra)",
-     "dry ginger powder"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "140 grams AP Flour",
@@ -11045,17 +10940,18 @@
   "serves": 2.0,
   "total": 77.0,
   "lines": 7,
-  "resolved": 6,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 38,
   "for_two": 77,
   "detail": [
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 eggs",
@@ -11351,7 +11247,8 @@
     "raw": "salt + black pepper + cajun seasoning",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp oil",
@@ -11505,8 +11402,8 @@
   "serves": null,
   "total": 230.0,
   "lines": 6,
-  "resolved": 4,
-  "unresolved": 2,
+  "resolved": 5,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -11556,11 +11453,9 @@
    {
     "raw": "nuts, seeds, candy, whatever your heart desires :)",
     "name": "nuts",
-    "status": "ambiguous",
-    "candidates": [
-     "macadamia nuts",
-     "pine nuts"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -11569,8 +11464,8 @@
   "serves": null,
   "total": 18.0,
   "lines": 11,
-  "resolved": 7,
-  "unresolved": 4,
+  "resolved": 8,
+  "unresolved": 3,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -11649,26 +11544,22 @@
     "raw": "around 500 - 600 ml water",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Ghee (replace with oil to make this vegan) + jeera + mustard seeds + hing + red chilli powder + minced garlic",
     "name": "ghee",
-    "item": "Ghee",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Chopped coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -11677,8 +11568,8 @@
   "serves": 1.0,
   "total": 57.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 57,
   "for_two": 114,
@@ -11706,8 +11597,9 @@
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4-5 garlic cloves, minced",
@@ -11739,7 +11631,8 @@
     "raw": "black pepper",
     "name": "black pepper",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "salt, to taste if you need it ( i usually dont add any )",
@@ -11760,11 +11653,9 @@
    {
     "raw": "sesame seeds, spring onions, optional",
     "name": "sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "suggested",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -11773,8 +11664,8 @@
   "serves": 2.0,
   "total": 431.0,
   "lines": 11,
-  "resolved": 7,
-  "unresolved": 4,
+  "resolved": 9,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 216,
   "for_two": 431,
@@ -11812,22 +11703,16 @@
    {
     "raw": "grated cheese",
     "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Caesar’s “cheats” Dressing",
     "name": "caesar s cheats dressing",
-    "item": "Caesar Dressing",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cup greek yogurt / 160 grams ish",
@@ -11880,8 +11765,8 @@
   "serves": 3.0,
   "total": 83.0,
   "lines": 16,
-  "resolved": 12,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 28,
   "for_two": 55,
@@ -11915,8 +11800,9 @@
    {
     "raw": "temper",
     "name": "temper",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 tbsp ghee/ oil",
@@ -12029,8 +11915,8 @@
   "serves": 3.0,
   "total": 412.0,
   "lines": 20,
-  "resolved": 16,
-  "unresolved": 4,
+  "resolved": 17,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 137,
   "for_two": 275,
@@ -12094,14 +11980,9 @@
    {
     "raw": "paste",
     "name": "paste",
-    "status": "ambiguous",
-    "candidates": [
-     "harissa paste",
-     "tomato paste",
-     "vanilla bean paste",
-     "thai green curry paste",
-     "thai red curry paste"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tbsp coriander seeds",
@@ -12446,8 +12327,8 @@
   "serves": 3.0,
   "total": 448.0,
   "lines": 22,
-  "resolved": 18,
-  "unresolved": 4,
+  "resolved": 20,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 149,
   "for_two": 299,
@@ -12527,27 +12408,23 @@
    {
     "raw": "Fresh coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Lemon wedges",
     "name": "lemon wedges",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Whole wheat pav",
     "name": "wheat pav",
-    "item": "Pav",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1-inch cinnamon stick",
@@ -12648,11 +12525,9 @@
    {
     "raw": "Salt & black pepper",
     "name": "salt & black pepper",
-    "item": "Black Salt",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -12908,8 +12783,8 @@
   "serves": 1.0,
   "total": 23.0,
   "lines": 13,
-  "resolved": 6,
-  "unresolved": 7,
+  "resolved": 10,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 23,
   "for_two": 46,
@@ -12965,12 +12840,9 @@
    {
     "raw": "drop of vanilla extract",
     "name": "drop vanilla extract",
-    "item": "Vanilla Extract",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 square dark chocolate if you want it to be extract chocolatelyyy <3",
@@ -12984,14 +12856,16 @@
    {
     "raw": "toppings",
     "name": "toppings",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "strawberries",
     "name": "strawberries",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "70% dark chocolate cube",
@@ -13015,12 +12889,9 @@
    {
     "raw": "crunchy granola, optional, for crunch",
     "name": "crunchy granola",
-    "item": "Granola",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -13029,8 +12900,8 @@
   "serves": null,
   "total": 12.0,
   "lines": 8,
-  "resolved": 3,
-  "unresolved": 5,
+  "resolved": 4,
+  "unresolved": 4,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -13076,8 +12947,9 @@
    {
     "raw": "Having a frother is amazing but if you don’t a spoon works fine!",
     "name": "having a frother is amazing",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp sugar/stevia/jaggery",
@@ -13179,8 +13051,8 @@
   "serves": null,
   "total": 25.0,
   "lines": 6,
-  "resolved": 3,
-  "unresolved": 3,
+  "resolved": 4,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -13228,12 +13100,9 @@
    {
     "raw": "toasted sourdough",
     "name": "sourdough",
-    "item": "Sourdough Slices",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -13242,8 +13111,8 @@
   "serves": 2.0,
   "total": 28.0,
   "lines": 9,
-  "resolved": 5,
-  "unresolved": 4,
+  "resolved": 6,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 14,
   "for_two": 28,
@@ -13264,7 +13133,8 @@
     "raw": "OR",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 shots espresso",
@@ -13275,8 +13145,9 @@
    {
     "raw": "coconut slushy",
     "name": "coconut slushy",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3 tbsp coconut milk",
@@ -13317,8 +13188,8 @@
   "serves": null,
   "total": 163.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -13376,8 +13247,9 @@
    {
     "raw": "Salt & pepper (to your liking)",
     "name": "salt & pepper",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Pinch of sugar (to balance out the tomato acidity)",
@@ -13792,8 +13664,9 @@
    {
     "raw": "water for blending - don’t use too much",
     "name": "water",
-    "status": "free",
-    "cost": 0
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "200g prawns, peeled & deveined",
@@ -13887,16 +13760,15 @@
     "raw": "Salt",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Extra curry leaves",
     "name": "curry leaves",
-    "item": "Curry Leaves",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -14040,8 +13912,8 @@
   "serves": 3.0,
   "total": 59.0,
   "lines": 10,
-  "resolved": 7,
-  "unresolved": 3,
+  "resolved": 8,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 20,
   "for_two": 39,
@@ -14120,17 +13992,15 @@
     "raw": "garnish",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "spring onion + white sesame seeds",
     "name": "spring onion",
-    "item": "Onion",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -14189,7 +14059,8 @@
     "raw": "garnish",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 spring onion green, chopped",
@@ -14202,11 +14073,9 @@
    {
     "raw": "sesame seeds",
     "name": "sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "suggested",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 tbsp gochujang",
@@ -14633,11 +14502,9 @@
    {
     "raw": "coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -14646,8 +14513,8 @@
   "serves": null,
   "total": 48.0,
   "lines": 11,
-  "resolved": 6,
-  "unresolved": 5,
+  "resolved": 7,
+  "unresolved": 4,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -14709,11 +14576,9 @@
    {
     "raw": "Red chili flakes / paprika for that kick",
     "name": "red chili flakes",
-    "item": "Crushed Red Pepper",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "6 slices of salami",
@@ -14734,8 +14599,9 @@
    {
     "raw": "Add whatever veggies you like—TBH, I kept it simple",
     "name": "add whatever veggies",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -14744,9 +14610,9 @@
   "serves": 1.0,
   "total": 286.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 286,
   "for_two": 572,
   "detail": [
@@ -14823,17 +14689,16 @@
    {
     "raw": "any vegetables you want",
     "name": "any vegetables",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "chopped coriander to garnish",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -15186,8 +15051,8 @@
   "serves": 1.0,
   "total": 0,
   "lines": 4,
-  "resolved": 1,
-  "unresolved": 3,
+  "resolved": 2,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 0,
   "for_two": 0,
@@ -15207,8 +15072,9 @@
    {
     "raw": "extra half packet, maggi masala",
     "name": "half packet",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 - 5 frozen momos",
@@ -15223,8 +15089,8 @@
   "serves": null,
   "total": 70.0,
   "lines": 14,
-  "resolved": 8,
-  "unresolved": 6,
+  "resolved": 9,
+  "unresolved": 5,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -15302,8 +15168,9 @@
    {
     "raw": "a handful of cashew nuts",
     "name": "a handful cashew nuts",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -15344,8 +15211,8 @@
   "serves": 2.0,
   "total": 34.0,
   "lines": 7,
-  "resolved": 3,
-  "unresolved": 4,
+  "resolved": 4,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 17,
   "for_two": 34,
@@ -15405,8 +15272,9 @@
    {
     "raw": "fresh cut mango pieces for topping",
     "name": "mango pieces",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -15415,8 +15283,8 @@
   "serves": 2.0,
   "total": 31.0,
   "lines": 4,
-  "resolved": 1,
-  "unresolved": 3,
+  "resolved": 2,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 16,
   "for_two": 31,
@@ -15449,8 +15317,9 @@
    {
     "raw": "the next morning, layer with fresh mango and serve :)",
     "name": "next morning",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -15608,7 +15477,8 @@
     "raw": "salt + pepper",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -15796,11 +15666,9 @@
    {
     "raw": "coriander leaves",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -15809,8 +15677,8 @@
   "serves": null,
   "total": 162.0,
   "lines": 17,
-  "resolved": 14,
-  "unresolved": 3,
+  "resolved": 15,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -15920,8 +15788,9 @@
    {
     "raw": "Optional vegetables: 2 vegetables maximum else reduce quantities of each",
     "name": "vegetables vegetables maximum else reduce quantities each",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 cup carrot, cubed",
@@ -16450,8 +16319,8 @@
   "serves": 10.0,
   "total": 614.0,
   "lines": 12,
-  "resolved": 10,
-  "unresolved": 2,
+  "resolved": 11,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 61,
   "for_two": 123,
@@ -16565,8 +16434,9 @@
    {
     "raw": "additional 30 grams of whipped cream gives a light and airy ganache for the topping",
     "name": "additional grams whipped cream gives a light airy ganache",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -16575,8 +16445,8 @@
   "serves": 1.0,
   "total": 31.0,
   "lines": 9,
-  "resolved": 6,
-  "unresolved": 3,
+  "resolved": 8,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 31,
   "for_two": 62,
@@ -16640,8 +16510,9 @@
    {
     "raw": "Squeeze lemon juice",
     "name": "squeeze lemon juice",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Pinch salt - to taste",
@@ -16652,12 +16523,9 @@
    {
     "raw": "pickled red onions (recipe is on my paneer roll reel)",
     "name": "pickled red onions",
-    "item": "Red Onion",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -16853,9 +16721,9 @@
   "serves": 1.0,
   "total": 53.0,
   "lines": 7,
-  "resolved": 6,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 7,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 53,
   "for_two": 106,
   "detail": [
@@ -16882,8 +16750,9 @@
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "40 grams button mushroom",
@@ -16928,8 +16797,8 @@
   "serves": null,
   "total": 163.0,
   "lines": 12,
-  "resolved": 10,
-  "unresolved": 2,
+  "resolved": 11,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -17008,7 +16877,8 @@
     "raw": "salt+pepper+oregano+chili flakes",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 cheese slice ( you can use grated cheese as well) Cheese is always subjective in a recipe, add as little or as much as you want",
@@ -17041,8 +16911,9 @@
    {
     "raw": "Increase protein in the meal by adding -cooked chicken, paneer, tofu.",
     "name": "increase protein in meal by adding chicken",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -17051,8 +16922,8 @@
   "serves": 1.0,
   "total": 52.0,
   "lines": 6,
-  "resolved": 4,
-  "unresolved": 2,
+  "resolved": 5,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 52,
   "for_two": 104,
@@ -17070,8 +16941,9 @@
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "40 grams button mushroom",
@@ -17112,8 +16984,8 @@
   "serves": null,
   "total": 230.0,
   "lines": 6,
-  "resolved": 4,
-  "unresolved": 2,
+  "resolved": 5,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -17163,11 +17035,9 @@
    {
     "raw": "nuts, seeds, candy, whatever your heart desires :)",
     "name": "nuts",
-    "status": "ambiguous",
-    "candidates": [
-     "macadamia nuts",
-     "pine nuts"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -17363,11 +17233,9 @@
    {
     "raw": "Extra curry leaves, for cooking",
     "name": "curry leaves",
-    "item": "Curry Leaves",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -17376,8 +17244,8 @@
   "serves": 3.0,
   "total": 525.0,
   "lines": 29,
-  "resolved": 21,
-  "unresolved": 8,
+  "resolved": 24,
+  "unresolved": 5,
   "complete": false,
   "per_serve": 175,
   "for_two": 350,
@@ -17385,8 +17253,9 @@
    {
     "raw": "Pressure Cooker Base",
     "name": "pressure cooker base",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 onions",
@@ -17469,10 +17338,9 @@
    {
     "raw": "Spices + Mix ins",
     "name": "spices",
-    "status": "suggest",
-    "candidates": [
-     "chinese five spice"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tbsp red chilli powder",
@@ -17545,8 +17413,9 @@
    {
     "raw": "Marinade - you can play around with the spices as per your preference of flavours",
     "name": "marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 cup hung curd",
@@ -17637,8 +17506,8 @@
   "serves": 2.0,
   "total": 426.0,
   "lines": 15,
-  "resolved": 11,
-  "unresolved": 4,
+  "resolved": 14,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 213,
   "for_two": 426,
@@ -17692,14 +17561,9 @@
    {
     "raw": "sauce",
     "name": "sauce",
-    "status": "ambiguous",
-    "candidates": [
-     "arrabbiata sauce",
-     "bbq sauce",
-     "burger sauce",
-     "fish sauce",
-     "hoisin sauce"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tbsp dark soy",
@@ -17764,14 +17628,16 @@
    {
     "raw": "assembly",
     "name": "assembly",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "head of lettuce for the cups",
     "name": "head lettuce",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -17780,8 +17646,8 @@
   "serves": 3.0,
   "total": 418.0,
   "lines": 22,
-  "resolved": 13,
-  "unresolved": 9,
+  "resolved": 16,
+  "unresolved": 6,
   "complete": false,
   "per_serve": 139,
   "for_two": 279,
@@ -17821,8 +17687,9 @@
    {
     "raw": "juice of 1 lemon",
     "name": "juice lemon",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp black pepper",
@@ -17849,13 +17716,9 @@
    {
     "raw": "dressing",
     "name": "dressing",
-    "status": "ambiguous",
-    "candidates": [
-     "balsamic dressing",
-     "caesar dressing",
-     "ranch dressing",
-     "thousand island dressing"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 tbsp greek yogurt",
@@ -17950,8 +17813,9 @@
    {
     "raw": "if you dont have a ready shawarma spice at home, use the below mix",
     "name": "if",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 teaspoon red chilli powder + ½ teaspoon cardamom powder + ½ teaspoon cumin powder + ¼ teaspoon cinnamon powder + ⅛ teaspoon crushed red pepper flakes",
@@ -18081,8 +17945,8 @@
   "serves": 3.0,
   "total": 426.0,
   "lines": 20,
-  "resolved": 15,
-  "unresolved": 5,
+  "resolved": 16,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 142,
   "for_two": 284,
@@ -18158,14 +18022,9 @@
    {
     "raw": "sauce",
     "name": "sauce",
-    "status": "ambiguous",
-    "candidates": [
-     "arrabbiata sauce",
-     "bbq sauce",
-     "burger sauce",
-     "fish sauce",
-     "hoisin sauce"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3 oranges, freshly squeezed",
@@ -18266,8 +18125,8 @@
   "serves": 3.0,
   "total": 239.0,
   "lines": 23,
-  "resolved": 13,
-  "unresolved": 10,
+  "resolved": 21,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 80,
   "for_two": 159,
@@ -18285,8 +18144,9 @@
    {
     "raw": "marinade",
     "name": "marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 - 2 tbsp thick curd",
@@ -18369,19 +18229,16 @@
    {
     "raw": "large bunch of coriander leaves + some stems wont matter as it will be blended",
     "name": "bunch coriander leaves",
-    "status": "suggest",
-    "candidates": [
-     "coriander"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "chaat masala, to flavour",
     "name": "chaat masala",
-    "item": "Chaat Masala",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "salt to taste",
@@ -18412,8 +18269,9 @@
    {
     "raw": "to assemble,",
     "name": "assemble",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3/4 cup quinoa, cooked",
@@ -18428,44 +18286,37 @@
    {
     "raw": "any lettuce of choice",
     "name": "any lettuce choice",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "cubed cucumber",
     "name": "cucumber",
-    "item": "Cucumber",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "sliced tomatoes",
     "name": "tomatoes",
-    "item": "Tomato",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "any other vegetables of choice",
     "name": "any other vegetables choice",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "pickled onions",
     "name": "pickled onions",
-    "item": "Onion",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -18474,8 +18325,8 @@
   "serves": 2.0,
   "total": 176.0,
   "lines": 17,
-  "resolved": 9,
-  "unresolved": 8,
+  "resolved": 13,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 88,
   "for_two": 176,
@@ -18483,8 +18334,9 @@
    {
     "raw": "Tikka Marinade - marinate paneer for 30 minutes minimum",
     "name": "tikka marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "200 grams paneer, cut into 8 pieces",
@@ -18599,29 +18451,23 @@
    {
     "raw": "Chopped lettuce",
     "name": "lettuce",
-    "status": "ambiguous",
-    "candidates": [
-     "lettuce iceberg",
-     "romaine lettuce"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Pickled onions",
     "name": "pickled onions",
-    "item": "Onion",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Pav or slider buns",
     "name": "pav slider buns",
-    "status": "suggest",
-    "candidates": [
-     "pav"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -18630,8 +18476,8 @@
   "serves": 3.0,
   "total": 225.0,
   "lines": 12,
-  "resolved": 6,
-  "unresolved": 6,
+  "resolved": 8,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 75,
   "for_two": 150,
@@ -18731,18 +18577,16 @@
    {
     "raw": "season with salt + pepper + any spices you want! Adds flavour",
     "name": "season with salt",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Few sprays of olive oil, optional",
     "name": "sprays olive oil",
-    "item": "Olive Oil Spray",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -18838,8 +18682,9 @@
    {
     "raw": "Water, if needed",
     "name": "water",
-    "status": "free",
-    "cost": 0
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -18848,8 +18693,8 @@
   "serves": null,
   "total": 72.0,
   "lines": 8,
-  "resolved": 5,
-  "unresolved": 3,
+  "resolved": 6,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -18915,10 +18760,9 @@
    {
     "raw": "a little butter to fry the french toast",
     "name": "a little butter fry french toast",
-    "status": "suggest",
-    "candidates": [
-     "french fries"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -19022,8 +18866,8 @@
   "serves": null,
   "total": 20.0,
   "lines": 9,
-  "resolved": 6,
-  "unresolved": 3,
+  "resolved": 8,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -19061,16 +18905,16 @@
    {
     "raw": "a few sprigs of coriander leaves",
     "name": "a few sprigs coriander leaves",
-    "status": "suggest",
-    "candidates": [
-     "coriander"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "the juice of one lemon",
     "name": "juice one lemon",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp cumin powder",
@@ -19348,7 +19192,8 @@
     "raw": "salt",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp garlic powder",
@@ -19373,11 +19218,9 @@
    {
     "raw": "optional2: cajun spice seasoning (game changer)",
     "name": "cajun spice seasoning",
-    "item": "Cajun Seasoning",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -19546,7 +19389,8 @@
     "raw": "around 500 - 600 ml water, should completely submerge",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Chopped coriander, for garnish",
@@ -19865,11 +19709,9 @@
    {
     "raw": "coriander, to garnish",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -19878,9 +19720,9 @@
   "serves": 1.0,
   "total": 29.0,
   "lines": 6,
-  "resolved": 5,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 29,
   "for_two": 58,
   "detail": [
@@ -19937,8 +19779,9 @@
    {
     "raw": "serve as is or with a slice of toast",
     "name": "serve as is with a slice toast",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -19947,8 +19790,8 @@
   "serves": 2.0,
   "total": 126.0,
   "lines": 16,
-  "resolved": 12,
-  "unresolved": 4,
+  "resolved": 13,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 63,
   "for_two": 126,
@@ -20086,8 +19929,9 @@
    {
     "raw": "around 400 ml water, should completely submerge",
     "name": "ml water",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Chopped coriander, for garnish",
@@ -20157,11 +20001,9 @@
    {
     "raw": "coriander",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -20170,8 +20012,8 @@
   "serves": null,
   "total": 15.0,
   "lines": 6,
-  "resolved": 3,
-  "unresolved": 3,
+  "resolved": 4,
+  "unresolved": 2,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -20217,8 +20059,9 @@
    {
     "raw": "regular roti dough made with whole wheat flour",
     "name": "roti dough made with wheat flour",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp ghee per paratha while cooking on tava",
@@ -20235,8 +20078,8 @@
   "serves": 4.0,
   "total": 240.0,
   "lines": 18,
-  "resolved": 15,
-  "unresolved": 3,
+  "resolved": 16,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 60,
   "for_two": 120,
@@ -20402,12 +20245,9 @@
    {
     "raw": "sprinkle of salt",
     "name": "sprinkle salt",
-    "item": "Sprinkles",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -20482,7 +20322,8 @@
     "raw": "(feel free to adjust as per your taste)",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp red chilli powder",
@@ -20557,8 +20398,8 @@
   "serves": 4.0,
   "total": 208.0,
   "lines": 15,
-  "resolved": 10,
-  "unresolved": 5,
+  "resolved": 11,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 52,
   "for_two": 104,
@@ -20596,8 +20437,9 @@
    {
     "raw": "marinade",
     "name": "marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3 tbsp thick curd",
@@ -20700,8 +20542,8 @@
   "serves": 1.0,
   "total": 143.0,
   "lines": 18,
-  "resolved": 12,
-  "unresolved": 6,
+  "resolved": 16,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 143,
   "for_two": 286,
@@ -20709,8 +20551,9 @@
    {
     "raw": "Tikka Marinade - marinate paneer for 30 minutes",
     "name": "tikka marinade",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "120 grams paneer, quantity as per your preference :)",
@@ -20807,33 +20650,23 @@
    {
     "raw": "Red bell pepper, optional, sliced",
     "name": "red bell pepper",
-    "item": "Bell Pepper Red",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Tomato - remove seeds inside part mushy, optional, sliced",
     "name": "tomato",
-    "item": "Tomato",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Dressing - combine in the mixer",
     "name": "dressing",
-    "status": "ambiguous",
-    "candidates": [
-     "balsamic dressing",
-     "caesar dressing",
-     "ranch dressing",
-     "thousand island dressing"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "3 tbsp Greek yogurt",
@@ -20855,7 +20688,8 @@
     "raw": "Pepper",
     "name": "pepper",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp Chaat masala",
@@ -20874,8 +20708,8 @@
   "serves": 4.0,
   "total": 475.0,
   "lines": 17,
-  "resolved": 13,
-  "unresolved": 4,
+  "resolved": 14,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 119,
   "for_two": 238,
@@ -21027,12 +20861,9 @@
    {
     "raw": "grated cheese, as much as you desire :)",
     "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -21041,57 +20872,46 @@
   "serves": null,
   "total": 0.0,
   "lines": 6,
-  "resolved": 1,
-  "unresolved": 5,
-  "complete": false,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": null,
   "for_two": null,
   "detail": [
    {
     "raw": "sponge cake - 1 portion (recipe in the previous reel)",
     "name": "sponge cake",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "evaporated milk - 177 ml ( boil 350 ml of milk for 20 minutes till it reduced to half and strain)",
     "name": "evaporated milk",
-    "item": "Evaporated Milk",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "condensed milk - 200 ml",
     "name": "condensed milk",
-    "item": "Condensed Milk",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "milk - 60 ml",
     "name": "milk",
-    "item": "Toned Milk",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "heavy whipping cream - 60 - 80 ml ( DO NOT USE AMUL CREAM)",
     "name": "heavy whipping cream",
-    "item": "Whipping Cream",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "pinch of cinnamon",
@@ -21276,11 +21096,9 @@
    {
     "raw": "coriander leaves to garnish",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -21390,11 +21208,9 @@
    {
     "raw": "coriander leaves to garnish",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -21494,11 +21310,9 @@
    {
     "raw": "coriander leaves to garnish",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -21507,8 +21321,8 @@
   "serves": null,
   "total": 123.0,
   "lines": 21,
-  "resolved": 17,
-  "unresolved": 4,
+  "resolved": 18,
+  "unresolved": 3,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -21644,17 +21458,16 @@
    {
     "raw": "coriander to garnish",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "tadka",
     "name": "tadka",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tbsp ghee",
@@ -21875,9 +21688,9 @@
   "serves": 1.0,
   "total": 286.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 286,
   "for_two": 572,
   "detail": [
@@ -21954,17 +21767,16 @@
    {
     "raw": "any vegetables you want",
     "name": "any vegetables",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "chopped coriander to garnish",
     "name": "coriander",
-    "item": "Coriander",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -22024,8 +21836,8 @@
   "serves": 1.0,
   "total": 24.0,
   "lines": 9,
-  "resolved": 4,
-  "unresolved": 5,
+  "resolved": 5,
+  "unresolved": 4,
   "complete": false,
   "per_serve": 24,
   "for_two": 48,
@@ -22099,12 +21911,9 @@
    {
     "raw": "dusting of cocoa powder, optional",
     "name": "dusting cocoa powder",
-    "item": "Cocoa Powder",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -22243,11 +22052,9 @@
    {
     "raw": "coriander leaves to garnish",
     "name": "coriander leaves",
-    "item": "Coriander",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -22335,8 +22142,8 @@
   "serves": null,
   "total": 57.0,
   "lines": 6,
-  "resolved": 4,
-  "unresolved": 2,
+  "resolved": 5,
+  "unresolved": 1,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -22344,8 +22151,9 @@
    {
     "raw": "Serves one, double/triple the recipe for more people",
     "name": "serves one",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "2 eggs",
@@ -22396,8 +22204,8 @@
   "serves": 3.0,
   "total": 475.0,
   "lines": 17,
-  "resolved": 13,
-  "unresolved": 4,
+  "resolved": 14,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 158,
   "for_two": 317,
@@ -22549,12 +22357,9 @@
    {
     "raw": "grated cheese, as much as you desire :)",
     "name": "cheese",
-    "item": "Cheese Block",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -22789,9 +22594,9 @@
   "serves": 1.0,
   "total": 50.0,
   "lines": 6,
-  "resolved": 5,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 50,
   "for_two": 100,
   "detail": [
@@ -22808,8 +22613,9 @@
    {
     "raw": "knobb of butter",
     "name": "knobb butter",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp minced garlic",
@@ -22854,8 +22660,8 @@
   "serves": 1.0,
   "total": 165.0,
   "lines": 10,
-  "resolved": 8,
-  "unresolved": 2,
+  "resolved": 9,
+  "unresolved": 1,
   "complete": false,
   "per_serve": 165,
   "for_two": 330,
@@ -22941,8 +22747,9 @@
    {
     "raw": "keeps well in the fridge for 2-3 days",
     "name": "keeps well in fridge",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -22951,89 +22758,74 @@
   "serves": 3.0,
   "total": 0,
   "lines": 9,
-  "resolved": 2,
-  "unresolved": 7,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 0,
   "for_two": 0,
   "detail": [
    {
     "raw": "Cannelloni tubes",
     "name": "cannelloni tubes",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Ricotta",
     "name": "ricotta",
-    "item": "Ricotta",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Spinach",
     "name": "spinach",
-    "item": "Spinach",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Tomato pasta sauce",
     "name": "tomato pasta sauce",
-    "status": "suggest",
-    "candidates": [
-     "tomato"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Mozzarella",
     "name": "mozzarella",
-    "item": "Mozzarella",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Garlic",
     "name": "garlic",
-    "item": "Garlic",
-    "via": "exact",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Italian seasoning",
     "name": "italian seasoning",
-    "item": "Italian Seasoning",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Salt & pepper",
     "name": "salt & pepper",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Chilli flakes",
     "name": "chilli flakes",
-    "item": "Crushed Red Pepper",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -23286,7 +23078,8 @@
     "raw": "salt, a pinch",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "50 grams, unsalted butter, cubed and frozen for 30 minutes",
@@ -23612,8 +23405,8 @@
   "serves": 2.0,
   "total": 118.0,
   "lines": 7,
-  "resolved": 4,
-  "unresolved": 3,
+  "resolved": 5,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 59,
   "for_two": 118,
@@ -23671,8 +23464,9 @@
    {
     "raw": "marshmallow, you get sugar free ones on amazon tooo or use normal ones if you dont care :)",
     "name": "marshmallow",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -23681,8 +23475,8 @@
   "serves": null,
   "total": 205.0,
   "lines": 10,
-  "resolved": 6,
-  "unresolved": 4,
+  "resolved": 7,
+  "unresolved": 3,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -23729,8 +23523,9 @@
    {
     "raw": "a few pieces of brocolli florettes, blanched and cooled",
     "name": "a few pieces brocolli florettes",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "4 tbsp olive oil",
@@ -23777,8 +23572,8 @@
   "serves": 2.0,
   "total": 286.0,
   "lines": 16,
-  "resolved": 12,
-  "unresolved": 4,
+  "resolved": 14,
+  "unresolved": 2,
   "complete": false,
   "per_serve": 143,
   "for_two": 286,
@@ -23786,12 +23581,9 @@
    {
     "raw": "Paneer & vegetables",
     "name": "paneer & vegetables",
-    "item": "Paneer",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "200g paneer, cut into cubes",
@@ -23856,17 +23648,16 @@
    {
     "raw": "Sesame seeds, to garnish",
     "name": "sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "suggested",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "Sweet & sour sauce ( feel free to adjust as per your taste - more/less spicy/salty)",
     "name": "sweet & sour sauce",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "200g pineapple juice",
@@ -24073,8 +23864,8 @@
   "serves": 3.0,
   "total": 607.0,
   "lines": 20,
-  "resolved": 14,
-  "unresolved": 6,
+  "resolved": 15,
+  "unresolved": 5,
   "complete": false,
   "per_serve": 202,
   "for_two": 405,
@@ -24171,8 +23962,9 @@
    {
     "raw": "Coconut curry sauce",
     "name": "coconut curry sauce",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1/2 tbsp oil",
@@ -24260,7 +24052,8 @@
     "raw": "To garnish, chopped cilantro / peanuts",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -24347,16 +24140,15 @@
     "raw": "garnish",
     "name": "",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "coriander | crushed peanuts | nigella seeds",
     "name": "coriander peanuts nigella seeds",
-    "item": "Coriander Seeds",
-    "via": "auto",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -24435,7 +24227,8 @@
     "raw": "salt + red chilli powder + haldi",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "large handful of coriander, you can use stems too",
@@ -24454,9 +24247,9 @@
   "serves": 5.0,
   "total": 412.0,
   "lines": 9,
-  "resolved": 8,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 9,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 82,
   "for_two": 165,
   "detail": [
@@ -24539,8 +24332,9 @@
    {
     "raw": "you can use walnuts, hazelnuts, pistachios etc as per your preference :)",
     "name": "you can",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -24549,8 +24343,8 @@
   "serves": null,
   "total": 15.0,
   "lines": 15,
-  "resolved": 8,
-  "unresolved": 7,
+  "resolved": 11,
+  "unresolved": 4,
   "complete": false,
   "per_serve": null,
   "for_two": null,
@@ -24558,12 +24352,9 @@
    {
     "raw": "Oil",
     "name": "oil",
-    "item": "Groundnut Oil",
-    "via": "suggested",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 tsp urad dal",
@@ -24634,11 +24425,9 @@
    {
     "raw": "curry leaves",
     "name": "curry leaves",
-    "item": "Curry Leaves",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "½ tsp mustard seeds",
@@ -24659,14 +24448,16 @@
    {
     "raw": "cool this and blend it into a smooth paste",
     "name": "cool this blend it",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "time to make the tadka,",
     "name": "time make tadka",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -24745,7 +24536,8 @@
     "raw": "salt + red chilli powder + haldi",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "large handful of coriander, you can use stems too",
@@ -24764,9 +24556,9 @@
   "serves": 2.0,
   "total": 47.0,
   "lines": 13,
-  "resolved": 10,
-  "unresolved": 3,
-  "complete": false,
+  "resolved": 13,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 24,
   "for_two": 47,
   "detail": [
@@ -24813,10 +24605,9 @@
    {
     "raw": "a handful bunch of coriander",
     "name": "a handful bunch coriander",
-    "status": "suggest",
-    "candidates": [
-     "coriander"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "1 - 2 green chillies, depending on your spice level",
@@ -24869,21 +24660,16 @@
    {
     "raw": "brown bread croutons",
     "name": "brown bread croutons",
-    "item": "Whole Wheat Bread",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "sprinkle of parmesan, to top",
     "name": "sprinkle parmesan",
-    "status": "ambiguous",
-    "candidates": [
-     "parmesan",
-     "sprinkles"
-    ]
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -24892,9 +24678,9 @@
   "serves": 8.0,
   "total": 286.0,
   "lines": 12,
-  "resolved": 11,
-  "unresolved": 1,
-  "complete": false,
+  "resolved": 12,
+  "unresolved": 0,
+  "complete": true,
   "per_serve": 36,
   "for_two": 72,
   "detail": [
@@ -24932,7 +24718,8 @@
     "raw": "salt, pinch",
     "name": "salt",
     "status": "vague",
-    "cost": 0
+    "cost": 0,
+    "note": "no quantity given — not costed"
    },
    {
     "raw": "100 grams caster sugar",
@@ -25007,8 +24794,9 @@
    {
     "raw": "reduce quantity of chocolate and add nuts of your choice",
     "name": "reduce quantity chocolate add nuts your choice",
-    "status": "missing",
-    "candidates": []
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -25322,11 +25110,9 @@
    {
     "raw": "white sesame seeds",
     "name": "white sesame seeds",
-    "item": "White Sesame Seeds",
-    "via": "exact",
     "status": "vague",
     "cost": 0,
-    "note": "no quantity — garnish/seasoning"
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -25416,8 +25202,8 @@
   "serves": 1.0,
   "total": 15.0,
   "lines": 7,
-  "resolved": 3,
-  "unresolved": 4,
+  "resolved": 4,
+  "unresolved": 3,
   "complete": false,
   "per_serve": 15,
   "for_two": 30,
@@ -25469,12 +25255,9 @@
    {
     "raw": "vegan chocolate chips / shavings + biscuit crumbs",
     "name": "vegan chocolate chips",
-    "item": "Chocolate Chips",
-    "via": "auto",
-    "status": "unit",
-    "reason": "noqty",
-    "qty": null,
-    "unit": null
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  }

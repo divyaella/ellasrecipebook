@@ -199,6 +199,7 @@ def cost_line(line):
     L=parse_line(line)
     out=dict(raw=line,name=L['name'])
     if L['vague'] and L['vague'][1]==0: out['status']='vague'; out['cost']=0; return out
+    if L['qty'] is None and not L['vague']: out.update(status='vague',cost=0,note='no quantity given — not costed'); return out
     nm=canon_name(L['name'])
     if nm and set(nm.split())<={'water','warm','hot','cold','ice','milk water'}-{'milk water'} and 'water' in nm.split() or nm in('ice','ice cubes','ice cube'): out.update(status='free',cost=0); return out
     if nm and set(nm.split())<={'salt','pepper','black','and','white','sea','rock','table'} : out.update(status='vague',cost=0); return out
@@ -217,7 +218,7 @@ def cost_line(line):
         base=p['unit']; 
         if base=='pc': out.update(status='vague',cost=0); return out
         out.update(status='ok',cost=round(amt*rate,2),amount=amt,note='vague amount'); return out
-    if L['qty'] is None and p['category'] in('Herbs','Spices & Seasonings'): out.update(status='vague',cost=0,note='no quantity — garnish/seasoning'); return out
+    if L['qty'] is None: out.update(status='vague',cost=0,note='no quantity given — not costed'); return out
     amt,note=to_base(L,p)
     if amt is None: out.update(status='unit',reason=note,qty=L['qty'],unit=L['unit']); return out
     out.update(status='ok',cost=round(amt*rate,2),amount=round(amt,1),note=note)
