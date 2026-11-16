@@ -11,16 +11,52 @@ const jsonLd = {
   address: { '@type': 'PostalAddress', addressLocality: 'Gurgaon', addressCountry: 'IN' },
 };
 ---
-<Base title="About Ella" description="Divya Ella — the home cook behind Ella's Recipe Book: healthy recipes you'll actually crave, with the macros and what the ingredients cost." jsonLd={jsonLd}>
+<Base title="About Ella" description="Meet Ella, the home cook behind Ella's Recipe Book: everyday, flavour-packed recipes with the protein, calories and what the ingredients cost." jsonLd={jsonLd}>
   <section class="about-page">
     <div class="wrap">
       <div class="portrait"><img src="/ella.jpg" alt="Ella smiling, in the courtyard of the City Palace, Jaipur" width="220" height="220" /></div>
       <div class="txt">
         <p class="kick">About</p>
-        <h1>Hi, I'm Ella.</h1>
-        <p>Home cook, dessert person, and a firm believer that the best recipes are the ones you actually make again. I started posting what I cooked on Instagram in 2022 — breakfasts first, then the dinners I make for my husband Adi, then everything in between.</p>
-        <p>This site is where those recipes get written down properly: the ingredient list you can tick off, the method in steps, the macros per serving, and — because it's the first thing I check — what the ingredients cost to feed two in Gurgaon.</p>
-        <p>Everything here was cooked in my kitchen, photographed before it got eaten, and tested on a very honest husband.</p>
+        <h1>Hi, I'm Ella. Welcome to my recipe book. ❤️</h1>
+        <p>I'm a firm believer that food should make you happy. It should be delicious, comforting, exciting, a little indulgent sometimes, and most importantly, something you actually look forward to eating.</p>
+        <p>I'm Ella, the person behind Ella's Recipe Book — a space where I share the food I cook, the recipes I create, the things I love eating, and everything that happens around my kitchen.</p>
+        <p>My relationship with food has never been just about eating. I've always loved the idea of taking a bunch of ingredients, putting them together, experimenting a little, and creating something that makes you want to go back for seconds. I'm equally excited about a really good sandwich, a comforting bowl of noodles, a colourful salad, a proper home-cooked Indian meal or a dessert that's absolutely not interested in being healthy. I don't believe in choosing between food that tastes good and food that makes you feel good. I think there's room for both.</p>
+
+        <h2>How it all started</h2>
+        <p>Ella's Recipe Book started as a little space on Instagram in 2022, where I began sharing breakfasts and everyday food I was making at home. What started as a way to document what I was cooking slowly turned into something much bigger.</p>
+        <p>I discovered that people weren't just interested in the finished dish. They wanted to know how to make it, what went into it, whether it was easy, how much it cost, what they could substitute and, most importantly, whether it was actually worth making.</p>
+        <p>And I loved sharing all of it.</p>
+        <p>Over time, that little Instagram page grew into a community of people who enjoy food as much as I do. It also made me realise that this was something I wanted to pursue beyond social media. I eventually took the leap from my corporate career to build Ella's Recipe Book full-time — turning something I loved doing into something I could create, grow and build a business around.</p>
+        <p>This website is the next chapter of that journey.</p>
+
+        <h2>So, what will you find here?</h2>
+        <p>Think of this as your little corner of the internet for everyday cooking inspiration.</p>
+        <p>You'll find recipes that are approachable, flavour-packed and made for real life. Some are quick weekday meals, some are healthier versions of your favourite takeaways, some are high in protein, some are indulgent, and some are simply things I felt like eating.</p>
+        <p>I'm particularly fond of taking familiar comfort foods and giving them a little twist. Think fakeaways, easy high-protein meals, interesting salads, sandwiches worth looking forward to and recipes that make everyday cooking a little more exciting.</p>
+        <p>I also love making recipes practical. So alongside the ingredients and instructions, you'll find nutritional information, protein and calorie breakdowns, and ingredient cost estimates. Because I think knowing what goes into your food, how it fits into your day and what it costs to make is genuinely useful.</p>
+        <p>No complicated ingredients for the sake of it. No unnecessary fuss. Just good food that you can recreate in your own kitchen.</p>
+
+        <h2>A little more about me</h2>
+        <p>A lot of my cooking happens at home, and quite a bit of it involves feeding my husband, Adi. He's often the person I'm cooking for, testing recipes on and occasionally negotiating dinner with.</p>
+        <p>You'll probably come across him here and there, especially through my little series, <em>Feeding Adi</em>.</p>
+        <p>I love experimenting with recipes, recreating restaurant favourites at home, finding clever ways to make everyday meals more interesting and discovering ingredients or flavour combinations I haven't tried before.</p>
+        <p>I also love the process behind creating food content — developing a recipe, figuring out how to film it, getting that perfect shot, editing a reel and hoping the final dish makes someone hungry enough to save it and try it themselves.</p>
+        <p>And while this website is very much about food, there's a lot of life that comes with it. The experiments that work, the ones that don't, the kitchen chaos, the everyday routines and all the little moments in between.</p>
+
+        <h2>What I believe in</h2>
+        <p>I don't think eating well needs to be complicated, expensive or boring.</p>
+        <p>I don't think every meal needs to be low-calorie, and I certainly don't think enjoying dessert means you've undone anything.</p>
+        <p>I believe in balance, good ingredients, big flavours, home cooking and making food that fits into your actual life.</p>
+        <p>I believe the best recipes are the ones you come back to, make for your family, send to a friend or save because you know you'll want them again.</p>
+        <p>And I believe that cooking at home can be just as exciting as eating out — sometimes even better.</p>
+
+        <h2>Make yourself at home</h2>
+        <p>Ella's Recipe Book is still growing, and I'm figuring things out as I go. This website is my way of creating a little more permanence for all the recipes I've shared and all the ones still to come.</p>
+        <p>Whether you're here looking for a quick breakfast, a high-protein dinner, a new sandwich obsession, a healthier takeaway alternative or just something really delicious to cook this weekend, I hope you find something you love.</p>
+        <p>Have a look around, try a recipe, make it your own and tell me how it turned out. I genuinely love hearing when something I've made finds its way into someone else's kitchen.</p>
+        <p>And if you're anything like me, you probably already have a list of things you want to cook next.</p>
+        <p>Happy cooking!</p>
+        <p class="sign">Ella x</p>
         <div class="cta-row">
           <a href="/recipes" class="btn">Browse the recipes</a>
           <a href={SITE.instagram} class="link-ul" rel="me">{SITE.handle} on Instagram</a>
@@ -36,6 +72,9 @@ const jsonLd = {
   .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
   .txt { flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 20px; max-width: 62ch; }
   h1 { font-weight: 500; font-size: clamp(40px, 5vw, 56px); letter-spacing: -0.01em; line-height: 1.05; }
+  .txt h2 { font-weight: 500; font-size: clamp(26px, 3vw, 34px); line-height: 1.15; margin-top: 16px; }
+  .sign { font-family: var(--hand); font-weight: 700; font-size: 34px; color: var(--berry) !important; }
+  .portrait { position: sticky; top: 24px; }
   .txt p:not(.kick) { font-size: 18px; line-height: 1.65; color: var(--muted); }
   .cta-row { display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: center; margin-top: 8px; }
 </style>
