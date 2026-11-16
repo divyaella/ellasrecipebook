@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ellasrecipebook.com/sitemap-index.xml
+Sitemap: https://www.ellasrecipebook.com/sitemap-index.xml
