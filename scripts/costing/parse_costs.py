@@ -168,6 +168,7 @@ def to_base(L,p):
     if u=='kg': q,u=q*1000,'g'
     if u=='l': q,u=q*1000,'ml'
     if u in('tsp','tbsp','cup'): q=q*{'tsp':5,'tbsp':15,'cup':240}[u]; u='ml'
+    if 'stock' in k and base=='g' and u=='ml': return (q/50,'stock: 1 cube (10 g) per 500 ml')
     if u in('packet','can') and base in('g','ml'): return (q*p['qty'],'pack size')
     if base=='g' and u in('sprig','bunch','handful','leaf','scoop'): return (q*{'sprig':2,'bunch':100,'handful':25,'leaf':.5,'scoop':30}[u],'')
     if base=='ml':

@@ -2210,13 +2210,13 @@
   "check_source": false,
   "title": "Basil Chicken Mince | Pad Krapow",
   "serves": 3.0,
-  "total": 577.0,
+  "total": 573.0,
   "lines": 13,
   "resolved": 12,
   "unresolved": 1,
   "complete": false,
-  "per_serve": 192,
-  "for_two": 385,
+  "per_serve": 191,
+  "for_two": 382,
   "detail": [
    {
     "raw": "450 grams chicken mince",
@@ -2330,9 +2330,9 @@
     "item": "Vegetable Stock (cube / powder)",
     "via": "auto",
     "status": "ok",
-    "cost": 3.75,
-    "amount": 15.0,
-    "note": ""
+    "cost": 0.07,
+    "amount": 0.3,
+    "note": "stock: 1 cube (10 g) per 500 ml"
    },
    {
     "raw": "large handful of basil leaves",
@@ -2903,13 +2903,13 @@
   "check_source": false,
   "title": "Bokchoy Soup",
   "serves": 3.0,
-  "total": 433.0,
+  "total": 227.0,
   "lines": 8,
   "resolved": 8,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 144,
-  "for_two": 289,
+  "per_serve": 76,
+  "for_two": 151,
   "detail": [
    {
     "raw": "1 tbsp sesame oil",
@@ -2957,9 +2957,9 @@
     "item": "Vegetable Stock (cube / powder)",
     "via": "auto",
     "status": "ok",
-    "cost": 210.0,
-    "amount": 840.0,
-    "note": ""
+    "cost": 4.2,
+    "amount": 16.8,
+    "note": "stock: 1 cube (10 g) per 500 ml"
    },
    {
     "raw": "500 grams bokchoy, chopped",
@@ -8298,13 +8298,13 @@
   "check_source": false,
   "title": "Creamy Mushroom Pasta",
   "serves": 2.0,
-  "total": 151.0,
+  "total": 122.0,
   "lines": 11,
   "resolved": 10,
   "unresolved": 1,
   "complete": false,
-  "per_serve": 76,
-  "for_two": 151,
+  "per_serve": 61,
+  "for_two": 122,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -8366,9 +8366,9 @@
     "item": "Vegetable Stock (cube / powder)",
     "via": "auto",
     "status": "ok",
-    "cost": 30.0,
-    "amount": 120.0,
-    "note": ""
+    "cost": 0.6,
+    "amount": 2.4,
+    "note": "stock: 1 cube (10 g) per 500 ml"
    },
    {
     "raw": "1/8 cup amul cream",
@@ -19340,13 +19340,13 @@
   "check_source": false,
   "title": "One Pan Chicken Lasagna",
   "serves": 3.0,
-  "total": 730.0,
+  "total": 642.0,
   "lines": 14,
   "resolved": 14,
   "unresolved": 0,
   "complete": true,
-  "per_serve": 243,
-  "for_two": 487,
+  "per_serve": 214,
+  "for_two": 428,
   "detail": [
    {
     "raw": "1 tsp olive oil",
@@ -19434,9 +19434,9 @@
     "item": "Vegetable Stock (cube / powder)",
     "via": "auto",
     "status": "ok",
-    "cost": 90.0,
-    "amount": 360.0,
-    "note": ""
+    "cost": 1.8,
+    "amount": 7.2,
+    "note": "stock: 1 cube (10 g) per 500 ml"
    },
    {
     "raw": "120 grams lasagna sheets",
