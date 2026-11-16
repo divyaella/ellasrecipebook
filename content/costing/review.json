@@ -192,6 +192,17 @@
   ]
  },
  {
+  "status": "missing",
+  "key": "fettuccine",
+  "recipes": 2,
+  "lines": 2,
+  "examples": [
+   "150 g fettuccine",
+   "100 g fettuccine (raw)"
+  ],
+  "candidates": []
+ },
+ {
   "status": "unit",
   "key": "Bay Leaves|piece-weight",
   "recipes": 2,
@@ -199,6 +210,17 @@
   "examples": [
    "1 bay leaf",
    "1 bayleaf"
+  ],
+  "candidates": []
+ },
+ {
+  "status": "missing",
+  "key": "olive oil butter",
+  "recipes": 2,
+  "lines": 2,
+  "examples": [
+   "1 tsp olive oil or butter",
+   "1/2 tsp olive oil or butter"
   ],
   "candidates": []
  },
@@ -281,6 +303,20 @@
   ],
   "candidates": [
    "dry red chilli"
+  ]
+ },
+ {
+  "status": "ambiguous",
+  "key": "kashmiri red chilli powder",
+  "recipes": 2,
+  "lines": 2,
+  "examples": [
+   "1 tsp Kashmiri red chilli powder",
+   "1 tbsp Kashmiri red chilli powder"
+  ],
+  "candidates": [
+   "kashmiri chilli powder",
+   "red chilli powder"
   ]
  },
  {
@@ -1100,6 +1136,16 @@
  },
  {
   "status": "missing",
+  "key": "dried kashmiri red chillies",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "6 dried Kashmiri red chillies"
+  ],
+  "candidates": []
+ },
+ {
+  "status": "missing",
   "key": "sesame oil olive oil",
   "recipes": 1,
   "lines": 1,
@@ -1347,19 +1393,6 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "kashmiri red chilli powder",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tbsp Kashmiri red chilli powder"
-  ],
-  "candidates": [
-   "kashmiri chilli powder",
-   "red chilli powder"
-  ]
- },
- {
   "status": "missing",
   "key": "kashmiri dried red chilli",
   "recipes": 1,
@@ -1540,6 +1573,19 @@
   "candidates": []
  },
  {
+  "status": "ambiguous",
+  "key": "pesto",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "1 tsp pesto"
+  ],
+  "candidates": [
+   "pesto (genovese)",
+   "sun-dried tomato pesto"
+  ]
+ },
+ {
   "status": "missing",
   "key": "monkfruit sweetender",
   "recipes": 1,
@@ -1644,16 +1690,6 @@
   "candidates": [
    "spinach"
   ]
- },
- {
-  "status": "missing",
-  "key": "olive oil butter",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1/2 tsp olive oil or butter"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",

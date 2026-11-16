@@ -4671,6 +4671,183 @@
    }
   ]
  },
+ "chicken-bolognese-with-fettuccine": {
+  "check_source": false,
+  "title": "Chicken Bolognese with Fettuccine",
+  "serves": 3,
+  "total": 519.0,
+  "lines": 18,
+  "resolved": 17,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 173,
+  "for_two": 346,
+  "detail": [
+   {
+    "raw": "1 tbsp oil",
+    "name": "oil",
+    "standin": "canola oil not priced yet — using Sunflower Oil",
+    "item": "Sunflower Oil",
+    "via": "alias",
+    "status": "ok",
+    "cost": 2.85,
+    "amount": 15.0,
+    "note": ""
+   },
+   {
+    "raw": "6 garlic cloves, minced (",
+    "name": "garlic cloves",
+    "item": "Garlic",
+    "via": "exact",
+    "status": "ok",
+    "cost": 8.28,
+    "amount": 24.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp garlic paste for extra zing)",
+    "name": "garlic paste",
+    "item": "Ginger Garlic Paste",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.91,
+    "amount": 5.5,
+    "note": ""
+   },
+   {
+    "raw": "1 onion, finely chopped",
+    "name": "onion",
+    "item": "Onion",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.51,
+    "amount": 110.0,
+    "note": ""
+   },
+   {
+    "raw": "1–2 carrots, grated (optional)",
+    "name": "carrots",
+    "item": "Carrot",
+    "via": "exact",
+    "status": "ok",
+    "cost": 9.45,
+    "amount": 105.0,
+    "note": ""
+   },
+   {
+    "raw": "1 capsicum, finely chopped (optional)",
+    "name": "capsicum",
+    "item": "Capsicum Green",
+    "via": "alias",
+    "status": "ok",
+    "cost": 26.4,
+    "amount": 150.0,
+    "note": ""
+   },
+   {
+    "raw": "200 g button mushrooms",
+    "name": "button mushrooms",
+    "item": "Mushrooms",
+    "via": "alias",
+    "status": "ok",
+    "cost": 53.33,
+    "amount": 200.0,
+    "note": ""
+   },
+   {
+    "raw": "450 g chicken kheema",
+    "name": "chicken kheema",
+    "item": "Chicken Mince (Keema)",
+    "via": "alias",
+    "status": "ok",
+    "cost": 317.0,
+    "amount": 450.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tbsp tomato paste",
+    "name": "tomato paste",
+    "item": "Tomato Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 9.49,
+    "amount": 16.5,
+    "note": ""
+   },
+   {
+    "raw": "4–5 tomatoes, blended to a purée",
+    "name": "tomatoes",
+    "item": "Tomato",
+    "via": "exact",
+    "status": "ok",
+    "cost": 26.1,
+    "amount": 450.0,
+    "note": ""
+   },
+   {
+    "raw": "¾ cup vegetable stock (or ½ cup water)",
+    "name": "vegetable stock",
+    "item": "Vegetable Stock (cube / powder)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.9,
+    "amount": 3.6,
+    "note": "stock: 1 cube (10 g) per 500 ml"
+   },
+   {
+    "raw": "1 tbsp black pepper",
+    "name": "black pepper",
+    "status": "vague",
+    "cost": 0
+   },
+   {
+    "raw": "1 tbsp dried basil",
+    "name": "dried basil",
+    "item": "Basil",
+    "via": "auto",
+    "status": "ok",
+    "cost": 37.12,
+    "amount": 8.2,
+    "note": ""
+   },
+   {
+    "raw": "1 tbsp red chilli flakes",
+    "name": "red chilli flakes",
+    "item": "Crushed Red Pepper",
+    "via": "exact",
+    "status": "ok",
+    "cost": 22.98,
+    "amount": 8.2,
+    "note": ""
+   },
+   {
+    "raw": "A handful of basil or parsley",
+    "name": "a handful basil parsley",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "150 g fettuccine",
+    "name": "fettuccine",
+    "status": "missing",
+    "candidates": []
+   },
+   {
+    "raw": "Grated parmesan, to taste",
+    "name": "parmesan",
+    "status": "vague",
+    "cost": 0
+   },
+   {
+    "raw": "Salt",
+    "name": "salt",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   }
+  ]
+ },
  "chicken-caesar-meatballs": {
   "check_source": false,
   "title": "Chicken Caesar Meatballs",
@@ -6095,6 +6272,89 @@
    {
     "raw": "Salt + pepper",
     "name": "salt",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   }
+  ]
+ },
+ "chilli-cheese-balsamic-onion-grilled-sandwich": {
+  "check_source": false,
+  "title": "Chilli Cheese & Balsamic Caramelised Onion Grilled Sandwich",
+  "serves": 1,
+  "total": 88.0,
+  "lines": 8,
+  "resolved": 7,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 88,
+  "for_two": 176,
+  "detail": [
+   {
+    "raw": "2 slices bread",
+    "name": "bread",
+    "item": "White Bread",
+    "via": "suggested",
+    "status": "ok",
+    "cost": 8.25,
+    "amount": 60.0,
+    "note": ""
+   },
+   {
+    "raw": "80–100 g cheese (mozzarella, cheddar or a mix)",
+    "name": "cheese",
+    "item": "Cheese Block",
+    "via": "suggested",
+    "status": "ok",
+    "cost": 56.25,
+    "amount": 90.0,
+    "note": ""
+   },
+   {
+    "raw": "1 medium onion, thinly sliced",
+    "name": "onion",
+    "item": "Onion",
+    "via": "exact",
+    "status": "ok",
+    "cost": 4.51,
+    "amount": 110.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp olive oil or butter",
+    "name": "olive oil butter",
+    "status": "missing",
+    "candidates": []
+   },
+   {
+    "raw": "1–2 tsp balsamic vinegar",
+    "name": "balsamic vinegar",
+    "item": "Balsamic Vinegar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 14.85,
+    "amount": 7.5,
+    "note": ""
+   },
+   {
+    "raw": "½ tsp chilli flakes (adjust to taste)",
+    "name": "chilli flakes",
+    "item": "Crushed Red Pepper",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.83,
+    "amount": 1.4,
+    "note": ""
+   },
+   {
+    "raw": "Salt and black pepper, to taste",
+    "name": "salt black pepper",
+    "status": "vague",
+    "cost": 0
+   },
+   {
+    "raw": "Butter, for grilling",
+    "name": "butter",
     "status": "vague",
     "cost": 0,
     "note": "no quantity given — not costed"
@@ -8054,6 +8314,96 @@
     "cost": 27.84,
     "amount": 480.0,
     "note": ""
+   }
+  ]
+ },
+ "creamy-15-minute-pasta": {
+  "check_source": false,
+  "title": "Creamy 15-Minute Pasta",
+  "serves": 3,
+  "total": 634.0,
+  "lines": 9,
+  "resolved": 8,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 211,
+  "for_two": 423,
+  "detail": [
+   {
+    "raw": "100 g fettuccine (raw)",
+    "name": "fettuccine",
+    "status": "missing",
+    "candidates": []
+   },
+   {
+    "raw": "5 cloves garlic, grated",
+    "name": "garlic",
+    "item": "Garlic",
+    "via": "exact",
+    "status": "ok",
+    "cost": 6.9,
+    "amount": 20.0,
+    "note": ""
+   },
+   {
+    "raw": "A bunch of basil, chopped",
+    "name": "basil",
+    "item": "Basil",
+    "via": "exact",
+    "status": "ok",
+    "cost": 450.0,
+    "amount": 100,
+    "note": ""
+   },
+   {
+    "raw": "2 tbsp tomato paste",
+    "name": "tomato paste",
+    "item": "Tomato Paste",
+    "via": "exact",
+    "status": "ok",
+    "cost": 18.97,
+    "amount": 33.0,
+    "note": ""
+   },
+   {
+    "raw": "½–1 cup cream (depends how rich you want it)",
+    "name": "cream",
+    "item": "Fresh Cream",
+    "via": "suggested",
+    "status": "ok",
+    "cost": 56.16,
+    "amount": 180.0,
+    "note": ""
+   },
+   {
+    "raw": "½ cup pasta water",
+    "name": "pasta water",
+    "status": "free",
+    "cost": 0
+   },
+   {
+    "raw": "30 g parmesan",
+    "name": "parmesan",
+    "item": "Parmesan",
+    "via": "exact",
+    "status": "ok",
+    "cost": 102.0,
+    "amount": 30.0,
+    "note": ""
+   },
+   {
+    "raw": "Oregano, chilli flakes and any extra flavours you like",
+    "name": "oregano",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "A little olive oil",
+    "name": "a little olive oil",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -13041,6 +13391,74 @@
    }
   ]
  },
+ "hot-honey-chilli-crisp-eggs": {
+  "check_source": false,
+  "title": "Hot Honey Cheddar Chilli Crisp Eggs",
+  "serves": 1,
+  "total": 52.0,
+  "lines": 6,
+  "resolved": 6,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 52,
+  "for_two": 104,
+  "detail": [
+   {
+    "raw": "2 eggs",
+    "name": "eggs",
+    "item": "White Eggs",
+    "via": "alias",
+    "status": "ok",
+    "cost": 24.17,
+    "amount": 2.0,
+    "note": ""
+   },
+   {
+    "raw": "15 g cheddar, grated",
+    "name": "cheddar",
+    "item": "Cheddar",
+    "via": "exact",
+    "status": "ok",
+    "cost": 14.62,
+    "amount": 15.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp hot honey",
+    "name": "hot honey",
+    "item": "Honey",
+    "via": "auto",
+    "status": "ok",
+    "cost": 3.85,
+    "amount": 7.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp chilli crisp",
+    "name": "chilli crisp",
+    "item": "Chilli Crisp",
+    "via": "exact",
+    "status": "ok",
+    "cost": 9.11,
+    "amount": 5.5,
+    "note": ""
+   },
+   {
+    "raw": "Salt and pepper",
+    "name": "salt pepper",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "Toast, for dipping",
+    "name": "toast",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   }
+  ]
+ },
  "hot-mocha": {
   "check_source": false,
   "title": "Hot Mocha",
@@ -14090,6 +14508,149 @@
     "name": "water",
     "status": "free",
     "cost": 0
+   }
+  ]
+ },
+ "kerala-prawns-15-minute": {
+  "check_source": false,
+  "title": "15-Minute Kerala Prawns",
+  "serves": 3,
+  "total": 482.0,
+  "lines": 14,
+  "resolved": 12,
+  "unresolved": 2,
+  "complete": false,
+  "per_serve": 161,
+  "for_two": 321,
+  "detail": [
+   {
+    "raw": "400 g large prawns, cleaned and deveined",
+    "name": "prawns",
+    "item": "Prawns (Medium)",
+    "via": "auto",
+    "status": "ok",
+    "cost": 456.0,
+    "amount": 400.0,
+    "note": ""
+   },
+   {
+    "raw": "6 dried Kashmiri red chillies",
+    "name": "dried kashmiri red chillies",
+    "status": "missing",
+    "candidates": []
+   },
+   {
+    "raw": "1 large onion (or 5–6 shallots)",
+    "name": "onion",
+    "item": "Onion",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.86,
+    "amount": 143.0,
+    "note": ""
+   },
+   {
+    "raw": "1½ tbsp ginger-garlic paste (or 5–6 garlic cloves",
+    "name": "ginger garlic paste garlic cloves",
+    "item": "Ginger Garlic Paste",
+    "via": "auto",
+    "status": "ok",
+    "cost": 4.08,
+    "amount": 24.8,
+    "note": ""
+   },
+   {
+    "raw": "1 inch ginger, fresh)",
+    "name": "ginger",
+    "item": "Ginger",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.75,
+    "amount": 10.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp Kashmiri red chilli powder",
+    "name": "kashmiri red chilli powder",
+    "status": "ambiguous",
+    "candidates": [
+     "kashmiri chilli powder",
+     "red chilli powder"
+    ]
+   },
+   {
+    "raw": "1½ tsp coriander powder",
+    "name": "coriander powder",
+    "item": "Coriander Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.96,
+    "amount": 4.1,
+    "note": ""
+   },
+   {
+    "raw": "½ tsp turmeric",
+    "name": "turmeric",
+    "item": "Turmeric Powder",
+    "via": "alias",
+    "status": "ok",
+    "cost": 0.54,
+    "amount": 1.4,
+    "note": ""
+   },
+   {
+    "raw": "¾ tsp cumin powder",
+    "name": "cumin powder",
+    "item": "Cumin Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.24,
+    "amount": 2.1,
+    "note": ""
+   },
+   {
+    "raw": "½ tbsp ghee (or coconut oil)",
+    "name": "ghee",
+    "item": "Ghee",
+    "via": "exact",
+    "status": "ok",
+    "cost": 5.7,
+    "amount": 7.5,
+    "note": ""
+   },
+   {
+    "raw": "3 sprigs curry leaves",
+    "name": "curry leaves",
+    "item": "Curry Leaves",
+    "via": "exact",
+    "status": "ok",
+    "cost": 1.8,
+    "amount": 6.0,
+    "note": "vague amount"
+   },
+   {
+    "raw": "1 tsp lemon juice",
+    "name": "lemon juice",
+    "item": "Lemon",
+    "via": "auto",
+    "status": "ok",
+    "cost": 0.67,
+    "amount": 2.8,
+    "note": ""
+   },
+   {
+    "raw": "Lots of chopped coriander",
+    "name": "lots coriander",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "Salt",
+    "name": "salt",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
    }
   ]
  },
@@ -21406,6 +21967,56 @@
    }
   ]
  },
+ "pesto-fried-eggs": {
+  "check_source": true,
+  "title": "Pesto Fried Eggs",
+  "serves": 1,
+  "total": 58.0,
+  "lines": 4,
+  "resolved": 3,
+  "unresolved": 1,
+  "complete": false,
+  "per_serve": 58,
+  "for_two": 116,
+  "detail": [
+   {
+    "raw": "2 eggs",
+    "name": "eggs",
+    "item": "White Eggs",
+    "via": "alias",
+    "status": "ok",
+    "cost": 24.17,
+    "amount": 2.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tsp pesto",
+    "name": "pesto",
+    "status": "ambiguous",
+    "candidates": [
+     "pesto (genovese)",
+     "sun-dried tomato pesto"
+    ]
+   },
+   {
+    "raw": "10 g parmesan",
+    "name": "parmesan",
+    "item": "Parmesan",
+    "via": "exact",
+    "status": "ok",
+    "cost": 34.0,
+    "amount": 10.0,
+    "note": ""
+   },
+   {
+    "raw": "Toast, for dipping",
+    "name": "toast",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   }
+  ]
+ },
  "pina-colada-chia-pudding": {
   "check_source": false,
   "title": "Pina Colada Chia Pudding",
@@ -25334,6 +25945,111 @@
    {
     "raw": "reduce quantity of chocolate and add nuts of your choice",
     "name": "reduce quantity chocolate add nuts your choice",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   }
+  ]
+ },
+ "turkish-eggs-with-chilli-butter": {
+  "check_source": false,
+  "title": "Turkish Eggs with Chilli Butter",
+  "serves": 1,
+  "total": 134.0,
+  "lines": 10,
+  "resolved": 10,
+  "unresolved": 0,
+  "complete": true,
+  "per_serve": 134,
+  "for_two": 268,
+  "detail": [
+   {
+    "raw": "200 g Skyr or thick Greek yogurt",
+    "name": "skyr thick greek yogurt",
+    "item": "Greek Yogurt",
+    "via": "auto",
+    "status": "ok",
+    "cost": 94.22,
+    "amount": 200.0,
+    "note": ""
+   },
+   {
+    "raw": "2 garlic cloves, grated",
+    "name": "garlic cloves",
+    "item": "Garlic",
+    "via": "exact",
+    "status": "ok",
+    "cost": 2.76,
+    "amount": 8.0,
+    "note": ""
+   },
+   {
+    "raw": "A little chopped coriander",
+    "name": "a little coriander",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "Salt",
+    "name": "salt",
+    "status": "vague",
+    "cost": 0,
+    "note": "no quantity given — not costed"
+   },
+   {
+    "raw": "2 eggs",
+    "name": "eggs",
+    "item": "White Eggs",
+    "via": "alias",
+    "status": "ok",
+    "cost": 24.17,
+    "amount": 2.0,
+    "note": ""
+   },
+   {
+    "raw": "1 tbsp vinegar",
+    "name": "vinegar",
+    "item": "White Vinegar",
+    "via": "suggested",
+    "status": "ok",
+    "cost": 2.1,
+    "amount": 15.0,
+    "note": ""
+   },
+   {
+    "raw": "10 g butter",
+    "name": "butter",
+    "item": "Salted Butter",
+    "via": "suggested",
+    "status": "ok",
+    "cost": 6.3,
+    "amount": 10.0,
+    "note": ""
+   },
+   {
+    "raw": "½ tsp chilli flakes",
+    "name": "chilli flakes",
+    "item": "Crushed Red Pepper",
+    "via": "exact",
+    "status": "ok",
+    "cost": 3.83,
+    "amount": 1.4,
+    "note": ""
+   },
+   {
+    "raw": "¼ tsp Kashmiri chilli powder",
+    "name": "kashmiri chilli powder",
+    "item": "Kashmiri Chilli Powder",
+    "via": "exact",
+    "status": "ok",
+    "cost": 0.5,
+    "amount": 0.7,
+    "note": ""
+   },
+   {
+    "raw": "Pita, toast or kulcha, to scoop",
+    "name": "pita",
     "status": "vague",
     "cost": 0,
     "note": "no quantity given — not costed"
