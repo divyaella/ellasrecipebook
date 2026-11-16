@@ -11,7 +11,7 @@ export const SITE = {
   handle: '@ellasrecipebook_',
   tagline: 'Home cooking, written down.',
   description:
-    'Healthy recipes you’ll actually crave — big flavour, better macros, the cost of feeding two made clear. By Divya Ella, Gurgaon.',
+    'Everyday recipes made with big flavour and a little thought. From high-protein favourites to indulgent comfort food, with nutrition and ingredient costs made clear.',
   author: 'Divya Ella',
 };
 
