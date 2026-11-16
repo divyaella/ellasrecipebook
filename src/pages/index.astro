@@ -2,18 +2,26 @@
 import Base from '../layouts/Base.astro';
 import RecipeCard from '../components/RecipeCard.astro';
 import Photo from '../components/Photo.astro';
+import homepage from '../../content/homepage.json';
 import { SITE, COLLECTIONS, CATEGORIES, loadRecipes, meta, fmtCost } from '../data/site';
 
 const all = await loadRecipes();
 const byId = Object.fromEntries(COLLECTIONS.map((c) => [c.id, all.filter(c.filter).sort(c.sort ?? (() => 0))]));
 
-const featured = all.filter((r) => r.posted >= '2026-01-01').sort((a, b) => b.likes - a.likes)[0] ?? all[0];
-const popular = byId.popular.slice(0, 5);
-const quick = byId['ready-in-20'].slice(0, 4);
+const picks = homepage as Record<string, string | string[]>;
+const bySlug = Object.fromEntries(all.map((r) => [r.slug, r]));
+// Hand-picked slugs first (content/homepage.json), topped up from the collection if any are missing or unpublished.
+const pick = (key: string, n: number, pool: typeof all) => {
+  const chosen = ((picks[key] as string[]) ?? []).map((s) => bySlug[s]).filter(Boolean);
+  return [...chosen, ...pool.filter((r) => !chosen.includes(r))].slice(0, n);
+};
+const featured = bySlug[picks.featured as string] ?? all.filter((r) => r.posted >= '2026-01-01').sort((a, b) => b.likes - a.likes)[0] ?? all[0];
+const popular = pick('popular', 5, byId.popular);
+const quick = pick('quick', 4, byId['ready-in-20']);
 const budget = byId['under-500'].slice(0, 6);
-const protein = byId['high-protein'].slice(0, 4);
-const light = byId['under-500-kcal'].filter((r) => !protein.includes(r)).slice(0, 4);
-const prep = byId['meal-prep'].slice(0, 5);
+const protein = pick('protein', 4, byId['high-protein']);
+const light = pick('light', 4, byId['under-500-kcal'].filter((r) => !protein.includes(r)));
+const prep = pick('prep', 5, byId['meal-prep']);
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
 const homeLd = [
   {

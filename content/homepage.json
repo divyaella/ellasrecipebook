@@ -1,0 +1,9 @@
+{
+  "_note": "Homepage picks, in display order. Edit slugs here to change what shows on the home page. Anything missing falls back to the most-liked recipes in that collection.",
+  "featured": "chicken-steak-in-creamy-mushroom-sauce",
+  "popular": ["creamy-mushroom-spinach-frittata", "healthier-chicken-ghee-roast-simplified", "no-oil-chicken-curry", "creamy-mushroom-eggs", "paneer-tikka-salad"],
+  "quick": ["creamy-spinach-eggs", "korean-fried-egg-rice", "eggs-kejriwal", "chilli-cheese-omlette"],
+  "protein": ["butter-chicken", "chicken-caesar-pasta-salad", "airfryer-chilli-chicken", "chocolate-protein-pancakes"],
+  "light": ["one-pot-masala-khichdi", "masala-egg-bites", "asian-style-oats", "one-pot-south-indian-khichdi"],
+  "prep": ["palak-khichdi", "dal-makhani", "stuffed-chicken-with-garlicky-mushrooms-spinach", "egg-salad-sandwich", "dark-chocolate-chia-pudding-high-protein"]
+}
