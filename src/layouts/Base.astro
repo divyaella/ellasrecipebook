@@ -55,6 +55,18 @@ const url = canonical ?? new URL(cleanPath, Astro.site).toString();
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <link rel="sitemap" href="/sitemap-index.xml" />
   {import.meta.env.GOOGLE_SITE_VERIFICATION && <meta name="google-site-verification" content={import.meta.env.GOOGLE_SITE_VERIFICATION} />}
+  <script is:inline>
+    if (location.hostname.endsWith('ellasrecipebook.com')) {
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-393E18BN00';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-393E18BN00');
+    }
+  </script>
   {jsonLd && <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />}
 </head>
 <body>
