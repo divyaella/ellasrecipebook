@@ -24,18 +24,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Dry Red Chilli|piece-weight",
-  "recipes": 4,
-  "lines": 5,
-  "examples": [
-   "3 dry red chilli",
-   "2 dry red chillies, broken and de seed ( optional )",
-   "1-2 dry red chillies"
-  ],
-  "candidates": []
- },
- {
   "status": "ambiguous",
   "key": "vegetable",
   "recipes": 3,
@@ -111,22 +99,16 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "dal",
+  "status": "unit",
+  "key": "Dry Red Chilli|piece-weight",
   "recipes": 3,
   "lines": 3,
   "examples": [
-   "1/2 cup dal (toor or moong), rinsed till water runs clear and soak for 30 minutes",
-   "100 grams dal (toor or masoor), rinsed till water runs clear and soaked for 30 minutes",
-   "100 grams dal (toor or masoor), rinsed till water runs clear and soaked for 30 minutes"
+   "3 dry red chilli",
+   "2 dry red chillies, broken and de seed ( optional )",
+   "1-2 dry red chillies"
   ],
-  "candidates": [
-   "chana dal",
-   "masoor dal",
-   "moong dal",
-   "toor dal",
-   "urad dal"
-  ]
+  "candidates": []
  },
  {
   "status": "missing",
@@ -167,19 +149,6 @@
  },
  {
   "status": "suggest",
-  "key": "on kasturi methi",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "1 heaping tbsp on kasturi methi",
-   "1 heaping tbsp on kasturi methi"
-  ],
-  "candidates": [
-   "kasuri methi"
-  ]
- },
- {
-  "status": "suggest",
   "key": "lemon s juice",
   "recipes": 2,
   "lines": 2,
@@ -199,17 +168,6 @@
   "examples": [
    "150 g fettuccine",
    "100 g fettuccine (raw)"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Bay Leaves|piece-weight",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "1 bay leaf",
-   "1 bayleaf"
   ],
   "candidates": []
  },
@@ -247,17 +205,6 @@
   "candidates": []
  },
  {
-  "status": "missing",
-  "key": "kashmiri red chilli",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "2 kashmiri red chilli",
-   "6 kashmiri red chilli, dried"
-  ],
-  "candidates": []
- },
- {
   "status": "unit",
   "key": "Sourdough Slices|unit-slice",
   "recipes": 2,
@@ -265,17 +212,6 @@
   "examples": [
    "2 slices sourdough, toasted",
    "4 slices sourdough"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "brandy cognac",
-  "recipes": 2,
-  "lines": 2,
-  "examples": [
-   "10 ml of brandy or cognac ( reduce same Amt of cream)",
-   "10 ml of brandy or cognac ( reduce same Amt of cream)"
   ],
   "candidates": []
  },
@@ -342,6 +278,23 @@
    "8 cashews"
   ],
   "candidates": []
+ },
+ {
+  "status": "ambiguous",
+  "key": "dal",
+  "recipes": 2,
+  "lines": 2,
+  "examples": [
+   "100 grams dal (toor or masoor), rinsed till water runs clear and soaked for 30 minutes",
+   "100 grams dal (toor or masoor), rinsed till water runs clear and soaked for 30 minutes"
+  ],
+  "candidates": [
+   "chana dal",
+   "masoor dal",
+   "moong dal",
+   "toor dal",
+   "urad dal"
+  ]
  },
  {
   "status": "missing",
@@ -420,34 +373,12 @@
   "candidates": []
  },
  {
-  "status": "suggest",
-  "key": "oregano chilli flakes each",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "2 packets of oregano and chilli flakes each, i use dominoes ;)"
-  ],
-  "candidates": [
-   "oregano"
-  ]
- },
- {
   "status": "missing",
   "key": "monkfruit tsp vanilla also makes it slightly sweet",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "1 tsp monkfruit or 1/4 tsp vanilla also makes it slightly sweet if you dont want to add sugar | monkfruit here"
-  ],
-  "candidates": []
- },
- {
-  "status": "unit",
-  "key": "Bok Choy|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "2 bunches of bok choy"
   ],
   "candidates": []
  },
@@ -494,16 +425,6 @@
   "lines": 1,
   "examples": [
    "2 tsp english mustard or to your taste"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "oil fry bhindi",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1.5 tbsp oil to fry the bhindi"
   ],
   "candidates": []
  },
@@ -583,6 +504,18 @@
   ]
  },
  {
+  "status": "suggest",
+  "key": "on kasturi methi",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "1 heaping tbsp on kasturi methi"
+  ],
+  "candidates": [
+   "kasuri methi"
+  ]
+ },
+ {
   "status": "missing",
   "key": "pita pockets",
   "recipes": 1,
@@ -617,21 +550,21 @@
  },
  {
   "status": "missing",
-  "key": "pasta speghetti",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "120 grams pasta speghetti ( perfect quantity for 2 people) ( i use barilla whole wheat)"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "hot sauce best replacement",
   "recipes": 1,
   "lines": 1,
   "examples": [
    "1 dash hot sauce (optional) the best replacement for WC sauce if you dont have it / dont want to use it"
+  ],
+  "candidates": []
+ },
+ {
+  "status": "unit",
+  "key": "Bay Leaves|piece-weight",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "1 bay leaf"
   ],
   "candidates": []
  },
@@ -689,19 +622,6 @@
  },
  {
   "status": "suggest",
-  "key": "hung curd whipped spice masalas",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "2 tbsp of hung curd whipped to cut the spice and masalas :) Optional: 1"
-  ],
-  "candidates": [
-   "hung curd",
-   "curd"
-  ]
- },
- {
-  "status": "suggest",
   "key": "cream tartare",
   "recipes": 1,
   "lines": 1,
@@ -711,6 +631,16 @@
   "candidates": [
    "cream of tartar"
   ]
+ },
+ {
+  "status": "missing",
+  "key": "kashmiri red chilli",
+  "recipes": 1,
+  "lines": 1,
+  "examples": [
+   "2 kashmiri red chilli"
+  ],
+  "candidates": []
  },
  {
   "status": "unit",
@@ -729,16 +659,6 @@
   "lines": 1,
   "examples": [
    "2 cheese cubes"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "mashmallow per cookie",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 medium mashmallow per cookie"
   ],
   "candidates": []
  },
@@ -894,16 +814,6 @@
   "candidates": []
  },
  {
-  "status": "unit",
-  "key": "Puff Pastry Sheets|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 sheet puff pastry, thawed in the fridge overnight is best, I took mine out to room temperature 40 minutes before"
-  ],
-  "candidates": []
- },
- {
   "status": "missing",
   "key": "chicken stock vegetable stock is too",
   "recipes": 1,
@@ -956,33 +866,6 @@
   "candidates": []
  },
  {
-  "status": "ambiguous",
-  "key": "honey corn syrup glucose",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "35 grams honey or corn syrup or glucose ( when using honey, your honeycomb will have a strong honey flavour)"
-  ],
-  "candidates": [
-   "honey",
-   "corn"
-  ]
- },
- {
-  "status": "ambiguous",
-  "key": "dark",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "150 grams dark / milk chocolate, if enrobing"
-  ],
-  "candidates": [
-   "dark chocolate (55%)",
-   "dark chocolate (70%)",
-   "soy sauce (dark)"
-  ]
- },
- {
   "status": "missing",
   "key": "jaggery your prefered sweetener choice",
   "recipes": 1,
@@ -1017,48 +900,6 @@
    "dark chocolate (55%)",
    "dark chocolate (70%)"
   ]
- },
- {
-  "status": "suggest",
-  "key": "coffee",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tbsp coffee"
-  ],
-  "candidates": [
-   "instant coffee powder"
-  ]
- },
- {
-  "status": "missing",
-  "key": "fat",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 - 1.5 cups whole fat / slim milk"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "sugar stevia jaggery",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tsp sugar/stevia/jaggery"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "chocolate callets",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "5-6 chocolate callets"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -1123,16 +964,6 @@
   "candidates": [
    "ginger"
   ]
- },
- {
-  "status": "unit",
-  "key": "Cloves|piece-weight",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "2 - 3 cardamom cloves"
-  ],
-  "candidates": []
  },
  {
   "status": "missing",
@@ -1257,36 +1088,6 @@
  },
  {
   "status": "missing",
-  "key": "cardamom pods",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "3 cardamom pods, green"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "oil tbsp oil",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "2 tbsp oil or 1 tbsp oil"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
-  "key": "monk fruit",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 sachet monk fruit"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "sachets monk fruit sweetener",
   "recipes": 1,
   "lines": 1,
@@ -1359,28 +1160,6 @@
    "2 - 3 tbsp malaga podi, adjust basis how strong and flavourful your podi is"
   ],
   "candidates": []
- },
- {
-  "status": "missing",
-  "key": "mini oreo packets",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "3 mini oreo packets - 46 grams each"
-  ],
-  "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "cheese slice cheese is always subjective in a recipe",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 cheese slice ( you can use grated cheese as well) Cheese is always subjective in a recipe, add as little or as much as you want"
-  ],
-  "candidates": [
-   "cheese slices"
-  ]
  },
  {
   "status": "missing",
@@ -1507,16 +1286,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "grounud black pepper",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 tsp grounud black pepper"
-  ],
-  "candidates": []
- },
- {
   "status": "unit",
   "key": "Shallots|piece-weight",
   "recipes": 1,
@@ -1563,16 +1332,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "portion sponge cake",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 portion (recipe in the previous reel) sponge cake"
-  ],
-  "candidates": []
- },
- {
   "status": "ambiguous",
   "key": "pesto",
   "recipes": 1,
@@ -1606,19 +1365,6 @@
   "candidates": [
    "pineapple slices",
    "pineapple juice"
-  ]
- },
- {
-  "status": "ambiguous",
-  "key": "cloves garlic",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 2 cloves of garlic"
-  ],
-  "candidates": [
-   "cloves",
-   "garlic"
   ]
  },
  {
@@ -1661,16 +1407,6 @@
  },
  {
   "status": "missing",
-  "key": "tbsp milk",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 . 5 tbsp milk"
-  ],
-  "candidates": []
- },
- {
-  "status": "missing",
   "key": "pasta per person",
   "recipes": 1,
   "lines": 1,
@@ -1692,29 +1428,6 @@
   ]
  },
  {
-  "status": "missing",
-  "key": "monk fruit sugar",
-  "recipes": 1,
-  "lines": 2,
-  "examples": [
-   "1 tbsp monk fruit sugar",
-   "2-3 tbsp monk fruit sugar"
-  ],
-  "candidates": []
- },
- {
-  "status": "suggest",
-  "key": "my homemade biscoff spread any topping choice",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "50 grams of my homemade biscoff spread (sugar free) or any topping of choice"
-  ],
-  "candidates": [
-   "biscoff spread"
-  ]
- },
- {
   "status": "suggest",
   "key": "cornflour mixed with tbsp milk",
   "recipes": 1,
@@ -1724,20 +1437,6 @@
   ],
   "candidates": [
    "cornstarch"
-  ]
- },
- {
-  "status": "ambiguous",
-  "key": "lettuce",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "1 lettuce, hand shredded"
-  ],
-  "candidates": [
-   "lettuce iceberg",
-   "romaine lettuce",
-   "lettuce (generic leaves)"
   ]
  },
  {
@@ -1796,18 +1495,6 @@
    "thai green curry paste",
    "thai red curry paste",
    "thai yellow curry paste"
-  ]
- },
- {
-  "status": "suggest",
-  "key": "chicken marinated with tsp gochujang paste",
-  "recipes": 1,
-  "lines": 1,
-  "examples": [
-   "200 grams chicken marinated with 1/2 tsp gochujang paste"
-  ],
-  "candidates": [
-   "gochujang"
   ]
  },
  {
