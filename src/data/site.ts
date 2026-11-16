@@ -6,7 +6,7 @@ export type Recipe = CollectionEntry<'recipes'>['data'];
 export const SITE = {
   name: "Ella's Recipe Book",
   domain: 'ellasrecipebook.com',
-  url: 'https://www.ellasrecipebook.com',
+  url: 'https://ellasrecipebook.com',
   instagram: 'https://www.instagram.com/ellasrecipebook_/',
   handle: '@ellasrecipebook_',
   tagline: 'Home cooking, written down.',
