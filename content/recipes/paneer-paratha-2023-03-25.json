@@ -17,12 +17,17 @@
       "items": [
         "200 grams low fat paneer, grated",
         "1 onion, finely chopped",
-        "2 green chilli, finely chopped",
-        "spices- red chilli powder + haldi + jeera powder + coriander powder + aamchur powder + salt",
+        "2 green chilli, finely chopped"
+      ]
+    },
+    {
+      "name": "Spices",
+      "items": [
         "handful of coriander, finely chopped",
         "regular roti dough made with whole wheat flour",
         "1 tsp ghee per paratha while cooking on tava"
-      ]
+      ],
+      "note": "red chilli powder + haldi + jeera powder + coriander powder + aamchur powder + salt"
     }
   ],
   "method": [

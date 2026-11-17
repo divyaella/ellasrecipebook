@@ -22,8 +22,12 @@
       "items": [
         "1 cup chickpeas, uncooked, around 190 grams",
         "1 cup black tea brewed",
-        "2 cups water, to pressure cook",
-        "masala",
+        "2 cups water, to pressure cook"
+      ]
+    },
+    {
+      "name": "Masala",
+      "items": [
         "4 black peppercorn",
         "2 cloves",
         "2 elaichi pods",
@@ -31,8 +35,12 @@
         "1 tsp jeera",
         "1 tsp saunf",
         "1 tsp coriander seeds",
-        "2 kashmiri red chilli",
-        "gravy",
+        "2 kashmiri red chilli"
+      ]
+    },
+    {
+      "name": "Gravy",
+      "items": [
         "1 tsp oil",
         "1 onion",
         "1 tbsp ginger garlic paste",

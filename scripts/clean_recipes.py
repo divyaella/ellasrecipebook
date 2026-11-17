@@ -139,6 +139,41 @@ def clean_method(r):
     return out
 
 
+HEAD_KW = r'(?:marinade|marination|base|sauce|dressing|gravy|masala|topping|toppings|assembly|filling|stuffing|batter|dough|garnish|spices|ins|slurry|paste|seasoning|powders|tadka|tempering|coating)'
+HEAD_RE = re.compile(r'^(?P<x>[^:\-–—]{2,45}?)\s*(?:[-–—:]\s+(?P<note>.+))?$')
+QTY = re.compile(r'\d|\b(?:half|one|two|three|handful|pinch|dash|knob|splash)\b', re.I)
+NOT_HEAD = re.compile(r'\b(?:for|to)\s+(?:garnish|topping|serve|serving)\b|to taste|optional|\b(?:salt|pepper)\b', re.I)
+
+
+def split_heading(item, first_in_group, next_item):
+    """(name, note, extra_items) if `item` is really a section heading ('Marinade - note', 'Dan Dan sauce',
+    'Garnish: a, b'), else None. Captions often give a heading as a bare line, so it used to land in the
+    ingredient list as if it were an ingredient."""
+    m = HEAD_RE.match(item.strip())
+    if not m:
+        return None
+    x, note = m.group('x').strip(), (m.group('note') or '').strip()
+    if not x or QTY.search(x) or NOT_HEAD.search(x) or len(x.split()) > 5:
+        return None
+    if note and re.match(r'\d', note):
+        return None                                   # "cashew paste: 8 cashews + 2 tomato" is an item
+    if re.search(r'\b' + HEAD_KW + r'$', x, re.I):
+        if note or len(x.split()) == 1 or (x[0].isupper() and next_item and QTY.search(next_item)):
+            if note and re.search(r'garnish', x, re.I):
+                return (x, '', [i.strip() for i in re.split(r',|\+| and ', note) if i.strip()])
+            return (x, note, [])
+        return None
+    # no keyword: only the first line of a list, 2+ words, Capitalised, followed by a quantified line
+    if first_in_group and not note and len(x.split()) >= 2 and x[0].isupper() and ',' not in x and next_item and QTY.search(next_item):
+        return (x, '', [])
+    return None
+
+
+def tidy_name(n):
+    n = n.strip().rstrip(':')
+    return n[0].upper() + n[1:] if n else n
+
+
 def clean_ingredients(r):
     groups = []
     for g in r['ingredients']:
@@ -147,14 +182,30 @@ def clean_ingredients(r):
             s = re.sub(r'(\s*#\w+)+', '', it).strip(' -•*')
             if len(s) >= 2:
                 items.append(s)
-        if items:
-            groups.append({'name': g['name'], 'items': items})
+        if not items:
+            continue
+        cur = {'name': tidy_name(g['name']) if g['name'] else g['name'], 'items': []}
+        if g.get('note'):
+            cur['note'] = g['note']
+        for i, s in enumerate(items):
+            h = split_heading(s, not cur['items'] and not cur['name'], items[i + 1] if i + 1 < len(items) else '')
+            if h:
+                if cur['items']:
+                    groups.append(cur)
+                cur = {'name': tidy_name(h[0]), 'items': list(h[2])}
+                if h[1]:
+                    cur['note'] = h[1]
+                continue
+            cur['items'].append(s)
+        if cur['items']:
+            groups.append(cur)
     return groups
 
 
 def main():
     files = sorted(DIR.glob('*.json'))
     recs = [json.loads(f.read_text()) for f in files]
+    prev_slug = {r['id']: r['slug'] for r in recs if r.get('slug')}
     for f in files:
         f.unlink()
 
@@ -196,6 +247,8 @@ def main():
         seen[s] = True
         r['slug'] = s
 
+    for r in recs:
+        r['slug'] = prev_slug.get(r['id'], r['slug'])   # URLs never change on a re-clean
     for r in recs:
         (DIR / f"{r['slug']}.json").write_text(json.dumps(r, ensure_ascii=False, indent=2) + '\n')
 

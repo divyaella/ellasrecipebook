@@ -34,8 +34,12 @@
         "1 tsp red chilli powder",
         "1 tbsp of ketchup",
         "1 heaping tbsp on kasturi methi",
-        "salt, to taste as per your preferece",
-        "Marinade - you can play around with the spices as per your preference of flavours",
+        "salt, to taste as per your preferece"
+      ]
+    },
+    {
+      "name": "Marinade",
+      "items": [
         "1/2 cup hung curd ( as thick as possible)",
         "2 tbsp ginger garlic paste",
         "1 tbsp red chilli powder",
@@ -45,7 +49,8 @@
         "1 tbsp jeera powder",
         "salt, to taste",
         "450 grams chicken breasts, cubed OR 350 grams paneer, cubed"
-      ]
+      ],
+      "note": "you can play around with the spices as per your preference of flavours"
     }
   ],
   "method": [

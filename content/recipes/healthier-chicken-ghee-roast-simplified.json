@@ -24,14 +24,18 @@
       ]
     },
     {
-      "name": "marinade",
+      "name": "Marinade",
       "items": [
         "1 tsp haldi",
         "1 - 2 tbsp thick dahi / greek yogurt",
         "1 tsp red chilli powder",
         "2 sprigs curry leaves",
-        "salt to taste",
-        "paste",
+        "salt to taste"
+      ]
+    },
+    {
+      "name": "Paste",
+      "items": [
         "1 tbsp coriander seeds",
         "10 black peppercorns",
         "1 tsp cumin seeds",

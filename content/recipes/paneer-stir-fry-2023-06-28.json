@@ -25,8 +25,12 @@
         "1 onion, thinly sliced",
         "1 tbsp ginger garlic paste",
         "1 tomato, thinly sliced",
-        "1 capsicum, thinly sliced",
-        "spices: (feel free to adjust as per your taste)",
+        "1 capsicum, thinly sliced"
+      ]
+    },
+    {
+      "name": "Spices",
+      "items": [
         "1 tsp red chilli powder",
         "1 tsp coriander powder",
         "1/2 tsp turmeric powder",
@@ -34,7 +38,8 @@
         "1 tsp chaat masala",
         "2-3 tbsp water",
         "handful coriander, to garnish"
-      ]
+      ],
+      "note": "(feel free to adjust as per your taste)"
     }
   ],
   "method": [

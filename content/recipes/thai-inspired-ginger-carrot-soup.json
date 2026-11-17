@@ -27,8 +27,12 @@
         "5 carrots, medium size ( if using large ones, 3 should suffice)",
         "2 birds eye chilli, for spice, optional basis what you like :)",
         "1 1/2 vegetable stock OR water works fine OR use one cup of water for pressure cooking and 1/4-1/2 cup coconut milk for a richer flavour",
-        "salt + black pepper to taste",
-        "garnish",
+        "salt + black pepper to taste"
+      ]
+    },
+    {
+      "name": "Garnish",
+      "items": [
         "coriander | crushed peanuts | nigella seeds"
       ]
     }

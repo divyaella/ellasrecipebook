@@ -23,7 +23,7 @@ const recipes = defineCollection({
     serves: z.number().nullable(),
     time_minutes: z.number().nullable(),
     cost_for_two: z.number().nullable().optional(),
-    ingredients: z.array(z.object({ name: z.string().nullable(), items: z.array(z.string()) })),
+    ingredients: z.array(z.object({ name: z.string().nullable(), note: z.string().optional(), items: z.array(z.string()) })),
     method: z.array(z.string()),
     tips: z.array(z.string()),
     keywords: z.array(z.string()),

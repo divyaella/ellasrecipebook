@@ -18,9 +18,8 @@
   "time_minutes": null,
   "ingredients": [
     {
-      "name": null,
+      "name": "Tikka Marinade",
       "items": [
-        "Tikka Marinade - marinate paneer for 30 minutes",
         "120 grams paneer, quantity as per your preference :)",
         "2 tbsp thick curd",
         "1 tbsp Red chilli powder",
@@ -30,18 +29,24 @@
         "1 tsp jeera powder",
         "Salt to taste",
         "1 tbsp ginger garlic paste"
-      ]
+      ],
+      "note": "marinate paneer for 30 minutes"
     },
     {
       "name": "Salad",
       "items": [
         "1 Cucumber, peel and remove seeds",
         "Red bell pepper, optional, sliced",
-        "Tomato - remove seeds inside part mushy, optional, sliced",
-        "Dressing - combine in the mixer",
+        "Tomato - remove seeds inside part mushy, optional, sliced"
+      ]
+    },
+    {
+      "name": "Dressing",
+      "items": [
         "3 tbsp Greek yogurt",
         "Handful of coriander"
-      ]
+      ],
+      "note": "combine in the mixer"
     },
     {
       "name": "Salt",

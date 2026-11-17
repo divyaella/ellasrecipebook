@@ -169,6 +169,7 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
           {r.ingredients.map((g) => (
             <div class="group">
               {g.name && <h3>{g.name}</h3>}
+              {g.note && <p class="gnote">{g.note}</p>}
               <ul>
                 {g.items.map((it) => (
                   <li><label><input type="checkbox" class="no-print" /><span>{it}</span></label></li>
@@ -254,6 +255,7 @@ const posted = new Date(r.posted).toLocaleDateString('en-IN', { day: 'numeric', 
   @media (max-width: 800px) { .ing { position: static; max-width: none; } }
   .ing h2, .method h2 { font-family: var(--hand); font-weight: 700; font-size: 44px; line-height: .95; }
   .ing h3, .macros h3, .tips h3 { font-weight: 600; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--berry); margin-bottom: 8px; }
+  .gnote { font-size: 13px; line-height: 1.45; color: var(--muted); font-style: italic; margin: -2px 0 6px; }
   .ing ul { list-style: none; padding: 0; display: flex; flex-direction: column; }
   .ing li label { display: flex; gap: 12px; align-items: flex-start; padding: 9px 0; border-bottom: 1px dotted var(--line); cursor: pointer; font-size: 16px; line-height: 1.45; }
   .ing li:last-child label { border-bottom: 0; }

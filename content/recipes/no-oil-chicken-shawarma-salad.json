@@ -24,7 +24,7 @@
       ]
     },
     {
-      "name": "marinade",
+      "name": "Marinade",
       "items": [
         "1 tbsp shawarma spices* see notes",
         "1 tbsp minced garlic",
@@ -32,8 +32,12 @@
         "juice of 1 lemon",
         "1 tsp black pepper",
         "1/2 tsp sumac",
-        "salt, to taste",
-        "dressing",
+        "salt, to taste"
+      ]
+    },
+    {
+      "name": "Dressing",
+      "items": [
         "4 tbsp greek yogurt",
         "1 tbsp minced garlic",
         "large handful of chopped coriander",

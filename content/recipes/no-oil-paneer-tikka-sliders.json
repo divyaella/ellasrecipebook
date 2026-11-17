@@ -18,9 +18,8 @@
   "time_minutes": 30,
   "ingredients": [
     {
-      "name": null,
+      "name": "Tikka Marinade",
       "items": [
-        "Tikka Marinade - marinate paneer for 30 minutes minimum",
         "200 grams paneer, cut into 8 pieces",
         "2 tbsp thick curd / greek yogurt",
         "1 tbsp RCP",
@@ -31,10 +30,11 @@
         "1 tsp chaat masala",
         "Salt to taste",
         "1 tbsp gg paste"
-      ]
+      ],
+      "note": "marinate paneer for 30 minutes minimum"
     },
     {
-      "name": "sauce",
+      "name": "Sauce",
       "items": [
         "2 tbsp Greek yogurt",
         "1 tbsp green chutney",

@@ -18,9 +18,8 @@
   "time_minutes": null,
   "ingredients": [
     {
-      "name": null,
+      "name": "Pressure Cooker Base",
       "items": [
-        "Pressure Cooker Base",
         "2 onions",
         "600 grams tomatoes, around 8 medium sized ones",
         "10 cloves of garlic",
@@ -29,8 +28,12 @@
         "8 cashews",
         "3 cloves",
         "3 green cardamom pods",
-        "1/2 cup water",
-        "Spices + Mix ins",
+        "1/2 cup water"
+      ]
+    },
+    {
+      "name": "Spices + Mix ins",
+      "items": [
         "1 tbsp red chilli powder",
         "1/4 tsp cinnamon powder, optional",
         "1 tsp garam masala",
@@ -38,8 +41,12 @@
         "1 tbsp tomato paste",
         "1 tbsp kasuri methi",
         "salt, to taste",
-        "1 tbsp fresh cream",
-        "Marinade - you can play around with the spices as per your preference of flavours",
+        "1 tbsp fresh cream"
+      ]
+    },
+    {
+      "name": "Marinade",
+      "items": [
         "1/2 cup hung curd OR greek yogurt",
         "2 tbsp ginger garlic paste",
         "1 tbsp red chilli powder",
@@ -49,7 +56,8 @@
         "1 tbsp jeera powder",
         "salt, to taste",
         "450 grams chicken breasts, cubed OR 400 grams paneer, cubed"
-      ]
+      ],
+      "note": "you can play around with the spices as per your preference of flavours"
     }
   ],
   "method": [

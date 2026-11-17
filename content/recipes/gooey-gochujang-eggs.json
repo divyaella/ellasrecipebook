@@ -28,8 +28,15 @@
         "1 - 2 tbsp water to thin consistency",
         "black pepper",
         "salt, to taste if you need it ( i usually dont add any )",
-        "1/2 - 1 cup cooked rice, to serve",
-        "garnish: sesame seeds, spring onions, optional"
+        "1/2 - 1 cup cooked rice, to serve"
+      ]
+    },
+    {
+      "name": "Garnish",
+      "items": [
+        "sesame seeds",
+        "spring onions",
+        "optional"
       ]
     }
   ],

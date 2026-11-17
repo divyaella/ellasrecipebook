@@ -23,14 +23,18 @@
         "1/4 tsp sesame oil",
         "2-3 garlic cloves, minced",
         "1/2 onion, thinly sliced",
-        "2 eggs",
-        "garnish",
+        "2 eggs"
+      ]
+    },
+    {
+      "name": "Garnish",
+      "items": [
         "1 spring onion green, chopped",
         "sesame seeds"
       ]
     },
     {
-      "name": "sauce",
+      "name": "Sauce",
       "items": [
         "1/2 tbsp gochujang",
         "1/2 tbsp light soy sauce or 1/2 tsp dark soy + 1/2 tsp water",

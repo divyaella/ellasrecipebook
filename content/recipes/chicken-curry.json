@@ -18,7 +18,7 @@
   "time_minutes": 60,
   "ingredients": [
     {
-      "name": "chicken marinade",
+      "name": "Chicken marinade",
       "items": [
         "500 grams curry cut chicken or use boneless thighs",
         "1/2 cup dahi, whisked till smooth",
@@ -35,13 +35,20 @@
       ]
     },
     {
-      "name": "spices",
+      "name": "Spices",
       "items": [
         "1 tbsp red chilli powder, 1/2 tsp haldi, 1 tbsp coriander powder, 1 tsp cumin powder,",
         "2 tomatoes, finely chopped",
         "salt to taste",
-        "1 tsp garam masala + 1 tsp kasturi methi",
-        "garnish: coriander, sliced ginger and green chilli"
+        "1 tsp garam masala + 1 tsp kasturi methi"
+      ]
+    },
+    {
+      "name": "Garnish",
+      "items": [
+        "coriander",
+        "sliced ginger",
+        "green chilli"
       ]
     }
   ],

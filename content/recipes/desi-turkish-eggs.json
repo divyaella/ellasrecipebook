@@ -18,7 +18,7 @@
   "time_minutes": 30,
   "ingredients": [
     {
-      "name": "yogurt base",
+      "name": "Yogurt base",
       "items": [
         "100 grams greek yogurt",
         "1 tsp minced garlic",
@@ -28,7 +28,7 @@
       ]
     },
     {
-      "name": "tadka",
+      "name": "Tadka",
       "items": [
         "7 grams butter + 1 tsp oil",
         "1 tsp mustard seeds",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "name": "garnish",
+      "name": "Garnish",
       "items": [
         "coriander"
       ]
